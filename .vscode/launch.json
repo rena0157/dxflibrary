@@ -4,6 +4,17 @@
    // For further information visit https://github.com/OmniSharp/omnisharp-vscode/blob/master/debugger-launchjson.md
    "version": "0.2.0",
    "configurations": [
+       {
+           "name": "Schema Generator",
+           "type": "coreclr",
+           "request": "launch",
+           "preLaunchTask": "build",
+           "program": "${workspaceFolder}src/DxfLibrary.SchemaGenerator/bin/Debug/netcoreapp2.1/DxfLibrary.SchemaGenerator.dll",
+           "args": [],
+           "cwd": "${workspaceFolder}",
+           "stopAtEntry": false,
+           "console": "internalConsole"
+       },
         {
             "name": ".NET Core Launch (console)",
             "type": "coreclr",

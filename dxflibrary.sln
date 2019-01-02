@@ -11,6 +11,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{6EB9AB31
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DxfLibrary.Tests", "tests\DxfLibrary.Tests\DxfLibrary.Tests.csproj", "{633DA03E-AB0F-4371-86A0-BD1EA79BAA09}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DxfLibrary.SchemaGenerator", "src\DxfLibrary.SchemaGenerator\DxfLibrary.SchemaGenerator.csproj", "{B5A1B80D-121A-42CD-B781-AC27FEBC387A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -48,9 +50,22 @@ Global
 		{633DA03E-AB0F-4371-86A0-BD1EA79BAA09}.Release|x64.Build.0 = Release|Any CPU
 		{633DA03E-AB0F-4371-86A0-BD1EA79BAA09}.Release|x86.ActiveCfg = Release|Any CPU
 		{633DA03E-AB0F-4371-86A0-BD1EA79BAA09}.Release|x86.Build.0 = Release|Any CPU
+		{B5A1B80D-121A-42CD-B781-AC27FEBC387A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B5A1B80D-121A-42CD-B781-AC27FEBC387A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B5A1B80D-121A-42CD-B781-AC27FEBC387A}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{B5A1B80D-121A-42CD-B781-AC27FEBC387A}.Debug|x64.Build.0 = Debug|Any CPU
+		{B5A1B80D-121A-42CD-B781-AC27FEBC387A}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{B5A1B80D-121A-42CD-B781-AC27FEBC387A}.Debug|x86.Build.0 = Debug|Any CPU
+		{B5A1B80D-121A-42CD-B781-AC27FEBC387A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B5A1B80D-121A-42CD-B781-AC27FEBC387A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B5A1B80D-121A-42CD-B781-AC27FEBC387A}.Release|x64.ActiveCfg = Release|Any CPU
+		{B5A1B80D-121A-42CD-B781-AC27FEBC387A}.Release|x64.Build.0 = Release|Any CPU
+		{B5A1B80D-121A-42CD-B781-AC27FEBC387A}.Release|x86.ActiveCfg = Release|Any CPU
+		{B5A1B80D-121A-42CD-B781-AC27FEBC387A}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{BB731A85-2A2A-49DC-9712-E2C8DC3ECC6A} = {6E6A968D-0EDC-4DEB-81A2-34582992E6A9}
 		{633DA03E-AB0F-4371-86A0-BD1EA79BAA09} = {6EB9AB31-E230-4EEA-B150-9685FE1B8CA5}
+		{B5A1B80D-121A-42CD-B781-AC27FEBC387A} = {6E6A968D-0EDC-4DEB-81A2-34582992E6A9}
 	EndGlobalSection
 EndGlobal

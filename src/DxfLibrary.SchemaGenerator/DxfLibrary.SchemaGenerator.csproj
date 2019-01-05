@@ -9,4 +9,8 @@
     <PackageReference Include="Newtonsoft.Json.Schema" Version="3.0.10" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\DxfLibrary\DxfLibrary.csproj" />
+  </ItemGroup>
+
 </Project>

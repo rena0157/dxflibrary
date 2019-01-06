@@ -24,20 +24,24 @@ namespace DxfLibrary.DxfSpec
         /// </summary>
         /// <typeparam name="T">The type of spec required</typeparam>
         /// <returns>The spec that was requested</returns>
-        public static T GetSpec<T>()
+        public static Spec<T> GetSpec<T>(string specName)
         {
             return JsonConvert
-                .DeserializeObject<T>(ReadSpecFromFile(GetStandardFileName(typeof(T))));
+                .DeserializeObject<Spec<T>>(ReadSpecFromFile(GetStandardFileName(specName)));
         }
+
+        public const string DxfCommonSpec = "DxfCommonSpec";
+
+        public const string HeaderSpec = "HeaderSpec";
 
         /// <summary>
         /// Return the standard file name for the type
         /// </summary>
         /// <param name="specType">The spec type</param>
         /// <returns>A relative path to the type spec</returns>
-        private static string GetStandardFileName(Type specType)
+        private static string GetStandardFileName(string specName)
         {
-            return $"./DxfSpec/Specs/{specType.Name}.json";
+            return $"./DxfSpec/Specs/{specName}.json";
         }
 
         /// <summary>

@@ -13,6 +13,18 @@
         {
             "Name" : "Sections.HeaderString",
             "Code" : "HEADER"
+        },
+        {
+            "Name" : "Sections.EntitiesString",
+            "Code" : "ENTITIES"
+        },
+        {
+            "Name" : "Sections.EndCode",
+            "Code" : "  0"
+        },
+        {
+            "Name" : "Sections.EndString",
+            "Code" : "ENDSEC"
         }
     ]
 }

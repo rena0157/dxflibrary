@@ -1,0 +1,14 @@
+{
+    "SpecName": "HeaderSpec",
+    "SpecType": "object",
+    "Properties": [
+        {
+            "Name" : "FileVersion",
+            "Code" : "$ACADVER"
+        },
+        {
+            "Name" : "LastSavedBy",
+            "Code" : "$LASTSAVEDBY"
+        }
+    ]
+}

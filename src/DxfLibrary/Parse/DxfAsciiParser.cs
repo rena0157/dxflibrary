@@ -23,10 +23,14 @@ namespace DxfLibrary.Parse
         public SectionsContainer Parse(IDxfReader<string, object> reader)
         {
             // Get the common Spec
-            var commonSpec = SpecService.GetSpec<DxfCommonSpec>();
+            var commonSpec = SpecService.GetSpec<object>(SpecService.DxfCommonSpec);
 
             // Initialize the sections container
             var container = new SectionsContainer();
+            
+            // Section Strings
+            var headerString = commonSpec.GetProperty("Sections.HeaderString") as string;
+            var entitiesString = commonSpec.GetProperty("Sections.EntitiesString") as string;
 
             // Read through the file
             while(!reader.EndOfStream)
@@ -43,12 +47,14 @@ namespace DxfLibrary.Parse
                 {
                     var sectionName = secondItem.Value as string;
 
-                    var headerString = commonSpec.GetProperty("Sections.HeaderString") as string;
 
                     if (sectionName == headerString)
                     {
                         var headerParser = new HeaderParser();
                         container.Header = headerParser.Parse(reader);
+                    }
+                    else if (sectionName == entitiesString)
+                    {
                     }
                 }
             }

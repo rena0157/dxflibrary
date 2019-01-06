@@ -28,11 +28,6 @@ namespace DxfLibrary.DxfSpec
         string SpecName {get;}
 
         /// <summary>
-        /// The type of the specification
-        /// </summary>
-        Type SpecType {get;}
-
-        /// <summary>
         /// A list of properties that the specification 
         /// specifies
         /// </summary>

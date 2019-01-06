@@ -15,13 +15,18 @@ namespace DxfLibrary.DxfSpec
     /// Spec base class that implements the basic common functions of the DxfSpec
     /// </summary>
     /// <typeparam name="T">The type of the DxfSpecProperty</typeparam>
-    public class SpecBase<T>
+    public class Spec<T> : IDxfSpec<T>
     {
         /// <summary>
         /// The Properties list that containes all of the properties relating to 
         /// this specificaiton
         /// </summary>
         public List<DxfSpecProperty<T>> Properties { get; set; }
+
+        /// <summary>
+        /// The Name of the Spec
+        /// </summary>
+        public string SpecName {get; set;}
 
         /// <summary>
         /// Gets a property by its name from the properties list

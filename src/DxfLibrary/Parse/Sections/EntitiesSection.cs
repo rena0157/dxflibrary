@@ -6,10 +6,17 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 
+using DxfLibrary.Entities;
+
 namespace DxfLibrary.Parse.Sections
 {
     public class EntitiesSection : IDxfParsable
     {
+        /// <summary>
+        /// Entities that are in the file
+        /// </summary>
+        List<IEntity> Entities {get; set;}
+
         /// <summary>
         /// Set a property in the 
         /// </summary>
@@ -19,7 +26,10 @@ namespace DxfLibrary.Parse.Sections
         {
             switch(name)
             {
-                
+                case nameof(Entities):
+                    Entities = new List<IEntity>();
+                    Entities = value as List<IEntity>;
+                break;
             }
         }
     }

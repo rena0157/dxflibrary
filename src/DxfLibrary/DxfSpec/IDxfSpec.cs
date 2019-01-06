@@ -40,7 +40,7 @@ namespace DxfLibrary.DxfSpec
         /// <param name="name">The name of the property that is to be retrieved</param>
         /// <typeparam name="X">The type that the property will be casted to</typeparam>
         /// <returns>A property</returns>
-        T GetProperty(string name);
+        T Get(string name);
 
     }
 }

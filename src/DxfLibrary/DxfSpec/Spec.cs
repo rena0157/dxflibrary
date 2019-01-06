@@ -34,7 +34,7 @@ namespace DxfLibrary.DxfSpec
         /// <param name="name">The name of the property that is to be returned</param>
         /// <typeparam name="X">The type of the property that is to be returned</typeparam>
         /// <returns>A DxfSpecProperty casted to the type in the name</returns>
-        public virtual T GetProperty(string name) 
+        public virtual T Get(string name) 
             => Properties
             .Where(prop => prop.Name == name)
             .FirstOrDefault()

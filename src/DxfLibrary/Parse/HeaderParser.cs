@@ -40,7 +40,7 @@ namespace DxfLibrary.Parse
             var commonSpec = SpecService.GetSpec<object>(SpecService.DxfCommonSpec);
 
             // This is end section string
-            var endSectionString = commonSpec.GetProperty("Sections.EndString") as string;
+            var endSectionString = commonSpec.Get("Sections.EndString") as string;
 
             // Read throughout the stream
             while(!reader.EndOfStream)

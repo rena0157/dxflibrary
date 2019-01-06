@@ -11,6 +11,7 @@ using System.Linq;
 // Internal using statements
 using DxfLibrary.IO;
 using DxfLibrary.DxfSpec;
+using DxfLibrary.Parse.Entities;
 
 namespace DxfLibrary.Parse
 {
@@ -29,8 +30,8 @@ namespace DxfLibrary.Parse
             var container = new SectionsContainer();
             
             // Section Strings
-            var headerString = commonSpec.GetProperty("Sections.HeaderString") as string;
-            var entitiesString = commonSpec.GetProperty("Sections.EntitiesString") as string;
+            var headerString = commonSpec.Get("Sections.HeaderString") as string;
+            var entitiesString = commonSpec.Get("Sections.EntitiesString") as string;
 
             // Read through the file
             while(!reader.EndOfStream)
@@ -38,8 +39,8 @@ namespace DxfLibrary.Parse
                 var firstItem = reader.GetNextPair();
                 var secondItem = reader.GetNextPair();
 
-                var sectionCode = commonSpec.GetProperty("Sections.StartCode") as string;
-                var sectionString = commonSpec.GetProperty("Sections.StartString") as string;
+                var sectionCode = commonSpec.Get("Sections.StartCode") as string;
+                var sectionString = commonSpec.Get("Sections.StartString") as string;
 
                 // If the first item's code is a section code and its value is a section string then this is the start
                 // of a section
@@ -55,7 +56,7 @@ namespace DxfLibrary.Parse
                     }
                     else if (sectionName == entitiesString)
                     {
-                        var entityParser = new EntityParser();
+                        var entityParser = new EntitySectionParser();
                         entityParser.Parse(reader);
                     }
                 }

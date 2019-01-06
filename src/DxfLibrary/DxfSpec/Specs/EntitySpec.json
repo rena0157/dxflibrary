@@ -2,6 +2,9 @@
     "SpecName": "EntitySpec",
     "SpecType": "object",
     "Properties": [
-        
+        {
+            "Name" : "Entity.LineString",
+            "Code" : "LINE"
+        }       
     ]
 }

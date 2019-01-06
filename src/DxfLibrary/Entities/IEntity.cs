@@ -4,6 +4,8 @@
 
 using System;
 
+using DxfLibrary.Parse;
+
 namespace DxfLibrary.Entities
 {
     /// <summary>
@@ -31,5 +33,6 @@ namespace DxfLibrary.Entities
         /// </summary>
         /// <value></value>
         string LayerName {get;}
+
     }
 }

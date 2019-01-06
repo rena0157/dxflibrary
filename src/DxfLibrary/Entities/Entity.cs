@@ -40,7 +40,7 @@ namespace DxfLibrary.Entities
         /// </summary>
         /// <param name="name">The name of the property</param>
         /// <param name="value">The value of the property</param>
-        public void SetProperty(string name, object value)
+        public virtual void SetProperty(string name, object value)
         {
             switch(name)
             {

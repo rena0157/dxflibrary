@@ -20,15 +20,17 @@ namespace DxfLibrary.DxfSpec
     public static class SpecService
     {
         /// <summary>
-        /// Collection of preloaded specs
+        /// Collection of preloaded specs, this can be cleared by calling the
+        /// Purge method
         /// </summary>
         private static List<Spec<object>> _specs = new List<Spec<object>>();
 
-
         /// <summary>
-        /// Get a Spec from the type of spec. Specifications
-        /// Area loaded form *.spec.json files and new spec objects
-        /// area created that are then returned to the user.
+        /// Get a Spec from the Spec Name. Specifications
+        /// are loaded form *.json files and new spec objects
+        /// are created that are then returned to the user.
+        /// Note that if the spec is already loaded then the spec will
+        /// just be returned from memory.
         /// </summary>
         /// <typeparam name="T">The type of spec required</typeparam>
         /// <returns>The spec that was requested</returns>
@@ -54,15 +56,31 @@ namespace DxfLibrary.DxfSpec
             return spec;
         }
 
+        /// <summary>
+        /// Constant for the DxfCommon Specification
+        /// </summary>
         public const string DxfCommonSpec = "DxfCommonSpec";
 
+        /// <summary>
+        /// Constant for the Header Specification 
+        /// </summary>
         public const string HeaderSpec = "HeaderSpec";
 
+        /// <summary>
+        /// Constant for the Entity Specification
+        /// </summary>
         public const string EntitySpec = "EntitySpec";
-        
 
         /// <summary>
-        /// Return the standard file name for the type
+        /// Purge the spec repository to clear up memory.
+        /// </summary>
+        public static void PurgeSpecs()
+        {
+            _specs.Clear();
+        }
+
+        /// <summary>
+        /// Return the standard file name for the Spec Name
         /// </summary>
         /// <param name="specType">The spec type</param>
         /// <returns>A relative path to the type spec</returns>
@@ -72,7 +90,7 @@ namespace DxfLibrary.DxfSpec
         }
 
         /// <summary>
-        /// Read a file from the file system
+        /// Read a file from the file system given a path
         /// </summary>
         /// <param name="path">The path to the file</param>
         /// <returns>The contents of the file</returns>

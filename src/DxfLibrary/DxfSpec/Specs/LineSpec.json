@@ -1,0 +1,10 @@
+{
+    "SpecName": "LineSpec",
+    "SpecType": "object",
+    "Properties": [
+        {
+            "Name" : "Test",
+            "Code" : "Test"
+        }
+    ]
+}

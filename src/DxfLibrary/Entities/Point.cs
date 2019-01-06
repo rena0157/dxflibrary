@@ -13,6 +13,35 @@ namespace DxfLibrary.Entities
     /// </summary>
     public class Point : Entity, IDxfParsable
     {
+        /// <summary>
+        /// Default Constructor for the point entity. The Default for
+        /// z is zero and is optional.
+        /// </summary>
+        /// <param name="x">The x coordinate for the point</param>
+        /// <param name="y">The y coordinate for the point</param>
+        /// <param name="z">The z coordinate for the point</param>
+        public Point(double x, double y, double z = 0)
+        {
+            X = x;
+            Y = y;
+            Z = z;
+        }
+
+        /// <summary>
+        /// The x coordinate of the point
+        /// </summary>
+        public double X {get; private set;}
+
+        /// <summary>
+        /// The y coordinate of the point
+        /// </summary>
+        public double Y {get; private set;}
+
+        /// <summary>
+        /// The z coordinate of the point
+        /// </summary>
+        /// <value></value>
+        public double Z {get; private set;}
 
         /// <summary>
         /// Set property function

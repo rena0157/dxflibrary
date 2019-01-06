@@ -3,46 +3,46 @@
 // Created on: 2019-01-06
 
 using System;
-using DxfLibrary.IO;
+using System.Linq;
+using System.Collections.Generic;
 
-
-using DxfLibrary.Parse.Sections;
-using DxfLibrary.DxfSpec;
+using DxfLibrary.Parse;
 using DxfLibrary.Entities;
+using DxfLibrary.IO;
+using DxfLibrary.DxfSpec;
 
 namespace DxfLibrary.Parse.Entities
 {
-    public class EntitySectionParser : IDxfParser<EntitiesSection, string, object>
+    /// <summary>
+    /// A base parsing class for the entity type
+    /// </summary>
+    public class EntityParser
     {
-        public EntitiesSection Parse(IDxfReader<string, object> reader)
+        /// <summary>
+        /// Using a tagged data, entity and spec sets the value of any property
+        /// that matches the given data.
+        /// </summary>
+        /// <param name="data">The current Data</param>
+        /// <param name="entity">The entity that is to be set</param>
+        /// <param name="spec">The specification to follow</param>
+        /// <returns>True if sucessful and false if unsuccessful</returns>
+        public bool EntityParse(TaggedData<string, object> data, IEntity entity, IDxfSpec<object> spec)
         {
-            var entitySection = new EntitiesSection();
-            var sectionProperties = entitySection.GetType().GetProperties();
+            var properties = entity.GetType().GetProperties();
 
-            // Get the entity Specification
-            var entitySpec = SpecService.GetSpec<object>(SpecService.EntitySpec);
-            var commonSpec = SpecService.GetSpec<object>(SpecService.DxfCommonSpec);
+            var property = properties
+                .Where(prop => spec.Properties
+                .Any(s => s.Name as string == prop.Name 
+                && data.GroupCode == s.Code as string))
+                .FirstOrDefault();
 
-            // Starting Strings
-            var lineString = entitySpec.Get("Entity.LineString") as string;
-            var startCode = commonSpec.Get("Sections.StartCode") as string;
-
-            Entity currentEntity = new Entity();
-
-            while(!reader.EndOfStream)
+            if (property != null)
             {
-                var firstPair = reader.GetNextPair();
-
-                // if the following is true then start parsing a LINE
-                if (firstPair.GroupCode == startCode && firstPair.Value as string == lineString)
-                {
-                    var lineParser = new LineParser();
-                    var line = lineParser.Parse(reader);
-                }
-
+                property.SetValue(property, data.Value);
+                return true;
             }
 
-            throw new NotImplementedException();
+            return false;
         }
     }
 }

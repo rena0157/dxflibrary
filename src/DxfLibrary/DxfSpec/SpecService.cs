@@ -72,6 +72,11 @@ namespace DxfLibrary.DxfSpec
         public const string EntitySpec = "EntitySpec";
 
         /// <summary>
+        /// Constant for the line specificaiton
+        /// </summary>
+        public const string LineSpec = "LineSpec";
+
+        /// <summary>
         /// Purge the spec repository to clear up memory.
         /// </summary>
         public static void PurgeSpecs()

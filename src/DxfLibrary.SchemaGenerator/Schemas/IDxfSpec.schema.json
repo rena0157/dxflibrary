@@ -1,0 +1,39 @@
+{
+  "definitions": {
+    "DxfSpecProperty<Object>": {
+      "type": [
+        "object",
+        "null"
+      ]
+    }
+  },
+  "type": "object",
+  "properties": {
+    "SpecName": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "SpecType": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "Properties": {
+      "type": [
+        "array",
+        "null"
+      ],
+      "items": {
+        "$ref": "#/definitions/DxfSpecProperty<Object>"
+      }
+    }
+  },
+  "required": [
+    "SpecName",
+    "SpecType",
+    "Properties"
+  ]
+}

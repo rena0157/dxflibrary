@@ -19,7 +19,7 @@ namespace DxfLibrary.DxfSpec
         /// <summary>
         /// The property name that the code defines
         /// </summary>
-        string Name {get; set;}
+        public string Name {get; set;}
 
         /// <summary>
         /// The Code that defines the data. This code is effectively
@@ -30,6 +30,6 @@ namespace DxfLibrary.DxfSpec
         /// the type will typically be a string and in binary files it 
         /// will typically be a byte.
         /// </remarks>
-        T Code {get; set;}
+        public T Code {get; set;}
     }
 }

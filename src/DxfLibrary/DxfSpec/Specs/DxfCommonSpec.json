@@ -1,0 +1,18 @@
+{
+    "SpecName": "DxfCommonSpec",
+    "SpecType": "object",
+    "Properties": [
+        {
+            "Name" : "Sections.StartCode",
+            "Code" : "  0"
+        },
+        {
+            "Name" : "Sections.StartString",
+            "Code" : "SECTION"
+        },
+        {
+            "Name" : "Sections.HeaderString",
+            "Code" : "HEADER"
+        }
+    ]
+}

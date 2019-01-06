@@ -1,0 +1,10 @@
+{
+    "json.schemas": [
+        {
+            "fileMatch": [
+                "Specs/*.json"
+            ],
+            "url": "/src/DxfLibrary.SchemaGenerator/Schemas/IDxfSpec.schema.json",
+        }
+    ]
+}

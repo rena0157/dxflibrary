@@ -8,6 +8,8 @@ using System.IO;
 
 // Internal Using Statements
 using Newtonsoft.Json.Schema;
+using Newtonsoft.Json.Schema.Generation;
+
 using DxfLibrary.DxfSpec;
 
 namespace DxfLibrary.SchemaGenerator
@@ -16,9 +18,24 @@ namespace DxfLibrary.SchemaGenerator
     {
         static void Main(string[] args)
         {
-            var generator = new JsonSchemaGenerator();
+            if (args.Length < 1)
+            {
+                Console.WriteLine("The save directory is required");
+                return;
+            }
+            
+            string schemaDir = args[0];
 
-            var test = generator.Generate(typeof(IDxfSpec<object>));
+            if (!Directory.Exists(schemaDir))
+            {
+                Console.WriteLine($"The directory '{schemaDir}' provided does not exist");
+                return;
+            }
+
+            var generator = new JSchemaGenerator();
+            var dxfspecSchema = generator.Generate(typeof(IDxfSpec<object>));
+            File.WriteAllText(Path.Join(schemaDir, "IDxfSpec.schema.json"), dxfspecSchema.ToString());
+
         }
     }
 }

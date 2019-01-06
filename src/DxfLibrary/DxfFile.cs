@@ -36,6 +36,12 @@ namespace DxfLibrary
             LoadFile(fileStream, false);
         }
 
+        /// <summary>
+        /// Constructor that loads a dxfFile into memory. This constructor
+        /// can be used for binary or Ascii files.
+        /// </summary>
+        /// <param name="fileStream">A filestream that points to the file</param>
+        /// <param name="isBinary">True if the file is binary</param>
         public DxfFile(FileStream fileStream, bool isBinary)
         {
             // Load the file
@@ -57,7 +63,7 @@ namespace DxfLibrary
             {
                 using (var reader = new DxfAsciiReader(fileStream))
                 {
-                    var parser = new DxfAsciiParser<SectionsContainer>();
+                    var parser = new DxfAsciiParser();
                     _container = parser.Parse(reader);
                 }
             }

@@ -6,6 +6,7 @@
 using System;
 
 // Internal Using Statements
+using DxfLibrary.Parse.Sections;
 
 namespace DxfLibrary.Parse
 {
@@ -14,6 +15,9 @@ namespace DxfLibrary.Parse
     /// </summary>
     public class SectionsContainer
     {
-
+        /// <summary>
+        /// The Header Section
+        /// </summary>
+        public HeaderSection Header {get; set;}
     }
 }

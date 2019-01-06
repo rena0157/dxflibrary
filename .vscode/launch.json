@@ -9,7 +9,7 @@
            "type": "coreclr",
            "request": "launch",
            "preLaunchTask": "build",
-           "program": "${workspaceFolder}src/DxfLibrary.SchemaGenerator/bin/Debug/netcoreapp2.1/DxfLibrary.SchemaGenerator.dll",
+           "program": "${workspaceFolder}/src/DxfLibrary.SchemaGenerator/bin/Debug/netcoreapp2.1/DxfLibrary.SchemaGenerator.dll",
            "args": [],
            "cwd": "${workspaceFolder}",
            "stopAtEntry": false,

@@ -19,7 +19,7 @@ namespace DxfLibrary.Parse.Sections
         {
             switch(name)
             {
-
+                
             }
         }
     }

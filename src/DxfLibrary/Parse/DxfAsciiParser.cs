@@ -55,6 +55,8 @@ namespace DxfLibrary.Parse
                     }
                     else if (sectionName == entitiesString)
                     {
+                        var entityParser = new EntityParser();
+                        entityParser.Parse(reader);
                     }
                 }
             }

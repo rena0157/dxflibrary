@@ -4,7 +4,9 @@
 
 using System;
 using DxfLibrary.IO;
+
 using DxfLibrary.Parse.Sections;
+using DxfLibrary.DxfSpec;
 
 namespace DxfLibrary.Parse
 {
@@ -14,7 +16,16 @@ namespace DxfLibrary.Parse
         {
             var entitySection = new EntitiesSection();
             var sectionProperties = entitySection.GetType().GetProperties();
-            
+
+            var entitySpec = SpecService.GetSpec<object>(SpecService.EntitySpec);
+
+
+            while(!reader.EndOfStream)
+            {
+                var firstPair = reader.GetNextPair();
+
+            }
+
             throw new NotImplementedException();
         }
     }

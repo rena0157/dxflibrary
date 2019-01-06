@@ -34,8 +34,8 @@ namespace DxfLibrary.Parse
                 var firstItem = reader.GetNextPair();
                 var secondItem = reader.GetNextPair();
 
-                var sectionCode = commonSpec.GetProperty("SectionStart.Code") as string;
-                var sectionString = commonSpec.GetProperty("Section.StartString") as string;
+                var sectionCode = commonSpec.GetProperty("Sections.StartCode") as string;
+                var sectionString = commonSpec.GetProperty("Sections.StartString") as string;
 
                 // If the first item's code is a section code and its value is a section string then this is the start
                 // of a section

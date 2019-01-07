@@ -13,7 +13,7 @@ namespace DxfLibrary.Entities
     /// Entity Base class, defines the basic
     /// Functions for an entity
     /// </summary>
-    public class Entity : IEntity, IDxfParsable
+    public class Entity : IEntity
     {
         /// <summary>
         /// The type of the Entity
@@ -36,7 +36,7 @@ namespace DxfLibrary.Entities
         public string LayerName {get; set;}
 
         /// <summary>
-        /// Parsable Function
+        /// Set a property in the entity
         /// </summary>
         /// <param name="name">The name of the property</param>
         /// <param name="value">The value of the property</param>

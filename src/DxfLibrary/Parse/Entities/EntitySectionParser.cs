@@ -35,7 +35,6 @@ namespace DxfLibrary.Parse.Entities
             var lineString = entitySpec.Get("Entity.LineString") as string;
             var startCode = commonSpec.Get("Sections.StartCode") as string;
 
-
             while(!reader.EndOfStream)
             {
                 var firstPair = reader.GetNextPair();
@@ -47,9 +46,12 @@ namespace DxfLibrary.Parse.Entities
 
                 // if the following is true then start parsing a LINE
                 if (firstPair.GroupCode == startCode && firstPair.Value as string == lineString)
-                {
-                    var lineParser = new LineParser();
-                    var line = lineParser.Parse(reader);
+                {   
+                    var parser = new EntityParser<LineStructure>();
+                    var specification = SpecService.GetSpec<object>(SpecService.LineSpec);
+
+                    // Make the line
+                    var line = new Line(parser.ParseEntity(new LineStructure(), reader, specification));
                 }
 
             }

@@ -3,8 +3,20 @@
     "SpecType": "object",
     "Properties": [
         {
-            "Name" : "Test",
-            "Code" : "Test"
+            "Name" : "X1",
+            "Code" : " 10"
+        },
+        {
+            "Name" : "Y1",
+            "Code" : " 20"
+        },
+        {
+            "Name" : "X2",
+            "Code" : " 11"
+        },
+        {
+            "Name" : "Y2",
+            "Code" : " 21"
         }
     ]
 }

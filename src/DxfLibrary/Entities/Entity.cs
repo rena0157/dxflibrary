@@ -45,15 +45,19 @@ namespace DxfLibrary.Entities
             switch(name)
             {
                 case nameof(EntityType):
+                    EntityType = value as Type;
                 break;
 
                 case nameof(Handle):
+                    Handle = value as string;
                 break;
 
                 case nameof(SoftPointer):
+                    SoftPointer = value as string;
                 break;
 
                 case nameof(LayerName):
+                    LayerName = value as string;
                 break;
 
             }

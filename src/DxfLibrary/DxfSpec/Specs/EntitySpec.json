@@ -5,6 +5,15 @@
         {
             "Name" : "Entity.LineString",
             "Code" : "LINE"
-        }       
+        },
+        {
+            "Name" : "Handle",
+            "Code" : "  5"
+        },
+        {
+            "Name" : "SoftPointer",
+            "Code" : "330"
+        }
+
     ]
 }

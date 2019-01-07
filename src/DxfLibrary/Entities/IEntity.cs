@@ -5,13 +5,15 @@
 using System;
 
 using DxfLibrary.Parse;
+using DxfLibrary.Parse.Entities;
+using DxfLibrary.Parse.Sections;
 
 namespace DxfLibrary.Entities
 {
     /// <summary>
     /// The Entity Interface
     /// </summary>
-    public interface IEntity
+    public interface IEntity : IDxfParsable
     {
         /// <summary>
         /// The type of the entity

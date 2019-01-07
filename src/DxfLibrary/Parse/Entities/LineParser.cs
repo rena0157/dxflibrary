@@ -27,9 +27,11 @@ namespace DxfLibrary.Parse.Entities
                 if(EntityParse(reader.GetNextPair(), line, entitySpec))
                     continue;
 
-            }
 
-            throw new NotImplementedException();
+                
+            }
+            
+            return line;
         }
     }
 }

@@ -2,10 +2,11 @@
 // Created by: Adam Renaud
 // Created on: 2019-01-06
 
+// System Using Statements
 using System;
 using DxfLibrary.IO;
 
-
+// Internal Using Statements
 using DxfLibrary.Parse.Sections;
 using DxfLibrary.DxfSpec;
 using DxfLibrary.Entities;
@@ -18,14 +19,13 @@ namespace DxfLibrary.Parse.Entities
     public class EntitySectionParser : IDxfParser<EntitiesSection, string, object>
     {
         /// <summary>
-        /// The parse Function for the entity Section
+        /// The parse Function for the entity Section.
         /// </summary>
-        /// <param name="reader"></param>
+        /// <param name="reader">The reader that will read from the file</param>
         /// <returns>An Entity Section Object</returns>
         public EntitiesSection Parse(IDxfReader<string, object> reader)
         {
             var entitySection = new EntitiesSection();
-            var sectionProperties = entitySection.GetType().GetProperties();
 
             // Get the entity Specification
             var entitySpec = SpecService.GetSpec<object>(SpecService.EntitySpec);
@@ -35,6 +35,7 @@ namespace DxfLibrary.Parse.Entities
             var lineString = entitySpec.Get("Entity.LineString") as string;
             var startCode = commonSpec.Get("Sections.StartCode") as string;
 
+            // Main read loop
             while(!reader.EndOfStream)
             {
                 var firstPair = reader.GetNextPair();

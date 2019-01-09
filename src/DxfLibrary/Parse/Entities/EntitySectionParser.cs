@@ -53,6 +53,7 @@ namespace DxfLibrary.Parse.Entities
 
                     // Make the line
                     var line = new Line(parser.ParseEntity(new LineStructure(), reader, specification));
+                    entitySection.Entities.Add(line);
                 }
 
             }

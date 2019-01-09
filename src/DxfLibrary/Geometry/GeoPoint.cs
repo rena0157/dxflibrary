@@ -11,6 +11,7 @@ namespace DxfLibrary.Geometry
     /// </summary>
     public class GeoPoint : GeoBase
     {
+        #region Constructors
         /// <summary>
         /// Default Constructor for the GeoPoint Class
         /// </summary>
@@ -23,6 +24,10 @@ namespace DxfLibrary.Geometry
             Y = y;
             Z = z;
         }
+
+        #endregion
+
+        #region Public Properties
 
         /// <summary>
         /// X coordinate
@@ -38,5 +43,7 @@ namespace DxfLibrary.Geometry
         /// Z Coordinate
         /// </summary>
         public double Z {get;}
+
+        #endregion
     }
 }

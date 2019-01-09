@@ -15,7 +15,7 @@ namespace DxfLibrary.Parse.Sections
         /// <summary>
         /// Entities that are in the file
         /// </summary>
-        List<IEntity> Entities {get; set;}
+        public List<IEntity> Entities {get; set;}
 
         /// <summary>
         /// Set a property in the 

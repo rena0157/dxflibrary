@@ -8,7 +8,9 @@ using System.Collections.Generic;
 namespace DxfLibrary.Entities
 {
     public class Line : Entity
-    {
+    {   
+
+        #region Constructors
         internal Line(LineStructure structure)
         {
 
@@ -18,6 +20,7 @@ namespace DxfLibrary.Entities
         {
 
         }
+        #endregion
     }
 
     internal class LineStructure : Entity

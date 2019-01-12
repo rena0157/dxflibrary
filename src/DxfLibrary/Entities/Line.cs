@@ -74,14 +74,20 @@ namespace DxfLibrary.Entities
         /// <summary>
         /// The Set Property Function
         /// </summary>
-        /// <param name="name"></param>
-        /// <param name="value"></param>
+        /// <param name="name">The name of the property</param>
+        /// <param name="value">The value of the property</param>
         public override void SetProperty(string name, object value)
         {
+            // Get the property
             var property = this.GetType().GetProperty(name);
+
+            // Get the type of the property
             var type = property.PropertyType;
+
+            // Converty the object to the type of the property
             var settingValue = Convert.ChangeType(value, type);
 
+            // Set the property
             this.GetType().GetProperty(name).SetValue(this, settingValue);
         }
 

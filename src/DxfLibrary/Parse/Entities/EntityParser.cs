@@ -18,8 +18,16 @@ namespace DxfLibrary.Parse.Entities
     /// </summary>
     public class EntityParser<T> : IDxfEntityParser<T, string, object, object>
     {
+        /// <summary>
+        /// Parser for the entity base class
+        /// </summary>
+        /// <param name="entity">The entity</param>
+        /// <param name="data">The data that is to be parsed</param>
+        /// <param name="entitySpec">The entity specification</param>
+        /// <returns>Returns true if the function was able to parse the data</returns>
         public bool BaseParse(IEntity entity, TaggedData<string, object> data, IDxfSpec<object> entitySpec)
         {
+            // List all of the properties of the entity
             var properties = entity.GetType().GetProperties();
 
             // Find properties that match the current data and set them 
@@ -39,7 +47,7 @@ namespace DxfLibrary.Parse.Entities
                 }
                 catch(Exception)
                 {
-                    throw;
+                    return false;
                 }
                 return true;
             }
@@ -48,6 +56,13 @@ namespace DxfLibrary.Parse.Entities
             return false;
         }
 
+        /// <summary>
+        /// Parse Entity Function
+        /// </summary>
+        /// <param name="entity">The Entity that is to be parsed</param>
+        /// <param name="reader">The reader that data will be read from</param>
+        /// <param name="entitySpec">The entity specification</param>
+        /// <returns></returns>
         public T ParseEntity(IEntity entity, IDxfReader<string, object> reader, IDxfSpec<object> entitySpec)
         {
             var properties = typeof(T).GetProperties();

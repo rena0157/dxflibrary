@@ -4,6 +4,7 @@
 
 using System;
 using System.IO;
+using System.Collections.Generic;
 
 namespace DxfLibrary.IO
 {
@@ -20,11 +21,17 @@ namespace DxfLibrary.IO
         /// </summary>
         private StreamReader _reader;
 
+        /// <summary>
+        /// The peek queue
+        /// </summary>
+        private Queue<TaggedData<string, object>> _peeks;
+
         #endregion
 
         public DxfAsciiReader(Stream stream)
         {
             _reader = new StreamReader(stream);
+            _peeks = new Queue<TaggedData<string, object>>();
         }
 
         #region Public Properties
@@ -65,8 +72,23 @@ namespace DxfLibrary.IO
         /// <returns>The created Tagged Data</returns>
         public TaggedData<string, object> GetNextPair()
         {
+            // if there is something in the queue then
+            // dequeue it
+            if (_peeks.Count > 0)
+                return _peeks.Dequeue();
+
             CurrentPosition += 2;
             return new TaggedData<string, object>(_reader.ReadLine(), _reader.ReadLine());
+        }
+
+        /// <summary>
+        /// Peak the next pair without reading the value of it
+        /// </summary>
+        public TaggedData<string, object> PeekNextPair()
+        {
+            var nextPair = new TaggedData<string, object>(_reader.ReadLine(), _reader.ReadLine());
+            _peeks.Enqueue(nextPair);
+            return nextPair;
         }
 
         #endregion

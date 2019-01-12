@@ -40,5 +40,11 @@ namespace DxfLibrary.IO
         /// <returns>A new <see cref="TaggedData{G, V}"> that contains the information from the stream</returns>
         TaggedData<G, V> GetNextPair();
 
+        /// <summary>
+        /// Peeek the next pair without moving the current position
+        /// </summary>
+        /// <returns>A tagged data pair</returns>
+        TaggedData<G, V> PeekNextPair();
+
     }
 }

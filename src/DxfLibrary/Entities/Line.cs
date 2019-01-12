@@ -13,7 +13,7 @@ namespace DxfLibrary.Entities
     /// The LINE entity
     /// </summary>
     public class Line : Entity, IGeoLength
-    {   
+    {
 
         #region Constructors
 

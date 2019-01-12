@@ -57,7 +57,8 @@ namespace DxfLibrary.Parse.Entities
                 }
             }
 
-            throw new NotImplementedException();
+            // TODO: Add Custom Exception Here
+            throw new ArgumentOutOfRangeException();
         }
     }
 }

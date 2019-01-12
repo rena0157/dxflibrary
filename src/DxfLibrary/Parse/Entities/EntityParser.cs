@@ -80,12 +80,12 @@ namespace DxfLibrary.Parse.Entities
             // Read loop
             while(!reader.EndOfStream)
             {
-                var data = reader.GetNextPair();
-                
                 // If we reach the end of an entity then return
-                if (commonSpec.Get("Sections.EndCode") as string == data.GroupCode )
+                if (commonSpec.Get("Sections.EndCode") as string == reader.PeekNextPair().GroupCode )
                     break;
 
+                var data = reader.GetNextPair();
+                
                 // First check to see if the base entity can parse the data
                 if (BaseParse(entity, data, baseEntitySpec))
                     continue;

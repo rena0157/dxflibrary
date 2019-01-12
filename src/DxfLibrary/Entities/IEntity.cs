@@ -19,7 +19,7 @@ namespace DxfLibrary.Entities
         /// <summary>
         /// The type of the entity
         /// </summary>
-        Type EntityType {get;}
+        Type EntityType {get; set;}
 
         /// <summary>
         /// The Entity's handle or ID

@@ -55,7 +55,6 @@ namespace DxfLibrary.Parse.Entities
                     var line = new Line(parser.ParseEntity(new LineStructure(), reader, specification));
                     entitySection.Entities.Add(line);
                 }
-
             }
 
             throw new NotImplementedException();

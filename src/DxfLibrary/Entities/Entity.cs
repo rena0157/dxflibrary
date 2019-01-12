@@ -65,7 +65,7 @@ namespace DxfLibrary.Entities
         /// <param name="struc"></param>
         internal Entity(IEntity struc)
         {
-            EntityType = struc.GetType();
+            EntityType = struc.EntityType;
             Handle = struc.Handle;
             SoftPointer = struc.SoftPointer;
             LayerName = struc.LayerName;

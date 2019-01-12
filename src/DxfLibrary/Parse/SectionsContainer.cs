@@ -19,5 +19,10 @@ namespace DxfLibrary.Parse
         /// The Header Section
         /// </summary>
         public HeaderSection Header {get; set;}
+
+        /// <summary>
+        /// The Entity Section
+        /// </summary>
+        public EntitiesSection Entities {get; set;}
     }
 }

@@ -1,6 +1,6 @@
 {
     "SpecName": "LineSpec",
-    "SpecType": "object",
+    "SpecType": "Line",
     "Properties": [
         {
             "Name" : "X1",

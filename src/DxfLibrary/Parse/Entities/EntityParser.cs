@@ -65,27 +65,39 @@ namespace DxfLibrary.Parse.Entities
         /// <returns></returns>
         public T ParseEntity(IEntity entity, IDxfReader<string, object> reader, IDxfSpec<object> entitySpec)
         {
-            var properties = typeof(T).GetProperties();
+            // Get the type of the struct
+            var structType = typeof(T);
 
+            // get the properties of the return type
+            var properties = structType.GetProperties();
+
+            // Get the common spec
             var commonSpec = SpecService.GetSpec<object>(SpecService.DxfCommonSpec);
 
+            // Get the base entity spec
             var baseEntitySpec = SpecService.GetSpec<object>(SpecService.EntitySpec);
 
+            // Read loop
             while(!reader.EndOfStream)
             {
                 var data = reader.GetNextPair();
                 
+                // If we reach the end of an entity then return
                 if (commonSpec.Get("Sections.EndCode") as string == data.GroupCode )
                     break;
 
+                // First check to see if the base entity can parse the data
                 if (BaseParse(entity, data, baseEntitySpec))
                     continue;
 
+                // Query the specifications to see if the current data matches
                 var query = properties
                     .Where(prop => entitySpec.Properties
                     .Any(spec => spec.Name == prop.Name && spec.Code as string == data.GroupCode))
                     .FirstOrDefault();
 
+                // If the current data matches then set the property in the
+                // entity
                 if (query != null)
                     entity.SetProperty(query.Name, data.Value);
             }

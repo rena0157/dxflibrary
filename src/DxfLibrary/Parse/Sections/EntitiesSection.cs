@@ -18,6 +18,14 @@ namespace DxfLibrary.Parse.Sections
         public List<IEntity> Entities {get; set;}
 
         /// <summary>
+        /// Default Constructor for the Entity Section
+        /// </summary>
+        public EntitiesSection()
+        {
+            Entities = new List<IEntity>();
+        }
+
+        /// <summary>
         /// Set a property in the 
         /// </summary>
         /// <param name="name"></param>

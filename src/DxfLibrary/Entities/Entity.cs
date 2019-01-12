@@ -6,6 +6,7 @@ using System;
 
 using DxfLibrary.Parse;
 using DxfLibrary.Parse.Sections;
+using DxfLibrary.Geometry;
 
 namespace DxfLibrary.Entities
 {
@@ -15,6 +16,17 @@ namespace DxfLibrary.Entities
     /// </summary>
     public class Entity : IEntity
     {
+        #region Protected Members
+
+        /// <summary>
+        /// The entity geometric base
+        /// </summary>
+        protected GeoBase _geometricBase;
+
+        #endregion
+
+        #region Public Members
+
         /// <summary>
         /// The type of the Entity
         /// </summary>
@@ -34,6 +46,34 @@ namespace DxfLibrary.Entities
         /// The Entity Layer name
         /// </summary>
         public string LayerName {get; set;}
+
+        #endregion
+
+        #region Constructors
+
+        /// <summary>
+        /// Default Constructor
+        /// </summary>
+        public Entity()
+        {
+
+        }
+
+        /// <summary>
+        /// Internal Constructor from a struct
+        /// </summary>
+        /// <param name="struc"></param>
+        internal Entity(IEntity struc)
+        {
+            EntityType = struc.GetType();
+            Handle = struc.Handle;
+            SoftPointer = struc.SoftPointer;
+            LayerName = struc.LayerName;
+        }
+
+        #endregion
+
+        #region Public Methods
 
         /// <summary>
         /// Set a property in the entity
@@ -62,5 +102,7 @@ namespace DxfLibrary.Entities
 
             }
         }
+
+        #endregion
     }
 }

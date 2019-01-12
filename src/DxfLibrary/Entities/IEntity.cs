@@ -7,6 +7,7 @@ using System;
 using DxfLibrary.Parse;
 using DxfLibrary.Parse.Entities;
 using DxfLibrary.Parse.Sections;
+using DxfLibrary.Geometry;
 
 namespace DxfLibrary.Entities
 {
@@ -35,6 +36,5 @@ namespace DxfLibrary.Entities
         /// </summary>
         /// <value></value>
         string LayerName {get;}
-
     }
 }

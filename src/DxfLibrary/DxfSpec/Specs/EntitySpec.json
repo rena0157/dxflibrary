@@ -7,6 +7,10 @@
             "Code" : "LINE"
         },
         {
+            "Name" : "Entity.LwPolylineString",
+            "Code" : "LWPOLYLINE"
+        },
+        {
             "Name" : "Handle",
             "Code" : "  5"
         },

@@ -77,6 +77,11 @@ namespace DxfLibrary.DxfSpec
         public const string LineSpec = "LineSpec";
 
         /// <summary>
+        /// Const for the LwPolyline Specification
+        /// </summary>
+        public const string LwPolylineSpec = "LwPolylineSpec";
+
+        /// <summary>
         /// Purge the spec repository to clear up memory.
         /// </summary>
         public static void PurgeSpecs()

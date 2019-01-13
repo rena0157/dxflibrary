@@ -1,0 +1,50 @@
+{
+    "SpecName": "LwPolylineSpec",
+    "SpecType": "LwPolyline",
+    "Properties": [
+        {
+            "Name" : "NumberOfVerticies",
+            "Code" : " 90"
+        },
+        {
+            "Name" : "PolylineFlag",
+            "Code" : " 70"
+        },
+        {
+            "Name" : "ConstWidth",
+            "Code" : " 43"
+        },
+        {
+            "Name" : "Elevation",
+            "Code" : " 38"
+        },
+        {
+            "Name" : "Thickness",
+            "Code" : " 39"
+        },
+        {
+            "Name" : "XCoordinate",
+            "Code" : " 10"
+        },
+        {
+            "Name" : "YCoordinate",
+            "Code" : " 20"
+        },
+        {
+            "Name" : "VertexId",
+            "Code" : " 91"
+        },
+        {
+            "Name" : " StartWidth",
+            "Code" : " 40"
+        },
+        {
+            "Name" : "EndWidth",
+            "Code" : " 41"
+        },
+        {
+            "Name" : "Bulge",
+            "Code" : " 42"
+        }
+    ]
+}

@@ -79,12 +79,12 @@ namespace DxfLibrary.Entities
         /// <summary>
         /// Starting width
         /// </summary>
-        public double StartWidth {get; set;}
+        public List<double> StartWidth {get; set;}
 
         /// <summary>
         /// Ending Width
         /// </summary>
-        public double EndWidth {get; set;}
+        public List<double> EndWidth {get; set;}
 
         #endregion
 
@@ -95,6 +95,7 @@ namespace DxfLibrary.Entities
     /// </summary>
     internal class LwPolylineStructure : Entity
     {
+        #region Trivial Properties
         /// <summary>
         /// The number of vertices in the Polyline
         /// </summary>
@@ -121,6 +122,10 @@ namespace DxfLibrary.Entities
         /// <value></value>
         public double Thickness {get; set;}
 
+        #endregion
+
+        #region Non-Trivial Properties
+
         /// <summary>
         /// X Coordinates of the Polyline
         /// </summary>
@@ -144,12 +149,16 @@ namespace DxfLibrary.Entities
         /// <summary>
         /// Starting width
         /// </summary>
-        public double StartWidth {get; set;}
+        public List<double> StartWidth {get; set;} = new List<double>();
 
         /// <summary>
         /// Ending Width
         /// </summary>
-        public double EndWidth {get; set;}
+        public List<double> EndWidth {get; set;} = new List<double>();
+
+        #endregion
+
+        #region Public Methods
 
         /// <summary>
         /// Override for the LwPolyline structure to deal with lists
@@ -163,26 +172,43 @@ namespace DxfLibrary.Entities
             switch(name)
             {
                 case nameof(XCoordinate):
-                    XCoordinate.Add(double.Parse(value as string));
+                    XCoordinate.Add(Convert.ToDouble(value));
 
-                    // Make sure that the number of bulges is the same as
-                    // the number of points
+                    // Set defaults for this point
                     Bulge.Add(0);
+                    StartWidth.Add(0);
+                    EndWidth.Add(0);
                 return;
 
                 case nameof(YCoordinate):
-                    YCoordinate.Add(double.Parse(value as string));
+                    YCoordinate.Add(Convert.ToDouble(value));
                 return;
 
+                // Adding a bulge
                 case nameof(Bulge):
                     Bulge.RemoveAt(Bulge.Count - 1);
-                    Bulge.Add(double.Parse(value as string));
+                    Bulge.Add(Convert.ToDouble(value));
                 return;
 
+                // Adding a Starting Width
+                case nameof(StartWidth):
+                    StartWidth.RemoveAt(StartWidth.Count - 1);
+                    StartWidth.Add(Convert.ToDouble(value));
+                return;
+
+                // Adding an Ending Width
+                case nameof(EndWidth):
+                    EndWidth.RemoveAt(EndWidth.Count - 1);
+                    EndWidth.Add(Convert.ToDouble(value));
+                return;
+
+                // If nothing matches then parse using base
                 default:
                     base.SetProperty(name, value);
                 return;
             }
         }
+
+        #endregion
     }
 }

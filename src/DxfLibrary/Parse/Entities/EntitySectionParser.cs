@@ -56,7 +56,7 @@ namespace DxfLibrary.Parse.Entities
                     var line = new Line(parser.ParseEntity(new LineStructure(), reader, specification));
                     entitySection.Entities.Add(line);
                 }
-                else if (firstPair.GroupCode == startCode && firstPair.Value as string == lineString)
+                else if (firstPair.GroupCode == startCode && firstPair.Value as string == lwPolylineString)
                 {
                     var parser = new EntityParser<LwPolylineStructure>();
                     var specification = SpecService.GetSpec<object>(SpecService.LwPolylineSpec);

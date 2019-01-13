@@ -25,7 +25,9 @@ namespace DxfLibrary.Entities
         /// <param name="structure">The Structure</param>
         internal LwPolyline(LwPolylineStructure structure) : base(structure)
         {
-
+            NumberOfVerticies = structure.NumberOfVerticies;
+            PolylineFlag = structure.PolylineFlag;
+            ConstWidth = structure.ConstWidth;
         }
 
         /// <summary>
@@ -53,38 +55,38 @@ namespace DxfLibrary.Entities
         /// <summary>
         /// The number of vertices in the Polyline
         /// </summary>
-        public int NumberOfVerticies {get; set;}
+        public int NumberOfVerticies {get;}
 
         /// <summary>
         /// The Polyline Flag, 1 = Closed, 0 = Open
         /// </summary>
-        public bool PolylineFlag {get; set;}
+        public bool PolylineFlag {get;}
 
         /// <summary>
         /// Constant with of the polyline
         /// </summary>
-        public double ConstWidth {get; set;}
+        public double ConstWidth {get;} = 0;
 
         /// <summary>
         /// The Elevation of the polyline
         /// </summary>
-        public double Elevation {get; set;}
+        public double Elevation {get;}
 
         /// <summary>
         /// Thickness of the Polyline
         /// </summary>
         /// <value></value>
-        public double Thickness {get; set;}
+        public double Thickness {get;}
 
         /// <summary>
         /// Starting width
         /// </summary>
-        public List<double> StartWidth {get; set;}
+        public List<double> StartWidth {get;}
 
         /// <summary>
         /// Ending Width
         /// </summary>
-        public List<double> EndWidth {get; set;}
+        public List<double> EndWidth {get;}
 
         #endregion
 
@@ -202,6 +204,19 @@ namespace DxfLibrary.Entities
                     EndWidth.Add(Convert.ToDouble(value));
                 return;
 
+                // Special Case required for string polyline flag
+                case nameof(PolylineFlag):
+                
+                    // if the polyline is a string then parse it as a 
+                    // string. Other wise continue.
+                    if (value is string str)
+                    {
+                        if (str == "     1") PolylineFlag = true;
+                        else PolylineFlag = false;
+                        return;
+                    }
+                break;
+
                 // If nothing matches then parse using base
                 default:
                     base.SetProperty(name, value);
@@ -209,7 +224,7 @@ namespace DxfLibrary.Entities
             }
         }
 
-        
+
 
         #endregion
     }

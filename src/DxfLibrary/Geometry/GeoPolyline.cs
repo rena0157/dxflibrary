@@ -34,8 +34,8 @@ namespace DxfLibrary.Geometry
             // Iterate through and create new lines
             for (var index = 0; index < x.Count - 1; ++index)
             {
-                var point0 = new GeoPoint(x[index], x[index + 1]);
-                var point1 = new GeoPoint(y[index], y[index + 1]);
+                var point0 = new GeoPoint(x[index], y[index]);
+                var point1 = new GeoPoint(x[index + 1], y[index + 1]);
                 var bulge = new Bulge(bulges[index]);
 
                 _lines.Add(new GeoLine(point0, point1, bulge));
@@ -45,8 +45,8 @@ namespace DxfLibrary.Geometry
             // to the first point
             if (isClosed)
             {
-                var point0 = new GeoPoint(x.Last(), x.First());
-                var point1 = new GeoPoint(y.Last(), y.First());
+                var point0 = new GeoPoint(x.Last(), y.Last());
+                var point1 = new GeoPoint(x.First(), y.First());
                 var bulge = new Bulge(bulges.Last());
                 _lines.Add(new GeoLine(point0, point1, bulge));
             }

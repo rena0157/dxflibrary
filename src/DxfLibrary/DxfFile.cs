@@ -6,6 +6,7 @@
 using System;
 using System.IO;
 using System.Collections.Generic;
+using System.Linq;
 
 // Internal Using Statements
 using DxfLibrary.IO;
@@ -58,6 +59,17 @@ namespace DxfLibrary
         /// A list of all the entities in the Dxf File
         /// </summary>
         public List<IEntity> Entities => _container.Entities.Entities;
+
+        /// <summary>
+        /// Get an Enumerable list of entities given their types
+        /// </summary>
+        /// <typeparam name="T">The entity type</typeparam>
+        /// <returns>A list of entities</returns>
+        public IEnumerable<T> GetEntities<T>()
+        {
+            return Entities
+                .Where(e => e.GetType() == typeof(T)).Cast<T>();
+        }
 
         #endregion
 

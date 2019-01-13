@@ -1,2 +1,6 @@
 bin/
 obj/
+
+*.dwl
+*.dwl2
+*.bak

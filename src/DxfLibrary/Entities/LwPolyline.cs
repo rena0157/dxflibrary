@@ -29,6 +29,7 @@ namespace DxfLibrary.Entities
             PolylineFlag = structure.PolylineFlag;
             ConstWidth = structure.ConstWidth;
             Elevation = structure.Elevation;
+            Thickness = structure.Thickness;
         }
 
         /// <summary>

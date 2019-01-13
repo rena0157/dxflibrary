@@ -99,6 +99,11 @@ namespace DxfLibrary.Tests.Entities
             Assert.Equal(expectedValue, polyline.ConstWidth);
         }
 
+        /// <summary>
+        /// Testing the parsing of the elevation member
+        /// </summary>
+        /// <param name="value">The value of the file</param>
+        /// <param name="expectedValue">The expected value</param>
         [Theory]
         [InlineData(BasicPolyline, 100.5)]
         [InlineData(PolylineArc, 0)]
@@ -116,6 +121,29 @@ namespace DxfLibrary.Tests.Entities
             Assert.NotNull(polyline);
             Assert.Equal(expectedValue, polyline.Elevation);
 
+        }
+
+        /// <summary>
+        /// Testing the parsing of the thickness member
+        /// </summary>
+        /// <param name="value">File string</param>
+        /// <param name="expectedValue">Expected value</param>
+        [Theory]
+        [InlineData(BasicPolyline, 3.2)]
+        [InlineData(PolylineArc, 0)]
+        [InlineData(PolylineOpen, 0)]
+        public void ThicknessTest(string value, double expectedValue)
+        {
+            // Arrange
+            WriteMemory(value);
+
+            // Act
+            var dxfFile = new DxfFile(_memoryStream);
+            var polyline = dxfFile.GetEntities<LwPolyline>().FirstOrDefault();
+
+            // Assert
+            Assert.NotNull(polyline);
+            Assert.Equal(expectedValue, polyline.Thickness);
         }
 
         #endregion
@@ -150,6 +178,8 @@ AcDbPolyline
 2.1
  38
 100.5
+ 39
+3.2
  10
 1.0
  20

@@ -1,6 +1,9 @@
+# dotnet build Dirs
 bin/
 obj/
 
+# AutoCAD Files
 *.dwl
 *.dwl2
 *.bak
+*.log

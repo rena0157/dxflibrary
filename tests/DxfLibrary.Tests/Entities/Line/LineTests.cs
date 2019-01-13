@@ -84,8 +84,8 @@ ENDSEC
         public void GetEntitiesTest()
         {
             DxfFile dxfFile = new DxfFile(_memoryStream);
-            var lines = dxfFile.GetEntities<Line>();
-            Assert.Equal(1, lines.Count());
+            var lines = dxfFile.GetEntities<Line>().FirstOrDefault();
+            Assert.NotNull(lines);
         }
 
         /// <summary>

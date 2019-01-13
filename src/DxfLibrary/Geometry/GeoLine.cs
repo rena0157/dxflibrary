@@ -3,10 +3,16 @@
 // Created on: 2019-01-09
 
 using System;
+using System.Collections.Generic;
+using System.Linq;
 
 namespace DxfLibrary.Geometry
 {
-    public class GeoLine : GeoBase, IGeoLength
+    /// <summary>
+    /// Geometric class that defines a segment.
+    /// This segment can either be a line or an arc
+    /// </summary>
+    public class GeoLine : GeoBase, IGeoLength, IGeoArea
     {
         #region Constructors
 
@@ -30,6 +36,11 @@ namespace DxfLibrary.Geometry
             Point1 = p1;
         }
 
+        public GeoLine(GeoPoint p0, GeoPoint p1, Bulge bulge)
+        {
+
+        }
+
         #endregion
 
         #region Public Properties
@@ -49,6 +60,11 @@ namespace DxfLibrary.Geometry
         /// </summary>
         public double Length => CalcLength();
 
+        /// <summary>
+        /// Area of the Segment
+        /// </summary>
+        public double Area => CalcArea();
+
         #endregion
 
         #region Private Methods
@@ -57,11 +73,14 @@ namespace DxfLibrary.Geometry
         /// Calculate the length of the line
         /// </summary>
         /// <returns>The length of the line</returns>
-        private double CalcLength()
+        private double CalcLength() => Math.Sqrt(Math.Pow(Point1.X - Point0.X, 2.0)
+            + Math.Pow(Point1.Y - Point0.Y, 2.0)
+            + Math.Pow(Point1.Z - Point0.Z, 2.0));
+
+        private double CalcArea()
         {
-            return Math.Sqrt(Math.Pow(Point1.X - Point0.X, 2.0)
-                + Math.Pow(Point1.Y - Point0.Y, 2.0)
-                + Math.Pow(Point1.Z - Point0.Z, 2.0));
+            // TODO: Finish this
+            return 0;
         }
 
         #endregion

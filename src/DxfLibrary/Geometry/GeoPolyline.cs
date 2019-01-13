@@ -29,6 +29,8 @@ namespace DxfLibrary.Geometry
             if (x.Count != y.Count || x.Count != bulges.Count)
                 throw new IndexOutOfRangeException();
             
+            _lines = new List<GeoLine>();
+
             // Iterate through and create new lines
             for (var index = 0; index < x.Count - 1; ++index)
             {

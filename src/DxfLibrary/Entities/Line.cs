@@ -35,6 +35,7 @@ namespace DxfLibrary.Entities
         {
 
         }
+
         #endregion
 
         #region Public Members
@@ -63,33 +64,27 @@ namespace DxfLibrary.Entities
     /// </summary>
     internal class LineStructure : Entity
     {
+        /// <summary>
+        /// First X Coordinate
+        /// </summary>
         public double X1 {get; set;}
 
+        /// <summary>
+        /// First Y Coordinate
+        /// </summary>
         public double Y1 {get; set;}
 
+        /// <summary>
+        /// Second X Coordinate
+        /// </summary>
+        /// <value></value>
         public double X2 {get; set;}
 
-        public double Y2 {get; set;}
-
         /// <summary>
-        /// The Set Property Function
+        /// Second Y Coordinate
         /// </summary>
-        /// <param name="name">The name of the property</param>
-        /// <param name="value">The value of the property</param>
-        public override void SetProperty(string name, object value)
-        {
-            // Get the property
-            var property = this.GetType().GetProperty(name);
-
-            // Get the type of the property
-            var type = property.PropertyType;
-
-            // Converty the object to the type of the property
-            var settingValue = Convert.ChangeType(value, type);
-
-            // Set the property
-            this.GetType().GetProperty(name).SetValue(this, settingValue);
-        }
+        /// <value></value>
+        public double Y2 {get; set;}
 
     }
 }

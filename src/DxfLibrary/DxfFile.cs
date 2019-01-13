@@ -5,10 +5,12 @@
 // System Using Statements
 using System;
 using System.IO;
+using System.Collections.Generic;
 
 // Internal Using Statements
 using DxfLibrary.IO;
 using DxfLibrary.Parse;
+using DxfLibrary.Entities;
 
 namespace DxfLibrary
 {
@@ -47,6 +49,15 @@ namespace DxfLibrary
             // Load the file
             LoadFile(fileStream, isBinary);
         }
+
+        #endregion
+
+        #region Public Members
+
+        /// <summary>
+        /// A list of all the entities in the Dxf File
+        /// </summary>
+        public List<IEntity> Entities => _container.Entities.Entities;
 
         #endregion
 

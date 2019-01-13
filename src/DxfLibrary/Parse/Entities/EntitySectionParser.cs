@@ -34,6 +34,7 @@ namespace DxfLibrary.Parse.Entities
             // Starting Strings
             var lineString = entitySpec.Get("Entity.LineString") as string;
             var startCode = commonSpec.Get("Sections.StartCode") as string;
+            var lwPolylineString = entitySpec.Get("Entity.LwPolylineString") as string;
 
             // Main read loop
             while(!reader.EndOfStream)
@@ -55,9 +56,17 @@ namespace DxfLibrary.Parse.Entities
                     var line = new Line(parser.ParseEntity(new LineStructure(), reader, specification));
                     entitySection.Entities.Add(line);
                 }
+                else if (firstPair.GroupCode == startCode && firstPair.Value as string == lineString)
+                {
+                    var parser = new EntityParser<LwPolylineStructure>();
+                    var specification = SpecService.GetSpec<object>(SpecService.LwPolylineSpec);
+
+                    // Make the LwPolyline
+                    var lwPolyline = new LwPolyline(parser.ParseEntity(new LwPolylineStructure(), reader, specification));
+                    entitySection.Entities.Add(lwPolyline);
+                }
             }
 
-            // TODO: Add Custom Exception Here
             throw new ArgumentOutOfRangeException();
         }
     }

@@ -148,6 +148,7 @@ namespace DxfLibrary.Tests.Entities
 
         [Theory]
         [InlineData(BasicPolyline, 13)]
+        [InlineData(PolylineOpen, 11.4031)]
         public void LengthTest(string value, double length)
         {
             // Arrange
@@ -159,7 +160,7 @@ namespace DxfLibrary.Tests.Entities
 
             // Assert
             Assert.NotNull(polyline);
-            Assert.Equal(length, polyline.Length);
+            Assert.Equal(length, polyline.Length, 4);
         }
 
         #endregion
@@ -169,6 +170,9 @@ namespace DxfLibrary.Tests.Entities
         /// <summary>
         /// Basic closed polyline with 4 points
         /// </summary>
+        /// <remarks>
+        /// A Basic polyline that is closed with no arcs or bulges.
+        /// </remarks>
         private const string BasicPolyline =
 @"  0
 SECTION

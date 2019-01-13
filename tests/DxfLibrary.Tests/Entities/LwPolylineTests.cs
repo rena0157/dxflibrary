@@ -146,6 +146,22 @@ namespace DxfLibrary.Tests.Entities
             Assert.Equal(expectedValue, polyline.Thickness);
         }
 
+        [Theory]
+        [InlineData(BasicPolyline, 13)]
+        public void LengthTest(string value, double length)
+        {
+            // Arrange
+            WriteMemory(value);
+
+            // Act
+            var dxfFile = new DxfFile(_memoryStream);
+            var polyline = dxfFile.GetEntities<LwPolyline>().FirstOrDefault();
+
+            // Assert
+            Assert.NotNull(polyline);
+            Assert.Equal(length, polyline.Length);
+        }
+
         #endregion
 
         #region BasicPolyline

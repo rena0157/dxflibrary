@@ -38,7 +38,9 @@ namespace DxfLibrary.Geometry
 
         public GeoLine(GeoPoint p0, GeoPoint p1, Bulge bulge)
         {
-
+            this.Bulge = bulge;
+            Point0 = p0;
+            Point1 = p1;
         }
 
         #endregion
@@ -56,6 +58,11 @@ namespace DxfLibrary.Geometry
         public GeoPoint Point1 {get; set;}
 
         /// <summary>
+        /// The Bulge of the segment
+        /// </summary>
+        public Bulge Bulge {get;}
+
+        /// <summary>
         /// Get the length of the Line
         /// </summary>
         public double Length => CalcLength();
@@ -64,6 +71,19 @@ namespace DxfLibrary.Geometry
         /// Area of the Segment
         /// </summary>
         public double Area => CalcArea();
+
+        #endregion
+
+        #region Public Methods
+
+        /// <summary>
+        /// Override of the ToString Method
+        /// </summary>
+        /// <returns></returns>
+        public override string ToString()
+        {
+            return $"P0({Point0.X}, {Point0.Y}, {Point0.Z}), P1({Point1.X}, {Point1.Y}, {Point1.Z})";
+        }
 
         #endregion
 

@@ -45,5 +45,52 @@ namespace DxfLibrary.Geometry
         public double Z {get;}
 
         #endregion
+
+        #region Public Methods
+
+        /// <summary>
+        /// Equals override for the point type,
+        /// all coordinates must be equal for the point to equal another point.
+        /// </summary>
+        /// <param name="obj">The object to compare to</param>
+        /// <returns>True: objects are equal, False: objects are not equal</returns>
+        public override bool Equals(object obj)
+        {
+            // Cast the object
+            var line = obj as GeoPoint;
+
+            // If it cannot be casted then return false
+            if (line == null)
+                return false;
+
+            // All coordinates must be the same for the point to be equal
+            return line.X == X && line.Y == Y && line.Z == Z;
+        }
+
+        /// <summary>
+        /// Override for the gethashcode method
+        /// </summary>
+        /// <returns>A hash that is dependant on the public properties of the 
+        /// object</returns>
+        public override int GetHashCode()
+        {
+            int hash = 982451653;
+
+            hash = (hash * 817504243) + X.GetHashCode();
+            hash = (hash * 817504243) + Y.GetHashCode();
+            hash = (hash * 817504243) + Z.GetHashCode();
+
+            return hash;
+        }
+
+        /// <summary>
+        /// Public override of the ToString method
+        /// The ToString method returns a formatted string
+        /// with the X, Y and Z coordinates of the point
+        /// </summary>
+        /// <returns>A Formatted string with the xyz coordinates</returns>
+        public override string ToString() => $"X:{X}, Y:{Y}, Z:{Z}";
+
+        #endregion
     }
 }

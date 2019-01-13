@@ -2,14 +2,17 @@
 // By: Adam Renaud
 // Created on: 2019-01-12
 
+// System Using Statements
 using System;
 using System.IO;
 using System.Collections.Generic;
 using System.Linq;
 
+// Test Using Statements
 using Xunit;
 using Xunit.Abstractions;
 
+// Internal Using Statements
 using DxfLibrary.Entities;
 using DxfLibrary.Geometry;
 

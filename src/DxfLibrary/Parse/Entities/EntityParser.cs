@@ -18,43 +18,6 @@ namespace DxfLibrary.Parse.Entities
     /// </summary>
     public class EntityParser<T> : IDxfEntityParser<T, string, object, object>
     {
-        /// <summary>
-        /// Parser for the entity base class
-        /// </summary>
-        /// <param name="entity">The entity</param>
-        /// <param name="data">The data that is to be parsed</param>
-        /// <param name="entitySpec">The entity specification</param>
-        /// <returns>Returns true if the function was able to parse the data</returns>
-        public bool BaseParse(IEntity entity, TaggedData<string, object> data, IDxfSpec<object> entitySpec)
-        {
-            // List all of the properties of the entity
-            var properties = entity.GetType().GetProperties();
-
-            // Find properties that match the current data and set them 
-            var property = properties
-                .Where(prop => entitySpec.Properties
-                .Any(s => s.Name as string == prop.Name 
-                && data.GroupCode == s.Code as string))
-                .FirstOrDefault();
-
-            // If the property is not null then try to set it
-            // if unable to set it return false, otherwise return true
-            if (property != null)
-            {
-                try
-                {
-                    entity.SetProperty(property.Name, data.Value);
-                }
-                catch(Exception)
-                {
-                    return false;
-                }
-                return true;
-            }
-
-            // If unable to set a property then return
-            return false;
-        }
 
         /// <summary>
         /// Parse Entity Function
@@ -85,10 +48,19 @@ namespace DxfLibrary.Parse.Entities
                     break;
 
                 var data = reader.GetNextPair();
-                
-                // First check to see if the base entity can parse the data
-                if (BaseParse(entity, data, baseEntitySpec))
+
+                // First check against the base class spec
+                var baseQuery = properties
+                    .Where(prop => baseEntitySpec.Properties
+                    .Any(spec => spec.Name == prop.Name && spec.Code as string == data.GroupCode))
+                    .FirstOrDefault();
+
+                // If base spec matches then set and return
+                if (baseQuery != null)
+                {
+                    entity.SetProperty(baseQuery.Name, data.Value);
                     continue;
+                }
 
                 // Query the specifications to see if the current data matches
                 var query = properties

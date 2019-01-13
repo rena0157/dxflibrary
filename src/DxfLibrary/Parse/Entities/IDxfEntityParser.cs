@@ -28,16 +28,6 @@ namespace DxfLibrary.Parse.Entities
         /// <param name="entitySpec">The specificaiton that the parser will need</param>
         /// <returns>A new Entity</returns>
         T ParseEntity(IEntity entity, IDxfReader<G, V> reader, IDxfSpec<S> entitySpec);
-
-
-        /// <summary>
-        /// Parses the base class entity
-        /// </summary>
-        /// <param name="entity">The entity that will be parsed</param>
-        /// <param name="data">Reader to where the data is</param>
-        /// <param name="entitySpec">The entity Specification</param>
-        bool BaseParse(IEntity entity, TaggedData<G, V> data, IDxfSpec<S> entitySpec);
-
     }
 
 

@@ -32,5 +32,13 @@ namespace DxfLibrary.GeoMath
         /// <returns>The area in the square units of the length</returns>
         public static double TrapzArea(GeoLine line)
             => (line.Point1.X - line.Point0.X) * 0.5 * (line.Point0.Y + line.Point1.Y);
+
+        /// <summary>
+        /// Calculate the arc length given a radius and angle
+        /// </summary>
+        /// <param name="radius">The radius of the arc</param>
+        /// <param name="Angle">The angle of the arc</param>
+        /// <returns>The total arc length given by the arc</returns>
+        public static double ArcLength(double radius, double Angle) => radius * Angle;
     }
 }

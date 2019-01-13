@@ -4,6 +4,8 @@
 
 using System;
 
+using DxfLibrary.GeoMath;
+
 namespace DxfLibrary.Geometry
 {
     /// <summary>
@@ -34,6 +36,25 @@ namespace DxfLibrary.Geometry
         /// The Angle of the Bulge in Degrees
         /// </summary>
         public double AngleDeg => Rad2Deg(Angle);
+
+        /// <summary>
+        /// Distance from the Chord line to the highest point of the arc,
+        /// at the center
+        /// </summary>
+        /// <param name="p0">Starting point</param>
+        /// <param name="p1">Ending point</param>
+        /// <returns>The distance from the chord line to the top of the arc</returns>
+        public double Sagitta(GeoPoint p0, GeoPoint p1) 
+            => Value * BasicGeometry.Distance(p0, p1) * 0.5;
+
+        /// <summary>
+        /// The Radius of the arc defined by the bulge
+        /// </summary>
+        /// <param name="p0">Starting Point</param>
+        /// <param name="p1">Ending Point</param>
+        /// <returns>The Radius of the Arc</returns>
+        public double Radius(GeoPoint p0, GeoPoint p1)
+            => (BasicGeometry.Distance(p0, p1)) * (Math.Pow(Value, 2) + 1) / (2 * Value);
 
         /// <summary>
         /// Converter for rads to degs

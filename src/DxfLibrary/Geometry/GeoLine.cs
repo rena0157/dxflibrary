@@ -72,8 +72,16 @@ namespace DxfLibrary.Geometry
         public Bulge Bulge {get;}
 
         /// <summary>
-        /// Get the length of the Line
+        /// The Length of the Line.
         /// </summary>
+        /// <remarks>
+        /// If the Bulge is 0: The length will return the distance
+        /// from point 0 to point 1
+        /// 
+        /// If the Bulge is not 0: The length will return the arc
+        /// length from by an arc from point 0 to point 1 with a 
+        /// Bulge of the Bulge.Value
+        /// </remarks>
         public double Length => CalcLength();
 
         /// <summary>
@@ -82,6 +90,21 @@ namespace DxfLibrary.Geometry
         /// line.
         /// </summary>
         public double Area => CalcArea();
+
+        /// <summary>
+        /// Radius of the Arc, if the Bulge is not 0.
+        /// If the Bulge is 0 this should return positive infinity
+        /// </summary>
+        public double Radius 
+            => Bulge.Value != 0 ? Bulge.Radius(Point0, Point1) : double.PositiveInfinity;
+
+        /// <summary>
+        /// The angle that the arc makes.
+        /// If the bulge is zero then the angle will return 
+        /// positive infinity
+        /// </summary>
+        public double Angle
+            => Bulge.Value != 0 ? Bulge.Angle : double.PositiveInfinity;
 
         #endregion
 
@@ -101,7 +124,7 @@ namespace DxfLibrary.Geometry
         #region Private Methods
 
         /// <summary>
-        /// Calculate the length of the line
+        /// Calculate the length of the Segment.
         /// </summary>
         /// <returns>The length of the line</returns>
         private double CalcLength()
@@ -110,8 +133,8 @@ namespace DxfLibrary.Geometry
             // between the two points
             if (Bulge.Value == 0) return BasicGeometry.Distance(Point0, Point1);
 
-            // TODO: Need to implement the case where there is a bulge
-            else throw new NotImplementedException();
+            // Return the arc length of the arc if the Bulge is not equal to 0
+            return BasicGeometry.ArcLength(Bulge.Radius(Point0, Point1), Bulge.Angle);
         }
 
         /// <summary>

@@ -25,12 +25,14 @@ namespace DxfLibrary.Entities
         /// <param name="structure">The Structure</param>
         internal LwPolyline(LwPolylineStructure structure) : base(structure)
         {
+            // Initialize the members of the class
             NumberOfVerticies = structure.NumberOfVerticies;
             PolylineFlag = structure.PolylineFlag;
             ConstWidth = structure.ConstWidth;
             Elevation = structure.Elevation;
             Thickness = structure.Thickness;
 
+            // Set the geometric base class
             _geometricBase = new GeoPolyline(structure.XCoordinate,
                 structure.YCoordinate, structure.Bulge, PolylineFlag);
         }

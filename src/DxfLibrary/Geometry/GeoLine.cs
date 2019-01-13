@@ -6,6 +6,8 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 
+using DxfLibrary.GeoMath;
+
 namespace DxfLibrary.Geometry
 {
     /// <summary>
@@ -36,6 +38,13 @@ namespace DxfLibrary.Geometry
             Point1 = p1;
         }
 
+        /// <summary>
+        /// Constructor for the geoline that takes two points
+        /// and a bulge
+        /// </summary>
+        /// <param name="p0">Starting point</param>
+        /// <param name="p1">Ending point</param>
+        /// <param name="bulge">The Bulge</param>
         public GeoLine(GeoPoint p0, GeoPoint p1, Bulge bulge)
         {
             this.Bulge = bulge;
@@ -68,7 +77,9 @@ namespace DxfLibrary.Geometry
         public double Length => CalcLength();
 
         /// <summary>
-        /// Area of the Segment
+        /// Area of the Segment. The Area of the segment
+        /// Is the area of a trapizoid that is bounded by the two points of the
+        /// line.
         /// </summary>
         public double Area => CalcArea();
 
@@ -93,14 +104,30 @@ namespace DxfLibrary.Geometry
         /// Calculate the length of the line
         /// </summary>
         /// <returns>The length of the line</returns>
-        private double CalcLength() => Math.Sqrt(Math.Pow(Point1.X - Point0.X, 2.0)
-            + Math.Pow(Point1.Y - Point0.Y, 2.0)
-            + Math.Pow(Point1.Z - Point0.Z, 2.0));
+        private double CalcLength()
+        {
+            // If the line has no bulge then calculate the straight length
+            // between the two points
+            if (Bulge.Value == 0) return BasicGeometry.Distance(Point0, Point1);
 
+            // TODO: Need to implement the case where there is a bulge
+            else throw new NotImplementedException();
+        }
+
+        /// <summary>
+        /// Calculate the area of the shape that
+        /// bounds the line and the x axis.
+        /// Note that the shape can include the area of the chord
+        /// if the line is an arc
+        /// </summary>
+        /// <returns>The area of the shape that is defined above</returns>
         private double CalcArea()
         {
-            // TODO: Finish this
-            return 0;
+            // If there is no bulge then treat as a regular line
+            if (Bulge.Value == 0) return BasicGeometry.TrapzArea(this);
+
+            // TODO: Need to implement the area in the case where there is a bulge
+            else throw new NotImplementedException();
         }
 
         #endregion

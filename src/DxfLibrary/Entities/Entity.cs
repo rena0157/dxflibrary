@@ -82,25 +82,17 @@ namespace DxfLibrary.Entities
         /// <param name="value">The value of the property</param>
         public virtual void SetProperty(string name, object value)
         {
-            switch(name)
-            {
-                case nameof(EntityType):
-                    EntityType = value as Type;
-                break;
+            // Get the property
+            var property = this.GetType().GetProperty(name);
 
-                case nameof(Handle):
-                    Handle = value as string;
-                break;
+            // Get the type of the property
+            var type = property.PropertyType;
 
-                case nameof(SoftPointer):
-                    SoftPointer = value as string;
-                break;
+            // Converty the object to the type of the property
+            var settingValue = Convert.ChangeType(value, type);
 
-                case nameof(LayerName):
-                    LayerName = value as string;
-                break;
-
-            }
+            // Set the property
+            this.GetType().GetProperty(name).SetValue(this, settingValue);
         }
 
         #endregion

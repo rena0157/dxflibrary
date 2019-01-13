@@ -30,6 +30,9 @@ namespace DxfLibrary.Entities
             ConstWidth = structure.ConstWidth;
             Elevation = structure.Elevation;
             Thickness = structure.Thickness;
+
+            _geometricBase = new GeoPolyline(structure.XCoordinate,
+                structure.YCoordinate, structure.Bulge, PolylineFlag);
         }
 
         /// <summary>
@@ -47,12 +50,12 @@ namespace DxfLibrary.Entities
         /// <summary>
         /// The Total Length of the LwPolyline
         /// </summary>
-        public double Length => throw new NotImplementedException();
+        public double Length => ((IGeoLength)_geometricBase).Length;
 
         /// <summary>
         /// The Total Area of the LwPolyline
         /// </summary>
-        public double Area => throw new NotImplementedException();
+        public double Area => ((IGeoArea)_geometricBase).Area;
 
         /// <summary>
         /// The number of vertices in the Polyline

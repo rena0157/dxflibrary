@@ -99,6 +99,24 @@ namespace DxfLibrary.Tests.Entities
             Assert.Equal(expectedValue, polyline.ConstWidth);
         }
 
+        [Theory]
+        [InlineData(BasicPolyline, 100.5)]
+        [InlineData(PolylineArc, 0)]
+        [InlineData(PolylineOpen, 0)]
+        public void ElevationTest(string value, double expectedValue)
+        {
+            // Arrange
+            WriteMemory(value);
+
+            // Act
+            var dxfFile = new DxfFile(_memoryStream);
+            var polyline = dxfFile.GetEntities<LwPolyline>().FirstOrDefault();
+
+            // Assert
+            Assert.NotNull(polyline);
+            Assert.Equal(expectedValue, polyline.Elevation);
+
+        }
 
         #endregion
 

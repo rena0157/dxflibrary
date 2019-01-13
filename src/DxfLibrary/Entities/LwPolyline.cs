@@ -28,6 +28,7 @@ namespace DxfLibrary.Entities
             NumberOfVerticies = structure.NumberOfVerticies;
             PolylineFlag = structure.PolylineFlag;
             ConstWidth = structure.ConstWidth;
+            Elevation = structure.Elevation;
         }
 
         /// <summary>

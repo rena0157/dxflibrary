@@ -32,7 +32,7 @@ namespace DxfLibrary
         /// Default Constructor that assumes that the file is not binary
         /// </summary>
         /// <param name="fileStream">The filestream that points to the file</param>
-        public DxfFile(FileStream fileStream)
+        public DxfFile(Stream fileStream)
         {
             // Load the file
             LoadFile(fileStream, false);
@@ -68,7 +68,7 @@ namespace DxfLibrary
         /// </summary>
         /// <param name="fileStream">The filestream where the file is</param>
         /// <param name="isBinary">If true then read the file as if it is binary</param>
-        private void LoadFile(FileStream fileStream, bool isBinary)
+        private void LoadFile(Stream fileStream, bool isBinary)
         {
             if (!isBinary)
             {

@@ -39,7 +39,7 @@ namespace DxfLibrary.GeoMath
         /// <param name="radius">The radius of the arc</param>
         /// <param name="Angle">The angle of the arc</param>
         /// <returns>The total arc length given by the arc</returns>
-        public static double ArcLength(double radius, double Angle) => radius * Angle;
+        public static double ArcLength(double radius, double angle) => radius * angle;
 
     }
 }

@@ -41,5 +41,23 @@ namespace DxfLibrary.GeoMath
         /// <returns>The total arc length given by the arc</returns>
         public static double ArcLength(double radius, double angle) => radius * angle;
 
+        #region Unit Conversion
+
+        /// <summary>
+        /// Conversion from Radians to degrees
+        /// </summary>
+        /// <param name="rad">Number in Radians</param>
+        /// <returns>A number in degrees</returns>
+        public static double Rad2Deg(double rad) => rad * 180 / Math.PI;
+
+        /// <summary>
+        /// Conversion from Degrees to Radians
+        /// </summary>
+        /// <param name="deg">A number that is in degrees</param>
+        /// <returns>A number that is in radians</returns>
+        public static double Deg2Rad(double deg) => deg / 180 * Math.PI;
+
+        #endregion
+
     }
 }

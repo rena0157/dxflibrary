@@ -14,17 +14,16 @@ namespace DxfLibrary.Geometry
     /// Geometric class that defines a segment.
     /// This segment can either be a line or an arc
     /// </summary>
-    public class GeoLine : GeoBase, IGeoLength, IGeoArea
+    public class GeoLine : GeoBase, IGeoLength, IGeoArea, IVectorable
     {
         #region Constructors
 
         /// <summary>
         /// Default Constructor for the Point
         /// </summary>
-        public GeoLine()
+        public GeoLine() 
+            : this(new GeoPoint(0,0), new GeoPoint(0,0), new Bulge(0))
         {
-            Point0 = new GeoPoint(0, 0, 0);
-            Point1 = new GeoPoint(0,0,0);
         }
 
         /// <summary>
@@ -32,10 +31,9 @@ namespace DxfLibrary.Geometry
         /// </summary>
         /// <param name="p0">First Point</param>
         /// <param name="p1">Second Point</param>
-        public GeoLine(GeoPoint p0, GeoPoint p1)
+        public GeoLine(GeoPoint p0, GeoPoint p1) 
+            : this(p0, p1, new Bulge(0))
         {
-            Point0 = p0;
-            Point1 = p1;
         }
 
         /// <summary>
@@ -119,6 +117,12 @@ namespace DxfLibrary.Geometry
             return $"P0({Point0.X}, {Point0.Y}, {Point0.Z}), P1({Point1.X}, {Point1.Y}, {Point1.Z})";
         }
 
+        /// <summary>
+        /// Convert this entity to a vector
+        /// </summary>
+        /// <returns>A new vector</returns>
+        public Vector ToVector() => new Vector(Point0, Point1);
+
         #endregion
 
         #region Private Methods
@@ -152,6 +156,8 @@ namespace DxfLibrary.Geometry
             // TODO: Need to implement the area in the case where there is a bulge
             else throw new NotImplementedException();
         }
+
+
 
         #endregion
     }

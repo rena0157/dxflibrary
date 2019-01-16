@@ -23,6 +23,12 @@ namespace DxfLibrary.Geometry
         }
 
         /// <summary>
+        /// Construct a bulge from an angle in radians
+        /// </summary>
+        /// <param name="Angle">The Angle</param>
+        public static Bulge FromAngle(double angle) => new Bulge(Math.Tan(angle / 4));
+
+        /// <summary>
         /// The Value of the Bulge
         /// </summary>
         public double Value {get;}
@@ -30,7 +36,7 @@ namespace DxfLibrary.Geometry
         /// <summary>
         /// The Angle of the Bulge
         /// </summary>
-        public double Angle => Math.Atan(Value / 4);
+        public double Angle => 4 * Math.Atan(Value);
 
         /// <summary>
         /// The Angle of the Bulge in Degrees
@@ -54,7 +60,7 @@ namespace DxfLibrary.Geometry
         /// <param name="p1">Ending Point</param>
         /// <returns>The Radius of the Arc</returns>
         public double Radius(GeoPoint p0, GeoPoint p1)
-            => (BasicGeometry.Distance(p0, p1)) * (Math.Pow(Value, 2) + 1) / (2 * Value);
+            => BasicGeometry.Distance(p0, p1) * 0.5 * (Math.Pow(Value, 2) + 1) / (2 * Value);
 
         /// <summary>
         /// Converter for rads to degs

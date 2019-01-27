@@ -41,7 +41,7 @@ namespace DxfLibrary.Geometry
         /// <summary>
         /// The Angle of the Bulge in Degrees
         /// </summary>
-        public double AngleDeg => Rad2Deg(Angle);
+        public double AngleDeg => BasicGeometry.Rad2Deg(Angle);
 
         /// <summary>
         /// Distance from the Chord line to the highest point of the arc,
@@ -61,12 +61,5 @@ namespace DxfLibrary.Geometry
         /// <returns>The Radius of the Arc</returns>
         public double Radius(GeoPoint p0, GeoPoint p1)
             => BasicGeometry.Distance(p0, p1) * 0.5 * (Math.Pow(Value, 2) + 1) / (2 * Value);
-
-        /// <summary>
-        /// Converter for rads to degs
-        /// </summary>
-        /// <param name="val">Val in radians</param>
-        /// <returns>The value in degrees</returns>
-        private double Rad2Deg(double val) => val * (180 / Math.PI);
     }
 }

@@ -3,6 +3,7 @@
 // Created On: 2019-01-09
 
 using System;
+using DxfLibrary.GeoMath;
 
 namespace DxfLibrary.Geometry
 {
@@ -63,8 +64,10 @@ namespace DxfLibrary.Geometry
             if (line == null)
                 return false;
 
-            // All coordinates must be the same for the point to be equal
-            return line.X == X && line.Y == Y && line.Z == Z;
+            // Compare the values
+            return BasicGeometry.DoubleCompare(line.X, X) &&
+                BasicGeometry.DoubleCompare(line.Y, Y) && 
+                BasicGeometry.DoubleCompare(line.Z, Z);
         }
 
         /// <summary>

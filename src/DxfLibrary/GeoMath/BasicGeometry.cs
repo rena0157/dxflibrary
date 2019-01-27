@@ -13,7 +13,7 @@ namespace DxfLibrary.GeoMath
     /// </summary>
     public static class BasicGeometry
     {
-        public static double Tolerance = 0.001;
+        public static double Tolerance = 1E-10;
 
         /// <summary>
         /// Calculate the Distance Between two points in space

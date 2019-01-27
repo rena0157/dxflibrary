@@ -94,6 +94,13 @@ namespace DxfLibrary.GeoMath
              new GeoPoint(origin.X + X, origin.Y + Y, origin.Z + Z));
         }
 
+        /// <summary>
+        /// Dot product of the vector and another vector
+        /// </summary>
+        /// <param name="other">The other vector to dot with</param>
+        /// <returns>Returns: The result of the dot product</returns>
+        public double Dot(Vector other) => X * other.X + Y * other.Y + Z * other.Z;
+
         #endregion
 
         #region Overrides

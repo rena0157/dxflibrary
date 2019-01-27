@@ -34,7 +34,7 @@ namespace DxfLibrary.Geometry
         public double Value {get;}
 
         /// <summary>
-        /// The Angle of the Bulge
+        /// The Angle of the Bulge in radians
         /// </summary>
         public double Angle => 4 * Math.Atan(Value);
 

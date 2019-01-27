@@ -28,7 +28,25 @@ namespace DxfLibrary.Tests.GeoMath
         }
 
         #region TestData
-        
+
+        // Addintion test Data
+        class AdditionTestData : IEnumerable<object[]>
+        {
+            public IEnumerator<object[]> GetEnumerator()
+            {
+                yield return new object[]
+                {
+                    new Vector(new GeoPoint(0,0), new GeoPoint(0,1)),
+                    new Vector(new GeoPoint(0,0), new GeoPoint(1,1))
+                };
+            }
+
+            IEnumerator IEnumerable.GetEnumerator()
+            {
+                return GetEnumerator();
+            }
+        }
+
         /// <summary>
         /// Data for the rotation tests
         /// </summary>
@@ -58,6 +76,15 @@ namespace DxfLibrary.Tests.GeoMath
         #endregion
 
         #region Tests
+
+        [Theory]
+        [ClassData(typeof(AdditionTestData))]
+        public static void AdditionTest(Vector b, Vector expected)
+        {
+            var a = new Vector(new GeoPoint(0,0), new GeoPoint(1,0));
+            var test = a + b;
+            Assert.Equal(expected.Length, test.Length);
+        }
 
         [Theory]
         [ClassData(typeof(RotationTestData))]

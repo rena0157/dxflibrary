@@ -96,6 +96,23 @@ namespace DxfLibrary.GeoMath
 
         #endregion
 
+        #region Overrides
+
+        /// <summary>
+        /// Overloaded operator + for the vector type
+        /// </summary>
+        /// <param name="a">The first vector</param>
+        /// <param name="b">The second vector</param>
+        /// <returns>Returns a new vector which is the addition of the two vectors</returns>
+        public static Vector operator +(Vector a, Vector b)
+        {
+            return new Vector(new GeoPoint(a.Origin.X + b.Origin.X, a.Origin.Y + b.Origin.Y, a.Origin.Z + b.Origin.Z),
+                new GeoPoint(a.Destination.X + b.Destination.X,
+                a.Destination.Y + b.Destination.Y, a.Destination.Z + b.Destination.Z));
+        }
+
+        #endregion
+
         #region UnitVectors
 
         /// <summary>

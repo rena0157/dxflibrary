@@ -13,6 +13,9 @@ namespace DxfLibrary.GeoMath
     /// </summary>
     public static class BasicGeometry
     {
+        /// <summary>
+        /// The Tolerance for floating point numbers in this library.
+        /// </summary>
         public static double Tolerance = 1E-10;
 
         /// <summary>

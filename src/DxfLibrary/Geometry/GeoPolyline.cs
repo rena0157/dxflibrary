@@ -6,6 +6,8 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 
+using DxfLibrary.GeoMath;
+
 namespace DxfLibrary.Geometry
 {
     public class GeoPolyline : GeoBase, IGeoLength, IGeoArea
@@ -71,5 +73,23 @@ namespace DxfLibrary.Geometry
         /// Get the total area of all the lines
         /// </summary>
         public double Area => _lines.Select(l => l.Area).Sum();
+
+        private double CalcArea()
+        {
+            double sum = 0.0;
+            for (var index = 0; index < _lines.Count; ++index)
+            {
+                var segment = _lines[index];
+
+                // If the segment does not have a bulge just add its area
+                if (BasicGeometry.DoubleCompare(segment.Bulge.Value, 0))
+                {
+                    sum += segment.Area;
+                    continue;
+                }
+
+            }
+            return sum;
+        }
     }
 }

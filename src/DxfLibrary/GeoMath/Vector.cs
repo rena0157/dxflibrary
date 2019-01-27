@@ -25,11 +25,9 @@ namespace DxfLibrary.GeoMath
         /// This is also know as the point of application in some circumstances</param>
         public Vector(GeoPoint origin, GeoPoint destination)
         {
+            // Set origin and destination
             Origin = origin;
             Destination = destination;
-            X = destination.X - origin.X;
-            Y = destination.Y - Origin.Y;
-            Z = destination.X - origin.Z;
         }
 
         #endregion
@@ -45,22 +43,22 @@ namespace DxfLibrary.GeoMath
         /// The ending point of the vector
         /// </summary>
         /// <value></value>
-        public GeoPoint Destination {get;}
+        public GeoPoint Destination {get; protected set;}
 
         /// <summary>
         /// The X Component of the vector
         /// </summary>
-        public double X {get; protected set;}
+        public double X => Destination.X - Origin.X;
 
         /// <summary>
         /// The Y Component of the vector
         /// </summary>
-        public double Y {get; protected set;}
+        public double Y => Destination.Y - Origin.Y;
 
         /// <summary>
         /// The Z Component of the vector
         /// </summary>
-        public double Z {get; protected set;}
+        public double Z => Destination.Z - Origin.Z;
 
         /// <summary>
         /// The Length of the vector. This is also known as
@@ -74,13 +72,15 @@ namespace DxfLibrary.GeoMath
         #region Public Methods
 
         /// <summary>
-        /// Rotate counterclockwise about the Z axis angle radians
+        /// Rotate counterclockwise about the Z axis angle radians.
+        /// This rotation will occur at the origin.
         /// </summary>
-        /// <param name="angle">The Angle to rotate</param>
+        /// <param name="angle">The Angle to rotate in radians</param>
         public void RotateZ(double angle) 
         {
-            X = X * Math.Cos(angle) - Math.Sin(angle);
-            Y = X * Math.Sin(angle) + Y * Math.Cos(angle);
+            // Rotate the vector componets
+            Destination = new GeoPoint(Destination.X * Math.Cos(angle) - Destination.Y*Math.Sin(angle),
+                Destination.X*Math.Sin(angle) + Destination.Y*Math.Cos(angle), Destination.Z);
         }
 
         /// <summary>

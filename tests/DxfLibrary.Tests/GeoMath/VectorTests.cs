@@ -27,21 +27,37 @@ namespace DxfLibrary.Tests.GeoMath
         {
         }
 
-        #region Tests
-
+        #region TestData
+        
+        /// <summary>
+        /// Data for the rotation tests
+        /// </summary>
         class RotationTestData : IEnumerable<object[]>
         {
+            // Rotation data
             public IEnumerator<object[]> GetEnumerator()
             {
+                // 90 degrees counterclockwise rotation
                 yield return new object[]
                 {
                     90,
                     new GeoPoint(0,1)
                 };
+
+                // 90 degrees clockwise rotation
+                yield return new object[]
+                {
+                    -90,
+                    new GeoPoint(0, -1)
+                };
             }
 
             IEnumerator IEnumerable.GetEnumerator() => GetEnumerator();
         }
+        
+        #endregion
+
+        #region Tests
 
         [Theory]
         [ClassData(typeof(RotationTestData))]

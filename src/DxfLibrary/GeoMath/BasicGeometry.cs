@@ -13,6 +13,8 @@ namespace DxfLibrary.GeoMath
     /// </summary>
     public static class BasicGeometry
     {
+        public static double Tolerance = 0.001;
+
         /// <summary>
         /// Calculate the Distance Between two points in space
         /// </summary>
@@ -64,6 +66,14 @@ namespace DxfLibrary.GeoMath
         /// <param name="deg">A number that is in degrees</param>
         /// <returns>A number that is in radians</returns>
         public static double Deg2Rad(double deg) => deg / 180 * Math.PI;
+
+        /// <summary>
+        /// Use <see cref="Tolerance"> to compare two doubles
+        /// </summary>
+        /// <param name="a">Double a</param>
+        /// <param name="b">Double b</param>
+        /// <returns>Returns: True if the doubles are within the Tolerance</returns>
+        public static bool DoubleCompare(double a, double b) => Math.Abs(a - b) < Tolerance;
 
         #endregion
 

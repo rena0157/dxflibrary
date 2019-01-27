@@ -153,8 +153,9 @@ namespace DxfLibrary.Geometry
             // If there is no bulge then treat as a regular line
             if (Bulge.Value == 0) return BasicGeometry.TrapzArea(this);
 
-            // TODO: Need to implement the area in the case where there is a bulge
-            else throw new NotImplementedException();
+            // If the bulge value is not equal to 0 then return the 
+            // Area of the circle segment
+            return BasicGeometry.CircleSegmentArea(Bulge.Radius(Point0, Point1), Bulge.Angle);
         }
 
 

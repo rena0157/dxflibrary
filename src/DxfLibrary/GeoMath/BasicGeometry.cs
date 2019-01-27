@@ -41,6 +41,14 @@ namespace DxfLibrary.GeoMath
         /// <returns>The total arc length given by the arc</returns>
         public static double ArcLength(double radius, double angle) => radius * angle;
 
+        /// <summary>
+        /// Calculate the area of a circles segment
+        /// </summary>
+        /// <param name="radius">The radius of the circle</param>
+        /// <param name="angle">The angle that the segment occupies in Radians</param>
+        /// <returns>The Area of the segment</returns>
+        public static double CircleSegmentArea(double radius, double angle) => Math.Pow(radius, 2) * (angle - Math.Sin(angle));
+
         #region Unit Conversion
 
         /// <summary>

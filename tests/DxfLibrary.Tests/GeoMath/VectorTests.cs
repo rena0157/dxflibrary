@@ -118,7 +118,17 @@ namespace DxfLibrary.Tests.GeoMath
             Assert.Equal(expected, result);
         }
 
-        
+        [Fact]
+        public static void CrossProdTest()
+        {
+            var vec1 = new Vector(new GeoPoint(2, 3, 4));
+            var vec2 = new Vector(new GeoPoint(4, 5, 6));
+
+            var test = vec1.Cross(vec2);
+
+            var expected = new Vector(new GeoPoint(-2, 4, -2));
+            Assert.Equal(expected, test);
+        }
 
         #endregion
 

@@ -37,8 +37,12 @@ namespace DxfLibrary.Geometry
         {
             // If the numbers do not match then throw an error
             if (x.Count != y.Count || x.Count != bulges.Count)
-                throw new IndexOutOfRangeException();
+                throw new IndexOutOfRangeException("All coordinates must be the same size");
             
+            // If there are less than 2 points then the polyline cannot be defined
+            if (x.Count < 2)
+                throw new ArgumentException("Need more than two points to define a polyline")
+
             _lines = new List<GeoLine>();
 
             // Iterate through and create new lines

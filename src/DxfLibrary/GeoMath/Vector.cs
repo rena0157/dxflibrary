@@ -140,6 +140,36 @@ namespace DxfLibrary.GeoMath
                 a.Destination.Y + b.Destination.Y, a.Destination.Z + b.Destination.Z));
         }
 
+        /// <summary>
+        /// Equals override for the vector type
+        /// </summary>
+        /// <param name="obj">The object that you are comparing</param>
+        /// <returns>Returns true if the vector is equal to another vector</returns>
+        public override bool Equals(object obj)
+        {
+            var vector = obj as Vector;
+
+            if (vector == null)
+                return false;
+
+            return Origin.Equals(vector.Origin) && 
+                Destination.Equals(vector.Destination);
+        }
+
+        /// <summary>
+        /// Override for the GetHashCode Type
+        /// </summary>
+        /// <returns>Returns: an int which is the hash code for the vector</returns>
+        public override int GetHashCode()
+        {
+            int hash = 983251653;
+
+            hash = (hash * 817504243) + Origin.GetHashCode();
+            hash = (hash * 817504243) + Destination.GetHashCode();
+
+            return hash;
+        }
+
         #endregion
 
         #region UnitVectors

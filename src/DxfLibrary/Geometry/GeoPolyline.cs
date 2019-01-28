@@ -41,7 +41,7 @@ namespace DxfLibrary.Geometry
             
             // If there are less than 2 points then the polyline cannot be defined
             if (x.Count < 2)
-                throw new ArgumentException("Need more than two points to define a polyline")
+                throw new ArgumentException("Need more than two points to define a polyline");
 
             _lines = new List<GeoLine>();
 

@@ -30,6 +30,16 @@ namespace DxfLibrary.GeoMath
             Destination = destination;
         }
 
+        /// <summary>
+        /// Constructor that creates a vector with its tail at the origin
+        /// and the destination given by a <see cref="GeoPoint">.
+        /// </summary>
+        /// <param name="destination">The GeoPoint for the destination</param>
+        public Vector(GeoPoint destination) : this(new GeoPoint(0,0), destination)
+        {
+
+        }
+
         #endregion
 
         #region Public Properties

@@ -82,7 +82,7 @@ namespace DxfLibrary.Tests.GeoMath
         /// </summary>
         [Theory]
         [ClassData(typeof(AdditionTestData))]
-        public static void AdditionTest(Vector b, Vector expected)
+        public void AdditionTest(Vector b, Vector expected)
         {
             var a = new Vector(new GeoPoint(0,0), new GeoPoint(1,0));
             var test = a + b;
@@ -94,7 +94,7 @@ namespace DxfLibrary.Tests.GeoMath
         /// </summary>
         [Theory]
         [ClassData(typeof(RotationTestData))]
-        public static void RotationTest(double angle, GeoPoint finalDestination)
+        public void RotationTest(double angle, GeoPoint finalDestination)
         {
             var testVec = Vector.UnitVectorX;
             testVec.RotateZ(BasicGeometry.Deg2Rad(angle));
@@ -105,7 +105,7 @@ namespace DxfLibrary.Tests.GeoMath
         /// Trivial Test for the dot product of two vectors
         /// </summary>
         [Fact]
-        public static void DotProdTest()
+        public void DotProdTest()
         {
             // Two Random vectors
             var vec1 = new Vector(new GeoPoint(2,3), new GeoPoint(5,2));
@@ -119,7 +119,7 @@ namespace DxfLibrary.Tests.GeoMath
         }
 
         [Fact]
-        public static void CrossProdTest()
+        public void CrossProdTest()
         {
             var vec1 = new Vector(new GeoPoint(2, 3, 4));
             var vec2 = new Vector(new GeoPoint(4, 5, 6));

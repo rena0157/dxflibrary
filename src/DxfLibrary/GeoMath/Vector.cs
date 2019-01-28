@@ -101,6 +101,18 @@ namespace DxfLibrary.GeoMath
         /// <returns>Returns: The result of the dot product</returns>
         public double Dot(Vector other) => X * other.X + Y * other.Y + Z * other.Z;
 
+        /// <summary>
+        /// The Cross Product of this vector and another vector.
+        /// Note that this returns a new vector where this origin is the same
+        /// as this vector.
+        /// </summary>
+        /// <param name="v2">The other vector that is being crossed</param>
+        /// <returns>Returns: A new vector</returns>
+        public Vector Cross(Vector v2) => new Vector(Origin, 
+            new GeoPoint(Origin.X + Y*v2.Z - v2.Y*Z,
+            Origin.Y + v2.X*Z - X*v2.Z,
+            Origin.Z + (X*v2.Y - v2.X*Y)));
+
         #endregion
 
         #region Overrides

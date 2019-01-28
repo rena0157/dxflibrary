@@ -3,12 +3,16 @@
 // Created on: 2019-01-13
 
 using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 
 namespace DxfLibrary.Geometry
 {
-    public class GeoPolyline : GeoBase, IGeoLength, IGeoArea
+    /// <summary>
+    /// Class that represents a collection of Geolines
+    /// </summary>
+    public class GeoPolyline : GeoBase, IGeoLength, IGeoArea, IEnumerable<GeoLine>
     {
         #region Private Members
 
@@ -84,6 +88,24 @@ namespace DxfLibrary.Geometry
 
         #endregion
 
+        #region Public Methods
+        
+        /// <summary>
+        /// Get the enumerator for the lines in the polyline
+        /// </summary>
+        /// <returns>Returns the Enumberator for the lines in the polyline</returns>
+        public IEnumerator<GeoLine> GetEnumerator()
+        {
+            return _lines.GetEnumerator();
+        }
+
+        /// <summary>
+        /// Gets the enumerator for the polyline class
+        /// </summary>
+        IEnumerator IEnumerable.GetEnumerator() => GetEnumerator();
+        
+        #endregion
+
         #region Private Methods
 
         private double CalcArea()
@@ -110,6 +132,8 @@ namespace DxfLibrary.Geometry
 
             return sum;
         }
+
+
 
         #endregion
     }

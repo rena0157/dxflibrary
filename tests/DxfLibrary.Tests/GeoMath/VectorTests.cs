@@ -77,6 +77,9 @@ namespace DxfLibrary.Tests.GeoMath
 
         #region Tests
 
+        /// <summary>
+        /// Test for the addition of two vectors
+        /// </summary>
         [Theory]
         [ClassData(typeof(AdditionTestData))]
         public static void AdditionTest(Vector b, Vector expected)
@@ -86,6 +89,9 @@ namespace DxfLibrary.Tests.GeoMath
             Assert.Equal(expected.Length, test.Length);
         }
 
+        /// <summary>
+        /// Test for the Rotation of a vector
+        /// </summary>
         [Theory]
         [ClassData(typeof(RotationTestData))]
         public static void RotationTest(double angle, GeoPoint finalDestination)
@@ -94,6 +100,25 @@ namespace DxfLibrary.Tests.GeoMath
             testVec.RotateZ(BasicGeometry.Deg2Rad(angle));
             Assert.Equal(finalDestination, testVec.Destination);
         }
+
+        /// <summary>
+        /// Trivial Test for the dot product of two vectors
+        /// </summary>
+        [Fact]
+        public static void DotProdTest()
+        {
+            // Two Random vectors
+            var vec1 = new Vector(new GeoPoint(2,3), new GeoPoint(5,2));
+            var vec2 = new Vector(new GeoPoint(5,7), new GeoPoint(9,1));
+
+            // Dot product
+            var result = vec1.Dot(vec2);
+            var expected = 18.0;
+
+            Assert.Equal(expected, result);
+        }
+
+        
 
         #endregion
 

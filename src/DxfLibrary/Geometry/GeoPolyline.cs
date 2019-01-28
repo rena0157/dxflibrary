@@ -10,10 +10,16 @@ namespace DxfLibrary.Geometry
 {
     public class GeoPolyline : GeoBase, IGeoLength, IGeoArea
     {
+        #region Private Members
+
         /// <summary>
         /// Private backing field for lines
         /// </summary>
         private List<GeoLine> _lines;
+
+        #endregion
+
+        #region Constructors
 
         /// <summary>
         /// Constructor for the GeoPolyline that takes in Lists of
@@ -62,6 +68,10 @@ namespace DxfLibrary.Geometry
         {
         }
 
+        #endregion
+
+        #region Public Properties
+
         /// <summary>
         /// Get the total length of all the lines
         /// </summary>
@@ -70,6 +80,37 @@ namespace DxfLibrary.Geometry
         /// <summary>
         /// Get the total area of all the lines
         /// </summary>
-        public double Area => _lines.Select(l => l.Area).Sum();
+        public double Area => CalcArea();
+
+        #endregion
+
+        #region Private Methods
+
+        private double CalcArea()
+        {
+            double sum = 0.0d;
+
+            // Need to iterate through the lines to caluclate the 
+            // Total area
+            for (int index = 0; index < _lines.Count; ++index)
+            {
+                // The current segment
+                var segment = _lines[index];
+
+                // If the segment does not have a bulge then
+                // Add the area from the object to the sum
+                if (!segment.HasBulge)
+                {
+                    sum += segment.Area;
+                    continue;
+                }
+
+                // TODO: Add section of code that adds areas if there is a bulge
+            }
+
+            return sum;
+        }
+
+        #endregion
     }
 }

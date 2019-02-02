@@ -73,7 +73,7 @@ namespace DxfLibrary.Geometry
         /// Returns True if the line has a bulge, and false
         /// if the file does not have a bulge
         /// </summary>
-        public bool HasBulge => Bulge.Value == 0;
+        public bool HasBulge => BasicGeometry.DoubleCompare(Bulge.Value, 0);
 
         /// <summary>
         /// The Length of the Line.

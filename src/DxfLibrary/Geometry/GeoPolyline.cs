@@ -161,7 +161,7 @@ namespace DxfLibrary.Geometry
                 
             }
 
-            return sum;
+            return Math.Abs(sum);
         }
 
 

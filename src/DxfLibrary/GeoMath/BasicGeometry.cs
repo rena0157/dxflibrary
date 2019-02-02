@@ -52,7 +52,7 @@ namespace DxfLibrary.GeoMath
         /// <param name="radius">The radius of the circle</param>
         /// <param name="angle">The angle that the segment occupies in Radians</param>
         /// <returns>The Area of the segment</returns>
-        public static double CircleSegmentArea(double radius, double angle) => Math.Pow(radius, 2) * (angle - Math.Sin(angle));
+        public static double CircleSegmentArea(double radius, double angle) => Math.Pow(radius, 2) * 0.5 * (angle - Math.Sin(angle));
 
         #region Unit Conversion
 

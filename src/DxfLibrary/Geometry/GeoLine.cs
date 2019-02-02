@@ -70,6 +70,12 @@ namespace DxfLibrary.Geometry
         public Bulge Bulge {get;}
 
         /// <summary>
+        /// Returns True if the line has a bulge, and false
+        /// if the file does not have a bulge
+        /// </summary>
+        public bool HasBulge => !(BasicGeometry.DoubleCompare(Bulge.Value, 0));
+
+        /// <summary>
         /// The Length of the Line.
         /// </summary>
         /// <remarks>
@@ -85,7 +91,8 @@ namespace DxfLibrary.Geometry
         /// <summary>
         /// Area of the Segment. The Area of the segment
         /// Is the area of a trapizoid that is bounded by the two points of the
-        /// line.
+        /// line. Note that if the segment is an arc then the area is the area
+        /// bounded by that arc.
         /// </summary>
         public double Area => CalcArea();
 
@@ -101,8 +108,13 @@ namespace DxfLibrary.Geometry
         /// If the bulge is zero then the angle will return 
         /// positive infinity
         /// </summary>
+        /// <remarks>
+        /// If there is no arc then the segment is a line and
+        /// will then have an angle of PI (180 degrees). This angle will be returned 
+        /// in radians.
+        /// </remarks>
         public double Angle
-            => Bulge.Value != 0 ? Bulge.Angle : double.PositiveInfinity;
+            => Bulge.Value != 0 ? Bulge.Angle : Math.PI;
 
         #endregion
 
@@ -111,7 +123,7 @@ namespace DxfLibrary.Geometry
         /// <summary>
         /// Override of the ToString Method
         /// </summary>
-        /// <returns></returns>
+        /// <returns>Returns: The Lines points and coordinates</returns>
         public override string ToString()
         {
             return $"P0({Point0.X}, {Point0.Y}, {Point0.Z}), P1({Point1.X}, {Point1.Y}, {Point1.Z})";
@@ -120,7 +132,10 @@ namespace DxfLibrary.Geometry
         /// <summary>
         /// Convert this entity to a vector
         /// </summary>
-        /// <returns>A new vector</returns>
+        /// <returns>
+        /// Returns: A new vector that has the origin and destination
+        /// the same as this lines point 0 and point 1
+        /// </returns>
         public Vector ToVector() => new Vector(Point0, Point1);
 
         #endregion
@@ -130,7 +145,12 @@ namespace DxfLibrary.Geometry
         /// <summary>
         /// Calculate the length of the Segment.
         /// </summary>
-        /// <returns>The length of the line</returns>
+        /// <remarks>
+        /// If the bulge value is 0: Returns the length of the line segment
+        /// 
+        /// If the bulge value is not 0: Returns the arc length of the arc segment
+        /// </remarks>
+        /// <returns>The length of the segment</returns>
         private double CalcLength()
         {
             // If the line has no bulge then calculate the straight length
@@ -155,10 +175,8 @@ namespace DxfLibrary.Geometry
 
             // If the bulge value is not equal to 0 then return the 
             // Area of the circle segment
-            return BasicGeometry.CircleSegmentArea(Bulge.Radius(Point0, Point1), Bulge.Angle);
+            return Math.Abs(BasicGeometry.CircleSegmentArea(Bulge.Radius(Point0, Point1), Bulge.Angle));
         }
-
-
 
         #endregion
     }

@@ -3,17 +3,29 @@
 // Created on: 2019-01-13
 
 using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 
+using DxfLibrary.GeoMath;
+
 namespace DxfLibrary.Geometry
 {
-    public class GeoPolyline : GeoBase, IGeoLength, IGeoArea
+    /// <summary>
+    /// Class that represents a collection of Geolines
+    /// </summary>
+    public class GeoPolyline : GeoBase, IGeoLength, IGeoArea, IEnumerable<GeoLine>
     {
+        #region Private Members
+
         /// <summary>
         /// Private backing field for lines
         /// </summary>
         private List<GeoLine> _lines;
+
+        #endregion
+
+        #region Constructors
 
         /// <summary>
         /// Constructor for the GeoPolyline that takes in Lists of
@@ -27,8 +39,12 @@ namespace DxfLibrary.Geometry
         {
             // If the numbers do not match then throw an error
             if (x.Count != y.Count || x.Count != bulges.Count)
-                throw new IndexOutOfRangeException();
+                throw new IndexOutOfRangeException("All coordinates must be the same size");
             
+            // If there are less than 2 points then the polyline cannot be defined
+            if (x.Count < 2)
+                throw new ArgumentException("Need more than two points to define a polyline");
+
             _lines = new List<GeoLine>();
 
             // Iterate through and create new lines
@@ -50,6 +66,12 @@ namespace DxfLibrary.Geometry
                 var bulge = new Bulge(bulges.Last());
                 _lines.Add(new GeoLine(point0, point1, bulge));
             }
+
+            // Determine the draw direction using the first and second
+            // line by converting them to vectors and crossing them.
+            if (_lines.Count > 1)
+                DrawDirection = _lines[0].ToVector()
+                    .Cross( _lines[1].ToVector() ).Z;
         }
 
         /// <summary>
@@ -62,6 +84,10 @@ namespace DxfLibrary.Geometry
         {
         }
 
+        #endregion
+
+        #region Public Properties
+
         /// <summary>
         /// Get the total length of all the lines
         /// </summary>
@@ -70,6 +96,76 @@ namespace DxfLibrary.Geometry
         /// <summary>
         /// Get the total area of all the lines
         /// </summary>
-        public double Area => _lines.Select(l => l.Area).Sum();
+        public double Area => CalcArea();
+
+        /// <summary>
+        /// The Draw direction of the polyline.
+        /// If the value is >0 then the draw direction is counterclockwise
+        /// If the value is less than 0 then the direction is clockwise
+        /// </summary>
+        public double DrawDirection {get;}
+
+        #endregion
+
+        #region Public Methods
+        
+        /// <summary>
+        /// Get the enumerator for the lines in the polyline
+        /// </summary>
+        /// <returns>Returns the Enumberator for the lines in the polyline</returns>
+        public IEnumerator<GeoLine> GetEnumerator()
+        {
+            return _lines.GetEnumerator();
+        }
+
+        /// <summary>
+        /// Gets the enumerator for the polyline class
+        /// </summary>
+        IEnumerator IEnumerable.GetEnumerator() => GetEnumerator();
+        
+        #endregion
+
+        #region Private Methods
+
+        private double CalcArea()
+        {
+            double sum = 0.0d;
+
+            // Need to iterate through the lines to caluclate the 
+            // Total area
+            foreach(var segment in  _lines)
+            {
+                // If the segment does not have a bulge then
+                // Add the area from the object to the sum
+                if (!segment.HasBulge)
+                {
+                    sum += segment.Area;
+                    continue;
+                }
+
+                // First add the area of the Trapizoid
+                if (DrawDirection > 0)
+                    sum += (new GeoLine(segment.Point0, segment.Point1).Area) * -1.0;
+
+                else if (DrawDirection < 0)
+                    sum += new GeoLine(segment.Point0, segment.Point1).Area;
+
+                // This value will determine if we are to add or subtract the segment area
+                var segmentAreaSwtich = DrawDirection * segment.Bulge.Value;
+
+                if (segmentAreaSwtich > 0)
+                    sum += segment.Area;
+
+                else if (segmentAreaSwtich < 0)
+                    sum -= segment.Area;
+                
+            }
+
+            return Math.Abs(sum);
+        }
+
+
+
+        #endregion
     }
 }

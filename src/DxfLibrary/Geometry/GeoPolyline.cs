@@ -66,6 +66,12 @@ namespace DxfLibrary.Geometry
                 var bulge = new Bulge(bulges.Last());
                 _lines.Add(new GeoLine(point0, point1, bulge));
             }
+
+            // Determine the draw direction using the first and second
+            // line by converting them to vectors and crossing them.
+            if (_lines.Count > 1)
+                DrawDirection = _lines[0].ToVector()
+                    .Cross( _lines[1].ToVector() ).Z;
         }
 
         /// <summary>
@@ -91,6 +97,13 @@ namespace DxfLibrary.Geometry
         /// Get the total area of all the lines
         /// </summary>
         public double Area => CalcArea();
+
+        /// <summary>
+        /// The Draw direction of the polyline.
+        /// If the value is >0 then the draw direction is counterclockwise
+        /// If the value is less than 0 then the direction is clockwise
+        /// </summary>
+        public double DrawDirection {get;}
 
         #endregion
 

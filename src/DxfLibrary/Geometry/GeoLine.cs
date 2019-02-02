@@ -178,8 +178,6 @@ namespace DxfLibrary.Geometry
             return BasicGeometry.CircleSegmentArea(Bulge.Radius(Point0, Point1), Bulge.Angle);
         }
 
-
-
         #endregion
     }
 }

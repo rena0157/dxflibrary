@@ -146,7 +146,18 @@ namespace DxfLibrary.Geometry
                     continue;
                 }
 
-                // TODO: Add section of code that adds areas if there is a bulge
+                // First add the area of the Trapizoid
+                sum += new GeoLine(segment.Point0, segment.Point1).Length;
+
+                // This value will determine if we are to add or subtract the segment area
+                var segmentAreaSwtich = DrawDirection * segment.Bulge.Value;
+
+                if (segmentAreaSwtich > 0)
+                    sum += segment.Area;
+
+                else if (segmentAreaSwtich < 0)
+                    sum -= segment.Area;
+                
             }
 
             return sum;

@@ -108,8 +108,13 @@ namespace DxfLibrary.Geometry
         /// If the bulge is zero then the angle will return 
         /// positive infinity
         /// </summary>
+        /// <remarks>
+        /// If there is no arc then the segment is a line and
+        /// will then have an angle of PI (180 degrees). This angle will be returned 
+        /// in radians.
+        /// </remarks>
         public double Angle
-            => Bulge.Value != 0 ? Bulge.Angle : double.PositiveInfinity;
+            => Bulge.Value != 0 ? Bulge.Angle : Math.PI;
 
         #endregion
 

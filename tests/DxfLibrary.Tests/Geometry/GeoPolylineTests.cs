@@ -61,6 +61,65 @@ namespace DxfLibrary.Tests.Geometry
                     ),
                     22.3175
                 };
+            
+                // Type: Arc
+                // Draw Direction: CCW
+                // Bulge: -ve
+                yield return new object[]
+                {
+                    new GeoPolyline
+                    (
+                        new List<double>{ 0, 5, 5, 0 },
+                        new List<double>{ 0, 0, 2.5, 2.5 },
+                        new List<double>{ 0, 0, -0.6, 0 },
+                        true
+                    ),
+                    7.1566
+                };
+
+                // Type: Arc
+                // Draw Direction: CW
+                // Bulge: +ve
+                yield return new object[]
+                {
+                    new GeoPolyline
+                    (
+                        new List<double>{ 0, 0, 5, 5 },
+                        new List<double>{ 0, 2.5, 2.5, 0 },
+                        new List<double>{ 0, 0.6, 0, 0 },
+                        true                      
+                    ),
+                    7.1566
+                };
+
+                // Type: Line
+                // Draw Direction: CCW
+                yield return new object[]
+                {
+                    new GeoPolyline
+                    (
+                        new List<double>{ 0, 5, 5, 0 },
+                        new List<double>{ 0, 0, 2.5, 2.5 },
+                        new List<double>{ 0, 0, 0, 0 },
+                        true
+                    ),
+                    12.5
+                };
+
+                // Type Line
+                // Draw Direction: CW
+                yield return new object[]
+                {
+                    new GeoPolyline
+                    (
+                        new List<double>{ 0, 0, 5, 5 },
+                        new List<double>{ 0, 2.5, 2.5, 0 },
+                        new List<double>{ 0, 0, 0, 0 },
+                        true                      
+                    ),
+                    12.5
+                };
+
             }
 
             IEnumerator IEnumerable.GetEnumerator() => GetEnumerator();

@@ -133,11 +133,8 @@ namespace DxfLibrary.Geometry
 
             // Need to iterate through the lines to caluclate the 
             // Total area
-            for (int index = 0; index < _lines.Count; ++index)
+            foreach(var segment in  _lines)
             {
-                // The current segment
-                var segment = _lines[index];
-
                 // If the segment does not have a bulge then
                 // Add the area from the object to the sum
                 if (!segment.HasBulge)

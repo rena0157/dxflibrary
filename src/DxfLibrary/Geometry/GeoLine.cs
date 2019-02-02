@@ -132,7 +132,10 @@ namespace DxfLibrary.Geometry
         /// <summary>
         /// Convert this entity to a vector
         /// </summary>
-        /// <returns>A new vector</returns>
+        /// <returns>
+        /// Returns: A new vector that has the origin and destination
+        /// the same as this lines point 0 and point 1
+        /// </returns>
         public Vector ToVector() => new Vector(Point0, Point1);
 
         #endregion

@@ -144,7 +144,11 @@ namespace DxfLibrary.Geometry
                 }
 
                 // First add the area of the Trapizoid
-                sum += new GeoLine(segment.Point0, segment.Point1).Length;
+                if (DrawDirection > 0)
+                    sum += (new GeoLine(segment.Point0, segment.Point1).Area) * -1.0;
+
+                else if (DrawDirection < 0)
+                    sum += new GeoLine(segment.Point0, segment.Point1).Area;
 
                 // This value will determine if we are to add or subtract the segment area
                 var segmentAreaSwtich = DrawDirection * segment.Bulge.Value;

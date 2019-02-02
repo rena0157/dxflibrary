@@ -175,7 +175,7 @@ namespace DxfLibrary.Geometry
 
             // If the bulge value is not equal to 0 then return the 
             // Area of the circle segment
-            return BasicGeometry.CircleSegmentArea(Bulge.Radius(Point0, Point1), Bulge.Angle);
+            return Math.Abs(BasicGeometry.CircleSegmentArea(Bulge.Radius(Point0, Point1), Bulge.Angle));
         }
 
         #endregion

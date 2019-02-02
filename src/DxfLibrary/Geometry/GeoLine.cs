@@ -145,7 +145,12 @@ namespace DxfLibrary.Geometry
         /// <summary>
         /// Calculate the length of the Segment.
         /// </summary>
-        /// <returns>The length of the line</returns>
+        /// <remarks>
+        /// If the bulge value is 0: Returns the length of the line segment
+        /// 
+        /// If the bulge value is not 0: Returns the arc length of the arc segment
+        /// </remarks>
+        /// <returns>The length of the segment</returns>
         private double CalcLength()
         {
             // If the line has no bulge then calculate the straight length

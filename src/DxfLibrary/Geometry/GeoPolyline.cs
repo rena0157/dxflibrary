@@ -90,19 +90,6 @@ namespace DxfLibrary.Geometry
         /// <summary>
         /// Get the total area of all the lines
         /// </summary>
-<<<<<<< HEAD
-        public double Area => _lines.Select(l => l.Area).Sum();
-
-        private double CalcArea()
-        {
-            double sum = 0.0;
-            for (var index = 0; index < _lines.Count; ++index)
-            {
-                var segment = _lines[index];
-
-                // If the segment does not have a bulge just add its area
-                if (BasicGeometry.DoubleCompare(segment.Bulge.Value, 0))
-=======
         public double Area => CalcArea();
 
         #endregion
@@ -141,17 +128,11 @@ namespace DxfLibrary.Geometry
                 // If the segment does not have a bulge then
                 // Add the area from the object to the sum
                 if (!segment.HasBulge)
->>>>>>> 38d0565e660ecfc0fda18d48f887cd99e3e2a57d
                 {
                     sum += segment.Area;
                     continue;
                 }
 
-<<<<<<< HEAD
-            }
-            return sum;
-        }
-=======
                 // TODO: Add section of code that adds areas if there is a bulge
             }
 
@@ -161,6 +142,5 @@ namespace DxfLibrary.Geometry
 
 
         #endregion
->>>>>>> 38d0565e660ecfc0fda18d48f887cd99e3e2a57d
     }
 }

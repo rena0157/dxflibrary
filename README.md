@@ -1,5 +1,25 @@
-## Dxflibrary
+# Dxflibrary
 
-A library for reading Dxf files with an emphasis on geometric properties of the entities within the files.
+## Introduction
 
-This is a work in progess.
+### Library Purpose
+
+A library for reading Dxf files with an emphasis on geometric properties of entities.
+
+## Status/Roadmap
+
+- Basic Entity Parsing Framework (Complete)
+- Entity Specification Framework (Complete)
+- Entities (In order of importance)
+  - LINE (Complete)
+  - LWPOLYLINE (Complete)
+  - HATCH
+  - ARC
+  - TEXT
+  - MTEXT
+  - CIRCLE
+- General File Properties
+  - Layers (Started)
+  - Tables
+  - Blocks
+- Header Options (Specification started)

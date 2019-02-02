@@ -91,7 +91,8 @@ namespace DxfLibrary.Geometry
         /// <summary>
         /// Area of the Segment. The Area of the segment
         /// Is the area of a trapizoid that is bounded by the two points of the
-        /// line.
+        /// line. Note that if the segment is an arc then the area is the area
+        /// bounded by that arc.
         /// </summary>
         public double Area => CalcArea();
 

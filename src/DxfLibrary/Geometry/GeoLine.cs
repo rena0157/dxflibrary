@@ -123,7 +123,7 @@ namespace DxfLibrary.Geometry
         /// <summary>
         /// Override of the ToString Method
         /// </summary>
-        /// <returns></returns>
+        /// <returns>Returns: The Lines points and coordinates</returns>
         public override string ToString()
         {
             return $"P0({Point0.X}, {Point0.Y}, {Point0.Z}), P1({Point1.X}, {Point1.Y}, {Point1.Z})";

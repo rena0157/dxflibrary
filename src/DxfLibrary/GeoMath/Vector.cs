@@ -30,6 +30,16 @@ namespace DxfLibrary.GeoMath
             Destination = destination;
         }
 
+        /// <summary>
+        /// Constructor that creates a vector with its tail at the origin
+        /// and the destination given by a <see cref="GeoPoint">.
+        /// </summary>
+        /// <param name="destination">The GeoPoint for the destination</param>
+        public Vector(GeoPoint destination) : this(new GeoPoint(0,0), destination)
+        {
+
+        }
+
         #endregion
 
         #region Public Properties
@@ -92,6 +102,72 @@ namespace DxfLibrary.GeoMath
         {
             return new Vector(origin,
              new GeoPoint(origin.X + X, origin.Y + Y, origin.Z + Z));
+        }
+
+        /// <summary>
+        /// Dot product of the vector and another vector
+        /// </summary>
+        /// <param name="other">The other vector to dot with</param>
+        /// <returns>Returns: The result of the dot product</returns>
+        public double Dot(Vector other) => X * other.X + Y * other.Y + Z * other.Z;
+
+        /// <summary>
+        /// The Cross Product of this vector and another vector.
+        /// Note that this returns a new vector where this origin is the same
+        /// as this vector.
+        /// </summary>
+        /// <param name="v2">The other vector that is being crossed</param>
+        /// <returns>Returns: A new vector</returns>
+        public Vector Cross(Vector v2) => new Vector(Origin, 
+            new GeoPoint(Origin.X + Y*v2.Z - v2.Y*Z,
+            Origin.Y + v2.X*Z - X*v2.Z,
+            Origin.Z + (X*v2.Y - v2.X*Y)));
+
+        #endregion
+
+        #region Overrides
+
+        /// <summary>
+        /// Overloaded operator + for the vector type
+        /// </summary>
+        /// <param name="a">The first vector</param>
+        /// <param name="b">The second vector</param>
+        /// <returns>Returns a new vector which is the addition of the two vectors</returns>
+        public static Vector operator +(Vector a, Vector b)
+        {
+            return new Vector(new GeoPoint(a.Origin.X + b.Origin.X, a.Origin.Y + b.Origin.Y, a.Origin.Z + b.Origin.Z),
+                new GeoPoint(a.Destination.X + b.Destination.X,
+                a.Destination.Y + b.Destination.Y, a.Destination.Z + b.Destination.Z));
+        }
+
+        /// <summary>
+        /// Equals override for the vector type
+        /// </summary>
+        /// <param name="obj">The object that you are comparing</param>
+        /// <returns>Returns true if the vector is equal to another vector</returns>
+        public override bool Equals(object obj)
+        {
+            var vector = obj as Vector;
+
+            if (vector == null)
+                return false;
+
+            return Origin.Equals(vector.Origin) && 
+                Destination.Equals(vector.Destination);
+        }
+
+        /// <summary>
+        /// Override for the GetHashCode Type
+        /// </summary>
+        /// <returns>Returns: an int which is the hash code for the vector</returns>
+        public override int GetHashCode()
+        {
+            int hash = 983251653;
+
+            hash = (hash * 817504243) + Origin.GetHashCode();
+            hash = (hash * 817504243) + Destination.GetHashCode();
+
+            return hash;
         }
 
         #endregion

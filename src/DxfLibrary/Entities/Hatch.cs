@@ -33,6 +33,7 @@ namespace DxfLibrary.Entities
             ElevationPoint = new GeoPoint(structure.ElevationX, structure.ElevationY, structure.ElevationZ);
             PatternName = structure.PatternName;
             HasSolidFill = structure.SolidFillFlag;
+            IsAssociative = structure.AssociativityFlag;
         }
 
         #endregion
@@ -52,7 +53,13 @@ namespace DxfLibrary.Entities
         /// <summary>
         /// Returns true if the hatch has solid fill
         /// </summary>
-        public bool HasSolidFill {get; set;}
+        public bool HasSolidFill {get;}
+
+        /// <summary>
+        /// Returns true if the Hatch is associated with
+        /// another object that defines it's geometry
+        /// </summary>
+        public bool IsAssociative {get;}
 
         /// <summary>
         /// Area of the Hatch
@@ -96,6 +103,11 @@ namespace DxfLibrary.Entities
         public bool SolidFillFlag {get; set;}
 
         /// <summary>
+        /// The Flag for associativity
+        /// </summary>
+        public bool AssociativityFlag {get; set;}
+
+        /// <summary>
         /// Override for the set property function. This is used
         /// for non-trival cases for this entity
         /// </summary>
@@ -110,6 +122,11 @@ namespace DxfLibrary.Entities
                 // no implicit way to convert an int to a bool
                 case nameof(SolidFillFlag):
                     SolidFillFlag = (int)Convert.ChangeType(value, typeof(int)) != 0;
+                break;
+
+                // no implicity way to convert an int to a bool
+                case nameof(AssociativityFlag):
+                    AssociativityFlag = (int)Convert.ChangeType(value, typeof(int)) != 0;
                 break;
 
                 // Default is to use the base set property function

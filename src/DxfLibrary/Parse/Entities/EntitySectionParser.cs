@@ -35,7 +35,7 @@ namespace DxfLibrary.Parse.Entities
             var lineString = entitySpec.Get("Entity.LineString") as string;
             var startCode = commonSpec.Get("Sections.StartCode") as string;
             var lwPolylineString = entitySpec.Get("Entity.LwPolylineString") as string;
-            var hatchString = entitySpec.Get("Entity.LwPolylineString") as string;
+            var hatchString = entitySpec.Get("Entity.HatchString") as string;
 
             // Main read loop
             while(!reader.EndOfStream)

@@ -82,6 +82,13 @@ namespace DxfLibrary.Tests.Entities
         public void HasSolidFillTest(string testString, bool expectedValue) 
             => Assert.Equal(expectedValue, GetFirstEntity<Hatch>(testString).HasSolidFill);
 
+        [Theory]
+        [InlineData(PatternHatch, true)]
+        [InlineData(SolidFillHatch, true)]
+        [InlineData(NonAssociativeHatch, false)]
+        public void IsAssociativeTest(string testString, bool expectedValue) 
+            => Assert.Equal(expectedValue, GetFirstEntity<Hatch>(testString).IsAssociative);
+
         #endregion
 
         #region Regular Pattern Hatch
@@ -390,6 +397,159 @@ SOLID
         1
 330
 323
+ 75
+     1
+ 76
+     1
+ 98
+        1
+ 10
+0.0
+ 20
+0.0
+450
+        0
+451
+        0
+460
+0.0
+461
+0.0
+452
+        0
+462
+0.0
+453
+        2
+463
+0.0
+ 63
+     5
+421
+      255
+463
+1.0
+ 63
+     2
+421
+ 16776960
+470
+LINEAR
+1001
+GradientColor1ACI
+1070
+     5
+1001
+GradientColor2ACI
+1070
+     2
+1001
+ACAD
+1010
+0.0
+1020
+0.0
+1030
+0.0
+  0
+ENDSEC
+  0";
+
+        #endregion
+    
+        #region Non-Associative Hatch
+
+        const string NonAssociativeHatch = 
+@"  0
+SECTION
+  2
+ENTITIES
+  0
+HATCH
+  5
+836
+330
+1F
+100
+AcDbEntity
+  8
+BasicPolyline
+100
+AcDbHatch
+ 10
+0.0
+ 20
+0.0
+ 30
+0.0
+210
+0.0
+220
+0.0
+230
+1.0
+  2
+SOLID
+ 70
+     1
+ 71
+     0
+ 91
+        1
+ 92
+        1
+ 93
+        4
+ 72
+     2
+ 10
+-5.083333333333335
+ 20
+18.08333333333333
+ 40
+18.23496336406764
+ 50
+294.573975236911
+ 51
+320.563208820744
+ 73
+     1
+ 72
+     2
+ 10
+11.25
+ 20
+1.6875
+ 40
+5.3125
+ 50
+244.942384581697
+ 51
+295.0576154183031
+ 73
+     0
+ 72
+     1
+ 10
+13.5
+ 20
+6.5
+ 11
+17.0
+ 21
+2.5
+ 72
+     1
+ 10
+17.0
+ 20
+2.5
+ 11
+2.5
+ 21
+1.5
+ 97
+        0
  75
      1
  76

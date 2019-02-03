@@ -95,6 +95,12 @@ namespace DxfLibrary.Entities
         /// </summary>
         public bool SolidFillFlag {get; set;}
 
+        /// <summary>
+        /// Override for the set property function. This is used
+        /// for non-trival cases for this entity
+        /// </summary>
+        /// <param name="name">The name of the property</param>
+        /// <param name="value">The value of the property</param>
         public override void SetProperty(string name, object value)
         {
             // Switch for non-trivial properties that
@@ -106,6 +112,7 @@ namespace DxfLibrary.Entities
                     SolidFillFlag = (int)Convert.ChangeType(value, typeof(int)) != 0;
                 break;
 
+                // Default is to use the base set property function
                 default:
                     base.SetProperty(name, value);
                 return;

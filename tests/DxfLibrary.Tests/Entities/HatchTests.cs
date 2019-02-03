@@ -53,7 +53,7 @@ namespace DxfLibrary.Tests.Entities
             {
                 yield return new object[]
                 {
-                    RegularHatch,
+                    PatternHatch,
                     new GeoPoint(0,0)
                 };
             }
@@ -76,12 +76,32 @@ namespace DxfLibrary.Tests.Entities
             => Assert.Equal(expectedValue, GetFirstHatch(testString).ElevationPoint);
 
 
+        /// <summary>
+        /// Testing the <see cref="Hatch.PatternName"> Property Extraction
+        /// </summary>
+        /// <param name="testString">The Dxf String to test</param>
+        /// <param name="expectedValue">The expected value of the pattern name</param>
+        [Theory]
+        [InlineData(PatternHatch, "ANSI31")]
+        public void PatternNameTest(string testString, string expectedValue) 
+            => Assert.Equal(expectedValue, GetFirstHatch(testString).PatternName);
+
+        /// <summary>
+        /// Testing the <see cref="Hatch.HasSolidFill"> Property Extraction
+        /// </summary>
+        /// <param name="testString">The Dxf String to test</param>
+        /// <param name="expectedValue">The expected value of the property</param>
+        [Theory]
+        [InlineData(PatternHatch, false)]
+        [InlineData(SolidFillHatch, true)]
+        public void HasSolidFillTest(string testString, bool expectedValue) 
+            => Assert.Equal(expectedValue, GetFirstHatch(testString).HasSolidFill);
+
         #endregion
 
+        #region Regular Pattern Hatch
 
-        #region Regular Hatch
-
-        const string RegularHatch = 
+        const string PatternHatch = 
 @"  0
 SECTION
   2
@@ -107,7 +127,7 @@ AcDbPolyline
  90
         4
  70
-     1
+     0
  43
 0.0
  10
@@ -258,5 +278,191 @@ ENDSEC
 
         #endregion
 
+        #region Solid Fill Hatch
+
+        const string SolidFillHatch = 
+@"  0
+SECTION
+  2
+ENTITIES
+  0
+LWPOLYLINE
+  5
+323
+102
+{ACAD_REACTORS
+330
+331
+102
+}
+330
+1F
+100
+AcDbEntity
+  8
+TestLayer
+100
+AcDbPolyline
+ 90
+        4
+ 70
+     1
+ 43
+0.0
+ 10
+0.0
+ 20
+0.0
+ 10
+10.0
+ 20
+0.0
+ 10
+10.0
+ 20
+10.0
+ 10
+0.0
+ 20
+10.0
+  0
+HATCH
+  5
+331
+330
+1F
+100
+AcDbEntity
+  8
+TestLayer
+100
+AcDbHatch
+ 10
+0.0
+ 20
+0.0
+ 30
+0.0
+210
+0.0
+220
+0.0
+230
+1.0
+  2
+SOLID
+ 70
+     1
+ 71
+     1
+ 91
+        1
+ 92
+        1
+ 93
+        4
+ 72
+     1
+ 10
+0.0
+ 20
+0.0
+ 11
+10.0
+ 21
+0.0
+ 72
+     1
+ 10
+10.0
+ 20
+0.0
+ 11
+10.0
+ 21
+10.0
+ 72
+     1
+ 10
+10.0
+ 20
+10.0
+ 11
+0.0
+ 21
+10.0
+ 72
+     1
+ 10
+0.0
+ 20
+10.0
+ 11
+0.0
+ 21
+0.0
+ 97
+        1
+330
+323
+ 75
+     1
+ 76
+     1
+ 98
+        1
+ 10
+0.0
+ 20
+0.0
+450
+        0
+451
+        0
+460
+0.0
+461
+0.0
+452
+        0
+462
+0.0
+453
+        2
+463
+0.0
+ 63
+     5
+421
+      255
+463
+1.0
+ 63
+     2
+421
+ 16776960
+470
+LINEAR
+1001
+GradientColor1ACI
+1070
+     5
+1001
+GradientColor2ACI
+1070
+     2
+1001
+ACAD
+1010
+0.0
+1020
+0.0
+1030
+0.0
+  0
+ENDSEC
+  0";
+
+        #endregion
     }
 }

@@ -50,6 +50,22 @@ namespace DxfLibrary.Geometry
             Point1 = p1;
         }
 
+        /// <summary>
+        /// Constructor from a center point, starting angle,
+        /// ending angle, and radius. Note that all angles are in radians.
+        /// </summary>
+        /// <param name="geoCenter">The Center point</param>
+        /// <param name="startAngle">The Starting Angle (Radians)</param>
+        /// <param name="endAngle">The Ending Angle (Radians)</param>
+        /// <param name="radius">The Radius of the segment</param>
+        public GeoLine(GeoPoint geoCenter, double startAngle, double endAngle, double radius) :
+            this(new GeoPoint(geoCenter.X + radius * Math.Cos(startAngle), geoCenter.Y + radius * Math.Sin(startAngle), geoCenter.Z),
+                 new GeoPoint(geoCenter.X + radius * Math.Cos(endAngle), geoCenter.Y + radius * Math.Sin(endAngle), geoCenter.Z),
+                 Geometry.Bulge.FromAngle(endAngle - startAngle))
+        {
+            
+        }
+
         #endregion
 
         #region Public Properties

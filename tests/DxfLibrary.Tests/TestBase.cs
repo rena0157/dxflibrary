@@ -24,6 +24,8 @@ namespace DxfLibrary.Tests
         /// </summary>
         protected ITestOutputHelper _logger;
 
+        protected int _doubleTolerance;
+
         #endregion
 
         #region Constructors

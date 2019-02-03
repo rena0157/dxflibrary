@@ -26,21 +26,6 @@ namespace DxfLibrary.Tests.Entities
         {
         }
 
-        /// <summary>
-        /// Helper Function that writes the test string the memory,
-        /// reads the file and gets the first hatch from the list.
-        /// </summary>
-        /// <param name="testString">The string that is written to memory</param>
-        /// <returns>Returns: The first hatch that was read from the file</returns>
-        private Hatch GetFirstHatch(string testString)
-        {
-            WriteMemory(testString);
-            var dxfFile = new DxfFile(_memoryStream);
-            var hatch = dxfFile.GetEntities<Hatch>().FirstOrDefault();
-            Assert.NotNull(hatch);
-            return hatch;
-        }
-
         #region TestData
 
         /// <summary>
@@ -73,7 +58,7 @@ namespace DxfLibrary.Tests.Entities
         [Theory]
         [ClassData(typeof(ElevationPointTestData))]
         public void ElevationPointTest(string testString, GeoPoint expectedValue) 
-            => Assert.Equal(expectedValue, GetFirstHatch(testString).ElevationPoint);
+            => Assert.Equal(expectedValue, GetFirstEntity<Hatch>(testString).ElevationPoint);
 
 
         /// <summary>
@@ -84,7 +69,7 @@ namespace DxfLibrary.Tests.Entities
         [Theory]
         [InlineData(PatternHatch, "ANSI31")]
         public void PatternNameTest(string testString, string expectedValue) 
-            => Assert.Equal(expectedValue, GetFirstHatch(testString).PatternName);
+            => Assert.Equal(expectedValue, GetFirstEntity<Hatch>(testString).PatternName);
 
         /// <summary>
         /// Testing the <see cref="Hatch.HasSolidFill"> Property Extraction
@@ -95,7 +80,7 @@ namespace DxfLibrary.Tests.Entities
         [InlineData(PatternHatch, false)]
         [InlineData(SolidFillHatch, true)]
         public void HasSolidFillTest(string testString, bool expectedValue) 
-            => Assert.Equal(expectedValue, GetFirstHatch(testString).HasSolidFill);
+            => Assert.Equal(expectedValue, GetFirstEntity<Hatch>(testString).HasSolidFill);
 
         #endregion
 

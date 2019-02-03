@@ -35,6 +35,7 @@ namespace DxfLibrary.Parse.Entities
             var lineString = entitySpec.Get("Entity.LineString") as string;
             var startCode = commonSpec.Get("Sections.StartCode") as string;
             var lwPolylineString = entitySpec.Get("Entity.LwPolylineString") as string;
+            var hatchString = entitySpec.Get("Entity.LwPolylineString") as string;
 
             // Main read loop
             while(!reader.EndOfStream)
@@ -64,6 +65,15 @@ namespace DxfLibrary.Parse.Entities
                     // Make the LwPolyline
                     var lwPolyline = new LwPolyline(parser.ParseEntity(new LwPolylineStructure(), reader, specification));
                     entitySection.Entities.Add(lwPolyline);
+                }
+                else if (firstPair.GroupCode == startCode && firstPair.Value as string == hatchString)
+                {
+                    var parser = new EntityParser<HatchStructure>();
+                    var specification = SpecService.GetSpec<object>(SpecService.HatchSpec);
+
+                    // Make the hatch
+                    var hatch = new Hatch(parser.ParseEntity(new HatchStructure(), reader, specification));
+                    entitySection.Entities.Add(hatch);
                 }
             }
 

@@ -1,6 +1,7 @@
 # dotnet build Dirs
 bin/
 obj/
+artifacts/
 
 # AutoCAD Files
 *.dwl

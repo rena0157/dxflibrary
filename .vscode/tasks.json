@@ -3,11 +3,10 @@
     "tasks": [
         {
             "label": "build",
-            "command": "dotnet",
+            "command": "powershell",
             "type": "process",
             "args": [
-                "build",
-                "${workspaceFolder}/tests/DxfLibrary.Tests/DxfLibrary.Tests.csproj"
+                "${workspaceFolder}/build.ps1"
             ],
             "problemMatcher": "$msCompile"
         }

@@ -22,14 +22,5 @@ namespace DxfLibrary.Tests
         public DxfFileTests(ITestOutputHelper logger) : base(logger)
         {
         }
-
-        [Fact]
-        public void ReadFile()
-        {
-            using (FileStream fileStream = new FileStream(@"C:\Dev\drawing1.dxf", FileMode.Open))
-            {
-                DxfFile dxfFile = new DxfFile(fileStream);
-            }
-        }
     }
 }

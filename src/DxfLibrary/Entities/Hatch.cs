@@ -9,4 +9,9 @@ namespace DxfLibrary.Entities
 
         public GeoPoint ElevationPoint {get;}
     }
+
+    internal class HatchStructure : Entity
+    {
+        
+    }
 }

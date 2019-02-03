@@ -11,6 +11,10 @@
             "Code" : "LWPOLYLINE"
         },
         {
+            "Name" : "Entity.HatchString",
+            "Code" : "HATCH"
+        },
+        {
             "Name" : "Handle",
             "Code" : "  5"
         },

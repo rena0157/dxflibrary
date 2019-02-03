@@ -103,11 +103,7 @@ namespace DxfLibrary.Tests.Geometry
         /// <param name="expectedLength">The expected length for that line</param>
         [Theory]
         [ClassData(typeof(LengthTestData))]
-        public void LengthTests(GeoLine testLine, double expectedLength)
-        {
-            var actualLength = testLine.Length;
-            Assert.Equal(expectedLength, actualLength, 4);
-        }
+        public void LengthTests(GeoLine testLine, double expectedLength) => Assert.Equal(expectedLength, testLine.Length, _doubleTolerance);
 
         [Theory]
         [ClassData(typeof(ArcedConstructorData))]

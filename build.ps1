@@ -9,4 +9,4 @@ $SolutionDir = "C:\Dev\dxflibrary"
 $ArtifactsDir = Join-Path -Path $SolutionDir -ChildPath "artifacts"
 
 # Build the projects and place into artifacts
-(Get-ChildItem -Path $SolutionDir -Recurse -Filter "*.csproj").FullName | dotnet build -o $ArtifactsDir
+(Get-ChildItem -Path $SolutionDir -Recurse -Filter "*.csproj").FullName | dotnet build -o $ArtifactsDir | dotnet clean

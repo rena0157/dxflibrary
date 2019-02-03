@@ -35,7 +35,6 @@ namespace DxfLibrary.Tests.Geometry
         /// <summary>
         /// Class for holding data that is used in the length tests
         /// </summary>
-        /// <typeparam name="object[]">The array of objects that are passed to the tests</typeparam>
         public class LengthTestData : IEnumerable<object[]>
         {
             /// <summary>
@@ -62,6 +61,37 @@ namespace DxfLibrary.Tests.Geometry
             IEnumerator IEnumerable.GetEnumerator() => GetEnumerator();
         }
 
+        /// <summary>
+        /// Test Data for the Arced Constructor for the GeoLine Type
+        /// </summary>
+        public class ArcedConstructorData : IEnumerable<object[]>
+        {
+            public IEnumerator<object[]> GetEnumerator()
+            {
+                // Testing a simple arc that has the following properties
+                // Point0: (x:2, y:1)
+                // Point1: (x:1, y:2)
+                // Total Angle: 180 degrees (PI/2)
+                yield return new object[] 
+                {
+                    new GeoLine(new GeoPoint(1,1), 0, Math.PI/2, 1),
+                    new GeoLine(new GeoPoint(2,1), new GeoPoint(1,2), Bulge.FromAngle(Math.PI/2 - 0))
+                };
+
+                // Exact same arc as before but with a reversed 
+                // ordering for the start and end angles
+                // This should swap the start and end points and should 
+                // also have a negative bulge value since it goes clockwise
+                yield return new object[] 
+                {
+                    new GeoLine(new GeoPoint(1,1), Math.PI/2, 0, 1),
+                    new GeoLine(new GeoPoint(1,2), new GeoPoint(2,1), Bulge.FromAngle(0 - Math.PI/2))
+                };
+            }
+
+            IEnumerator IEnumerable.GetEnumerator() => GetEnumerator();
+        }
+
         #endregion
 
         #region Tests
@@ -78,6 +108,10 @@ namespace DxfLibrary.Tests.Geometry
             var actualLength = testLine.Length;
             Assert.Equal(expectedLength, actualLength, 4);
         }
+
+        [Theory]
+        [ClassData(typeof(ArcedConstructorData))]
+        public void ArcTests(GeoLine actualLine, GeoLine expectedLine) => Assert.Equal(expectedLine, actualLine);
 
         #endregion
 

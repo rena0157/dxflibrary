@@ -1,4 +1,8 @@
+// Hatch.cs
+// By: Adam Renaud
+// Created on: 2019-02-03
 
+using System;
 using DxfLibrary.Geometry;
 
 namespace DxfLibrary.Entities
@@ -27,6 +31,8 @@ namespace DxfLibrary.Entities
         internal Hatch(HatchStructure structure) : base(structure)
         {
             ElevationPoint = new GeoPoint(structure.ElevationX, structure.ElevationY, structure.ElevationZ);
+            PatternName = structure.PatternName;
+            HasSolidFill = structure.SolidFillFlag;
         }
 
         #endregion
@@ -37,6 +43,16 @@ namespace DxfLibrary.Entities
         /// The Elevation Point for the hatch
         /// </summary>
         public GeoPoint ElevationPoint {get;}
+
+        /// <summary>
+        /// The Pattern Name of the Hatch
+        /// </summary>
+        public string PatternName {get;}
+
+        /// <summary>
+        /// Returns true if the hatch has solid fill
+        /// </summary>
+        public bool HasSolidFill {get; set;}
 
         /// <summary>
         /// Area of the Hatch
@@ -68,6 +84,33 @@ namespace DxfLibrary.Entities
         /// Z Coordinate of the Elevation Point
         /// </summary>
         public double ElevationZ {get;set;}
+
+        /// <summary>
+        /// The Pattern Name of the Hatch
+        /// </summary>
+        public string PatternName {get; set;}
+
+        /// <summary>
+        /// Flag for solid Fill
+        /// </summary>
+        public bool SolidFillFlag {get; set;}
+
+        public override void SetProperty(string name, object value)
+        {
+            // Switch for non-trivial properties that
+            // require more than just a simple conversion
+            switch(name)
+            {
+                // no implicit way to convert an int to a bool
+                case nameof(SolidFillFlag):
+                    SolidFillFlag = (int)Convert.ChangeType(value, typeof(int)) != 0;
+                break;
+
+                default:
+                    base.SetProperty(name, value);
+                return;
+            }
+        }
 
         #endregion
         

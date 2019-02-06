@@ -16,6 +16,9 @@ using System.Collections;
 
 namespace DxfLibrary.Tests.Entities
 {
+    /// <summary>
+    /// Class for testing the extraction and creation of hatches
+    /// </summary>
     public class HatchTests : EntityTestBase
     {
         /// <summary>

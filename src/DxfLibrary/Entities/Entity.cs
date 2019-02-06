@@ -3,10 +3,12 @@
 // Created on: 2019-01-06
 
 using System;
+using System.Collections.Generic;
 
 using DxfLibrary.Parse;
 using DxfLibrary.Parse.Sections;
 using DxfLibrary.Geometry;
+using DxfLibrary.Utilities;
 
 namespace DxfLibrary.Entities
 {
@@ -38,9 +40,9 @@ namespace DxfLibrary.Entities
         public string Handle {get; set;}
 
         /// <summary>
-        /// Soft Pointer to another entity
+        /// Objects that this entity references
         /// </summary>
-        public string SoftPointer {get; set;}
+        public List<IEntityReference> References {get;}
 
         /// <summary>
         /// The Entity Layer name
@@ -65,9 +67,9 @@ namespace DxfLibrary.Entities
         /// <param name="struc"></param>
         internal Entity(IEntity struc)
         {
+            References = struc.References;
             EntityType = struc.EntityType;
             Handle = struc.Handle;
-            SoftPointer = struc.SoftPointer;
             LayerName = struc.LayerName;
         }
 

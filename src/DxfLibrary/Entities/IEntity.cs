@@ -3,11 +3,13 @@
 // Created on: 2019-01-06
 
 using System;
+using System.Collections.Generic;
 
 using DxfLibrary.Parse;
 using DxfLibrary.Parse.Entities;
 using DxfLibrary.Parse.Sections;
 using DxfLibrary.Geometry;
+using DxfLibrary.Utilities;
 
 namespace DxfLibrary.Entities
 {
@@ -27,9 +29,9 @@ namespace DxfLibrary.Entities
         string Handle {get;}
 
         /// <summary>
-        /// The soft pointer of the entity
+        /// Objects that this entity references
         /// </summary>
-        string SoftPointer {get;}
+        List<IEntityReference> References {get;}
 
         /// <summary>
         /// The entity Layer name

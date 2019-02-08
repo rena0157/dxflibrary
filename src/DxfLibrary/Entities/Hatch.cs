@@ -15,11 +15,6 @@ namespace DxfLibrary.Entities
     {
         #region Private Properties
 
-        /// <summary>
-        /// Backing field for the geopolyline in this hatch
-        /// </summary>
-        private GeoPolyline _geopolyline;
-
         #endregion
 
         #region Constructors
@@ -65,7 +60,7 @@ namespace DxfLibrary.Entities
         /// Area of the Hatch
         /// </summary>
         /// <returns>Returns: The total area of the hatch</returns>
-        public double Area => _geopolyline.Area;
+        public double Area => ((IGeoArea)_geometricBase).Area;
 
         #endregion
     }

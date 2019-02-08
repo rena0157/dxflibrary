@@ -105,7 +105,7 @@ namespace DxfLibrary.Entities
         /// <summary>
         ///  The SoftPointers for this struct
         /// </summary>
-        public List<string> SoftPointers {get; set;}
+        public List<string> SoftPointers {get; set;} = new List<string>();
 
         /// <summary>
         /// Set a property in the entity
@@ -114,7 +114,25 @@ namespace DxfLibrary.Entities
         /// <param name="value">The value of the property</param>
         public virtual void SetProperty(string name, object value)
         {
-            // Get the property
+            switch(name)
+            {
+                case "SoftPointer":
+                    SoftPointers.Add(value as string);
+                break;
+
+                default:
+                    SetPropertyDefault(name, value);
+                break;
+            }
+        }
+
+        /// <summary>
+        /// Default Function for setting properties
+        /// </summary>
+        /// <param name="name">The name of the property</param>
+        /// <param name="value">The value to set for the property</param>
+        private void SetPropertyDefault(string name, object value)
+        {
             var property = this.GetType().GetProperty(name);
 
             // Get the type of the property

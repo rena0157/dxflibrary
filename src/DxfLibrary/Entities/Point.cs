@@ -11,7 +11,7 @@ namespace DxfLibrary.Entities
     /// <summary>
     /// The Point Entity.
     /// </summary>
-    public class Point : Entity, IDxfParsable
+    public class Point : Entity
     {
         /// <summary>
         /// Default Constructor for the point entity. The Default for
@@ -42,15 +42,5 @@ namespace DxfLibrary.Entities
         /// </summary>
         /// <value></value>
         public double Z {get; private set;}
-
-        /// <summary>
-        /// Set property function
-        /// </summary>
-        /// <param name="name">The name of the property</param>
-        /// <param name="value">The value of the property</param>
-        public override void SetProperty(string name, object value)
-        {
-
-        }
     }
 }

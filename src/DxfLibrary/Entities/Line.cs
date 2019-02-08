@@ -62,7 +62,7 @@ namespace DxfLibrary.Entities
     /// <summary>
     /// Internal Class used to construct the Line Entity
     /// </summary>
-    internal class LineStructure : Entity
+    internal class LineStructure : EntityStruct
     {
         /// <summary>
         /// First X Coordinate

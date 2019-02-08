@@ -27,7 +27,7 @@ namespace DxfLibrary.Parse.Entities
         /// <param name="reader">The reader for the data in the file</param>
         /// <param name="entitySpec">The specificaiton that the parser will need</param>
         /// <returns>A new Entity</returns>
-        T ParseEntity(IEntity entity, IDxfReader<G, V> reader, IDxfSpec<S> entitySpec);
+        T ParseEntity(EntityStruct entity, IDxfReader<G, V> reader, IDxfSpec<S> entitySpec);
     }
 
 

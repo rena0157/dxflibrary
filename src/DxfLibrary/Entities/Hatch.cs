@@ -73,7 +73,7 @@ namespace DxfLibrary.Entities
     /// <summary>
     /// Internal Entity Structure for Hatches
     /// </summary>
-    internal class HatchStructure : Entity
+    internal class HatchStructure : EntityStruct
     {
         #region Basic Properties
 

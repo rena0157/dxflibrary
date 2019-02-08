@@ -102,7 +102,7 @@ namespace DxfLibrary.Entities
     /// <summary>
     /// Internal Structure for the LwPolyline
     /// </summary>
-    internal class LwPolylineStructure : Entity
+    internal class LwPolylineStructure : EntityStruct
     {
         #region Trivial Properties
         /// <summary>

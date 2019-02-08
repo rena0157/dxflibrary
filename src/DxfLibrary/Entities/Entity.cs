@@ -65,7 +65,7 @@ namespace DxfLibrary.Entities
         /// Internal Constructor from a struct
         /// </summary>
         /// <param name="struc"></param>
-        internal Entity(IEntity struc)
+        internal Entity(IEntityStruct struc)
         {
             References = struc.References;
             EntityType = struc.EntityType;
@@ -75,7 +75,37 @@ namespace DxfLibrary.Entities
 
         #endregion
 
-        #region Public Methods
+    }
+
+    /// <summary>
+    /// Internal Structure for entity creation
+    /// </summary>
+    public class EntityStruct : IEntityStruct
+    {
+        /// <summary>
+        /// The Entity Type
+        /// </summary>
+        public Type EntityType {get; set;}
+
+        /// <summary>
+        /// The Handle of the Entity
+        /// </summary>
+        public string Handle {get; set;}
+
+        /// <summary>
+        /// A List of Entities
+        /// </summary>
+        public List<IEntityReference> References {get; set;}
+
+        /// <summary>
+        /// The Name of the Layer that the Entity is on
+        /// </summary>
+        public string LayerName {get; set;}
+
+        /// <summary>
+        ///  The SoftPointers for this struct
+        /// </summary>
+        public List<string> SoftPointers {get; set;}
 
         /// <summary>
         /// Set a property in the entity
@@ -96,7 +126,5 @@ namespace DxfLibrary.Entities
             // Set the property
             this.GetType().GetProperty(name).SetValue(this, settingValue);
         }
-
-        #endregion
     }
 }

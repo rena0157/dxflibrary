@@ -26,7 +26,7 @@ namespace DxfLibrary.Parse.Entities
         /// <param name="reader">The reader that data will be read from</param>
         /// <param name="entitySpec">The entity specification</param>
         /// <returns></returns>
-        public T ParseEntity(IEntity entity, IDxfReader<string, object> reader, IDxfSpec<object> entitySpec)
+        public T ParseEntity(EntityStruct entity, IDxfReader<string, object> reader, IDxfSpec<object> entitySpec)
         {
             // Get the type of the struct
             var structType = typeof(T);
@@ -74,7 +74,7 @@ namespace DxfLibrary.Parse.Entities
                     entity.SetProperty(query.Name, data.Value);
             }
 
-            return (T)entity;
+            return (T)Convert.ChangeType(entity, typeof(T));
         }
     }
 }

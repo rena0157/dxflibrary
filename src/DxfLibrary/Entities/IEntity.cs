@@ -16,12 +16,12 @@ namespace DxfLibrary.Entities
     /// <summary>
     /// The Entity Interface
     /// </summary>
-    public interface IEntity : IDxfParsable
+    public interface IEntity
     {
         /// <summary>
         /// The type of the entity
         /// </summary>
-        Type EntityType {get; set;}
+        Type EntityType {get;}
 
         /// <summary>
         /// The Entity's handle or ID

@@ -16,10 +16,6 @@ namespace DxfLibrary.Entities
     /// </summary>
     public interface IEntityStruct : IDxfParsable, IEntity
     {
-        /// <summary>
-        /// All of the SoftPointers in the Struct
-        /// </summary>
-        /// <value></value>
-        List<string> SoftPointers {get;set;}
+        
     }
 }

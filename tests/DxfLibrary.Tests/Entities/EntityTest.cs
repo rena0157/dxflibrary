@@ -39,18 +39,8 @@ namespace DxfLibrary.Tests.Entities
         /// </summary>
         [Theory]
         [InlineData(_LayerNameTest, "TestLayer")]
-        public void LayerNameTest(string testString, string expected)
-        {
-            // Arrange
-            WriteMemory(testString);
-
-            // Act
-            DxfFile dxfFile = new DxfFile(_memoryStream);
-            var entity = dxfFile.Entities.First();
-
-            // Assert
-            Assert.Equal(expected, entity.LayerName);
-        }
+        public void LayerNameTest(string testString, string expected) 
+          => Assert.Equal(expected, GetFirstEntity<Line>(testString).LayerName);
 
         #endregion
 

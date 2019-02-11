@@ -38,15 +38,24 @@ namespace DxfLibrary.Tests.Entities
         /// Test that the layer name is being matched correctly
         /// </summary>
         [Theory]
-        [InlineData(_LayerNameTest, "TestLayer")]
+        [InlineData(GenericEntity, "TestLayer")]
         public void LayerNameTest(string testString, string expected) 
-          => Assert.Equal(expected, GetFirstEntity<Line>(testString).LayerName);
+            => Assert.Equal(expected, GetFirstEntity<Line>(testString).LayerName);
+
+        [Theory]
+        [InlineData(GenericEntity, "1F")]
+        public void SoftPointerTest(string testString, string expected)
+            => Assert.Equal(expected, 
+                GetFirstEntity<Line>(testString)
+                .References
+                .FirstOrDefault()
+                .SoftPointer);
 
         #endregion
 
         #region TestString
 
-        private const string _LayerNameTest = 
+        private const string GenericEntity = 
 @"  0
 SECTION
   2

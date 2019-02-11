@@ -95,17 +95,13 @@ namespace DxfLibrary.Entities
         /// <summary>
         /// A List of Entities
         /// </summary>
-        public List<IEntityReference> References {get; set;}
+        public List<IEntityReference> References {get; set;} = new List<IEntityReference>();
 
         /// <summary>
         /// The Name of the Layer that the Entity is on
         /// </summary>
         public string LayerName {get; set;}
 
-        /// <summary>
-        ///  The SoftPointers for this struct
-        /// </summary>
-        public List<string> SoftPointers {get; set;} = new List<string>();
 
         /// <summary>
         /// Set a property in the entity
@@ -116,8 +112,8 @@ namespace DxfLibrary.Entities
         {
             switch(name)
             {
-                case "SoftPointer":
-                    SoftPointers.Add(value as string);
+                case nameof(References):
+                    References.Add(new EntityReference(value as string));
                 break;
 
                 default:

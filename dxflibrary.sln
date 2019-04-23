@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DxfLibrary.Tests", "tests\D
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DxfLibrary.SchemaGenerator", "src\DxfLibrary.SchemaGenerator\DxfLibrary.SchemaGenerator.csproj", "{B5A1B80D-121A-42CD-B781-AC27FEBC387A}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "_build", "build\_build.csproj", "{34DD5C29-5E70-4518-AA92-2FE0683C7CD7}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -26,6 +28,8 @@ Global
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{34DD5C29-5E70-4518-AA92-2FE0683C7CD7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{34DD5C29-5E70-4518-AA92-2FE0683C7CD7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BB731A85-2A2A-49DC-9712-E2C8DC3ECC6A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{BB731A85-2A2A-49DC-9712-E2C8DC3ECC6A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BB731A85-2A2A-49DC-9712-E2C8DC3ECC6A}.Debug|x64.ActiveCfg = Debug|Any CPU

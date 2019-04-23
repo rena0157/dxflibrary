@@ -65,4 +65,19 @@ class Build : NukeBuild
                 .EnableNoRestore());
         });
 
+
+    Target Test => _ => _
+        .DependsOn(Compile)
+        .Executes(() => 
+        {
+            Logger.Log(LogLevel.Normal, "Hello From Test");
+            var testProject = Solution.GetProject("DxfLibrary.Tests");
+            Logger.Log(LogLevel.Normal, testProject.Path);
+            
+            var settings = new DotNetRunSettings();
+
+            settings.SetProjectFile(testProject.Path);
+
+            DotNetRun(settings);
+        });
 }

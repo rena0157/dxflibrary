@@ -32,7 +32,7 @@ namespace DxfLibrary
         /// <summary>
         /// Default Constructor that assumes that the file is not binary
         /// </summary>
-        /// <param name="fileStream">The filestream that points to the file</param>
+        /// <param name="fileStream">The file-stream that points to the file</param>
         public DxfFile(Stream fileStream)
         {
             // Load the file

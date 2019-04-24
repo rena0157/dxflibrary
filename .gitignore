@@ -8,3 +8,5 @@ artifacts/
 *.dwl2
 *.bak
 *.log
+/.tmp
+/.vs/dxflibrary/v16

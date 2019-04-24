@@ -51,9 +51,8 @@ namespace DxfLibrary.Parse.Entities
 
                 // First check against the base class spec
                 var baseQuery = properties
-                    .Where(prop => baseEntitySpec.Properties
-                    .Any(spec => spec.Name == prop.Name && spec.Code as string == data.GroupCode))
-                    .FirstOrDefault();
+                    .FirstOrDefault(prop => baseEntitySpec.Properties
+                    .Any(spec => spec.Name == prop.Name && spec.Code as string == data.GroupCode));
 
                 // If base spec matches then set and return
                 if (baseQuery != null)
@@ -64,9 +63,8 @@ namespace DxfLibrary.Parse.Entities
 
                 // Query the specifications to see if the current data matches
                 var query = properties
-                    .Where(prop => entitySpec.Properties
-                    .Any(spec => spec.Name == prop.Name && spec.Code as string == data.GroupCode))
-                    .FirstOrDefault();
+                    .FirstOrDefault(prop => entitySpec.Properties
+                    .Any(spec => spec.Name == prop.Name && spec.Code as string == data.GroupCode));
 
                 // If the current data matches then set the property in the
                 // entity

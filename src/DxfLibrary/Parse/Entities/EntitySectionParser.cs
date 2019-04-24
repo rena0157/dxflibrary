@@ -10,6 +10,7 @@ using DxfLibrary.IO;
 using DxfLibrary.Parse.Sections;
 using DxfLibrary.DxfSpec;
 using DxfLibrary.Entities;
+using DxfLibrary.Utilities;
 
 namespace DxfLibrary.Parse.Entities
 {
@@ -45,6 +46,9 @@ namespace DxfLibrary.Parse.Entities
 
                 if (firstPair.Value as string == commonSpec.Get("Sections.EndString") as string)
                 {
+                    var entityLinker = new DxfEntityLinker();
+                    entityLinker.LinkEntities(entitySection.Entities);
+                    
                     return entitySection;
                 }
 

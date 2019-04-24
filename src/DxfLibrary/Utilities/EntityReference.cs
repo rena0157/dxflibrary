@@ -21,6 +21,16 @@ namespace DxfLibrary.Utilities
             SoftPointer = softPointer;
             Reference = null;
         }
+        
+        /// <summary>
+        /// Construction of the entity reference using an entity
+        /// </summary>
+        /// <param name="entity">The entity that will be referenced</param>
+        public EntityReference(IEntity entity)
+        {
+            SoftPointer = entity.Handle;
+            Reference = entity;
+        }
 
         /// <summary>
         /// The soft pointer to another entity

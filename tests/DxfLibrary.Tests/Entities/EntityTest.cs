@@ -42,15 +42,6 @@ namespace DxfLibrary.Tests.Entities
         public void LayerNameTest(string testString, string expected) 
             => Assert.Equal(expected, GetFirstEntity<Line>(testString).LayerName);
 
-        [Theory]
-        [InlineData(GenericEntity, "1F")]
-        public void SoftPointerTest(string testString, string expected)
-            => Assert.Equal(expected, 
-                GetFirstEntity<Line>(testString)
-                .References
-                .FirstOrDefault()
-                .SoftPointer);
-
         #endregion
 
         #region TestString

@@ -15,6 +15,12 @@ namespace DxfLibrary.Utilities
     /// </summary>
     public class DxfEntityLinker : IDxfLinker
     {
+        /// <summary>
+        /// Link Entities together using softpointer and
+        /// handles 
+        /// </summary>
+        /// <param name="entities">The list of entities that will be linked</param>
+        /// <returns>Returns true if successful</returns>
         public bool LinkEntities(List<IEntity> entities)
         {
 

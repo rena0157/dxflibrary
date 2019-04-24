@@ -62,6 +62,7 @@ namespace DxfLibrary.Parse.Entities
                 }
 
                 // Query the specifications to see if the current data matches
+                // A non base property
                 var query = properties
                     .FirstOrDefault(prop => entitySpec.Properties
                     .Any(spec => spec.Name == prop.Name && spec.Code as string == data.GroupCode));

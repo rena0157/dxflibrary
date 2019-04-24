@@ -75,17 +75,17 @@ namespace DxfLibrary.Entities
         /// <summary>
         /// X coordinate of the Elevation Point
         /// </summary>
-        public double ElevationX {get;set;}
+        public double ElevationX {get; set;}
 
         /// <summary>
         /// Y Coordinate of the Elevation Point
         /// </summary>
-        public double ElevationY {get;set;}
+        public double ElevationY {get; set;}
 
         /// <summary>
         /// Z Coordinate of the Elevation Point
         /// </summary>
-        public double ElevationZ {get;set;}
+        public double ElevationZ {get; set;}
 
         /// <summary>
         /// The Pattern Name of the Hatch

@@ -1,17 +1,17 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.26124.0
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.28803.202
 MinimumVisualStudioVersion = 15.0.26124.0
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{6E6A968D-0EDC-4DEB-81A2-34582992E6A9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DxfLibrary", "src\DxfLibrary\DxfLibrary.csproj", "{BB731A85-2A2A-49DC-9712-E2C8DC3ECC6A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DxfLibrary", "src\DxfLibrary\DxfLibrary.csproj", "{BB731A85-2A2A-49DC-9712-E2C8DC3ECC6A}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{6EB9AB31-E230-4EEA-B150-9685FE1B8CA5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DxfLibrary.Tests", "tests\DxfLibrary.Tests\DxfLibrary.Tests.csproj", "{633DA03E-AB0F-4371-86A0-BD1EA79BAA09}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DxfLibrary.Tests", "tests\DxfLibrary.Tests\DxfLibrary.Tests.csproj", "{633DA03E-AB0F-4371-86A0-BD1EA79BAA09}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DxfLibrary.SchemaGenerator", "src\DxfLibrary.SchemaGenerator\DxfLibrary.SchemaGenerator.csproj", "{B5A1B80D-121A-42CD-B781-AC27FEBC387A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DxfLibrary.SchemaGenerator", "src\DxfLibrary.SchemaGenerator\DxfLibrary.SchemaGenerator.csproj", "{B5A1B80D-121A-42CD-B781-AC27FEBC387A}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "_build", "build\_build.csproj", "{34DD5C29-5E70-4518-AA92-2FE0683C7CD7}"
 EndProject
@@ -24,12 +24,7 @@ Global
 		Release|x64 = Release|x64
 		Release|x86 = Release|x86
 	EndGlobalSection
-	GlobalSection(SolutionProperties) = preSolution
-		HideSolutionNode = FALSE
-	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{34DD5C29-5E70-4518-AA92-2FE0683C7CD7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{34DD5C29-5E70-4518-AA92-2FE0683C7CD7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BB731A85-2A2A-49DC-9712-E2C8DC3ECC6A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{BB731A85-2A2A-49DC-9712-E2C8DC3ECC6A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BB731A85-2A2A-49DC-9712-E2C8DC3ECC6A}.Debug|x64.ActiveCfg = Debug|Any CPU
@@ -66,10 +61,26 @@ Global
 		{B5A1B80D-121A-42CD-B781-AC27FEBC387A}.Release|x64.Build.0 = Release|Any CPU
 		{B5A1B80D-121A-42CD-B781-AC27FEBC387A}.Release|x86.ActiveCfg = Release|Any CPU
 		{B5A1B80D-121A-42CD-B781-AC27FEBC387A}.Release|x86.Build.0 = Release|Any CPU
+		{34DD5C29-5E70-4518-AA92-2FE0683C7CD7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{34DD5C29-5E70-4518-AA92-2FE0683C7CD7}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{34DD5C29-5E70-4518-AA92-2FE0683C7CD7}.Debug|x64.Build.0 = Debug|Any CPU
+		{34DD5C29-5E70-4518-AA92-2FE0683C7CD7}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{34DD5C29-5E70-4518-AA92-2FE0683C7CD7}.Debug|x86.Build.0 = Debug|Any CPU
+		{34DD5C29-5E70-4518-AA92-2FE0683C7CD7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{34DD5C29-5E70-4518-AA92-2FE0683C7CD7}.Release|x64.ActiveCfg = Release|Any CPU
+		{34DD5C29-5E70-4518-AA92-2FE0683C7CD7}.Release|x64.Build.0 = Release|Any CPU
+		{34DD5C29-5E70-4518-AA92-2FE0683C7CD7}.Release|x86.ActiveCfg = Release|Any CPU
+		{34DD5C29-5E70-4518-AA92-2FE0683C7CD7}.Release|x86.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{BB731A85-2A2A-49DC-9712-E2C8DC3ECC6A} = {6E6A968D-0EDC-4DEB-81A2-34582992E6A9}
 		{633DA03E-AB0F-4371-86A0-BD1EA79BAA09} = {6EB9AB31-E230-4EEA-B150-9685FE1B8CA5}
 		{B5A1B80D-121A-42CD-B781-AC27FEBC387A} = {6E6A968D-0EDC-4DEB-81A2-34582992E6A9}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {9B826969-8B2B-41F1-AADA-49CAFFE48351}
 	EndGlobalSection
 EndGlobal

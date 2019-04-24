@@ -9,3 +9,5 @@ artifacts/
 *.dwl2
 *.bak
 *.log
+/.vs/dxflibrary/v16/Server/sqlite3/db.lock
+/.vs/dxflibrary/v16/Server/sqlite3

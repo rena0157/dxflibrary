@@ -13,7 +13,7 @@ namespace DxfLibrary.Parse.Entities
     /// <summary>
     /// A base parsing class for the entity type
     /// </summary>
-    public class EntityParser<T> : IDxfEntityParser<T, string, object, object>
+    public class EntityParser<T> : IDxfEntityParser<T, string, object, object, EntityStruct>
     {
 
         /// <summary>

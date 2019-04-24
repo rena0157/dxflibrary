@@ -293,7 +293,11 @@ ENDSEC
 
         #region Solid Fill Hatch
 
-        const string SolidFillHatch = 
+        /// <summary>
+        /// DxfData with an LWPOLYLINE and HATCH That has solid fill.
+        /// The Hatch is associative with the polyline and has references all set up
+        /// </summary>
+        public const string SolidFillHatch = 
 @"  0
 SECTION
   2

@@ -108,7 +108,7 @@ namespace DxfLibrary.Tests.Entities
         public void SoftPointerReferencesTest(string testString, string expectedValue)
             => Assert.Equal(expectedValue,
                 GetFirstEntity<Hatch>(testString).References
-                    .FirstOrDefault(r => r.SoftPointer == expectedValue)?.SoftPointer);
+                .FirstOrDefault(r => r.SoftPointer == expectedValue)?.SoftPointer);
 
         #endregion
 

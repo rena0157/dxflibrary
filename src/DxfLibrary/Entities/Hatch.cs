@@ -60,7 +60,7 @@ namespace DxfLibrary.Entities
         /// Area of the Hatch
         /// </summary>
         /// <returns>Returns: The total area of the hatch</returns>
-        public double Area => ((IGeoArea)_geometricBase).Area;
+        public double Area => ((IGeoArea)GeometricBase).Area;
 
         #endregion
     }

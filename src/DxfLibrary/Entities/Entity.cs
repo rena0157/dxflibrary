@@ -23,7 +23,7 @@ namespace DxfLibrary.Entities
         /// <summary>
         /// The entity geometric base
         /// </summary>
-        protected GeoBase _geometricBase;
+        protected GeoBase GeometricBase;
 
         #endregion
 

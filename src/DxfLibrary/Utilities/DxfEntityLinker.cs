@@ -31,10 +31,10 @@ namespace DxfLibrary.Utilities
             {
                 foreach ( var reference in entity.References )
                 {
+                    // If the reference is already linked
+                    // Don't relink it
                     if ( reference.IsLinked )
-                    {
                         continue;
-                    }
 
                     reference.Reference 
                         = entities.First(e => e.Handle == reference.SoftPointer);

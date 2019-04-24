@@ -24,7 +24,9 @@ namespace DxfLibrary.Entities
         Type EntityType {get;}
 
         /// <summary>
-        /// The Entity's handle or ID
+        /// The Entity's handle or ID, this is also the
+        /// soft pointer of another entity that can point to this
+        /// entity
         /// </summary>
         string Handle {get;}
 

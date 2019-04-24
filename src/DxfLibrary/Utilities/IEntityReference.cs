@@ -21,7 +21,7 @@ namespace DxfLibrary.Utilities
         /// <summary>
         /// The actual reference to the entity
         /// </summary>
-        IEntity Reference {get;}
+        IEntity Reference {get; set; }
 
         /// <summary>
         /// Flag for telling if the entity is linked

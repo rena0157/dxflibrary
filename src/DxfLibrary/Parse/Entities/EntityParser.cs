@@ -4,9 +4,6 @@
 
 using System;
 using System.Linq;
-using System.Collections.Generic;
-
-using DxfLibrary.Parse;
 using DxfLibrary.Entities;
 using DxfLibrary.IO;
 using DxfLibrary.DxfSpec;

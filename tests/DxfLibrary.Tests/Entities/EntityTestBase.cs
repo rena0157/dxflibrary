@@ -49,6 +49,19 @@ namespace DxfLibrary.Tests.Entities
         }
 
         /// <summary>
+        /// Takes the data string, writes to the memory buffer,
+        /// reads the dxf file and extracts all of the entities
+        /// </summary>
+        /// <param name="data">The data that represents a dxf file</param>
+        /// <returns>Returns: A list of all the entities from the file</returns>
+        protected List<IEntity> GetAllEntities(string data)
+        {
+            WriteMemory(data);
+            var dxfFile = new DxfFile(_memoryStream);
+            return dxfFile.Entities;
+        }
+
+        /// <summary>
         /// A Stream Writer that is used to write to the memory stream.
         /// Note that this is not disposed of until the object is distroyed to keep
         /// the base stream alive.

@@ -119,7 +119,7 @@ namespace DxfLibrary.Entities
                     SolidFillFlag = (int)Convert.ChangeType(value, typeof(int)) != 0;
                 break;
 
-                // no implicity way to convert an int to a bool
+                // no implicit way to convert an int to a bool
                 case nameof(AssociativityFlag):
                     AssociativityFlag = (int)Convert.ChangeType(value, typeof(int)) != 0;
                 break;

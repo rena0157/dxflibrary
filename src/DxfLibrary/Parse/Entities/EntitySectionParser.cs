@@ -25,13 +25,14 @@ namespace DxfLibrary.Parse.Entities
         /// <returns>An Entity Section Object</returns>
         public EntitiesSection Parse(IDxfReader<string, object> reader)
         {
+            // The return entity section
             var entitySection = new EntitiesSection();
 
             // Get the entity Specification
             var entitySpec = SpecService.GetSpec<object>(SpecService.EntitySpec);
             var commonSpec = SpecService.GetSpec<object>(SpecService.DxfCommonSpec);
 
-            // Starting Strings
+            // Starting Strings - these string signify the start of a new entity
             var lineString = entitySpec.Get("Entity.LineString") as string;
             var startCode = commonSpec.Get("Sections.StartCode") as string;
             var lwPolylineString = entitySpec.Get("Entity.LwPolylineString") as string;
@@ -57,6 +58,8 @@ namespace DxfLibrary.Parse.Entities
                     var line = new Line(parser.ParseEntity(new LineStructure(), reader, specification));
                     entitySection.Entities.Add(line);
                 }
+
+                // If the following is true then start parsing an LWPOLYLINE
                 else if (firstPair.GroupCode == startCode && firstPair.Value as string == lwPolylineString)
                 {
                     var parser = new EntityParser<LwPolylineStructure>();
@@ -66,6 +69,8 @@ namespace DxfLibrary.Parse.Entities
                     var lwPolyline = new LwPolyline(parser.ParseEntity(new LwPolylineStructure(), reader, specification));
                     entitySection.Entities.Add(lwPolyline);
                 }
+
+                // If the following is true then start parsing a HATCH
                 else if (firstPair.GroupCode == startCode && firstPair.Value as string == hatchString)
                 {
                     var parser = new EntityParser<HatchStructure>();

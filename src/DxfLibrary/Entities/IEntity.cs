@@ -33,7 +33,7 @@ namespace DxfLibrary.Entities
         /// <summary>
         /// Objects that this entity references
         /// </summary>
-        List<IEntityReference> References {get;}
+        List<IEntityReference> References {get; set;}
 
         /// <summary>
         /// The entity Layer name

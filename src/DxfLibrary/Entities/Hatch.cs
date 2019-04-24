@@ -31,6 +31,11 @@ namespace DxfLibrary.Entities
             IsAssociative = structure.AssociativityFlag;
         }
 
+        // Default Hatch Constructor
+        public Hatch()
+        {
+        }
+
         #endregion
 
         #region Public Properties

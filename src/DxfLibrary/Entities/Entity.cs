@@ -42,7 +42,7 @@ namespace DxfLibrary.Entities
         /// <summary>
         /// Objects that this entity references
         /// </summary>
-        public List<IEntityReference> References {get;}
+        public List<IEntityReference> References {get; set;}
 
         /// <summary>
         /// The Entity Layer name
@@ -58,7 +58,7 @@ namespace DxfLibrary.Entities
         /// </summary>
         public Entity()
         {
-
+            References = new List<IEntityReference>();
         }
 
         /// <summary>

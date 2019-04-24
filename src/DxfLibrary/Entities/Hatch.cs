@@ -4,6 +4,7 @@
 
 using System;
 using DxfLibrary.Geometry;
+using DxfLibrary.Parse.Entities;
 
 namespace DxfLibrary.Entities
 {
@@ -108,6 +109,12 @@ namespace DxfLibrary.Entities
         public bool AssociativityFlag {get; set;}
 
         /// <summary>
+        /// The number of boundary paths associated with this hatch
+        /// </summary>
+        /// <value></value>
+        public int BoundaryPathsCount {get; set;}
+
+        /// <summary>
         /// Override for the set property function. This is used
         /// for non-trival cases for this entity
         /// </summary>
@@ -127,6 +134,10 @@ namespace DxfLibrary.Entities
                 // no implicit way to convert an int to a bool
                 case nameof(AssociativityFlag):
                     AssociativityFlag = (int)Convert.ChangeType(value, typeof(int)) != 0;
+                break;
+
+                case nameof(BoundaryPathsCount):
+                    BoundaryPathsCount = (int)Convert.ChangeType(value, typeof(int));
                 break;
 
                 // Default is to use the base set property function

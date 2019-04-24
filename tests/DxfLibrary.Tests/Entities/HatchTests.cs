@@ -54,7 +54,7 @@ namespace DxfLibrary.Tests.Entities
         #region Tests
 
         /// <summary>
-        /// Testing the <see cref="Hatch.ElevationPoint"> Property Extraction
+        /// Testing the <see cref="Hatch.ElevationPoint"/> Property Extraction
         /// </summary>
         /// <param name="testString">The Dxf String to test</param>
         /// <param name="expectedValue">The expected value of the Elevation Point</param>
@@ -65,7 +65,7 @@ namespace DxfLibrary.Tests.Entities
 
 
         /// <summary>
-        /// Testing the <see cref="Hatch.PatternName"> Property Extraction
+        /// Testing the <see cref="Hatch.PatternName"/> Property Extraction
         /// </summary>
         /// <param name="testString">The Dxf String to test</param>
         /// <param name="expectedValue">The expected value of the pattern name</param>
@@ -85,12 +85,30 @@ namespace DxfLibrary.Tests.Entities
         public void HasSolidFillTest(string testString, bool expectedValue) 
             => Assert.Equal(expectedValue, GetFirstEntity<Hatch>(testString).HasSolidFill);
 
+        /// <summary>
+        /// Testing the <see cref="Hatch.IsAssociative"/> Property Extraction
+        /// </summary>
+        /// <param name="testString">The Dxf String to test</param>
+        /// <param name="expectedValue">The expected value of the property</param>
         [Theory]
         [InlineData(PatternHatch, true)]
         [InlineData(SolidFillHatch, true)]
         [InlineData(NonAssociativeHatch, false)]
         public void IsAssociativeTest(string testString, bool expectedValue) 
             => Assert.Equal(expectedValue, GetFirstEntity<Hatch>(testString).IsAssociative);
+
+        /// <summary>
+        /// Testing the <see cref="Entity.References"/> soft pointer property
+        /// </summary>
+        /// <param name="testString">The Dxf String to test</param>
+        /// <param name="expectedValue">The expected value of the property</param>
+        [Theory]
+        [InlineData(SolidFillHatch, "323")]
+        [InlineData(PatternHatch, "323")]
+        public void SoftPointerReferencesTest(string testString, string expectedValue)
+            => Assert.Equal(expectedValue,
+                GetFirstEntity<Hatch>(testString).References
+                    .FirstOrDefault(r => r.SoftPointer == expectedValue)?.SoftPointer);
 
         #endregion
 

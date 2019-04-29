@@ -10,8 +10,16 @@ using DxfLibrary.Utilities;
 
 namespace DxfLibrary.Tests.Utilities
 {
+    /// <summary>
+    /// Class that tests the DxfType class and all of its function
+    /// </summary>
     public class DxfTypeTests : TestBase
     {
+        /// <summary>
+        /// Default Constructor for this class that sets up the logger from xUnit
+        /// </summary>
+        /// <param name="logger"></param>
+        /// <returns></returns>
         public DxfTypeTests(ITestOutputHelper logger) : base(logger)
         {
         }

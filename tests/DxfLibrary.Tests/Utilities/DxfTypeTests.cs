@@ -29,7 +29,15 @@ namespace DxfLibrary.Tests.Utilities
         [InlineData(60, typeof(Int16))]
         [InlineData(125, typeof(double))]
         [InlineData(275, typeof(Int16))]
+        [InlineData(999, typeof(string))]
         public void FromGroupCodeTest(int code, Type expectedType)
             => Assert.Equal(expectedType, DxfType.FromGroupCode(code));
+
+        [Theory]
+        [InlineData(-2)]
+        public void FromGroupCodeTestException(int code)
+            => Assert.Throws(typeof(ArgumentException), () => {
+                DxfType.FromGroupCode(code);
+            });
     }
 }

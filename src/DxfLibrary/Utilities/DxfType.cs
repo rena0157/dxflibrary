@@ -49,7 +49,9 @@ namespace DxfLibrary.Utilities
                     (n >= 390 && n < 400) ||
                     (n >=410 && n < 420) ||
                     (n >= 430 && n < 440) || 
-                    (n >= 470 && n <= 481)
+                    (n >= 470 && n <= 481) || 
+                    (n == 999) ||
+                    (n >= 1000 && n < 1010)
                 ):
                 return typeof(string);
 
@@ -60,7 +62,8 @@ namespace DxfLibrary.Utilities
                     (n >= 40 && n < 60) ||
                     (n >= 100 && n < 160) ||
                     (n >= 210 && n <= 239) ||
-                    (n >= 460 && n < 470)
+                    (n >= 460 && n < 470) ||
+                    (n >= 1010 && n < 1060)
                 ):
                 return typeof(double);
 
@@ -71,8 +74,8 @@ namespace DxfLibrary.Utilities
                     (n >= 170 && n <= 179) ||
                     (n >= 270 && n < 290) ||
                     (n >= 370 && n < 390) ||
-                    (n >= 400 && n < 410)
-
+                    (n >= 400 && n < 410) ||
+                    (n >= 1060 && n <= 1070)
                 ):
                 return typeof(Int16);
 
@@ -81,7 +84,8 @@ namespace DxfLibrary.Utilities
                 (
                     (n >= 80 && n < 100) ||
                     (n >= 420 && n < 430) || 
-                    (n >= 440 && n < 450)
+                    (n >= 440 && n < 450) ||
+                    (n == 1071)
                 ):
                 return typeof(Int32);
 

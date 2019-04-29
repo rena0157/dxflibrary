@@ -42,7 +42,7 @@ namespace DxfLibrary.Utilities
                 // All of the string cases
                 case int n when 
                 (
-                    (n < 10) || 
+                    (n >= 0 && n < 10) || 
                     (n == 100) || 
                     (n == 105) ||
                     (n >= 300 && n < 370) ||

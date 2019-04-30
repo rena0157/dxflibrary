@@ -3,7 +3,9 @@
 // Created: 2019-04-24
 
 using System;
+using System.Collections.Generic;
 using System.IO;
+using System.Text;
 
 namespace DxfLibrary.IO
 {
@@ -33,6 +35,12 @@ namespace DxfLibrary.IO
         public DxfBinaryReader(Stream stream)
         {
             _reader = new BinaryReader(stream);
+            var sentenial = ReadNullTerminatedString();
+
+            if (sentenial != "AutoCAD Binary DXF\r\n\u001a\0")
+                throw new FileLoadException("File is not a valid Binary DxfFile");
+
+            var testBytes = _reader.ReadInt16();
         }
 
         #endregion
@@ -76,6 +84,28 @@ namespace DxfLibrary.IO
         public TaggedData<byte[], byte[]> PeekNextPair()
         {
             throw new NotImplementedException();
+        }
+
+        #endregion
+
+        #region Private Methods
+
+        /// <summary>
+        /// Function that Reads Null Terminated Strings from reader of bytes
+        /// </summary>
+        /// <returns>Returns: The string</returns>
+        private string ReadNullTerminatedString()
+        {
+            byte currentByte = _reader.ReadByte();
+            var bytes = new List<byte>();
+
+            while(currentByte != 0 && bytes.Count < 250)
+            {
+                bytes.Add(currentByte);
+                currentByte = _reader.ReadByte();
+            }
+
+            return Encoding.UTF8.GetString(bytes.ToArray());
         }
 
         #endregion

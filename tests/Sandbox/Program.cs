@@ -15,8 +15,15 @@ namespace Sandbox
 {
     class Program
     {
+        /// <summary>
+        /// Test Directory
+        /// </summary>
         private static string _dirname = @"C:\Dev\dxfTestData\";
 
+        /// <summary>
+        /// The Main Function
+        /// </summary>
+        /// <param name="args">General Arguments</param>
         static void Main(string[] args)
         {
             Log("Starting Sandbox");

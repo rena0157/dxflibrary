@@ -1,4 +1,12 @@
-﻿using System;
+﻿// Program.cs for Sandbox
+// By: Adam Renaud
+// Created: 2019-04-30
+// This Sandbox application serves as a Staging Area for
+// The tests that are created in the tests folder. This
+// code will not always be the same and will often change from time
+// to time
+
+using System;
 using System.IO;
 using DxfLibrary;
 using DxfLibrary.IO;

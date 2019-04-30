@@ -37,7 +37,7 @@ namespace DxfLibrary.IO
             _reader = new BinaryReader(stream);
             var sentenial = ReadNullTerminatedString();
 
-            if (sentenial != "AutoCAD Binary DXF\r\n\u001a\0")
+            if (sentenial != "AutoCAD Binary DXF\r\n\u001a")
                 throw new FileLoadException("File is not a valid Binary DxfFile");
 
             var testBytes = _reader.ReadInt16();

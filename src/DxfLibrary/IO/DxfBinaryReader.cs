@@ -34,13 +34,16 @@ namespace DxfLibrary.IO
         /// <param name="stream">A base stream passed into the constructor</param>
         public DxfBinaryReader(Stream stream)
         {
+            // Create the binary reader
             _reader = new BinaryReader(stream);
+
+            // Read the sentenial to make sure that it is a 
+            // Dxf binary file
             var sentenial = ReadNullTerminatedString();
 
+            // If the file is not a valid file then throw an exception
             if (sentenial != "AutoCAD Binary DXF\r\n\u001a")
                 throw new FileLoadException("File is not a valid Binary DxfFile");
-
-            var testBytes = _reader.ReadInt16();
         }
 
         #endregion

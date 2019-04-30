@@ -33,7 +33,12 @@ namespace Sandbox
 
             using(var stream = new FileStream(testFile, FileMode.Open, FileAccess.Read, FileShare.ReadWrite))
             {
-                var dxfFile = new DxfFile(stream, true);   
+                var reader = new DxfBinaryReader(stream);
+
+                while(!reader.EndOfStream)
+                {
+                    var pair = reader.GetNextPair();
+                }
             }
 
         }

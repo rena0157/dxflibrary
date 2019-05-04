@@ -90,6 +90,14 @@ namespace DxfLibrary
                     _container = parser.Parse(reader);
                 }
             }
+            else
+            {
+                using (var reader = new DxfBinaryReader(fileStream))
+                {
+                    var parser = new DxfAsciiParser();
+                    _container = parser.Parse(reader);
+                }
+            }
         }
 
         #endregion

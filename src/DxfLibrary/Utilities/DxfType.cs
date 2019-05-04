@@ -43,9 +43,16 @@ namespace DxfLibrary.Utilities
                 case int n when 
                 (
                     (n >= 0 && n < 10) || 
-                    (n == 100) || 
+                    (n == 100) ||
+                    (n == 101) ||
+                    (n == 102) ||
                     (n == 105) ||
-                    (n >= 300 && n < 370) ||
+
+                    // TODO: Possible bug here.. hex values should be treated carefully, needs more
+                    // Testing
+                    (n >= 300 && n < 370 && n != 310) ||
+
+
                     (n >= 390 && n < 400) ||
                     (n >=410 && n < 420) ||
                     (n >= 430 && n < 440) || 
@@ -55,12 +62,19 @@ namespace DxfLibrary.Utilities
                 ):
                 return typeof(string);
 
+                // Byte Array Case
+                case int n when 
+                (
+                    (n == 310)
+                ):
+                return typeof(byte[]);
+
                 // all of the double cases
                 case int n when 
                 (
                     (n >= 10 && n < 40) ||
                     (n >= 40 && n < 60) ||
-                    (n >= 100 && n < 160) ||
+                    (n >= 110 && n < 160) ||
                     (n >= 210 && n <= 239) ||
                     (n >= 460 && n < 470) ||
                     (n >= 1010 && n < 1060)
@@ -104,7 +118,7 @@ namespace DxfLibrary.Utilities
                 // The default case will throw an exception becuase the type
                 // could not be matched
                 default:
-                    throw new ArgumentException("Argument does not match any predefined group code type");   
+                    throw new ArgumentException("Argument does not match any predefined group code type");
             }
 
         }

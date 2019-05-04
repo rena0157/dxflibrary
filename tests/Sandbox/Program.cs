@@ -8,6 +8,7 @@
 
 using System;
 using System.IO;
+using System.Collections.Generic;
 using DxfLibrary;
 using DxfLibrary.IO;
 
@@ -35,12 +36,19 @@ namespace Sandbox
             {
                 var reader = new DxfBinaryReader(stream);
 
+                var pairs = new List<TaggedData<string, object>>();
+
                 while(!reader.EndOfStream)
                 {
-                    var pair = reader.GetNextPair();
-                }
-            }
+                    if (pairs.Count == 6029)
+                        Console.WriteLine("BREAK");
 
+                    var pair = reader.GetNextPair();
+                    pairs.Add(pair);
+                }
+                 Log("Exiting Program");
+
+            }
         }
 
         /// <summary>

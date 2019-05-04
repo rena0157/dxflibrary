@@ -6,6 +6,7 @@ using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Text;
+using DxfLibrary.Utilities;
 
 namespace DxfLibrary.IO
 {
@@ -14,7 +15,7 @@ namespace DxfLibrary.IO
     /// </summary>
     /// <typeparam name="byte[]"></typeparam>
     /// <typeparam name="byte[]"></typeparam>
-    public class DxfBinaryReader : IDxfReader<byte[], byte[]>
+    public class DxfBinaryReader : IDxfReader<string, object>
     {
 
         #region Private Properties
@@ -79,12 +80,40 @@ namespace DxfLibrary.IO
         /// Get the next pair of data from the stream
         /// </summary>
         /// <returns>Returns the data for the next pair</returns>
-        public TaggedData<byte[], byte[]> GetNextPair()
+        public TaggedData<string, object> GetNextPair()
         {
-            return new TaggedData<byte[], byte[]>(_reader.ReadBytes(2), _reader.ReadBytes(2));
+            // First read the group code and then get the type
+            // that the value is anticipated to be.
+            var groupCode = _reader.ReadInt16().ToString();
+            var valueType = DxfType.FromGroupCode(groupCode);
+            object value = new object();
+
+            // Type switch dictionary, a dictionary that holds the types and 
+            // coresponding actions for each type.
+            var typeSwitch = new Dictionary<Type, Action> 
+            {
+                { typeof(string), () => value = ReadNullTerminatedString() },
+                { typeof(double), () => value = _reader.ReadDouble() },
+                { typeof(Int16), () => value = _reader.ReadInt16() },
+                { typeof(Int32), () => value = _reader.ReadInt32() },
+                { typeof(Int64), () => value = _reader.ReadInt64() },
+                { typeof(bool), () => value = _reader.ReadBoolean() },
+
+                // Reading Binary Data, the first byte is the length
+                // of the data and the remaining bytes is the actual data
+                { typeof(byte[]), () => {
+                    var length = _reader.ReadSByte();
+                    value = _reader.ReadBytes(length);
+                } }
+            };
+
+            // Run the switch dictionary action
+            typeSwitch[valueType]();
+
+            return new TaggedData<string, object>(groupCode, value);
         }
 
-        public TaggedData<byte[], byte[]> PeekNextPair()
+        public TaggedData<string, object> PeekNextPair()
         {
             throw new NotImplementedException();
         }

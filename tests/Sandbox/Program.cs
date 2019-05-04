@@ -9,8 +9,11 @@
 using System;
 using System.IO;
 using System.Collections.Generic;
+using System.Linq;
+using System.Threading;
 using DxfLibrary;
 using DxfLibrary.IO;
+using DxfLibrary.Entities;
 
 namespace Sandbox
 {
@@ -21,6 +24,10 @@ namespace Sandbox
         /// </summary>
         private static string _dirname = @"C:\Dev\dxfTestData\";
 
+        private static DxfFile _file;
+
+        private static string testFile = Path.Join(_dirname, "BinTest.dxf");
+
         /// <summary>
         /// The Main Function
         /// </summary>
@@ -29,28 +36,31 @@ namespace Sandbox
         {
             Log("Starting Sandbox");
 
-            var testFile = Path.Join(_dirname, "BinTest.dxf");
-            Log($"Opening File {testFile}");
-
-            using(var stream = new FileStream(testFile, FileMode.Open, FileAccess.Read, FileShare.ReadWrite))
+            _file = ReadFile(testFile);
+            
+            using(var watcher = new FileSystemWatcher())
             {
-                Environment.CurrentDirectory = @"C:\Dev\dxflibrary\artifacts\";
-                var test = Directory.GetCurrentDirectory();
-                var file = new DxfFile(stream, true);
+                watcher.NotifyFilter = NotifyFilters.Attributes
+                                       | NotifyFilters.LastAccess
+                                       | NotifyFilters.LastWrite 
+                                       | NotifyFilters.CreationTime
+                                       | NotifyFilters.DirectoryName
+                                       | NotifyFilters.FileName
+                                       | NotifyFilters.Security
+                                       | NotifyFilters.Size;
 
-                // var pairs = new List<TaggedData<string, object>>();
+                watcher.Path = _dirname;
 
-                // while(!reader.EndOfStream)
-                // {
-                //     if (pairs.Count == 6029)
-                //         Console.WriteLine("BREAK");
+                watcher.Changed += FileChangedEvent;
 
-                //     var pair = reader.GetNextPair();
-                //     pairs.Add(pair);
-                // }
-                 Log("Exiting Program");
+                watcher.Filter = "*.dxf";
 
+                watcher.EnableRaisingEvents = true;
+
+                Console.WriteLine("Press q to Quit");
+                while (Console.ReadLine() != "q") ; 
             }
+
         }
 
         /// <summary>
@@ -60,6 +70,37 @@ namespace Sandbox
         private static void Log(object message)
         {
             Console.WriteLine($"[{DateTime.Now}] -- {message.ToString()}");
+        }
+
+        private static void FileChangedEvent(object sender, FileSystemEventArgs e)
+        {
+            Log("File Changed...");
+            _file = ReadFile(testFile);
+
+            foreach(var entity in _file.Entities)
+            {
+                Log($"Entity: {entity.GetType()}, Handle: {entity.Handle}");
+            }
+
+            var polylines = _file.GetEntities<LwPolyline>().ToList();
+
+            var totalLength = 0.0;
+            foreach(var polyline in polylines)
+            {
+                totalLength += polyline.Length;
+            }
+
+            Log($"Total Polyline Length: {totalLength} m");
+        }
+
+        private static DxfFile ReadFile(string filename)
+        {
+            Thread.Sleep(500);
+            using(var stream = new FileStream(filename, FileMode.Open, FileAccess.Read, FileShare.ReadWrite))
+            {
+                Environment.CurrentDirectory = @"C:\Dev\dxflibrary\artifacts\";
+                return new DxfFile(stream, true);
+            }
         }
     }
 }

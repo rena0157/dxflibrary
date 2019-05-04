@@ -1,0 +1,486 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class LwPolyline
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class LwPolyline
+   ">
+    <meta name="generator" content="docfx 2.37.2.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="DxfLibrary.Entities.LwPolyline">
+  
+  
+  <h1 id="DxfLibrary_Entities_LwPolyline" data-uid="DxfLibrary.Entities.LwPolyline" class="text-break">Class LwPolyline
+  </h1>
+  <div class="markdown level0 summary"><p>Class representing the LwPolyline Entity</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><a class="xref" href="DxfLibrary.Entities.Entity.html">Entity</a></div>
+    <div class="level2"><span class="xref">LwPolyline</span></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="DxfLibrary.Entities.IEntity.html">IEntity</a></div>
+    <div><a class="xref" href="DxfLibrary.Geometry.IGeoLength.html">IGeoLength</a></div>
+    <div><a class="xref" href="DxfLibrary.Geometry.IGeoArea.html">IGeoArea</a></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="DxfLibrary.Entities.Entity.html#DxfLibrary_Entities_Entity_GeometricBase">Entity.GeometricBase</a>
+    </div>
+    <div>
+      <a class="xref" href="DxfLibrary.Entities.Entity.html#DxfLibrary_Entities_Entity_EntityType">Entity.EntityType</a>
+    </div>
+    <div>
+      <a class="xref" href="DxfLibrary.Entities.Entity.html#DxfLibrary_Entities_Entity_Handle">Entity.Handle</a>
+    </div>
+    <div>
+      <a class="xref" href="DxfLibrary.Entities.Entity.html#DxfLibrary_Entities_Entity_References">Entity.References</a>
+    </div>
+    <div>
+      <a class="xref" href="DxfLibrary.Entities.Entity.html#DxfLibrary_Entities_Entity_LayerName">Entity.LayerName</a>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="DxfLibrary.Entities.html">DxfLibrary.Entities</a></h6>
+  <h6><strong>Assembly</strong>: DxfLibrary.dll</h6>
+  <h5 id="DxfLibrary_Entities_LwPolyline_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class LwPolyline : Entity, IEntity, IGeoLength, IGeoArea</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/rena0157/dxflibrary/new/master/apiSpec/new?filename=DxfLibrary_Entities_LwPolyline__ctor.md&amp;value=---%0Auid%3A%20DxfLibrary.Entities.LwPolyline.%23ctor%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/rena0157/dxflibrary/blob/master/src/DxfLibrary/Entities/LwPolyline.cs/#L43">View Source</a>
+  </span>
+  <a id="DxfLibrary_Entities_LwPolyline__ctor_" data-uid="DxfLibrary.Entities.LwPolyline.#ctor*"></a>
+  <h4 id="DxfLibrary_Entities_LwPolyline__ctor" data-uid="DxfLibrary.Entities.LwPolyline.#ctor">LwPolyline()</h4>
+  <div class="markdown level1 summary"><p>Default Constructor for the LwPolyline</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public LwPolyline()</code></pre>
+  </div>
+  <h3 id="properties">Properties
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/rena0157/dxflibrary/new/master/apiSpec/new?filename=DxfLibrary_Entities_LwPolyline_Area.md&amp;value=---%0Auid%3A%20DxfLibrary.Entities.LwPolyline.Area%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/rena0157/dxflibrary/blob/master/src/DxfLibrary/Entities/LwPolyline.cs/#L60">View Source</a>
+  </span>
+  <a id="DxfLibrary_Entities_LwPolyline_Area_" data-uid="DxfLibrary.Entities.LwPolyline.Area*"></a>
+  <h4 id="DxfLibrary_Entities_LwPolyline_Area" data-uid="DxfLibrary.Entities.LwPolyline.Area">Area</h4>
+  <div class="markdown level1 summary"><p>The Total Area of the LwPolyline</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public double Area { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/rena0157/dxflibrary/new/master/apiSpec/new?filename=DxfLibrary_Entities_LwPolyline_ConstWidth.md&amp;value=---%0Auid%3A%20DxfLibrary.Entities.LwPolyline.ConstWidth%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/rena0157/dxflibrary/blob/master/src/DxfLibrary/Entities/LwPolyline.cs/#L75">View Source</a>
+  </span>
+  <a id="DxfLibrary_Entities_LwPolyline_ConstWidth_" data-uid="DxfLibrary.Entities.LwPolyline.ConstWidth*"></a>
+  <h4 id="DxfLibrary_Entities_LwPolyline_ConstWidth" data-uid="DxfLibrary.Entities.LwPolyline.ConstWidth">ConstWidth</h4>
+  <div class="markdown level1 summary"><p>Constant with of the polyline</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public double ConstWidth { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/rena0157/dxflibrary/new/master/apiSpec/new?filename=DxfLibrary_Entities_LwPolyline_Elevation.md&amp;value=---%0Auid%3A%20DxfLibrary.Entities.LwPolyline.Elevation%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/rena0157/dxflibrary/blob/master/src/DxfLibrary/Entities/LwPolyline.cs/#L80">View Source</a>
+  </span>
+  <a id="DxfLibrary_Entities_LwPolyline_Elevation_" data-uid="DxfLibrary.Entities.LwPolyline.Elevation*"></a>
+  <h4 id="DxfLibrary_Entities_LwPolyline_Elevation" data-uid="DxfLibrary.Entities.LwPolyline.Elevation">Elevation</h4>
+  <div class="markdown level1 summary"><p>The Elevation of the polyline</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public double Elevation { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/rena0157/dxflibrary/new/master/apiSpec/new?filename=DxfLibrary_Entities_LwPolyline_EndWidth.md&amp;value=---%0Auid%3A%20DxfLibrary.Entities.LwPolyline.EndWidth%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/rena0157/dxflibrary/blob/master/src/DxfLibrary/Entities/LwPolyline.cs/#L96">View Source</a>
+  </span>
+  <a id="DxfLibrary_Entities_LwPolyline_EndWidth_" data-uid="DxfLibrary.Entities.LwPolyline.EndWidth*"></a>
+  <h4 id="DxfLibrary_Entities_LwPolyline_EndWidth" data-uid="DxfLibrary.Entities.LwPolyline.EndWidth">EndWidth</h4>
+  <div class="markdown level1 summary"><p>Ending Width</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public List&lt;double&gt; EndWidth { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.List</span>&lt;<span class="xref">System.Double</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/rena0157/dxflibrary/new/master/apiSpec/new?filename=DxfLibrary_Entities_LwPolyline_Length.md&amp;value=---%0Auid%3A%20DxfLibrary.Entities.LwPolyline.Length%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/rena0157/dxflibrary/blob/master/src/DxfLibrary/Entities/LwPolyline.cs/#L55">View Source</a>
+  </span>
+  <a id="DxfLibrary_Entities_LwPolyline_Length_" data-uid="DxfLibrary.Entities.LwPolyline.Length*"></a>
+  <h4 id="DxfLibrary_Entities_LwPolyline_Length" data-uid="DxfLibrary.Entities.LwPolyline.Length">Length</h4>
+  <div class="markdown level1 summary"><p>The Total Length of the LwPolyline</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public double Length { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/rena0157/dxflibrary/new/master/apiSpec/new?filename=DxfLibrary_Entities_LwPolyline_NumberOfVerticies.md&amp;value=---%0Auid%3A%20DxfLibrary.Entities.LwPolyline.NumberOfVerticies%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/rena0157/dxflibrary/blob/master/src/DxfLibrary/Entities/LwPolyline.cs/#L65">View Source</a>
+  </span>
+  <a id="DxfLibrary_Entities_LwPolyline_NumberOfVerticies_" data-uid="DxfLibrary.Entities.LwPolyline.NumberOfVerticies*"></a>
+  <h4 id="DxfLibrary_Entities_LwPolyline_NumberOfVerticies" data-uid="DxfLibrary.Entities.LwPolyline.NumberOfVerticies">NumberOfVerticies</h4>
+  <div class="markdown level1 summary"><p>The number of vertices in the Polyline</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int NumberOfVerticies { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/rena0157/dxflibrary/new/master/apiSpec/new?filename=DxfLibrary_Entities_LwPolyline_PolylineFlag.md&amp;value=---%0Auid%3A%20DxfLibrary.Entities.LwPolyline.PolylineFlag%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/rena0157/dxflibrary/blob/master/src/DxfLibrary/Entities/LwPolyline.cs/#L70">View Source</a>
+  </span>
+  <a id="DxfLibrary_Entities_LwPolyline_PolylineFlag_" data-uid="DxfLibrary.Entities.LwPolyline.PolylineFlag*"></a>
+  <h4 id="DxfLibrary_Entities_LwPolyline_PolylineFlag" data-uid="DxfLibrary.Entities.LwPolyline.PolylineFlag">PolylineFlag</h4>
+  <div class="markdown level1 summary"><p>The Polyline Flag, 1 = Closed, 0 = Open</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool PolylineFlag { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/rena0157/dxflibrary/new/master/apiSpec/new?filename=DxfLibrary_Entities_LwPolyline_StartWidth.md&amp;value=---%0Auid%3A%20DxfLibrary.Entities.LwPolyline.StartWidth%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/rena0157/dxflibrary/blob/master/src/DxfLibrary/Entities/LwPolyline.cs/#L91">View Source</a>
+  </span>
+  <a id="DxfLibrary_Entities_LwPolyline_StartWidth_" data-uid="DxfLibrary.Entities.LwPolyline.StartWidth*"></a>
+  <h4 id="DxfLibrary_Entities_LwPolyline_StartWidth" data-uid="DxfLibrary.Entities.LwPolyline.StartWidth">StartWidth</h4>
+  <div class="markdown level1 summary"><p>Starting width</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public List&lt;double&gt; StartWidth { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.List</span>&lt;<span class="xref">System.Double</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/rena0157/dxflibrary/new/master/apiSpec/new?filename=DxfLibrary_Entities_LwPolyline_Thickness.md&amp;value=---%0Auid%3A%20DxfLibrary.Entities.LwPolyline.Thickness%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/rena0157/dxflibrary/blob/master/src/DxfLibrary/Entities/LwPolyline.cs/#L86">View Source</a>
+  </span>
+  <a id="DxfLibrary_Entities_LwPolyline_Thickness_" data-uid="DxfLibrary.Entities.LwPolyline.Thickness*"></a>
+  <h4 id="DxfLibrary_Entities_LwPolyline_Thickness" data-uid="DxfLibrary.Entities.LwPolyline.Thickness">Thickness</h4>
+  <div class="markdown level1 summary"><p>Thickness of the Polyline</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public double Thickness { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="DxfLibrary.Entities.IEntity.html">IEntity</a>
+  </div>
+  <div>
+      <a class="xref" href="DxfLibrary.Geometry.IGeoLength.html">IGeoLength</a>
+  </div>
+  <div>
+      <a class="xref" href="DxfLibrary.Geometry.IGeoArea.html">IGeoArea</a>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/rena0157/dxflibrary/new/master/apiSpec/new?filename=DxfLibrary_Entities_LwPolyline.md&amp;value=---%0Auid%3A%20DxfLibrary.Entities.LwPolyline%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/rena0157/dxflibrary/blob/master/src/DxfLibrary/Entities/LwPolyline.cs/#L16" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

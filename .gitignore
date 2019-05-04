@@ -11,3 +11,13 @@ artifacts/
 *.log
 /.tmp
 /.vs/dxflibrary/v16
+
+###############
+#    folder   #
+###############
+/**/DROP/
+/**/TEMP/
+/**/packages/
+/**/bin/
+/**/obj/
+_site

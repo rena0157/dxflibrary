@@ -1,0 +1,2716 @@
+### YamlMime:XRefMap
+sorted: true
+references:
+- uid: DxfLibrary
+  name: DxfLibrary
+  href: api/DxfLibrary.html
+  commentId: N:DxfLibrary
+  fullName: DxfLibrary
+  nameWithType: DxfLibrary
+- uid: DxfLibrary.DxfFile
+  name: DxfFile
+  href: api/DxfLibrary.DxfFile.html
+  commentId: T:DxfLibrary.DxfFile
+  fullName: DxfLibrary.DxfFile
+  nameWithType: DxfFile
+- uid: DxfLibrary.DxfFile.#ctor(System.IO.FileStream,System.Boolean)
+  name: DxfFile(FileStream, Boolean)
+  href: api/DxfLibrary.DxfFile.html#DxfLibrary_DxfFile__ctor_System_IO_FileStream_System_Boolean_
+  commentId: M:DxfLibrary.DxfFile.#ctor(System.IO.FileStream,System.Boolean)
+  fullName: DxfLibrary.DxfFile.DxfFile(System.IO.FileStream, System.Boolean)
+  nameWithType: DxfFile.DxfFile(FileStream, Boolean)
+- uid: DxfLibrary.DxfFile.#ctor(System.IO.Stream)
+  name: DxfFile(Stream)
+  href: api/DxfLibrary.DxfFile.html#DxfLibrary_DxfFile__ctor_System_IO_Stream_
+  commentId: M:DxfLibrary.DxfFile.#ctor(System.IO.Stream)
+  fullName: DxfLibrary.DxfFile.DxfFile(System.IO.Stream)
+  nameWithType: DxfFile.DxfFile(Stream)
+- uid: DxfLibrary.DxfFile.#ctor*
+  name: DxfFile
+  href: api/DxfLibrary.DxfFile.html#DxfLibrary_DxfFile__ctor_
+  commentId: Overload:DxfLibrary.DxfFile.#ctor
+  isSpec: "True"
+  fullName: DxfLibrary.DxfFile.DxfFile
+  nameWithType: DxfFile.DxfFile
+- uid: DxfLibrary.DxfFile.Entities
+  name: Entities
+  href: api/DxfLibrary.DxfFile.html#DxfLibrary_DxfFile_Entities
+  commentId: P:DxfLibrary.DxfFile.Entities
+  fullName: DxfLibrary.DxfFile.Entities
+  nameWithType: DxfFile.Entities
+- uid: DxfLibrary.DxfFile.Entities*
+  name: Entities
+  href: api/DxfLibrary.DxfFile.html#DxfLibrary_DxfFile_Entities_
+  commentId: Overload:DxfLibrary.DxfFile.Entities
+  isSpec: "True"
+  fullName: DxfLibrary.DxfFile.Entities
+  nameWithType: DxfFile.Entities
+- uid: DxfLibrary.DxfFile.GetEntities*
+  name: GetEntities
+  href: api/DxfLibrary.DxfFile.html#DxfLibrary_DxfFile_GetEntities_
+  commentId: Overload:DxfLibrary.DxfFile.GetEntities
+  isSpec: "True"
+  fullName: DxfLibrary.DxfFile.GetEntities
+  nameWithType: DxfFile.GetEntities
+- uid: DxfLibrary.DxfFile.GetEntities``1
+  name: GetEntities<T>()
+  href: api/DxfLibrary.DxfFile.html#DxfLibrary_DxfFile_GetEntities__1
+  commentId: M:DxfLibrary.DxfFile.GetEntities``1
+  name.vb: GetEntities(Of T)()
+  fullName: DxfLibrary.DxfFile.GetEntities<T>()
+  fullName.vb: DxfLibrary.DxfFile.GetEntities(Of T)()
+  nameWithType: DxfFile.GetEntities<T>()
+  nameWithType.vb: DxfFile.GetEntities(Of T)()
+- uid: DxfLibrary.DxfSpec
+  name: DxfLibrary.DxfSpec
+  href: api/DxfLibrary.DxfSpec.html
+  commentId: N:DxfLibrary.DxfSpec
+  fullName: DxfLibrary.DxfSpec
+  nameWithType: DxfLibrary.DxfSpec
+- uid: DxfLibrary.DxfSpec.DxfSpecProperty`1
+  name: DxfSpecProperty<T>
+  href: api/DxfLibrary.DxfSpec.DxfSpecProperty-1.html
+  commentId: T:DxfLibrary.DxfSpec.DxfSpecProperty`1
+  name.vb: DxfSpecProperty(Of T)
+  fullName: DxfLibrary.DxfSpec.DxfSpecProperty<T>
+  fullName.vb: DxfLibrary.DxfSpec.DxfSpecProperty(Of T)
+  nameWithType: DxfSpecProperty<T>
+  nameWithType.vb: DxfSpecProperty(Of T)
+- uid: DxfLibrary.DxfSpec.DxfSpecProperty`1.Code
+  name: Code
+  href: api/DxfLibrary.DxfSpec.DxfSpecProperty-1.html#DxfLibrary_DxfSpec_DxfSpecProperty_1_Code
+  commentId: P:DxfLibrary.DxfSpec.DxfSpecProperty`1.Code
+  fullName: DxfLibrary.DxfSpec.DxfSpecProperty<T>.Code
+  fullName.vb: DxfLibrary.DxfSpec.DxfSpecProperty(Of T).Code
+  nameWithType: DxfSpecProperty<T>.Code
+  nameWithType.vb: DxfSpecProperty(Of T).Code
+- uid: DxfLibrary.DxfSpec.DxfSpecProperty`1.Code*
+  name: Code
+  href: api/DxfLibrary.DxfSpec.DxfSpecProperty-1.html#DxfLibrary_DxfSpec_DxfSpecProperty_1_Code_
+  commentId: Overload:DxfLibrary.DxfSpec.DxfSpecProperty`1.Code
+  isSpec: "True"
+  fullName: DxfLibrary.DxfSpec.DxfSpecProperty<T>.Code
+  fullName.vb: DxfLibrary.DxfSpec.DxfSpecProperty(Of T).Code
+  nameWithType: DxfSpecProperty<T>.Code
+  nameWithType.vb: DxfSpecProperty(Of T).Code
+- uid: DxfLibrary.DxfSpec.DxfSpecProperty`1.Name
+  name: Name
+  href: api/DxfLibrary.DxfSpec.DxfSpecProperty-1.html#DxfLibrary_DxfSpec_DxfSpecProperty_1_Name
+  commentId: P:DxfLibrary.DxfSpec.DxfSpecProperty`1.Name
+  fullName: DxfLibrary.DxfSpec.DxfSpecProperty<T>.Name
+  fullName.vb: DxfLibrary.DxfSpec.DxfSpecProperty(Of T).Name
+  nameWithType: DxfSpecProperty<T>.Name
+  nameWithType.vb: DxfSpecProperty(Of T).Name
+- uid: DxfLibrary.DxfSpec.DxfSpecProperty`1.Name*
+  name: Name
+  href: api/DxfLibrary.DxfSpec.DxfSpecProperty-1.html#DxfLibrary_DxfSpec_DxfSpecProperty_1_Name_
+  commentId: Overload:DxfLibrary.DxfSpec.DxfSpecProperty`1.Name
+  isSpec: "True"
+  fullName: DxfLibrary.DxfSpec.DxfSpecProperty<T>.Name
+  fullName.vb: DxfLibrary.DxfSpec.DxfSpecProperty(Of T).Name
+  nameWithType: DxfSpecProperty<T>.Name
+  nameWithType.vb: DxfSpecProperty(Of T).Name
+- uid: DxfLibrary.DxfSpec.IDxfSpec`1
+  name: IDxfSpec<T>
+  href: api/DxfLibrary.DxfSpec.IDxfSpec-1.html
+  commentId: T:DxfLibrary.DxfSpec.IDxfSpec`1
+  name.vb: IDxfSpec(Of T)
+  fullName: DxfLibrary.DxfSpec.IDxfSpec<T>
+  fullName.vb: DxfLibrary.DxfSpec.IDxfSpec(Of T)
+  nameWithType: IDxfSpec<T>
+  nameWithType.vb: IDxfSpec(Of T)
+- uid: DxfLibrary.DxfSpec.IDxfSpec`1.Get(System.String)
+  name: Get(String)
+  href: api/DxfLibrary.DxfSpec.IDxfSpec-1.html#DxfLibrary_DxfSpec_IDxfSpec_1_Get_System_String_
+  commentId: M:DxfLibrary.DxfSpec.IDxfSpec`1.Get(System.String)
+  fullName: DxfLibrary.DxfSpec.IDxfSpec<T>.Get(System.String)
+  fullName.vb: DxfLibrary.DxfSpec.IDxfSpec(Of T).Get(System.String)
+  nameWithType: IDxfSpec<T>.Get(String)
+  nameWithType.vb: IDxfSpec(Of T).Get(String)
+- uid: DxfLibrary.DxfSpec.IDxfSpec`1.Get*
+  name: Get
+  href: api/DxfLibrary.DxfSpec.IDxfSpec-1.html#DxfLibrary_DxfSpec_IDxfSpec_1_Get_
+  commentId: Overload:DxfLibrary.DxfSpec.IDxfSpec`1.Get
+  isSpec: "True"
+  fullName: DxfLibrary.DxfSpec.IDxfSpec<T>.Get
+  fullName.vb: DxfLibrary.DxfSpec.IDxfSpec(Of T).Get
+  nameWithType: IDxfSpec<T>.Get
+  nameWithType.vb: IDxfSpec(Of T).Get
+- uid: DxfLibrary.DxfSpec.IDxfSpec`1.Properties
+  name: Properties
+  href: api/DxfLibrary.DxfSpec.IDxfSpec-1.html#DxfLibrary_DxfSpec_IDxfSpec_1_Properties
+  commentId: P:DxfLibrary.DxfSpec.IDxfSpec`1.Properties
+  fullName: DxfLibrary.DxfSpec.IDxfSpec<T>.Properties
+  fullName.vb: DxfLibrary.DxfSpec.IDxfSpec(Of T).Properties
+  nameWithType: IDxfSpec<T>.Properties
+  nameWithType.vb: IDxfSpec(Of T).Properties
+- uid: DxfLibrary.DxfSpec.IDxfSpec`1.Properties*
+  name: Properties
+  href: api/DxfLibrary.DxfSpec.IDxfSpec-1.html#DxfLibrary_DxfSpec_IDxfSpec_1_Properties_
+  commentId: Overload:DxfLibrary.DxfSpec.IDxfSpec`1.Properties
+  isSpec: "True"
+  fullName: DxfLibrary.DxfSpec.IDxfSpec<T>.Properties
+  fullName.vb: DxfLibrary.DxfSpec.IDxfSpec(Of T).Properties
+  nameWithType: IDxfSpec<T>.Properties
+  nameWithType.vb: IDxfSpec(Of T).Properties
+- uid: DxfLibrary.DxfSpec.IDxfSpec`1.SpecName
+  name: SpecName
+  href: api/DxfLibrary.DxfSpec.IDxfSpec-1.html#DxfLibrary_DxfSpec_IDxfSpec_1_SpecName
+  commentId: P:DxfLibrary.DxfSpec.IDxfSpec`1.SpecName
+  fullName: DxfLibrary.DxfSpec.IDxfSpec<T>.SpecName
+  fullName.vb: DxfLibrary.DxfSpec.IDxfSpec(Of T).SpecName
+  nameWithType: IDxfSpec<T>.SpecName
+  nameWithType.vb: IDxfSpec(Of T).SpecName
+- uid: DxfLibrary.DxfSpec.IDxfSpec`1.SpecName*
+  name: SpecName
+  href: api/DxfLibrary.DxfSpec.IDxfSpec-1.html#DxfLibrary_DxfSpec_IDxfSpec_1_SpecName_
+  commentId: Overload:DxfLibrary.DxfSpec.IDxfSpec`1.SpecName
+  isSpec: "True"
+  fullName: DxfLibrary.DxfSpec.IDxfSpec<T>.SpecName
+  fullName.vb: DxfLibrary.DxfSpec.IDxfSpec(Of T).SpecName
+  nameWithType: IDxfSpec<T>.SpecName
+  nameWithType.vb: IDxfSpec(Of T).SpecName
+- uid: DxfLibrary.DxfSpec.IDxfSpec`1.SpecType
+  name: SpecType
+  href: api/DxfLibrary.DxfSpec.IDxfSpec-1.html#DxfLibrary_DxfSpec_IDxfSpec_1_SpecType
+  commentId: P:DxfLibrary.DxfSpec.IDxfSpec`1.SpecType
+  fullName: DxfLibrary.DxfSpec.IDxfSpec<T>.SpecType
+  fullName.vb: DxfLibrary.DxfSpec.IDxfSpec(Of T).SpecType
+  nameWithType: IDxfSpec<T>.SpecType
+  nameWithType.vb: IDxfSpec(Of T).SpecType
+- uid: DxfLibrary.DxfSpec.IDxfSpec`1.SpecType*
+  name: SpecType
+  href: api/DxfLibrary.DxfSpec.IDxfSpec-1.html#DxfLibrary_DxfSpec_IDxfSpec_1_SpecType_
+  commentId: Overload:DxfLibrary.DxfSpec.IDxfSpec`1.SpecType
+  isSpec: "True"
+  fullName: DxfLibrary.DxfSpec.IDxfSpec<T>.SpecType
+  fullName.vb: DxfLibrary.DxfSpec.IDxfSpec(Of T).SpecType
+  nameWithType: IDxfSpec<T>.SpecType
+  nameWithType.vb: IDxfSpec(Of T).SpecType
+- uid: DxfLibrary.DxfSpec.Spec`1
+  name: Spec<T>
+  href: api/DxfLibrary.DxfSpec.Spec-1.html
+  commentId: T:DxfLibrary.DxfSpec.Spec`1
+  name.vb: Spec(Of T)
+  fullName: DxfLibrary.DxfSpec.Spec<T>
+  fullName.vb: DxfLibrary.DxfSpec.Spec(Of T)
+  nameWithType: Spec<T>
+  nameWithType.vb: Spec(Of T)
+- uid: DxfLibrary.DxfSpec.Spec`1.Get(System.String)
+  name: Get(String)
+  href: api/DxfLibrary.DxfSpec.Spec-1.html#DxfLibrary_DxfSpec_Spec_1_Get_System_String_
+  commentId: M:DxfLibrary.DxfSpec.Spec`1.Get(System.String)
+  fullName: DxfLibrary.DxfSpec.Spec<T>.Get(System.String)
+  fullName.vb: DxfLibrary.DxfSpec.Spec(Of T).Get(System.String)
+  nameWithType: Spec<T>.Get(String)
+  nameWithType.vb: Spec(Of T).Get(String)
+- uid: DxfLibrary.DxfSpec.Spec`1.Get*
+  name: Get
+  href: api/DxfLibrary.DxfSpec.Spec-1.html#DxfLibrary_DxfSpec_Spec_1_Get_
+  commentId: Overload:DxfLibrary.DxfSpec.Spec`1.Get
+  isSpec: "True"
+  fullName: DxfLibrary.DxfSpec.Spec<T>.Get
+  fullName.vb: DxfLibrary.DxfSpec.Spec(Of T).Get
+  nameWithType: Spec<T>.Get
+  nameWithType.vb: Spec(Of T).Get
+- uid: DxfLibrary.DxfSpec.Spec`1.Properties
+  name: Properties
+  href: api/DxfLibrary.DxfSpec.Spec-1.html#DxfLibrary_DxfSpec_Spec_1_Properties
+  commentId: P:DxfLibrary.DxfSpec.Spec`1.Properties
+  fullName: DxfLibrary.DxfSpec.Spec<T>.Properties
+  fullName.vb: DxfLibrary.DxfSpec.Spec(Of T).Properties
+  nameWithType: Spec<T>.Properties
+  nameWithType.vb: Spec(Of T).Properties
+- uid: DxfLibrary.DxfSpec.Spec`1.Properties*
+  name: Properties
+  href: api/DxfLibrary.DxfSpec.Spec-1.html#DxfLibrary_DxfSpec_Spec_1_Properties_
+  commentId: Overload:DxfLibrary.DxfSpec.Spec`1.Properties
+  isSpec: "True"
+  fullName: DxfLibrary.DxfSpec.Spec<T>.Properties
+  fullName.vb: DxfLibrary.DxfSpec.Spec(Of T).Properties
+  nameWithType: Spec<T>.Properties
+  nameWithType.vb: Spec(Of T).Properties
+- uid: DxfLibrary.DxfSpec.Spec`1.SpecName
+  name: SpecName
+  href: api/DxfLibrary.DxfSpec.Spec-1.html#DxfLibrary_DxfSpec_Spec_1_SpecName
+  commentId: P:DxfLibrary.DxfSpec.Spec`1.SpecName
+  fullName: DxfLibrary.DxfSpec.Spec<T>.SpecName
+  fullName.vb: DxfLibrary.DxfSpec.Spec(Of T).SpecName
+  nameWithType: Spec<T>.SpecName
+  nameWithType.vb: Spec(Of T).SpecName
+- uid: DxfLibrary.DxfSpec.Spec`1.SpecName*
+  name: SpecName
+  href: api/DxfLibrary.DxfSpec.Spec-1.html#DxfLibrary_DxfSpec_Spec_1_SpecName_
+  commentId: Overload:DxfLibrary.DxfSpec.Spec`1.SpecName
+  isSpec: "True"
+  fullName: DxfLibrary.DxfSpec.Spec<T>.SpecName
+  fullName.vb: DxfLibrary.DxfSpec.Spec(Of T).SpecName
+  nameWithType: Spec<T>.SpecName
+  nameWithType.vb: Spec(Of T).SpecName
+- uid: DxfLibrary.DxfSpec.Spec`1.SpecType
+  name: SpecType
+  href: api/DxfLibrary.DxfSpec.Spec-1.html#DxfLibrary_DxfSpec_Spec_1_SpecType
+  commentId: P:DxfLibrary.DxfSpec.Spec`1.SpecType
+  fullName: DxfLibrary.DxfSpec.Spec<T>.SpecType
+  fullName.vb: DxfLibrary.DxfSpec.Spec(Of T).SpecType
+  nameWithType: Spec<T>.SpecType
+  nameWithType.vb: Spec(Of T).SpecType
+- uid: DxfLibrary.DxfSpec.Spec`1.SpecType*
+  name: SpecType
+  href: api/DxfLibrary.DxfSpec.Spec-1.html#DxfLibrary_DxfSpec_Spec_1_SpecType_
+  commentId: Overload:DxfLibrary.DxfSpec.Spec`1.SpecType
+  isSpec: "True"
+  fullName: DxfLibrary.DxfSpec.Spec<T>.SpecType
+  fullName.vb: DxfLibrary.DxfSpec.Spec(Of T).SpecType
+  nameWithType: Spec<T>.SpecType
+  nameWithType.vb: Spec(Of T).SpecType
+- uid: DxfLibrary.DxfSpec.SpecService
+  name: SpecService
+  href: api/DxfLibrary.DxfSpec.SpecService.html
+  commentId: T:DxfLibrary.DxfSpec.SpecService
+  fullName: DxfLibrary.DxfSpec.SpecService
+  nameWithType: SpecService
+- uid: DxfLibrary.DxfSpec.SpecService.DxfCommonSpec
+  name: DxfCommonSpec
+  href: api/DxfLibrary.DxfSpec.SpecService.html#DxfLibrary_DxfSpec_SpecService_DxfCommonSpec
+  commentId: F:DxfLibrary.DxfSpec.SpecService.DxfCommonSpec
+  fullName: DxfLibrary.DxfSpec.SpecService.DxfCommonSpec
+  nameWithType: SpecService.DxfCommonSpec
+- uid: DxfLibrary.DxfSpec.SpecService.EntitySpec
+  name: EntitySpec
+  href: api/DxfLibrary.DxfSpec.SpecService.html#DxfLibrary_DxfSpec_SpecService_EntitySpec
+  commentId: F:DxfLibrary.DxfSpec.SpecService.EntitySpec
+  fullName: DxfLibrary.DxfSpec.SpecService.EntitySpec
+  nameWithType: SpecService.EntitySpec
+- uid: DxfLibrary.DxfSpec.SpecService.GetSpec*
+  name: GetSpec
+  href: api/DxfLibrary.DxfSpec.SpecService.html#DxfLibrary_DxfSpec_SpecService_GetSpec_
+  commentId: Overload:DxfLibrary.DxfSpec.SpecService.GetSpec
+  isSpec: "True"
+  fullName: DxfLibrary.DxfSpec.SpecService.GetSpec
+  nameWithType: SpecService.GetSpec
+- uid: DxfLibrary.DxfSpec.SpecService.GetSpec``1(System.String)
+  name: GetSpec<T>(String)
+  href: api/DxfLibrary.DxfSpec.SpecService.html#DxfLibrary_DxfSpec_SpecService_GetSpec__1_System_String_
+  commentId: M:DxfLibrary.DxfSpec.SpecService.GetSpec``1(System.String)
+  name.vb: GetSpec(Of T)(String)
+  fullName: DxfLibrary.DxfSpec.SpecService.GetSpec<T>(System.String)
+  fullName.vb: DxfLibrary.DxfSpec.SpecService.GetSpec(Of T)(System.String)
+  nameWithType: SpecService.GetSpec<T>(String)
+  nameWithType.vb: SpecService.GetSpec(Of T)(String)
+- uid: DxfLibrary.DxfSpec.SpecService.HatchSpec
+  name: HatchSpec
+  href: api/DxfLibrary.DxfSpec.SpecService.html#DxfLibrary_DxfSpec_SpecService_HatchSpec
+  commentId: F:DxfLibrary.DxfSpec.SpecService.HatchSpec
+  fullName: DxfLibrary.DxfSpec.SpecService.HatchSpec
+  nameWithType: SpecService.HatchSpec
+- uid: DxfLibrary.DxfSpec.SpecService.HeaderSpec
+  name: HeaderSpec
+  href: api/DxfLibrary.DxfSpec.SpecService.html#DxfLibrary_DxfSpec_SpecService_HeaderSpec
+  commentId: F:DxfLibrary.DxfSpec.SpecService.HeaderSpec
+  fullName: DxfLibrary.DxfSpec.SpecService.HeaderSpec
+  nameWithType: SpecService.HeaderSpec
+- uid: DxfLibrary.DxfSpec.SpecService.LineSpec
+  name: LineSpec
+  href: api/DxfLibrary.DxfSpec.SpecService.html#DxfLibrary_DxfSpec_SpecService_LineSpec
+  commentId: F:DxfLibrary.DxfSpec.SpecService.LineSpec
+  fullName: DxfLibrary.DxfSpec.SpecService.LineSpec
+  nameWithType: SpecService.LineSpec
+- uid: DxfLibrary.DxfSpec.SpecService.LwPolylineSpec
+  name: LwPolylineSpec
+  href: api/DxfLibrary.DxfSpec.SpecService.html#DxfLibrary_DxfSpec_SpecService_LwPolylineSpec
+  commentId: F:DxfLibrary.DxfSpec.SpecService.LwPolylineSpec
+  fullName: DxfLibrary.DxfSpec.SpecService.LwPolylineSpec
+  nameWithType: SpecService.LwPolylineSpec
+- uid: DxfLibrary.DxfSpec.SpecService.PurgeSpecs
+  name: PurgeSpecs()
+  href: api/DxfLibrary.DxfSpec.SpecService.html#DxfLibrary_DxfSpec_SpecService_PurgeSpecs
+  commentId: M:DxfLibrary.DxfSpec.SpecService.PurgeSpecs
+  fullName: DxfLibrary.DxfSpec.SpecService.PurgeSpecs()
+  nameWithType: SpecService.PurgeSpecs()
+- uid: DxfLibrary.DxfSpec.SpecService.PurgeSpecs*
+  name: PurgeSpecs
+  href: api/DxfLibrary.DxfSpec.SpecService.html#DxfLibrary_DxfSpec_SpecService_PurgeSpecs_
+  commentId: Overload:DxfLibrary.DxfSpec.SpecService.PurgeSpecs
+  isSpec: "True"
+  fullName: DxfLibrary.DxfSpec.SpecService.PurgeSpecs
+  nameWithType: SpecService.PurgeSpecs
+- uid: DxfLibrary.Entities
+  name: DxfLibrary.Entities
+  href: api/DxfLibrary.Entities.html
+  commentId: N:DxfLibrary.Entities
+  fullName: DxfLibrary.Entities
+  nameWithType: DxfLibrary.Entities
+- uid: DxfLibrary.Entities.Entity
+  name: Entity
+  href: api/DxfLibrary.Entities.Entity.html
+  commentId: T:DxfLibrary.Entities.Entity
+  fullName: DxfLibrary.Entities.Entity
+  nameWithType: Entity
+- uid: DxfLibrary.Entities.Entity.#ctor
+  name: Entity()
+  href: api/DxfLibrary.Entities.Entity.html#DxfLibrary_Entities_Entity__ctor
+  commentId: M:DxfLibrary.Entities.Entity.#ctor
+  fullName: DxfLibrary.Entities.Entity.Entity()
+  nameWithType: Entity.Entity()
+- uid: DxfLibrary.Entities.Entity.#ctor*
+  name: Entity
+  href: api/DxfLibrary.Entities.Entity.html#DxfLibrary_Entities_Entity__ctor_
+  commentId: Overload:DxfLibrary.Entities.Entity.#ctor
+  isSpec: "True"
+  fullName: DxfLibrary.Entities.Entity.Entity
+  nameWithType: Entity.Entity
+- uid: DxfLibrary.Entities.Entity.EntityType
+  name: EntityType
+  href: api/DxfLibrary.Entities.Entity.html#DxfLibrary_Entities_Entity_EntityType
+  commentId: P:DxfLibrary.Entities.Entity.EntityType
+  fullName: DxfLibrary.Entities.Entity.EntityType
+  nameWithType: Entity.EntityType
+- uid: DxfLibrary.Entities.Entity.EntityType*
+  name: EntityType
+  href: api/DxfLibrary.Entities.Entity.html#DxfLibrary_Entities_Entity_EntityType_
+  commentId: Overload:DxfLibrary.Entities.Entity.EntityType
+  isSpec: "True"
+  fullName: DxfLibrary.Entities.Entity.EntityType
+  nameWithType: Entity.EntityType
+- uid: DxfLibrary.Entities.Entity.GeometricBase
+  name: GeometricBase
+  href: api/DxfLibrary.Entities.Entity.html#DxfLibrary_Entities_Entity_GeometricBase
+  commentId: F:DxfLibrary.Entities.Entity.GeometricBase
+  fullName: DxfLibrary.Entities.Entity.GeometricBase
+  nameWithType: Entity.GeometricBase
+- uid: DxfLibrary.Entities.Entity.Handle
+  name: Handle
+  href: api/DxfLibrary.Entities.Entity.html#DxfLibrary_Entities_Entity_Handle
+  commentId: P:DxfLibrary.Entities.Entity.Handle
+  fullName: DxfLibrary.Entities.Entity.Handle
+  nameWithType: Entity.Handle
+- uid: DxfLibrary.Entities.Entity.Handle*
+  name: Handle
+  href: api/DxfLibrary.Entities.Entity.html#DxfLibrary_Entities_Entity_Handle_
+  commentId: Overload:DxfLibrary.Entities.Entity.Handle
+  isSpec: "True"
+  fullName: DxfLibrary.Entities.Entity.Handle
+  nameWithType: Entity.Handle
+- uid: DxfLibrary.Entities.Entity.LayerName
+  name: LayerName
+  href: api/DxfLibrary.Entities.Entity.html#DxfLibrary_Entities_Entity_LayerName
+  commentId: P:DxfLibrary.Entities.Entity.LayerName
+  fullName: DxfLibrary.Entities.Entity.LayerName
+  nameWithType: Entity.LayerName
+- uid: DxfLibrary.Entities.Entity.LayerName*
+  name: LayerName
+  href: api/DxfLibrary.Entities.Entity.html#DxfLibrary_Entities_Entity_LayerName_
+  commentId: Overload:DxfLibrary.Entities.Entity.LayerName
+  isSpec: "True"
+  fullName: DxfLibrary.Entities.Entity.LayerName
+  nameWithType: Entity.LayerName
+- uid: DxfLibrary.Entities.Entity.References
+  name: References
+  href: api/DxfLibrary.Entities.Entity.html#DxfLibrary_Entities_Entity_References
+  commentId: P:DxfLibrary.Entities.Entity.References
+  fullName: DxfLibrary.Entities.Entity.References
+  nameWithType: Entity.References
+- uid: DxfLibrary.Entities.Entity.References*
+  name: References
+  href: api/DxfLibrary.Entities.Entity.html#DxfLibrary_Entities_Entity_References_
+  commentId: Overload:DxfLibrary.Entities.Entity.References
+  isSpec: "True"
+  fullName: DxfLibrary.Entities.Entity.References
+  nameWithType: Entity.References
+- uid: DxfLibrary.Entities.EntityStruct
+  name: EntityStruct
+  href: api/DxfLibrary.Entities.EntityStruct.html
+  commentId: T:DxfLibrary.Entities.EntityStruct
+  fullName: DxfLibrary.Entities.EntityStruct
+  nameWithType: EntityStruct
+- uid: DxfLibrary.Entities.EntityStruct.EntityType
+  name: EntityType
+  href: api/DxfLibrary.Entities.EntityStruct.html#DxfLibrary_Entities_EntityStruct_EntityType
+  commentId: P:DxfLibrary.Entities.EntityStruct.EntityType
+  fullName: DxfLibrary.Entities.EntityStruct.EntityType
+  nameWithType: EntityStruct.EntityType
+- uid: DxfLibrary.Entities.EntityStruct.EntityType*
+  name: EntityType
+  href: api/DxfLibrary.Entities.EntityStruct.html#DxfLibrary_Entities_EntityStruct_EntityType_
+  commentId: Overload:DxfLibrary.Entities.EntityStruct.EntityType
+  isSpec: "True"
+  fullName: DxfLibrary.Entities.EntityStruct.EntityType
+  nameWithType: EntityStruct.EntityType
+- uid: DxfLibrary.Entities.EntityStruct.Handle
+  name: Handle
+  href: api/DxfLibrary.Entities.EntityStruct.html#DxfLibrary_Entities_EntityStruct_Handle
+  commentId: P:DxfLibrary.Entities.EntityStruct.Handle
+  fullName: DxfLibrary.Entities.EntityStruct.Handle
+  nameWithType: EntityStruct.Handle
+- uid: DxfLibrary.Entities.EntityStruct.Handle*
+  name: Handle
+  href: api/DxfLibrary.Entities.EntityStruct.html#DxfLibrary_Entities_EntityStruct_Handle_
+  commentId: Overload:DxfLibrary.Entities.EntityStruct.Handle
+  isSpec: "True"
+  fullName: DxfLibrary.Entities.EntityStruct.Handle
+  nameWithType: EntityStruct.Handle
+- uid: DxfLibrary.Entities.EntityStruct.LayerName
+  name: LayerName
+  href: api/DxfLibrary.Entities.EntityStruct.html#DxfLibrary_Entities_EntityStruct_LayerName
+  commentId: P:DxfLibrary.Entities.EntityStruct.LayerName
+  fullName: DxfLibrary.Entities.EntityStruct.LayerName
+  nameWithType: EntityStruct.LayerName
+- uid: DxfLibrary.Entities.EntityStruct.LayerName*
+  name: LayerName
+  href: api/DxfLibrary.Entities.EntityStruct.html#DxfLibrary_Entities_EntityStruct_LayerName_
+  commentId: Overload:DxfLibrary.Entities.EntityStruct.LayerName
+  isSpec: "True"
+  fullName: DxfLibrary.Entities.EntityStruct.LayerName
+  nameWithType: EntityStruct.LayerName
+- uid: DxfLibrary.Entities.EntityStruct.References
+  name: References
+  href: api/DxfLibrary.Entities.EntityStruct.html#DxfLibrary_Entities_EntityStruct_References
+  commentId: P:DxfLibrary.Entities.EntityStruct.References
+  fullName: DxfLibrary.Entities.EntityStruct.References
+  nameWithType: EntityStruct.References
+- uid: DxfLibrary.Entities.EntityStruct.References*
+  name: References
+  href: api/DxfLibrary.Entities.EntityStruct.html#DxfLibrary_Entities_EntityStruct_References_
+  commentId: Overload:DxfLibrary.Entities.EntityStruct.References
+  isSpec: "True"
+  fullName: DxfLibrary.Entities.EntityStruct.References
+  nameWithType: EntityStruct.References
+- uid: DxfLibrary.Entities.EntityStruct.SetProperty(System.String,System.Object)
+  name: SetProperty(String, Object)
+  href: api/DxfLibrary.Entities.EntityStruct.html#DxfLibrary_Entities_EntityStruct_SetProperty_System_String_System_Object_
+  commentId: M:DxfLibrary.Entities.EntityStruct.SetProperty(System.String,System.Object)
+  fullName: DxfLibrary.Entities.EntityStruct.SetProperty(System.String, System.Object)
+  nameWithType: EntityStruct.SetProperty(String, Object)
+- uid: DxfLibrary.Entities.EntityStruct.SetProperty*
+  name: SetProperty
+  href: api/DxfLibrary.Entities.EntityStruct.html#DxfLibrary_Entities_EntityStruct_SetProperty_
+  commentId: Overload:DxfLibrary.Entities.EntityStruct.SetProperty
+  isSpec: "True"
+  fullName: DxfLibrary.Entities.EntityStruct.SetProperty
+  nameWithType: EntityStruct.SetProperty
+- uid: DxfLibrary.Entities.Hatch
+  name: Hatch
+  href: api/DxfLibrary.Entities.Hatch.html
+  commentId: T:DxfLibrary.Entities.Hatch
+  fullName: DxfLibrary.Entities.Hatch
+  nameWithType: Hatch
+- uid: DxfLibrary.Entities.Hatch.#ctor
+  name: Hatch()
+  href: api/DxfLibrary.Entities.Hatch.html#DxfLibrary_Entities_Hatch__ctor
+  commentId: M:DxfLibrary.Entities.Hatch.#ctor
+  fullName: DxfLibrary.Entities.Hatch.Hatch()
+  nameWithType: Hatch.Hatch()
+- uid: DxfLibrary.Entities.Hatch.#ctor*
+  name: Hatch
+  href: api/DxfLibrary.Entities.Hatch.html#DxfLibrary_Entities_Hatch__ctor_
+  commentId: Overload:DxfLibrary.Entities.Hatch.#ctor
+  isSpec: "True"
+  fullName: DxfLibrary.Entities.Hatch.Hatch
+  nameWithType: Hatch.Hatch
+- uid: DxfLibrary.Entities.Hatch.Area
+  name: Area
+  href: api/DxfLibrary.Entities.Hatch.html#DxfLibrary_Entities_Hatch_Area
+  commentId: P:DxfLibrary.Entities.Hatch.Area
+  fullName: DxfLibrary.Entities.Hatch.Area
+  nameWithType: Hatch.Area
+- uid: DxfLibrary.Entities.Hatch.Area*
+  name: Area
+  href: api/DxfLibrary.Entities.Hatch.html#DxfLibrary_Entities_Hatch_Area_
+  commentId: Overload:DxfLibrary.Entities.Hatch.Area
+  isSpec: "True"
+  fullName: DxfLibrary.Entities.Hatch.Area
+  nameWithType: Hatch.Area
+- uid: DxfLibrary.Entities.Hatch.ElevationPoint
+  name: ElevationPoint
+  href: api/DxfLibrary.Entities.Hatch.html#DxfLibrary_Entities_Hatch_ElevationPoint
+  commentId: P:DxfLibrary.Entities.Hatch.ElevationPoint
+  fullName: DxfLibrary.Entities.Hatch.ElevationPoint
+  nameWithType: Hatch.ElevationPoint
+- uid: DxfLibrary.Entities.Hatch.ElevationPoint*
+  name: ElevationPoint
+  href: api/DxfLibrary.Entities.Hatch.html#DxfLibrary_Entities_Hatch_ElevationPoint_
+  commentId: Overload:DxfLibrary.Entities.Hatch.ElevationPoint
+  isSpec: "True"
+  fullName: DxfLibrary.Entities.Hatch.ElevationPoint
+  nameWithType: Hatch.ElevationPoint
+- uid: DxfLibrary.Entities.Hatch.HasSolidFill
+  name: HasSolidFill
+  href: api/DxfLibrary.Entities.Hatch.html#DxfLibrary_Entities_Hatch_HasSolidFill
+  commentId: P:DxfLibrary.Entities.Hatch.HasSolidFill
+  fullName: DxfLibrary.Entities.Hatch.HasSolidFill
+  nameWithType: Hatch.HasSolidFill
+- uid: DxfLibrary.Entities.Hatch.HasSolidFill*
+  name: HasSolidFill
+  href: api/DxfLibrary.Entities.Hatch.html#DxfLibrary_Entities_Hatch_HasSolidFill_
+  commentId: Overload:DxfLibrary.Entities.Hatch.HasSolidFill
+  isSpec: "True"
+  fullName: DxfLibrary.Entities.Hatch.HasSolidFill
+  nameWithType: Hatch.HasSolidFill
+- uid: DxfLibrary.Entities.Hatch.IsAssociative
+  name: IsAssociative
+  href: api/DxfLibrary.Entities.Hatch.html#DxfLibrary_Entities_Hatch_IsAssociative
+  commentId: P:DxfLibrary.Entities.Hatch.IsAssociative
+  fullName: DxfLibrary.Entities.Hatch.IsAssociative
+  nameWithType: Hatch.IsAssociative
+- uid: DxfLibrary.Entities.Hatch.IsAssociative*
+  name: IsAssociative
+  href: api/DxfLibrary.Entities.Hatch.html#DxfLibrary_Entities_Hatch_IsAssociative_
+  commentId: Overload:DxfLibrary.Entities.Hatch.IsAssociative
+  isSpec: "True"
+  fullName: DxfLibrary.Entities.Hatch.IsAssociative
+  nameWithType: Hatch.IsAssociative
+- uid: DxfLibrary.Entities.Hatch.PatternName
+  name: PatternName
+  href: api/DxfLibrary.Entities.Hatch.html#DxfLibrary_Entities_Hatch_PatternName
+  commentId: P:DxfLibrary.Entities.Hatch.PatternName
+  fullName: DxfLibrary.Entities.Hatch.PatternName
+  nameWithType: Hatch.PatternName
+- uid: DxfLibrary.Entities.Hatch.PatternName*
+  name: PatternName
+  href: api/DxfLibrary.Entities.Hatch.html#DxfLibrary_Entities_Hatch_PatternName_
+  commentId: Overload:DxfLibrary.Entities.Hatch.PatternName
+  isSpec: "True"
+  fullName: DxfLibrary.Entities.Hatch.PatternName
+  nameWithType: Hatch.PatternName
+- uid: DxfLibrary.Entities.IEntity
+  name: IEntity
+  href: api/DxfLibrary.Entities.IEntity.html
+  commentId: T:DxfLibrary.Entities.IEntity
+  fullName: DxfLibrary.Entities.IEntity
+  nameWithType: IEntity
+- uid: DxfLibrary.Entities.IEntity.EntityType
+  name: EntityType
+  href: api/DxfLibrary.Entities.IEntity.html#DxfLibrary_Entities_IEntity_EntityType
+  commentId: P:DxfLibrary.Entities.IEntity.EntityType
+  fullName: DxfLibrary.Entities.IEntity.EntityType
+  nameWithType: IEntity.EntityType
+- uid: DxfLibrary.Entities.IEntity.EntityType*
+  name: EntityType
+  href: api/DxfLibrary.Entities.IEntity.html#DxfLibrary_Entities_IEntity_EntityType_
+  commentId: Overload:DxfLibrary.Entities.IEntity.EntityType
+  isSpec: "True"
+  fullName: DxfLibrary.Entities.IEntity.EntityType
+  nameWithType: IEntity.EntityType
+- uid: DxfLibrary.Entities.IEntity.Handle
+  name: Handle
+  href: api/DxfLibrary.Entities.IEntity.html#DxfLibrary_Entities_IEntity_Handle
+  commentId: P:DxfLibrary.Entities.IEntity.Handle
+  fullName: DxfLibrary.Entities.IEntity.Handle
+  nameWithType: IEntity.Handle
+- uid: DxfLibrary.Entities.IEntity.Handle*
+  name: Handle
+  href: api/DxfLibrary.Entities.IEntity.html#DxfLibrary_Entities_IEntity_Handle_
+  commentId: Overload:DxfLibrary.Entities.IEntity.Handle
+  isSpec: "True"
+  fullName: DxfLibrary.Entities.IEntity.Handle
+  nameWithType: IEntity.Handle
+- uid: DxfLibrary.Entities.IEntity.LayerName
+  name: LayerName
+  href: api/DxfLibrary.Entities.IEntity.html#DxfLibrary_Entities_IEntity_LayerName
+  commentId: P:DxfLibrary.Entities.IEntity.LayerName
+  fullName: DxfLibrary.Entities.IEntity.LayerName
+  nameWithType: IEntity.LayerName
+- uid: DxfLibrary.Entities.IEntity.LayerName*
+  name: LayerName
+  href: api/DxfLibrary.Entities.IEntity.html#DxfLibrary_Entities_IEntity_LayerName_
+  commentId: Overload:DxfLibrary.Entities.IEntity.LayerName
+  isSpec: "True"
+  fullName: DxfLibrary.Entities.IEntity.LayerName
+  nameWithType: IEntity.LayerName
+- uid: DxfLibrary.Entities.IEntity.References
+  name: References
+  href: api/DxfLibrary.Entities.IEntity.html#DxfLibrary_Entities_IEntity_References
+  commentId: P:DxfLibrary.Entities.IEntity.References
+  fullName: DxfLibrary.Entities.IEntity.References
+  nameWithType: IEntity.References
+- uid: DxfLibrary.Entities.IEntity.References*
+  name: References
+  href: api/DxfLibrary.Entities.IEntity.html#DxfLibrary_Entities_IEntity_References_
+  commentId: Overload:DxfLibrary.Entities.IEntity.References
+  isSpec: "True"
+  fullName: DxfLibrary.Entities.IEntity.References
+  nameWithType: IEntity.References
+- uid: DxfLibrary.Entities.IEntityStruct
+  name: IEntityStruct
+  href: api/DxfLibrary.Entities.IEntityStruct.html
+  commentId: T:DxfLibrary.Entities.IEntityStruct
+  fullName: DxfLibrary.Entities.IEntityStruct
+  nameWithType: IEntityStruct
+- uid: DxfLibrary.Entities.Line
+  name: Line
+  href: api/DxfLibrary.Entities.Line.html
+  commentId: T:DxfLibrary.Entities.Line
+  fullName: DxfLibrary.Entities.Line
+  nameWithType: Line
+- uid: DxfLibrary.Entities.Line.#ctor
+  name: Line()
+  href: api/DxfLibrary.Entities.Line.html#DxfLibrary_Entities_Line__ctor
+  commentId: M:DxfLibrary.Entities.Line.#ctor
+  fullName: DxfLibrary.Entities.Line.Line()
+  nameWithType: Line.Line()
+- uid: DxfLibrary.Entities.Line.#ctor*
+  name: Line
+  href: api/DxfLibrary.Entities.Line.html#DxfLibrary_Entities_Line__ctor_
+  commentId: Overload:DxfLibrary.Entities.Line.#ctor
+  isSpec: "True"
+  fullName: DxfLibrary.Entities.Line.Line
+  nameWithType: Line.Line
+- uid: DxfLibrary.Entities.Line.EndPoint
+  name: EndPoint
+  href: api/DxfLibrary.Entities.Line.html#DxfLibrary_Entities_Line_EndPoint
+  commentId: P:DxfLibrary.Entities.Line.EndPoint
+  fullName: DxfLibrary.Entities.Line.EndPoint
+  nameWithType: Line.EndPoint
+- uid: DxfLibrary.Entities.Line.EndPoint*
+  name: EndPoint
+  href: api/DxfLibrary.Entities.Line.html#DxfLibrary_Entities_Line_EndPoint_
+  commentId: Overload:DxfLibrary.Entities.Line.EndPoint
+  isSpec: "True"
+  fullName: DxfLibrary.Entities.Line.EndPoint
+  nameWithType: Line.EndPoint
+- uid: DxfLibrary.Entities.Line.Length
+  name: Length
+  href: api/DxfLibrary.Entities.Line.html#DxfLibrary_Entities_Line_Length
+  commentId: P:DxfLibrary.Entities.Line.Length
+  fullName: DxfLibrary.Entities.Line.Length
+  nameWithType: Line.Length
+- uid: DxfLibrary.Entities.Line.Length*
+  name: Length
+  href: api/DxfLibrary.Entities.Line.html#DxfLibrary_Entities_Line_Length_
+  commentId: Overload:DxfLibrary.Entities.Line.Length
+  isSpec: "True"
+  fullName: DxfLibrary.Entities.Line.Length
+  nameWithType: Line.Length
+- uid: DxfLibrary.Entities.Line.StartPoint
+  name: StartPoint
+  href: api/DxfLibrary.Entities.Line.html#DxfLibrary_Entities_Line_StartPoint
+  commentId: P:DxfLibrary.Entities.Line.StartPoint
+  fullName: DxfLibrary.Entities.Line.StartPoint
+  nameWithType: Line.StartPoint
+- uid: DxfLibrary.Entities.Line.StartPoint*
+  name: StartPoint
+  href: api/DxfLibrary.Entities.Line.html#DxfLibrary_Entities_Line_StartPoint_
+  commentId: Overload:DxfLibrary.Entities.Line.StartPoint
+  isSpec: "True"
+  fullName: DxfLibrary.Entities.Line.StartPoint
+  nameWithType: Line.StartPoint
+- uid: DxfLibrary.Entities.LwPolyline
+  name: LwPolyline
+  href: api/DxfLibrary.Entities.LwPolyline.html
+  commentId: T:DxfLibrary.Entities.LwPolyline
+  fullName: DxfLibrary.Entities.LwPolyline
+  nameWithType: LwPolyline
+- uid: DxfLibrary.Entities.LwPolyline.#ctor
+  name: LwPolyline()
+  href: api/DxfLibrary.Entities.LwPolyline.html#DxfLibrary_Entities_LwPolyline__ctor
+  commentId: M:DxfLibrary.Entities.LwPolyline.#ctor
+  fullName: DxfLibrary.Entities.LwPolyline.LwPolyline()
+  nameWithType: LwPolyline.LwPolyline()
+- uid: DxfLibrary.Entities.LwPolyline.#ctor*
+  name: LwPolyline
+  href: api/DxfLibrary.Entities.LwPolyline.html#DxfLibrary_Entities_LwPolyline__ctor_
+  commentId: Overload:DxfLibrary.Entities.LwPolyline.#ctor
+  isSpec: "True"
+  fullName: DxfLibrary.Entities.LwPolyline.LwPolyline
+  nameWithType: LwPolyline.LwPolyline
+- uid: DxfLibrary.Entities.LwPolyline.Area
+  name: Area
+  href: api/DxfLibrary.Entities.LwPolyline.html#DxfLibrary_Entities_LwPolyline_Area
+  commentId: P:DxfLibrary.Entities.LwPolyline.Area
+  fullName: DxfLibrary.Entities.LwPolyline.Area
+  nameWithType: LwPolyline.Area
+- uid: DxfLibrary.Entities.LwPolyline.Area*
+  name: Area
+  href: api/DxfLibrary.Entities.LwPolyline.html#DxfLibrary_Entities_LwPolyline_Area_
+  commentId: Overload:DxfLibrary.Entities.LwPolyline.Area
+  isSpec: "True"
+  fullName: DxfLibrary.Entities.LwPolyline.Area
+  nameWithType: LwPolyline.Area
+- uid: DxfLibrary.Entities.LwPolyline.ConstWidth
+  name: ConstWidth
+  href: api/DxfLibrary.Entities.LwPolyline.html#DxfLibrary_Entities_LwPolyline_ConstWidth
+  commentId: P:DxfLibrary.Entities.LwPolyline.ConstWidth
+  fullName: DxfLibrary.Entities.LwPolyline.ConstWidth
+  nameWithType: LwPolyline.ConstWidth
+- uid: DxfLibrary.Entities.LwPolyline.ConstWidth*
+  name: ConstWidth
+  href: api/DxfLibrary.Entities.LwPolyline.html#DxfLibrary_Entities_LwPolyline_ConstWidth_
+  commentId: Overload:DxfLibrary.Entities.LwPolyline.ConstWidth
+  isSpec: "True"
+  fullName: DxfLibrary.Entities.LwPolyline.ConstWidth
+  nameWithType: LwPolyline.ConstWidth
+- uid: DxfLibrary.Entities.LwPolyline.Elevation
+  name: Elevation
+  href: api/DxfLibrary.Entities.LwPolyline.html#DxfLibrary_Entities_LwPolyline_Elevation
+  commentId: P:DxfLibrary.Entities.LwPolyline.Elevation
+  fullName: DxfLibrary.Entities.LwPolyline.Elevation
+  nameWithType: LwPolyline.Elevation
+- uid: DxfLibrary.Entities.LwPolyline.Elevation*
+  name: Elevation
+  href: api/DxfLibrary.Entities.LwPolyline.html#DxfLibrary_Entities_LwPolyline_Elevation_
+  commentId: Overload:DxfLibrary.Entities.LwPolyline.Elevation
+  isSpec: "True"
+  fullName: DxfLibrary.Entities.LwPolyline.Elevation
+  nameWithType: LwPolyline.Elevation
+- uid: DxfLibrary.Entities.LwPolyline.EndWidth
+  name: EndWidth
+  href: api/DxfLibrary.Entities.LwPolyline.html#DxfLibrary_Entities_LwPolyline_EndWidth
+  commentId: P:DxfLibrary.Entities.LwPolyline.EndWidth
+  fullName: DxfLibrary.Entities.LwPolyline.EndWidth
+  nameWithType: LwPolyline.EndWidth
+- uid: DxfLibrary.Entities.LwPolyline.EndWidth*
+  name: EndWidth
+  href: api/DxfLibrary.Entities.LwPolyline.html#DxfLibrary_Entities_LwPolyline_EndWidth_
+  commentId: Overload:DxfLibrary.Entities.LwPolyline.EndWidth
+  isSpec: "True"
+  fullName: DxfLibrary.Entities.LwPolyline.EndWidth
+  nameWithType: LwPolyline.EndWidth
+- uid: DxfLibrary.Entities.LwPolyline.Length
+  name: Length
+  href: api/DxfLibrary.Entities.LwPolyline.html#DxfLibrary_Entities_LwPolyline_Length
+  commentId: P:DxfLibrary.Entities.LwPolyline.Length
+  fullName: DxfLibrary.Entities.LwPolyline.Length
+  nameWithType: LwPolyline.Length
+- uid: DxfLibrary.Entities.LwPolyline.Length*
+  name: Length
+  href: api/DxfLibrary.Entities.LwPolyline.html#DxfLibrary_Entities_LwPolyline_Length_
+  commentId: Overload:DxfLibrary.Entities.LwPolyline.Length
+  isSpec: "True"
+  fullName: DxfLibrary.Entities.LwPolyline.Length
+  nameWithType: LwPolyline.Length
+- uid: DxfLibrary.Entities.LwPolyline.NumberOfVerticies
+  name: NumberOfVerticies
+  href: api/DxfLibrary.Entities.LwPolyline.html#DxfLibrary_Entities_LwPolyline_NumberOfVerticies
+  commentId: P:DxfLibrary.Entities.LwPolyline.NumberOfVerticies
+  fullName: DxfLibrary.Entities.LwPolyline.NumberOfVerticies
+  nameWithType: LwPolyline.NumberOfVerticies
+- uid: DxfLibrary.Entities.LwPolyline.NumberOfVerticies*
+  name: NumberOfVerticies
+  href: api/DxfLibrary.Entities.LwPolyline.html#DxfLibrary_Entities_LwPolyline_NumberOfVerticies_
+  commentId: Overload:DxfLibrary.Entities.LwPolyline.NumberOfVerticies
+  isSpec: "True"
+  fullName: DxfLibrary.Entities.LwPolyline.NumberOfVerticies
+  nameWithType: LwPolyline.NumberOfVerticies
+- uid: DxfLibrary.Entities.LwPolyline.PolylineFlag
+  name: PolylineFlag
+  href: api/DxfLibrary.Entities.LwPolyline.html#DxfLibrary_Entities_LwPolyline_PolylineFlag
+  commentId: P:DxfLibrary.Entities.LwPolyline.PolylineFlag
+  fullName: DxfLibrary.Entities.LwPolyline.PolylineFlag
+  nameWithType: LwPolyline.PolylineFlag
+- uid: DxfLibrary.Entities.LwPolyline.PolylineFlag*
+  name: PolylineFlag
+  href: api/DxfLibrary.Entities.LwPolyline.html#DxfLibrary_Entities_LwPolyline_PolylineFlag_
+  commentId: Overload:DxfLibrary.Entities.LwPolyline.PolylineFlag
+  isSpec: "True"
+  fullName: DxfLibrary.Entities.LwPolyline.PolylineFlag
+  nameWithType: LwPolyline.PolylineFlag
+- uid: DxfLibrary.Entities.LwPolyline.StartWidth
+  name: StartWidth
+  href: api/DxfLibrary.Entities.LwPolyline.html#DxfLibrary_Entities_LwPolyline_StartWidth
+  commentId: P:DxfLibrary.Entities.LwPolyline.StartWidth
+  fullName: DxfLibrary.Entities.LwPolyline.StartWidth
+  nameWithType: LwPolyline.StartWidth
+- uid: DxfLibrary.Entities.LwPolyline.StartWidth*
+  name: StartWidth
+  href: api/DxfLibrary.Entities.LwPolyline.html#DxfLibrary_Entities_LwPolyline_StartWidth_
+  commentId: Overload:DxfLibrary.Entities.LwPolyline.StartWidth
+  isSpec: "True"
+  fullName: DxfLibrary.Entities.LwPolyline.StartWidth
+  nameWithType: LwPolyline.StartWidth
+- uid: DxfLibrary.Entities.LwPolyline.Thickness
+  name: Thickness
+  href: api/DxfLibrary.Entities.LwPolyline.html#DxfLibrary_Entities_LwPolyline_Thickness
+  commentId: P:DxfLibrary.Entities.LwPolyline.Thickness
+  fullName: DxfLibrary.Entities.LwPolyline.Thickness
+  nameWithType: LwPolyline.Thickness
+- uid: DxfLibrary.Entities.LwPolyline.Thickness*
+  name: Thickness
+  href: api/DxfLibrary.Entities.LwPolyline.html#DxfLibrary_Entities_LwPolyline_Thickness_
+  commentId: Overload:DxfLibrary.Entities.LwPolyline.Thickness
+  isSpec: "True"
+  fullName: DxfLibrary.Entities.LwPolyline.Thickness
+  nameWithType: LwPolyline.Thickness
+- uid: DxfLibrary.Entities.Point
+  name: Point
+  href: api/DxfLibrary.Entities.Point.html
+  commentId: T:DxfLibrary.Entities.Point
+  fullName: DxfLibrary.Entities.Point
+  nameWithType: Point
+- uid: DxfLibrary.Entities.Point.#ctor(System.Double,System.Double,System.Double)
+  name: Point(Double, Double, Double)
+  href: api/DxfLibrary.Entities.Point.html#DxfLibrary_Entities_Point__ctor_System_Double_System_Double_System_Double_
+  commentId: M:DxfLibrary.Entities.Point.#ctor(System.Double,System.Double,System.Double)
+  fullName: DxfLibrary.Entities.Point.Point(System.Double, System.Double, System.Double)
+  nameWithType: Point.Point(Double, Double, Double)
+- uid: DxfLibrary.Entities.Point.#ctor*
+  name: Point
+  href: api/DxfLibrary.Entities.Point.html#DxfLibrary_Entities_Point__ctor_
+  commentId: Overload:DxfLibrary.Entities.Point.#ctor
+  isSpec: "True"
+  fullName: DxfLibrary.Entities.Point.Point
+  nameWithType: Point.Point
+- uid: DxfLibrary.Entities.Point.X
+  name: X
+  href: api/DxfLibrary.Entities.Point.html#DxfLibrary_Entities_Point_X
+  commentId: P:DxfLibrary.Entities.Point.X
+  fullName: DxfLibrary.Entities.Point.X
+  nameWithType: Point.X
+- uid: DxfLibrary.Entities.Point.X*
+  name: X
+  href: api/DxfLibrary.Entities.Point.html#DxfLibrary_Entities_Point_X_
+  commentId: Overload:DxfLibrary.Entities.Point.X
+  isSpec: "True"
+  fullName: DxfLibrary.Entities.Point.X
+  nameWithType: Point.X
+- uid: DxfLibrary.Entities.Point.Y
+  name: Y
+  href: api/DxfLibrary.Entities.Point.html#DxfLibrary_Entities_Point_Y
+  commentId: P:DxfLibrary.Entities.Point.Y
+  fullName: DxfLibrary.Entities.Point.Y
+  nameWithType: Point.Y
+- uid: DxfLibrary.Entities.Point.Y*
+  name: Y
+  href: api/DxfLibrary.Entities.Point.html#DxfLibrary_Entities_Point_Y_
+  commentId: Overload:DxfLibrary.Entities.Point.Y
+  isSpec: "True"
+  fullName: DxfLibrary.Entities.Point.Y
+  nameWithType: Point.Y
+- uid: DxfLibrary.Entities.Point.Z
+  name: Z
+  href: api/DxfLibrary.Entities.Point.html#DxfLibrary_Entities_Point_Z
+  commentId: P:DxfLibrary.Entities.Point.Z
+  fullName: DxfLibrary.Entities.Point.Z
+  nameWithType: Point.Z
+- uid: DxfLibrary.Entities.Point.Z*
+  name: Z
+  href: api/DxfLibrary.Entities.Point.html#DxfLibrary_Entities_Point_Z_
+  commentId: Overload:DxfLibrary.Entities.Point.Z
+  isSpec: "True"
+  fullName: DxfLibrary.Entities.Point.Z
+  nameWithType: Point.Z
+- uid: DxfLibrary.GeoMath
+  name: DxfLibrary.GeoMath
+  href: api/DxfLibrary.GeoMath.html
+  commentId: N:DxfLibrary.GeoMath
+  fullName: DxfLibrary.GeoMath
+  nameWithType: DxfLibrary.GeoMath
+- uid: DxfLibrary.GeoMath.BasicGeometry
+  name: BasicGeometry
+  href: api/DxfLibrary.GeoMath.BasicGeometry.html
+  commentId: T:DxfLibrary.GeoMath.BasicGeometry
+  fullName: DxfLibrary.GeoMath.BasicGeometry
+  nameWithType: BasicGeometry
+- uid: DxfLibrary.GeoMath.BasicGeometry.ArcLength(System.Double,System.Double)
+  name: ArcLength(Double, Double)
+  href: api/DxfLibrary.GeoMath.BasicGeometry.html#DxfLibrary_GeoMath_BasicGeometry_ArcLength_System_Double_System_Double_
+  commentId: M:DxfLibrary.GeoMath.BasicGeometry.ArcLength(System.Double,System.Double)
+  fullName: DxfLibrary.GeoMath.BasicGeometry.ArcLength(System.Double, System.Double)
+  nameWithType: BasicGeometry.ArcLength(Double, Double)
+- uid: DxfLibrary.GeoMath.BasicGeometry.ArcLength*
+  name: ArcLength
+  href: api/DxfLibrary.GeoMath.BasicGeometry.html#DxfLibrary_GeoMath_BasicGeometry_ArcLength_
+  commentId: Overload:DxfLibrary.GeoMath.BasicGeometry.ArcLength
+  isSpec: "True"
+  fullName: DxfLibrary.GeoMath.BasicGeometry.ArcLength
+  nameWithType: BasicGeometry.ArcLength
+- uid: DxfLibrary.GeoMath.BasicGeometry.CircleSegmentArea(System.Double,System.Double)
+  name: CircleSegmentArea(Double, Double)
+  href: api/DxfLibrary.GeoMath.BasicGeometry.html#DxfLibrary_GeoMath_BasicGeometry_CircleSegmentArea_System_Double_System_Double_
+  commentId: M:DxfLibrary.GeoMath.BasicGeometry.CircleSegmentArea(System.Double,System.Double)
+  fullName: DxfLibrary.GeoMath.BasicGeometry.CircleSegmentArea(System.Double, System.Double)
+  nameWithType: BasicGeometry.CircleSegmentArea(Double, Double)
+- uid: DxfLibrary.GeoMath.BasicGeometry.CircleSegmentArea*
+  name: CircleSegmentArea
+  href: api/DxfLibrary.GeoMath.BasicGeometry.html#DxfLibrary_GeoMath_BasicGeometry_CircleSegmentArea_
+  commentId: Overload:DxfLibrary.GeoMath.BasicGeometry.CircleSegmentArea
+  isSpec: "True"
+  fullName: DxfLibrary.GeoMath.BasicGeometry.CircleSegmentArea
+  nameWithType: BasicGeometry.CircleSegmentArea
+- uid: DxfLibrary.GeoMath.BasicGeometry.Deg2Rad(System.Double)
+  name: Deg2Rad(Double)
+  href: api/DxfLibrary.GeoMath.BasicGeometry.html#DxfLibrary_GeoMath_BasicGeometry_Deg2Rad_System_Double_
+  commentId: M:DxfLibrary.GeoMath.BasicGeometry.Deg2Rad(System.Double)
+  fullName: DxfLibrary.GeoMath.BasicGeometry.Deg2Rad(System.Double)
+  nameWithType: BasicGeometry.Deg2Rad(Double)
+- uid: DxfLibrary.GeoMath.BasicGeometry.Deg2Rad*
+  name: Deg2Rad
+  href: api/DxfLibrary.GeoMath.BasicGeometry.html#DxfLibrary_GeoMath_BasicGeometry_Deg2Rad_
+  commentId: Overload:DxfLibrary.GeoMath.BasicGeometry.Deg2Rad
+  isSpec: "True"
+  fullName: DxfLibrary.GeoMath.BasicGeometry.Deg2Rad
+  nameWithType: BasicGeometry.Deg2Rad
+- uid: DxfLibrary.GeoMath.BasicGeometry.Distance(DxfLibrary.Geometry.GeoPoint,DxfLibrary.Geometry.GeoPoint)
+  name: Distance(GeoPoint, GeoPoint)
+  href: api/DxfLibrary.GeoMath.BasicGeometry.html#DxfLibrary_GeoMath_BasicGeometry_Distance_DxfLibrary_Geometry_GeoPoint_DxfLibrary_Geometry_GeoPoint_
+  commentId: M:DxfLibrary.GeoMath.BasicGeometry.Distance(DxfLibrary.Geometry.GeoPoint,DxfLibrary.Geometry.GeoPoint)
+  fullName: DxfLibrary.GeoMath.BasicGeometry.Distance(DxfLibrary.Geometry.GeoPoint, DxfLibrary.Geometry.GeoPoint)
+  nameWithType: BasicGeometry.Distance(GeoPoint, GeoPoint)
+- uid: DxfLibrary.GeoMath.BasicGeometry.Distance*
+  name: Distance
+  href: api/DxfLibrary.GeoMath.BasicGeometry.html#DxfLibrary_GeoMath_BasicGeometry_Distance_
+  commentId: Overload:DxfLibrary.GeoMath.BasicGeometry.Distance
+  isSpec: "True"
+  fullName: DxfLibrary.GeoMath.BasicGeometry.Distance
+  nameWithType: BasicGeometry.Distance
+- uid: DxfLibrary.GeoMath.BasicGeometry.DoubleCompare(System.Double,System.Double)
+  name: DoubleCompare(Double, Double)
+  href: api/DxfLibrary.GeoMath.BasicGeometry.html#DxfLibrary_GeoMath_BasicGeometry_DoubleCompare_System_Double_System_Double_
+  commentId: M:DxfLibrary.GeoMath.BasicGeometry.DoubleCompare(System.Double,System.Double)
+  fullName: DxfLibrary.GeoMath.BasicGeometry.DoubleCompare(System.Double, System.Double)
+  nameWithType: BasicGeometry.DoubleCompare(Double, Double)
+- uid: DxfLibrary.GeoMath.BasicGeometry.DoubleCompare*
+  name: DoubleCompare
+  href: api/DxfLibrary.GeoMath.BasicGeometry.html#DxfLibrary_GeoMath_BasicGeometry_DoubleCompare_
+  commentId: Overload:DxfLibrary.GeoMath.BasicGeometry.DoubleCompare
+  isSpec: "True"
+  fullName: DxfLibrary.GeoMath.BasicGeometry.DoubleCompare
+  nameWithType: BasicGeometry.DoubleCompare
+- uid: DxfLibrary.GeoMath.BasicGeometry.Rad2Deg(System.Double)
+  name: Rad2Deg(Double)
+  href: api/DxfLibrary.GeoMath.BasicGeometry.html#DxfLibrary_GeoMath_BasicGeometry_Rad2Deg_System_Double_
+  commentId: M:DxfLibrary.GeoMath.BasicGeometry.Rad2Deg(System.Double)
+  fullName: DxfLibrary.GeoMath.BasicGeometry.Rad2Deg(System.Double)
+  nameWithType: BasicGeometry.Rad2Deg(Double)
+- uid: DxfLibrary.GeoMath.BasicGeometry.Rad2Deg*
+  name: Rad2Deg
+  href: api/DxfLibrary.GeoMath.BasicGeometry.html#DxfLibrary_GeoMath_BasicGeometry_Rad2Deg_
+  commentId: Overload:DxfLibrary.GeoMath.BasicGeometry.Rad2Deg
+  isSpec: "True"
+  fullName: DxfLibrary.GeoMath.BasicGeometry.Rad2Deg
+  nameWithType: BasicGeometry.Rad2Deg
+- uid: DxfLibrary.GeoMath.BasicGeometry.Tolerance
+  name: Tolerance
+  href: api/DxfLibrary.GeoMath.BasicGeometry.html#DxfLibrary_GeoMath_BasicGeometry_Tolerance
+  commentId: F:DxfLibrary.GeoMath.BasicGeometry.Tolerance
+  fullName: DxfLibrary.GeoMath.BasicGeometry.Tolerance
+  nameWithType: BasicGeometry.Tolerance
+- uid: DxfLibrary.GeoMath.BasicGeometry.TrapzArea(DxfLibrary.Geometry.GeoLine)
+  name: TrapzArea(GeoLine)
+  href: api/DxfLibrary.GeoMath.BasicGeometry.html#DxfLibrary_GeoMath_BasicGeometry_TrapzArea_DxfLibrary_Geometry_GeoLine_
+  commentId: M:DxfLibrary.GeoMath.BasicGeometry.TrapzArea(DxfLibrary.Geometry.GeoLine)
+  fullName: DxfLibrary.GeoMath.BasicGeometry.TrapzArea(DxfLibrary.Geometry.GeoLine)
+  nameWithType: BasicGeometry.TrapzArea(GeoLine)
+- uid: DxfLibrary.GeoMath.BasicGeometry.TrapzArea*
+  name: TrapzArea
+  href: api/DxfLibrary.GeoMath.BasicGeometry.html#DxfLibrary_GeoMath_BasicGeometry_TrapzArea_
+  commentId: Overload:DxfLibrary.GeoMath.BasicGeometry.TrapzArea
+  isSpec: "True"
+  fullName: DxfLibrary.GeoMath.BasicGeometry.TrapzArea
+  nameWithType: BasicGeometry.TrapzArea
+- uid: DxfLibrary.GeoMath.IVectorable
+  name: IVectorable
+  href: api/DxfLibrary.GeoMath.IVectorable.html
+  commentId: T:DxfLibrary.GeoMath.IVectorable
+  fullName: DxfLibrary.GeoMath.IVectorable
+  nameWithType: IVectorable
+- uid: DxfLibrary.GeoMath.IVectorable.ToVector
+  name: ToVector()
+  href: api/DxfLibrary.GeoMath.IVectorable.html#DxfLibrary_GeoMath_IVectorable_ToVector
+  commentId: M:DxfLibrary.GeoMath.IVectorable.ToVector
+  fullName: DxfLibrary.GeoMath.IVectorable.ToVector()
+  nameWithType: IVectorable.ToVector()
+- uid: DxfLibrary.GeoMath.IVectorable.ToVector*
+  name: ToVector
+  href: api/DxfLibrary.GeoMath.IVectorable.html#DxfLibrary_GeoMath_IVectorable_ToVector_
+  commentId: Overload:DxfLibrary.GeoMath.IVectorable.ToVector
+  isSpec: "True"
+  fullName: DxfLibrary.GeoMath.IVectorable.ToVector
+  nameWithType: IVectorable.ToVector
+- uid: DxfLibrary.GeoMath.Vector
+  name: Vector
+  href: api/DxfLibrary.GeoMath.Vector.html
+  commentId: T:DxfLibrary.GeoMath.Vector
+  fullName: DxfLibrary.GeoMath.Vector
+  nameWithType: Vector
+- uid: DxfLibrary.GeoMath.Vector.#ctor(DxfLibrary.Geometry.GeoPoint)
+  name: Vector(GeoPoint)
+  href: api/DxfLibrary.GeoMath.Vector.html#DxfLibrary_GeoMath_Vector__ctor_DxfLibrary_Geometry_GeoPoint_
+  commentId: M:DxfLibrary.GeoMath.Vector.#ctor(DxfLibrary.Geometry.GeoPoint)
+  fullName: DxfLibrary.GeoMath.Vector.Vector(DxfLibrary.Geometry.GeoPoint)
+  nameWithType: Vector.Vector(GeoPoint)
+- uid: DxfLibrary.GeoMath.Vector.#ctor(DxfLibrary.Geometry.GeoPoint,DxfLibrary.Geometry.GeoPoint)
+  name: Vector(GeoPoint, GeoPoint)
+  href: api/DxfLibrary.GeoMath.Vector.html#DxfLibrary_GeoMath_Vector__ctor_DxfLibrary_Geometry_GeoPoint_DxfLibrary_Geometry_GeoPoint_
+  commentId: M:DxfLibrary.GeoMath.Vector.#ctor(DxfLibrary.Geometry.GeoPoint,DxfLibrary.Geometry.GeoPoint)
+  fullName: DxfLibrary.GeoMath.Vector.Vector(DxfLibrary.Geometry.GeoPoint, DxfLibrary.Geometry.GeoPoint)
+  nameWithType: Vector.Vector(GeoPoint, GeoPoint)
+- uid: DxfLibrary.GeoMath.Vector.#ctor*
+  name: Vector
+  href: api/DxfLibrary.GeoMath.Vector.html#DxfLibrary_GeoMath_Vector__ctor_
+  commentId: Overload:DxfLibrary.GeoMath.Vector.#ctor
+  isSpec: "True"
+  fullName: DxfLibrary.GeoMath.Vector.Vector
+  nameWithType: Vector.Vector
+- uid: DxfLibrary.GeoMath.Vector.Cross(DxfLibrary.GeoMath.Vector)
+  name: Cross(Vector)
+  href: api/DxfLibrary.GeoMath.Vector.html#DxfLibrary_GeoMath_Vector_Cross_DxfLibrary_GeoMath_Vector_
+  commentId: M:DxfLibrary.GeoMath.Vector.Cross(DxfLibrary.GeoMath.Vector)
+  fullName: DxfLibrary.GeoMath.Vector.Cross(DxfLibrary.GeoMath.Vector)
+  nameWithType: Vector.Cross(Vector)
+- uid: DxfLibrary.GeoMath.Vector.Cross*
+  name: Cross
+  href: api/DxfLibrary.GeoMath.Vector.html#DxfLibrary_GeoMath_Vector_Cross_
+  commentId: Overload:DxfLibrary.GeoMath.Vector.Cross
+  isSpec: "True"
+  fullName: DxfLibrary.GeoMath.Vector.Cross
+  nameWithType: Vector.Cross
+- uid: DxfLibrary.GeoMath.Vector.Destination
+  name: Destination
+  href: api/DxfLibrary.GeoMath.Vector.html#DxfLibrary_GeoMath_Vector_Destination
+  commentId: P:DxfLibrary.GeoMath.Vector.Destination
+  fullName: DxfLibrary.GeoMath.Vector.Destination
+  nameWithType: Vector.Destination
+- uid: DxfLibrary.GeoMath.Vector.Destination*
+  name: Destination
+  href: api/DxfLibrary.GeoMath.Vector.html#DxfLibrary_GeoMath_Vector_Destination_
+  commentId: Overload:DxfLibrary.GeoMath.Vector.Destination
+  isSpec: "True"
+  fullName: DxfLibrary.GeoMath.Vector.Destination
+  nameWithType: Vector.Destination
+- uid: DxfLibrary.GeoMath.Vector.Dot(DxfLibrary.GeoMath.Vector)
+  name: Dot(Vector)
+  href: api/DxfLibrary.GeoMath.Vector.html#DxfLibrary_GeoMath_Vector_Dot_DxfLibrary_GeoMath_Vector_
+  commentId: M:DxfLibrary.GeoMath.Vector.Dot(DxfLibrary.GeoMath.Vector)
+  fullName: DxfLibrary.GeoMath.Vector.Dot(DxfLibrary.GeoMath.Vector)
+  nameWithType: Vector.Dot(Vector)
+- uid: DxfLibrary.GeoMath.Vector.Dot*
+  name: Dot
+  href: api/DxfLibrary.GeoMath.Vector.html#DxfLibrary_GeoMath_Vector_Dot_
+  commentId: Overload:DxfLibrary.GeoMath.Vector.Dot
+  isSpec: "True"
+  fullName: DxfLibrary.GeoMath.Vector.Dot
+  nameWithType: Vector.Dot
+- uid: DxfLibrary.GeoMath.Vector.Equals(System.Object)
+  name: Equals(Object)
+  href: api/DxfLibrary.GeoMath.Vector.html#DxfLibrary_GeoMath_Vector_Equals_System_Object_
+  commentId: M:DxfLibrary.GeoMath.Vector.Equals(System.Object)
+  fullName: DxfLibrary.GeoMath.Vector.Equals(System.Object)
+  nameWithType: Vector.Equals(Object)
+- uid: DxfLibrary.GeoMath.Vector.Equals*
+  name: Equals
+  href: api/DxfLibrary.GeoMath.Vector.html#DxfLibrary_GeoMath_Vector_Equals_
+  commentId: Overload:DxfLibrary.GeoMath.Vector.Equals
+  isSpec: "True"
+  fullName: DxfLibrary.GeoMath.Vector.Equals
+  nameWithType: Vector.Equals
+- uid: DxfLibrary.GeoMath.Vector.GetHashCode
+  name: GetHashCode()
+  href: api/DxfLibrary.GeoMath.Vector.html#DxfLibrary_GeoMath_Vector_GetHashCode
+  commentId: M:DxfLibrary.GeoMath.Vector.GetHashCode
+  fullName: DxfLibrary.GeoMath.Vector.GetHashCode()
+  nameWithType: Vector.GetHashCode()
+- uid: DxfLibrary.GeoMath.Vector.GetHashCode*
+  name: GetHashCode
+  href: api/DxfLibrary.GeoMath.Vector.html#DxfLibrary_GeoMath_Vector_GetHashCode_
+  commentId: Overload:DxfLibrary.GeoMath.Vector.GetHashCode
+  isSpec: "True"
+  fullName: DxfLibrary.GeoMath.Vector.GetHashCode
+  nameWithType: Vector.GetHashCode
+- uid: DxfLibrary.GeoMath.Vector.Length
+  name: Length
+  href: api/DxfLibrary.GeoMath.Vector.html#DxfLibrary_GeoMath_Vector_Length
+  commentId: P:DxfLibrary.GeoMath.Vector.Length
+  fullName: DxfLibrary.GeoMath.Vector.Length
+  nameWithType: Vector.Length
+- uid: DxfLibrary.GeoMath.Vector.Length*
+  name: Length
+  href: api/DxfLibrary.GeoMath.Vector.html#DxfLibrary_GeoMath_Vector_Length_
+  commentId: Overload:DxfLibrary.GeoMath.Vector.Length
+  isSpec: "True"
+  fullName: DxfLibrary.GeoMath.Vector.Length
+  nameWithType: Vector.Length
+- uid: DxfLibrary.GeoMath.Vector.op_Addition(DxfLibrary.GeoMath.Vector,DxfLibrary.GeoMath.Vector)
+  name: Addition(Vector, Vector)
+  href: api/DxfLibrary.GeoMath.Vector.html#DxfLibrary_GeoMath_Vector_op_Addition_DxfLibrary_GeoMath_Vector_DxfLibrary_GeoMath_Vector_
+  commentId: M:DxfLibrary.GeoMath.Vector.op_Addition(DxfLibrary.GeoMath.Vector,DxfLibrary.GeoMath.Vector)
+  fullName: DxfLibrary.GeoMath.Vector.Addition(DxfLibrary.GeoMath.Vector, DxfLibrary.GeoMath.Vector)
+  nameWithType: Vector.Addition(Vector, Vector)
+- uid: DxfLibrary.GeoMath.Vector.op_Addition*
+  name: Addition
+  href: api/DxfLibrary.GeoMath.Vector.html#DxfLibrary_GeoMath_Vector_op_Addition_
+  commentId: Overload:DxfLibrary.GeoMath.Vector.op_Addition
+  isSpec: "True"
+  fullName: DxfLibrary.GeoMath.Vector.Addition
+  nameWithType: Vector.Addition
+- uid: DxfLibrary.GeoMath.Vector.Origin
+  name: Origin
+  href: api/DxfLibrary.GeoMath.Vector.html#DxfLibrary_GeoMath_Vector_Origin
+  commentId: P:DxfLibrary.GeoMath.Vector.Origin
+  fullName: DxfLibrary.GeoMath.Vector.Origin
+  nameWithType: Vector.Origin
+- uid: DxfLibrary.GeoMath.Vector.Origin*
+  name: Origin
+  href: api/DxfLibrary.GeoMath.Vector.html#DxfLibrary_GeoMath_Vector_Origin_
+  commentId: Overload:DxfLibrary.GeoMath.Vector.Origin
+  isSpec: "True"
+  fullName: DxfLibrary.GeoMath.Vector.Origin
+  nameWithType: Vector.Origin
+- uid: DxfLibrary.GeoMath.Vector.RotateZ(System.Double)
+  name: RotateZ(Double)
+  href: api/DxfLibrary.GeoMath.Vector.html#DxfLibrary_GeoMath_Vector_RotateZ_System_Double_
+  commentId: M:DxfLibrary.GeoMath.Vector.RotateZ(System.Double)
+  fullName: DxfLibrary.GeoMath.Vector.RotateZ(System.Double)
+  nameWithType: Vector.RotateZ(Double)
+- uid: DxfLibrary.GeoMath.Vector.RotateZ*
+  name: RotateZ
+  href: api/DxfLibrary.GeoMath.Vector.html#DxfLibrary_GeoMath_Vector_RotateZ_
+  commentId: Overload:DxfLibrary.GeoMath.Vector.RotateZ
+  isSpec: "True"
+  fullName: DxfLibrary.GeoMath.Vector.RotateZ
+  nameWithType: Vector.RotateZ
+- uid: DxfLibrary.GeoMath.Vector.Translate(DxfLibrary.Geometry.GeoPoint)
+  name: Translate(GeoPoint)
+  href: api/DxfLibrary.GeoMath.Vector.html#DxfLibrary_GeoMath_Vector_Translate_DxfLibrary_Geometry_GeoPoint_
+  commentId: M:DxfLibrary.GeoMath.Vector.Translate(DxfLibrary.Geometry.GeoPoint)
+  fullName: DxfLibrary.GeoMath.Vector.Translate(DxfLibrary.Geometry.GeoPoint)
+  nameWithType: Vector.Translate(GeoPoint)
+- uid: DxfLibrary.GeoMath.Vector.Translate*
+  name: Translate
+  href: api/DxfLibrary.GeoMath.Vector.html#DxfLibrary_GeoMath_Vector_Translate_
+  commentId: Overload:DxfLibrary.GeoMath.Vector.Translate
+  isSpec: "True"
+  fullName: DxfLibrary.GeoMath.Vector.Translate
+  nameWithType: Vector.Translate
+- uid: DxfLibrary.GeoMath.Vector.UnitVector
+  name: UnitVector
+  href: api/DxfLibrary.GeoMath.Vector.html#DxfLibrary_GeoMath_Vector_UnitVector
+  commentId: P:DxfLibrary.GeoMath.Vector.UnitVector
+  fullName: DxfLibrary.GeoMath.Vector.UnitVector
+  nameWithType: Vector.UnitVector
+- uid: DxfLibrary.GeoMath.Vector.UnitVector*
+  name: UnitVector
+  href: api/DxfLibrary.GeoMath.Vector.html#DxfLibrary_GeoMath_Vector_UnitVector_
+  commentId: Overload:DxfLibrary.GeoMath.Vector.UnitVector
+  isSpec: "True"
+  fullName: DxfLibrary.GeoMath.Vector.UnitVector
+  nameWithType: Vector.UnitVector
+- uid: DxfLibrary.GeoMath.Vector.UnitVectorX
+  name: UnitVectorX
+  href: api/DxfLibrary.GeoMath.Vector.html#DxfLibrary_GeoMath_Vector_UnitVectorX
+  commentId: P:DxfLibrary.GeoMath.Vector.UnitVectorX
+  fullName: DxfLibrary.GeoMath.Vector.UnitVectorX
+  nameWithType: Vector.UnitVectorX
+- uid: DxfLibrary.GeoMath.Vector.UnitVectorX*
+  name: UnitVectorX
+  href: api/DxfLibrary.GeoMath.Vector.html#DxfLibrary_GeoMath_Vector_UnitVectorX_
+  commentId: Overload:DxfLibrary.GeoMath.Vector.UnitVectorX
+  isSpec: "True"
+  fullName: DxfLibrary.GeoMath.Vector.UnitVectorX
+  nameWithType: Vector.UnitVectorX
+- uid: DxfLibrary.GeoMath.Vector.UnitVectorY
+  name: UnitVectorY
+  href: api/DxfLibrary.GeoMath.Vector.html#DxfLibrary_GeoMath_Vector_UnitVectorY
+  commentId: P:DxfLibrary.GeoMath.Vector.UnitVectorY
+  fullName: DxfLibrary.GeoMath.Vector.UnitVectorY
+  nameWithType: Vector.UnitVectorY
+- uid: DxfLibrary.GeoMath.Vector.UnitVectorY*
+  name: UnitVectorY
+  href: api/DxfLibrary.GeoMath.Vector.html#DxfLibrary_GeoMath_Vector_UnitVectorY_
+  commentId: Overload:DxfLibrary.GeoMath.Vector.UnitVectorY
+  isSpec: "True"
+  fullName: DxfLibrary.GeoMath.Vector.UnitVectorY
+  nameWithType: Vector.UnitVectorY
+- uid: DxfLibrary.GeoMath.Vector.UnitVectorZ
+  name: UnitVectorZ
+  href: api/DxfLibrary.GeoMath.Vector.html#DxfLibrary_GeoMath_Vector_UnitVectorZ
+  commentId: P:DxfLibrary.GeoMath.Vector.UnitVectorZ
+  fullName: DxfLibrary.GeoMath.Vector.UnitVectorZ
+  nameWithType: Vector.UnitVectorZ
+- uid: DxfLibrary.GeoMath.Vector.UnitVectorZ*
+  name: UnitVectorZ
+  href: api/DxfLibrary.GeoMath.Vector.html#DxfLibrary_GeoMath_Vector_UnitVectorZ_
+  commentId: Overload:DxfLibrary.GeoMath.Vector.UnitVectorZ
+  isSpec: "True"
+  fullName: DxfLibrary.GeoMath.Vector.UnitVectorZ
+  nameWithType: Vector.UnitVectorZ
+- uid: DxfLibrary.GeoMath.Vector.X
+  name: X
+  href: api/DxfLibrary.GeoMath.Vector.html#DxfLibrary_GeoMath_Vector_X
+  commentId: P:DxfLibrary.GeoMath.Vector.X
+  fullName: DxfLibrary.GeoMath.Vector.X
+  nameWithType: Vector.X
+- uid: DxfLibrary.GeoMath.Vector.X*
+  name: X
+  href: api/DxfLibrary.GeoMath.Vector.html#DxfLibrary_GeoMath_Vector_X_
+  commentId: Overload:DxfLibrary.GeoMath.Vector.X
+  isSpec: "True"
+  fullName: DxfLibrary.GeoMath.Vector.X
+  nameWithType: Vector.X
+- uid: DxfLibrary.GeoMath.Vector.Y
+  name: Y
+  href: api/DxfLibrary.GeoMath.Vector.html#DxfLibrary_GeoMath_Vector_Y
+  commentId: P:DxfLibrary.GeoMath.Vector.Y
+  fullName: DxfLibrary.GeoMath.Vector.Y
+  nameWithType: Vector.Y
+- uid: DxfLibrary.GeoMath.Vector.Y*
+  name: Y
+  href: api/DxfLibrary.GeoMath.Vector.html#DxfLibrary_GeoMath_Vector_Y_
+  commentId: Overload:DxfLibrary.GeoMath.Vector.Y
+  isSpec: "True"
+  fullName: DxfLibrary.GeoMath.Vector.Y
+  nameWithType: Vector.Y
+- uid: DxfLibrary.GeoMath.Vector.Z
+  name: Z
+  href: api/DxfLibrary.GeoMath.Vector.html#DxfLibrary_GeoMath_Vector_Z
+  commentId: P:DxfLibrary.GeoMath.Vector.Z
+  fullName: DxfLibrary.GeoMath.Vector.Z
+  nameWithType: Vector.Z
+- uid: DxfLibrary.GeoMath.Vector.Z*
+  name: Z
+  href: api/DxfLibrary.GeoMath.Vector.html#DxfLibrary_GeoMath_Vector_Z_
+  commentId: Overload:DxfLibrary.GeoMath.Vector.Z
+  isSpec: "True"
+  fullName: DxfLibrary.GeoMath.Vector.Z
+  nameWithType: Vector.Z
+- uid: DxfLibrary.Geometry
+  name: DxfLibrary.Geometry
+  href: api/DxfLibrary.Geometry.html
+  commentId: N:DxfLibrary.Geometry
+  fullName: DxfLibrary.Geometry
+  nameWithType: DxfLibrary.Geometry
+- uid: DxfLibrary.Geometry.Bulge
+  name: Bulge
+  href: api/DxfLibrary.Geometry.Bulge.html
+  commentId: T:DxfLibrary.Geometry.Bulge
+  fullName: DxfLibrary.Geometry.Bulge
+  nameWithType: Bulge
+- uid: DxfLibrary.Geometry.Bulge.#ctor(System.Double)
+  name: Bulge(Double)
+  href: api/DxfLibrary.Geometry.Bulge.html#DxfLibrary_Geometry_Bulge__ctor_System_Double_
+  commentId: M:DxfLibrary.Geometry.Bulge.#ctor(System.Double)
+  fullName: DxfLibrary.Geometry.Bulge.Bulge(System.Double)
+  nameWithType: Bulge.Bulge(Double)
+- uid: DxfLibrary.Geometry.Bulge.#ctor*
+  name: Bulge
+  href: api/DxfLibrary.Geometry.Bulge.html#DxfLibrary_Geometry_Bulge__ctor_
+  commentId: Overload:DxfLibrary.Geometry.Bulge.#ctor
+  isSpec: "True"
+  fullName: DxfLibrary.Geometry.Bulge.Bulge
+  nameWithType: Bulge.Bulge
+- uid: DxfLibrary.Geometry.Bulge.Angle
+  name: Angle
+  href: api/DxfLibrary.Geometry.Bulge.html#DxfLibrary_Geometry_Bulge_Angle
+  commentId: P:DxfLibrary.Geometry.Bulge.Angle
+  fullName: DxfLibrary.Geometry.Bulge.Angle
+  nameWithType: Bulge.Angle
+- uid: DxfLibrary.Geometry.Bulge.Angle*
+  name: Angle
+  href: api/DxfLibrary.Geometry.Bulge.html#DxfLibrary_Geometry_Bulge_Angle_
+  commentId: Overload:DxfLibrary.Geometry.Bulge.Angle
+  isSpec: "True"
+  fullName: DxfLibrary.Geometry.Bulge.Angle
+  nameWithType: Bulge.Angle
+- uid: DxfLibrary.Geometry.Bulge.AngleDeg
+  name: AngleDeg
+  href: api/DxfLibrary.Geometry.Bulge.html#DxfLibrary_Geometry_Bulge_AngleDeg
+  commentId: P:DxfLibrary.Geometry.Bulge.AngleDeg
+  fullName: DxfLibrary.Geometry.Bulge.AngleDeg
+  nameWithType: Bulge.AngleDeg
+- uid: DxfLibrary.Geometry.Bulge.AngleDeg*
+  name: AngleDeg
+  href: api/DxfLibrary.Geometry.Bulge.html#DxfLibrary_Geometry_Bulge_AngleDeg_
+  commentId: Overload:DxfLibrary.Geometry.Bulge.AngleDeg
+  isSpec: "True"
+  fullName: DxfLibrary.Geometry.Bulge.AngleDeg
+  nameWithType: Bulge.AngleDeg
+- uid: DxfLibrary.Geometry.Bulge.FromAngle(System.Double)
+  name: FromAngle(Double)
+  href: api/DxfLibrary.Geometry.Bulge.html#DxfLibrary_Geometry_Bulge_FromAngle_System_Double_
+  commentId: M:DxfLibrary.Geometry.Bulge.FromAngle(System.Double)
+  fullName: DxfLibrary.Geometry.Bulge.FromAngle(System.Double)
+  nameWithType: Bulge.FromAngle(Double)
+- uid: DxfLibrary.Geometry.Bulge.FromAngle*
+  name: FromAngle
+  href: api/DxfLibrary.Geometry.Bulge.html#DxfLibrary_Geometry_Bulge_FromAngle_
+  commentId: Overload:DxfLibrary.Geometry.Bulge.FromAngle
+  isSpec: "True"
+  fullName: DxfLibrary.Geometry.Bulge.FromAngle
+  nameWithType: Bulge.FromAngle
+- uid: DxfLibrary.Geometry.Bulge.Radius(DxfLibrary.Geometry.GeoPoint,DxfLibrary.Geometry.GeoPoint)
+  name: Radius(GeoPoint, GeoPoint)
+  href: api/DxfLibrary.Geometry.Bulge.html#DxfLibrary_Geometry_Bulge_Radius_DxfLibrary_Geometry_GeoPoint_DxfLibrary_Geometry_GeoPoint_
+  commentId: M:DxfLibrary.Geometry.Bulge.Radius(DxfLibrary.Geometry.GeoPoint,DxfLibrary.Geometry.GeoPoint)
+  fullName: DxfLibrary.Geometry.Bulge.Radius(DxfLibrary.Geometry.GeoPoint, DxfLibrary.Geometry.GeoPoint)
+  nameWithType: Bulge.Radius(GeoPoint, GeoPoint)
+- uid: DxfLibrary.Geometry.Bulge.Radius*
+  name: Radius
+  href: api/DxfLibrary.Geometry.Bulge.html#DxfLibrary_Geometry_Bulge_Radius_
+  commentId: Overload:DxfLibrary.Geometry.Bulge.Radius
+  isSpec: "True"
+  fullName: DxfLibrary.Geometry.Bulge.Radius
+  nameWithType: Bulge.Radius
+- uid: DxfLibrary.Geometry.Bulge.Sagitta(DxfLibrary.Geometry.GeoPoint,DxfLibrary.Geometry.GeoPoint)
+  name: Sagitta(GeoPoint, GeoPoint)
+  href: api/DxfLibrary.Geometry.Bulge.html#DxfLibrary_Geometry_Bulge_Sagitta_DxfLibrary_Geometry_GeoPoint_DxfLibrary_Geometry_GeoPoint_
+  commentId: M:DxfLibrary.Geometry.Bulge.Sagitta(DxfLibrary.Geometry.GeoPoint,DxfLibrary.Geometry.GeoPoint)
+  fullName: DxfLibrary.Geometry.Bulge.Sagitta(DxfLibrary.Geometry.GeoPoint, DxfLibrary.Geometry.GeoPoint)
+  nameWithType: Bulge.Sagitta(GeoPoint, GeoPoint)
+- uid: DxfLibrary.Geometry.Bulge.Sagitta*
+  name: Sagitta
+  href: api/DxfLibrary.Geometry.Bulge.html#DxfLibrary_Geometry_Bulge_Sagitta_
+  commentId: Overload:DxfLibrary.Geometry.Bulge.Sagitta
+  isSpec: "True"
+  fullName: DxfLibrary.Geometry.Bulge.Sagitta
+  nameWithType: Bulge.Sagitta
+- uid: DxfLibrary.Geometry.Bulge.Value
+  name: Value
+  href: api/DxfLibrary.Geometry.Bulge.html#DxfLibrary_Geometry_Bulge_Value
+  commentId: P:DxfLibrary.Geometry.Bulge.Value
+  fullName: DxfLibrary.Geometry.Bulge.Value
+  nameWithType: Bulge.Value
+- uid: DxfLibrary.Geometry.Bulge.Value*
+  name: Value
+  href: api/DxfLibrary.Geometry.Bulge.html#DxfLibrary_Geometry_Bulge_Value_
+  commentId: Overload:DxfLibrary.Geometry.Bulge.Value
+  isSpec: "True"
+  fullName: DxfLibrary.Geometry.Bulge.Value
+  nameWithType: Bulge.Value
+- uid: DxfLibrary.Geometry.GeoBase
+  name: GeoBase
+  href: api/DxfLibrary.Geometry.GeoBase.html
+  commentId: T:DxfLibrary.Geometry.GeoBase
+  fullName: DxfLibrary.Geometry.GeoBase
+  nameWithType: GeoBase
+- uid: DxfLibrary.Geometry.GeoLine
+  name: GeoLine
+  href: api/DxfLibrary.Geometry.GeoLine.html
+  commentId: T:DxfLibrary.Geometry.GeoLine
+  fullName: DxfLibrary.Geometry.GeoLine
+  nameWithType: GeoLine
+- uid: DxfLibrary.Geometry.GeoLine.#ctor
+  name: GeoLine()
+  href: api/DxfLibrary.Geometry.GeoLine.html#DxfLibrary_Geometry_GeoLine__ctor
+  commentId: M:DxfLibrary.Geometry.GeoLine.#ctor
+  fullName: DxfLibrary.Geometry.GeoLine.GeoLine()
+  nameWithType: GeoLine.GeoLine()
+- uid: DxfLibrary.Geometry.GeoLine.#ctor(DxfLibrary.Geometry.GeoPoint,DxfLibrary.Geometry.GeoPoint)
+  name: GeoLine(GeoPoint, GeoPoint)
+  href: api/DxfLibrary.Geometry.GeoLine.html#DxfLibrary_Geometry_GeoLine__ctor_DxfLibrary_Geometry_GeoPoint_DxfLibrary_Geometry_GeoPoint_
+  commentId: M:DxfLibrary.Geometry.GeoLine.#ctor(DxfLibrary.Geometry.GeoPoint,DxfLibrary.Geometry.GeoPoint)
+  fullName: DxfLibrary.Geometry.GeoLine.GeoLine(DxfLibrary.Geometry.GeoPoint, DxfLibrary.Geometry.GeoPoint)
+  nameWithType: GeoLine.GeoLine(GeoPoint, GeoPoint)
+- uid: DxfLibrary.Geometry.GeoLine.#ctor(DxfLibrary.Geometry.GeoPoint,DxfLibrary.Geometry.GeoPoint,DxfLibrary.Geometry.Bulge)
+  name: GeoLine(GeoPoint, GeoPoint, Bulge)
+  href: api/DxfLibrary.Geometry.GeoLine.html#DxfLibrary_Geometry_GeoLine__ctor_DxfLibrary_Geometry_GeoPoint_DxfLibrary_Geometry_GeoPoint_DxfLibrary_Geometry_Bulge_
+  commentId: M:DxfLibrary.Geometry.GeoLine.#ctor(DxfLibrary.Geometry.GeoPoint,DxfLibrary.Geometry.GeoPoint,DxfLibrary.Geometry.Bulge)
+  fullName: DxfLibrary.Geometry.GeoLine.GeoLine(DxfLibrary.Geometry.GeoPoint, DxfLibrary.Geometry.GeoPoint, DxfLibrary.Geometry.Bulge)
+  nameWithType: GeoLine.GeoLine(GeoPoint, GeoPoint, Bulge)
+- uid: DxfLibrary.Geometry.GeoLine.#ctor(DxfLibrary.Geometry.GeoPoint,System.Double,System.Double,System.Double)
+  name: GeoLine(GeoPoint, Double, Double, Double)
+  href: api/DxfLibrary.Geometry.GeoLine.html#DxfLibrary_Geometry_GeoLine__ctor_DxfLibrary_Geometry_GeoPoint_System_Double_System_Double_System_Double_
+  commentId: M:DxfLibrary.Geometry.GeoLine.#ctor(DxfLibrary.Geometry.GeoPoint,System.Double,System.Double,System.Double)
+  fullName: DxfLibrary.Geometry.GeoLine.GeoLine(DxfLibrary.Geometry.GeoPoint, System.Double, System.Double, System.Double)
+  nameWithType: GeoLine.GeoLine(GeoPoint, Double, Double, Double)
+- uid: DxfLibrary.Geometry.GeoLine.#ctor*
+  name: GeoLine
+  href: api/DxfLibrary.Geometry.GeoLine.html#DxfLibrary_Geometry_GeoLine__ctor_
+  commentId: Overload:DxfLibrary.Geometry.GeoLine.#ctor
+  isSpec: "True"
+  fullName: DxfLibrary.Geometry.GeoLine.GeoLine
+  nameWithType: GeoLine.GeoLine
+- uid: DxfLibrary.Geometry.GeoLine.Angle
+  name: Angle
+  href: api/DxfLibrary.Geometry.GeoLine.html#DxfLibrary_Geometry_GeoLine_Angle
+  commentId: P:DxfLibrary.Geometry.GeoLine.Angle
+  fullName: DxfLibrary.Geometry.GeoLine.Angle
+  nameWithType: GeoLine.Angle
+- uid: DxfLibrary.Geometry.GeoLine.Angle*
+  name: Angle
+  href: api/DxfLibrary.Geometry.GeoLine.html#DxfLibrary_Geometry_GeoLine_Angle_
+  commentId: Overload:DxfLibrary.Geometry.GeoLine.Angle
+  isSpec: "True"
+  fullName: DxfLibrary.Geometry.GeoLine.Angle
+  nameWithType: GeoLine.Angle
+- uid: DxfLibrary.Geometry.GeoLine.Area
+  name: Area
+  href: api/DxfLibrary.Geometry.GeoLine.html#DxfLibrary_Geometry_GeoLine_Area
+  commentId: P:DxfLibrary.Geometry.GeoLine.Area
+  fullName: DxfLibrary.Geometry.GeoLine.Area
+  nameWithType: GeoLine.Area
+- uid: DxfLibrary.Geometry.GeoLine.Area*
+  name: Area
+  href: api/DxfLibrary.Geometry.GeoLine.html#DxfLibrary_Geometry_GeoLine_Area_
+  commentId: Overload:DxfLibrary.Geometry.GeoLine.Area
+  isSpec: "True"
+  fullName: DxfLibrary.Geometry.GeoLine.Area
+  nameWithType: GeoLine.Area
+- uid: DxfLibrary.Geometry.GeoLine.Bulge
+  name: Bulge
+  href: api/DxfLibrary.Geometry.GeoLine.html#DxfLibrary_Geometry_GeoLine_Bulge
+  commentId: P:DxfLibrary.Geometry.GeoLine.Bulge
+  fullName: DxfLibrary.Geometry.GeoLine.Bulge
+  nameWithType: GeoLine.Bulge
+- uid: DxfLibrary.Geometry.GeoLine.Bulge*
+  name: Bulge
+  href: api/DxfLibrary.Geometry.GeoLine.html#DxfLibrary_Geometry_GeoLine_Bulge_
+  commentId: Overload:DxfLibrary.Geometry.GeoLine.Bulge
+  isSpec: "True"
+  fullName: DxfLibrary.Geometry.GeoLine.Bulge
+  nameWithType: GeoLine.Bulge
+- uid: DxfLibrary.Geometry.GeoLine.Equals(System.Object)
+  name: Equals(Object)
+  href: api/DxfLibrary.Geometry.GeoLine.html#DxfLibrary_Geometry_GeoLine_Equals_System_Object_
+  commentId: M:DxfLibrary.Geometry.GeoLine.Equals(System.Object)
+  fullName: DxfLibrary.Geometry.GeoLine.Equals(System.Object)
+  nameWithType: GeoLine.Equals(Object)
+- uid: DxfLibrary.Geometry.GeoLine.Equals*
+  name: Equals
+  href: api/DxfLibrary.Geometry.GeoLine.html#DxfLibrary_Geometry_GeoLine_Equals_
+  commentId: Overload:DxfLibrary.Geometry.GeoLine.Equals
+  isSpec: "True"
+  fullName: DxfLibrary.Geometry.GeoLine.Equals
+  nameWithType: GeoLine.Equals
+- uid: DxfLibrary.Geometry.GeoLine.GetHashCode
+  name: GetHashCode()
+  href: api/DxfLibrary.Geometry.GeoLine.html#DxfLibrary_Geometry_GeoLine_GetHashCode
+  commentId: M:DxfLibrary.Geometry.GeoLine.GetHashCode
+  fullName: DxfLibrary.Geometry.GeoLine.GetHashCode()
+  nameWithType: GeoLine.GetHashCode()
+- uid: DxfLibrary.Geometry.GeoLine.GetHashCode*
+  name: GetHashCode
+  href: api/DxfLibrary.Geometry.GeoLine.html#DxfLibrary_Geometry_GeoLine_GetHashCode_
+  commentId: Overload:DxfLibrary.Geometry.GeoLine.GetHashCode
+  isSpec: "True"
+  fullName: DxfLibrary.Geometry.GeoLine.GetHashCode
+  nameWithType: GeoLine.GetHashCode
+- uid: DxfLibrary.Geometry.GeoLine.HasBulge
+  name: HasBulge
+  href: api/DxfLibrary.Geometry.GeoLine.html#DxfLibrary_Geometry_GeoLine_HasBulge
+  commentId: P:DxfLibrary.Geometry.GeoLine.HasBulge
+  fullName: DxfLibrary.Geometry.GeoLine.HasBulge
+  nameWithType: GeoLine.HasBulge
+- uid: DxfLibrary.Geometry.GeoLine.HasBulge*
+  name: HasBulge
+  href: api/DxfLibrary.Geometry.GeoLine.html#DxfLibrary_Geometry_GeoLine_HasBulge_
+  commentId: Overload:DxfLibrary.Geometry.GeoLine.HasBulge
+  isSpec: "True"
+  fullName: DxfLibrary.Geometry.GeoLine.HasBulge
+  nameWithType: GeoLine.HasBulge
+- uid: DxfLibrary.Geometry.GeoLine.Length
+  name: Length
+  href: api/DxfLibrary.Geometry.GeoLine.html#DxfLibrary_Geometry_GeoLine_Length
+  commentId: P:DxfLibrary.Geometry.GeoLine.Length
+  fullName: DxfLibrary.Geometry.GeoLine.Length
+  nameWithType: GeoLine.Length
+- uid: DxfLibrary.Geometry.GeoLine.Length*
+  name: Length
+  href: api/DxfLibrary.Geometry.GeoLine.html#DxfLibrary_Geometry_GeoLine_Length_
+  commentId: Overload:DxfLibrary.Geometry.GeoLine.Length
+  isSpec: "True"
+  fullName: DxfLibrary.Geometry.GeoLine.Length
+  nameWithType: GeoLine.Length
+- uid: DxfLibrary.Geometry.GeoLine.Point0
+  name: Point0
+  href: api/DxfLibrary.Geometry.GeoLine.html#DxfLibrary_Geometry_GeoLine_Point0
+  commentId: P:DxfLibrary.Geometry.GeoLine.Point0
+  fullName: DxfLibrary.Geometry.GeoLine.Point0
+  nameWithType: GeoLine.Point0
+- uid: DxfLibrary.Geometry.GeoLine.Point0*
+  name: Point0
+  href: api/DxfLibrary.Geometry.GeoLine.html#DxfLibrary_Geometry_GeoLine_Point0_
+  commentId: Overload:DxfLibrary.Geometry.GeoLine.Point0
+  isSpec: "True"
+  fullName: DxfLibrary.Geometry.GeoLine.Point0
+  nameWithType: GeoLine.Point0
+- uid: DxfLibrary.Geometry.GeoLine.Point1
+  name: Point1
+  href: api/DxfLibrary.Geometry.GeoLine.html#DxfLibrary_Geometry_GeoLine_Point1
+  commentId: P:DxfLibrary.Geometry.GeoLine.Point1
+  fullName: DxfLibrary.Geometry.GeoLine.Point1
+  nameWithType: GeoLine.Point1
+- uid: DxfLibrary.Geometry.GeoLine.Point1*
+  name: Point1
+  href: api/DxfLibrary.Geometry.GeoLine.html#DxfLibrary_Geometry_GeoLine_Point1_
+  commentId: Overload:DxfLibrary.Geometry.GeoLine.Point1
+  isSpec: "True"
+  fullName: DxfLibrary.Geometry.GeoLine.Point1
+  nameWithType: GeoLine.Point1
+- uid: DxfLibrary.Geometry.GeoLine.Radius
+  name: Radius
+  href: api/DxfLibrary.Geometry.GeoLine.html#DxfLibrary_Geometry_GeoLine_Radius
+  commentId: P:DxfLibrary.Geometry.GeoLine.Radius
+  fullName: DxfLibrary.Geometry.GeoLine.Radius
+  nameWithType: GeoLine.Radius
+- uid: DxfLibrary.Geometry.GeoLine.Radius*
+  name: Radius
+  href: api/DxfLibrary.Geometry.GeoLine.html#DxfLibrary_Geometry_GeoLine_Radius_
+  commentId: Overload:DxfLibrary.Geometry.GeoLine.Radius
+  isSpec: "True"
+  fullName: DxfLibrary.Geometry.GeoLine.Radius
+  nameWithType: GeoLine.Radius
+- uid: DxfLibrary.Geometry.GeoLine.ToString
+  name: ToString()
+  href: api/DxfLibrary.Geometry.GeoLine.html#DxfLibrary_Geometry_GeoLine_ToString
+  commentId: M:DxfLibrary.Geometry.GeoLine.ToString
+  fullName: DxfLibrary.Geometry.GeoLine.ToString()
+  nameWithType: GeoLine.ToString()
+- uid: DxfLibrary.Geometry.GeoLine.ToString*
+  name: ToString
+  href: api/DxfLibrary.Geometry.GeoLine.html#DxfLibrary_Geometry_GeoLine_ToString_
+  commentId: Overload:DxfLibrary.Geometry.GeoLine.ToString
+  isSpec: "True"
+  fullName: DxfLibrary.Geometry.GeoLine.ToString
+  nameWithType: GeoLine.ToString
+- uid: DxfLibrary.Geometry.GeoLine.ToVector
+  name: ToVector()
+  href: api/DxfLibrary.Geometry.GeoLine.html#DxfLibrary_Geometry_GeoLine_ToVector
+  commentId: M:DxfLibrary.Geometry.GeoLine.ToVector
+  fullName: DxfLibrary.Geometry.GeoLine.ToVector()
+  nameWithType: GeoLine.ToVector()
+- uid: DxfLibrary.Geometry.GeoLine.ToVector*
+  name: ToVector
+  href: api/DxfLibrary.Geometry.GeoLine.html#DxfLibrary_Geometry_GeoLine_ToVector_
+  commentId: Overload:DxfLibrary.Geometry.GeoLine.ToVector
+  isSpec: "True"
+  fullName: DxfLibrary.Geometry.GeoLine.ToVector
+  nameWithType: GeoLine.ToVector
+- uid: DxfLibrary.Geometry.GeoPoint
+  name: GeoPoint
+  href: api/DxfLibrary.Geometry.GeoPoint.html
+  commentId: T:DxfLibrary.Geometry.GeoPoint
+  fullName: DxfLibrary.Geometry.GeoPoint
+  nameWithType: GeoPoint
+- uid: DxfLibrary.Geometry.GeoPoint.#ctor(System.Double,System.Double,System.Double)
+  name: GeoPoint(Double, Double, Double)
+  href: api/DxfLibrary.Geometry.GeoPoint.html#DxfLibrary_Geometry_GeoPoint__ctor_System_Double_System_Double_System_Double_
+  commentId: M:DxfLibrary.Geometry.GeoPoint.#ctor(System.Double,System.Double,System.Double)
+  fullName: DxfLibrary.Geometry.GeoPoint.GeoPoint(System.Double, System.Double, System.Double)
+  nameWithType: GeoPoint.GeoPoint(Double, Double, Double)
+- uid: DxfLibrary.Geometry.GeoPoint.#ctor*
+  name: GeoPoint
+  href: api/DxfLibrary.Geometry.GeoPoint.html#DxfLibrary_Geometry_GeoPoint__ctor_
+  commentId: Overload:DxfLibrary.Geometry.GeoPoint.#ctor
+  isSpec: "True"
+  fullName: DxfLibrary.Geometry.GeoPoint.GeoPoint
+  nameWithType: GeoPoint.GeoPoint
+- uid: DxfLibrary.Geometry.GeoPoint.Equals(System.Object)
+  name: Equals(Object)
+  href: api/DxfLibrary.Geometry.GeoPoint.html#DxfLibrary_Geometry_GeoPoint_Equals_System_Object_
+  commentId: M:DxfLibrary.Geometry.GeoPoint.Equals(System.Object)
+  fullName: DxfLibrary.Geometry.GeoPoint.Equals(System.Object)
+  nameWithType: GeoPoint.Equals(Object)
+- uid: DxfLibrary.Geometry.GeoPoint.Equals*
+  name: Equals
+  href: api/DxfLibrary.Geometry.GeoPoint.html#DxfLibrary_Geometry_GeoPoint_Equals_
+  commentId: Overload:DxfLibrary.Geometry.GeoPoint.Equals
+  isSpec: "True"
+  fullName: DxfLibrary.Geometry.GeoPoint.Equals
+  nameWithType: GeoPoint.Equals
+- uid: DxfLibrary.Geometry.GeoPoint.GetHashCode
+  name: GetHashCode()
+  href: api/DxfLibrary.Geometry.GeoPoint.html#DxfLibrary_Geometry_GeoPoint_GetHashCode
+  commentId: M:DxfLibrary.Geometry.GeoPoint.GetHashCode
+  fullName: DxfLibrary.Geometry.GeoPoint.GetHashCode()
+  nameWithType: GeoPoint.GetHashCode()
+- uid: DxfLibrary.Geometry.GeoPoint.GetHashCode*
+  name: GetHashCode
+  href: api/DxfLibrary.Geometry.GeoPoint.html#DxfLibrary_Geometry_GeoPoint_GetHashCode_
+  commentId: Overload:DxfLibrary.Geometry.GeoPoint.GetHashCode
+  isSpec: "True"
+  fullName: DxfLibrary.Geometry.GeoPoint.GetHashCode
+  nameWithType: GeoPoint.GetHashCode
+- uid: DxfLibrary.Geometry.GeoPoint.ToString
+  name: ToString()
+  href: api/DxfLibrary.Geometry.GeoPoint.html#DxfLibrary_Geometry_GeoPoint_ToString
+  commentId: M:DxfLibrary.Geometry.GeoPoint.ToString
+  fullName: DxfLibrary.Geometry.GeoPoint.ToString()
+  nameWithType: GeoPoint.ToString()
+- uid: DxfLibrary.Geometry.GeoPoint.ToString*
+  name: ToString
+  href: api/DxfLibrary.Geometry.GeoPoint.html#DxfLibrary_Geometry_GeoPoint_ToString_
+  commentId: Overload:DxfLibrary.Geometry.GeoPoint.ToString
+  isSpec: "True"
+  fullName: DxfLibrary.Geometry.GeoPoint.ToString
+  nameWithType: GeoPoint.ToString
+- uid: DxfLibrary.Geometry.GeoPoint.X
+  name: X
+  href: api/DxfLibrary.Geometry.GeoPoint.html#DxfLibrary_Geometry_GeoPoint_X
+  commentId: P:DxfLibrary.Geometry.GeoPoint.X
+  fullName: DxfLibrary.Geometry.GeoPoint.X
+  nameWithType: GeoPoint.X
+- uid: DxfLibrary.Geometry.GeoPoint.X*
+  name: X
+  href: api/DxfLibrary.Geometry.GeoPoint.html#DxfLibrary_Geometry_GeoPoint_X_
+  commentId: Overload:DxfLibrary.Geometry.GeoPoint.X
+  isSpec: "True"
+  fullName: DxfLibrary.Geometry.GeoPoint.X
+  nameWithType: GeoPoint.X
+- uid: DxfLibrary.Geometry.GeoPoint.Y
+  name: Y
+  href: api/DxfLibrary.Geometry.GeoPoint.html#DxfLibrary_Geometry_GeoPoint_Y
+  commentId: P:DxfLibrary.Geometry.GeoPoint.Y
+  fullName: DxfLibrary.Geometry.GeoPoint.Y
+  nameWithType: GeoPoint.Y
+- uid: DxfLibrary.Geometry.GeoPoint.Y*
+  name: Y
+  href: api/DxfLibrary.Geometry.GeoPoint.html#DxfLibrary_Geometry_GeoPoint_Y_
+  commentId: Overload:DxfLibrary.Geometry.GeoPoint.Y
+  isSpec: "True"
+  fullName: DxfLibrary.Geometry.GeoPoint.Y
+  nameWithType: GeoPoint.Y
+- uid: DxfLibrary.Geometry.GeoPoint.Z
+  name: Z
+  href: api/DxfLibrary.Geometry.GeoPoint.html#DxfLibrary_Geometry_GeoPoint_Z
+  commentId: P:DxfLibrary.Geometry.GeoPoint.Z
+  fullName: DxfLibrary.Geometry.GeoPoint.Z
+  nameWithType: GeoPoint.Z
+- uid: DxfLibrary.Geometry.GeoPoint.Z*
+  name: Z
+  href: api/DxfLibrary.Geometry.GeoPoint.html#DxfLibrary_Geometry_GeoPoint_Z_
+  commentId: Overload:DxfLibrary.Geometry.GeoPoint.Z
+  isSpec: "True"
+  fullName: DxfLibrary.Geometry.GeoPoint.Z
+  nameWithType: GeoPoint.Z
+- uid: DxfLibrary.Geometry.GeoPolyline
+  name: GeoPolyline
+  href: api/DxfLibrary.Geometry.GeoPolyline.html
+  commentId: T:DxfLibrary.Geometry.GeoPolyline
+  fullName: DxfLibrary.Geometry.GeoPolyline
+  nameWithType: GeoPolyline
+- uid: DxfLibrary.Geometry.GeoPolyline.#ctor(System.Collections.Generic.List{System.Double},System.Collections.Generic.List{System.Double},System.Boolean)
+  name: GeoPolyline(List<Double>, List<Double>, Boolean)
+  href: api/DxfLibrary.Geometry.GeoPolyline.html#DxfLibrary_Geometry_GeoPolyline__ctor_System_Collections_Generic_List_System_Double__System_Collections_Generic_List_System_Double__System_Boolean_
+  commentId: M:DxfLibrary.Geometry.GeoPolyline.#ctor(System.Collections.Generic.List{System.Double},System.Collections.Generic.List{System.Double},System.Boolean)
+  name.vb: GeoPolyline(List(Of Double), List(Of Double), Boolean)
+  fullName: DxfLibrary.Geometry.GeoPolyline.GeoPolyline(System.Collections.Generic.List<System.Double>, System.Collections.Generic.List<System.Double>, System.Boolean)
+  fullName.vb: DxfLibrary.Geometry.GeoPolyline.GeoPolyline(System.Collections.Generic.List(Of System.Double), System.Collections.Generic.List(Of System.Double), System.Boolean)
+  nameWithType: GeoPolyline.GeoPolyline(List<Double>, List<Double>, Boolean)
+  nameWithType.vb: GeoPolyline.GeoPolyline(List(Of Double), List(Of Double), Boolean)
+- uid: DxfLibrary.Geometry.GeoPolyline.#ctor(System.Collections.Generic.List{System.Double},System.Collections.Generic.List{System.Double},System.Collections.Generic.List{System.Double},System.Boolean)
+  name: GeoPolyline(List<Double>, List<Double>, List<Double>, Boolean)
+  href: api/DxfLibrary.Geometry.GeoPolyline.html#DxfLibrary_Geometry_GeoPolyline__ctor_System_Collections_Generic_List_System_Double__System_Collections_Generic_List_System_Double__System_Collections_Generic_List_System_Double__System_Boolean_
+  commentId: M:DxfLibrary.Geometry.GeoPolyline.#ctor(System.Collections.Generic.List{System.Double},System.Collections.Generic.List{System.Double},System.Collections.Generic.List{System.Double},System.Boolean)
+  name.vb: GeoPolyline(List(Of Double), List(Of Double), List(Of Double), Boolean)
+  fullName: DxfLibrary.Geometry.GeoPolyline.GeoPolyline(System.Collections.Generic.List<System.Double>, System.Collections.Generic.List<System.Double>, System.Collections.Generic.List<System.Double>, System.Boolean)
+  fullName.vb: DxfLibrary.Geometry.GeoPolyline.GeoPolyline(System.Collections.Generic.List(Of System.Double), System.Collections.Generic.List(Of System.Double), System.Collections.Generic.List(Of System.Double), System.Boolean)
+  nameWithType: GeoPolyline.GeoPolyline(List<Double>, List<Double>, List<Double>, Boolean)
+  nameWithType.vb: GeoPolyline.GeoPolyline(List(Of Double), List(Of Double), List(Of Double), Boolean)
+- uid: DxfLibrary.Geometry.GeoPolyline.#ctor*
+  name: GeoPolyline
+  href: api/DxfLibrary.Geometry.GeoPolyline.html#DxfLibrary_Geometry_GeoPolyline__ctor_
+  commentId: Overload:DxfLibrary.Geometry.GeoPolyline.#ctor
+  isSpec: "True"
+  fullName: DxfLibrary.Geometry.GeoPolyline.GeoPolyline
+  nameWithType: GeoPolyline.GeoPolyline
+- uid: DxfLibrary.Geometry.GeoPolyline.Area
+  name: Area
+  href: api/DxfLibrary.Geometry.GeoPolyline.html#DxfLibrary_Geometry_GeoPolyline_Area
+  commentId: P:DxfLibrary.Geometry.GeoPolyline.Area
+  fullName: DxfLibrary.Geometry.GeoPolyline.Area
+  nameWithType: GeoPolyline.Area
+- uid: DxfLibrary.Geometry.GeoPolyline.Area*
+  name: Area
+  href: api/DxfLibrary.Geometry.GeoPolyline.html#DxfLibrary_Geometry_GeoPolyline_Area_
+  commentId: Overload:DxfLibrary.Geometry.GeoPolyline.Area
+  isSpec: "True"
+  fullName: DxfLibrary.Geometry.GeoPolyline.Area
+  nameWithType: GeoPolyline.Area
+- uid: DxfLibrary.Geometry.GeoPolyline.DrawDirection
+  name: DrawDirection
+  href: api/DxfLibrary.Geometry.GeoPolyline.html#DxfLibrary_Geometry_GeoPolyline_DrawDirection
+  commentId: P:DxfLibrary.Geometry.GeoPolyline.DrawDirection
+  fullName: DxfLibrary.Geometry.GeoPolyline.DrawDirection
+  nameWithType: GeoPolyline.DrawDirection
+- uid: DxfLibrary.Geometry.GeoPolyline.DrawDirection*
+  name: DrawDirection
+  href: api/DxfLibrary.Geometry.GeoPolyline.html#DxfLibrary_Geometry_GeoPolyline_DrawDirection_
+  commentId: Overload:DxfLibrary.Geometry.GeoPolyline.DrawDirection
+  isSpec: "True"
+  fullName: DxfLibrary.Geometry.GeoPolyline.DrawDirection
+  nameWithType: GeoPolyline.DrawDirection
+- uid: DxfLibrary.Geometry.GeoPolyline.GetEnumerator
+  name: GetEnumerator()
+  href: api/DxfLibrary.Geometry.GeoPolyline.html#DxfLibrary_Geometry_GeoPolyline_GetEnumerator
+  commentId: M:DxfLibrary.Geometry.GeoPolyline.GetEnumerator
+  fullName: DxfLibrary.Geometry.GeoPolyline.GetEnumerator()
+  nameWithType: GeoPolyline.GetEnumerator()
+- uid: DxfLibrary.Geometry.GeoPolyline.GetEnumerator*
+  name: GetEnumerator
+  href: api/DxfLibrary.Geometry.GeoPolyline.html#DxfLibrary_Geometry_GeoPolyline_GetEnumerator_
+  commentId: Overload:DxfLibrary.Geometry.GeoPolyline.GetEnumerator
+  isSpec: "True"
+  fullName: DxfLibrary.Geometry.GeoPolyline.GetEnumerator
+  nameWithType: GeoPolyline.GetEnumerator
+- uid: DxfLibrary.Geometry.GeoPolyline.Length
+  name: Length
+  href: api/DxfLibrary.Geometry.GeoPolyline.html#DxfLibrary_Geometry_GeoPolyline_Length
+  commentId: P:DxfLibrary.Geometry.GeoPolyline.Length
+  fullName: DxfLibrary.Geometry.GeoPolyline.Length
+  nameWithType: GeoPolyline.Length
+- uid: DxfLibrary.Geometry.GeoPolyline.Length*
+  name: Length
+  href: api/DxfLibrary.Geometry.GeoPolyline.html#DxfLibrary_Geometry_GeoPolyline_Length_
+  commentId: Overload:DxfLibrary.Geometry.GeoPolyline.Length
+  isSpec: "True"
+  fullName: DxfLibrary.Geometry.GeoPolyline.Length
+  nameWithType: GeoPolyline.Length
+- uid: DxfLibrary.Geometry.GeoPolyline.System#Collections#IEnumerable#GetEnumerator
+  name: IEnumerable.GetEnumerator()
+  href: api/DxfLibrary.Geometry.GeoPolyline.html#DxfLibrary_Geometry_GeoPolyline_System_Collections_IEnumerable_GetEnumerator
+  commentId: M:DxfLibrary.Geometry.GeoPolyline.System#Collections#IEnumerable#GetEnumerator
+  name.vb: System.Collections.IEnumerable.GetEnumerator()
+  fullName: DxfLibrary.Geometry.GeoPolyline.System.Collections.IEnumerable.GetEnumerator()
+  nameWithType: GeoPolyline.IEnumerable.GetEnumerator()
+  nameWithType.vb: GeoPolyline.System.Collections.IEnumerable.GetEnumerator()
+- uid: DxfLibrary.Geometry.GeoPolyline.System#Collections#IEnumerable#GetEnumerator*
+  name: IEnumerable.GetEnumerator
+  href: api/DxfLibrary.Geometry.GeoPolyline.html#DxfLibrary_Geometry_GeoPolyline_System_Collections_IEnumerable_GetEnumerator_
+  commentId: Overload:DxfLibrary.Geometry.GeoPolyline.System#Collections#IEnumerable#GetEnumerator
+  isSpec: "True"
+  name.vb: System.Collections.IEnumerable.GetEnumerator
+  fullName: DxfLibrary.Geometry.GeoPolyline.System.Collections.IEnumerable.GetEnumerator
+  nameWithType: GeoPolyline.IEnumerable.GetEnumerator
+  nameWithType.vb: GeoPolyline.System.Collections.IEnumerable.GetEnumerator
+- uid: DxfLibrary.Geometry.IGeoArea
+  name: IGeoArea
+  href: api/DxfLibrary.Geometry.IGeoArea.html
+  commentId: T:DxfLibrary.Geometry.IGeoArea
+  fullName: DxfLibrary.Geometry.IGeoArea
+  nameWithType: IGeoArea
+- uid: DxfLibrary.Geometry.IGeoArea.Area
+  name: Area
+  href: api/DxfLibrary.Geometry.IGeoArea.html#DxfLibrary_Geometry_IGeoArea_Area
+  commentId: P:DxfLibrary.Geometry.IGeoArea.Area
+  fullName: DxfLibrary.Geometry.IGeoArea.Area
+  nameWithType: IGeoArea.Area
+- uid: DxfLibrary.Geometry.IGeoArea.Area*
+  name: Area
+  href: api/DxfLibrary.Geometry.IGeoArea.html#DxfLibrary_Geometry_IGeoArea_Area_
+  commentId: Overload:DxfLibrary.Geometry.IGeoArea.Area
+  isSpec: "True"
+  fullName: DxfLibrary.Geometry.IGeoArea.Area
+  nameWithType: IGeoArea.Area
+- uid: DxfLibrary.Geometry.IGeoLength
+  name: IGeoLength
+  href: api/DxfLibrary.Geometry.IGeoLength.html
+  commentId: T:DxfLibrary.Geometry.IGeoLength
+  fullName: DxfLibrary.Geometry.IGeoLength
+  nameWithType: IGeoLength
+- uid: DxfLibrary.Geometry.IGeoLength.Length
+  name: Length
+  href: api/DxfLibrary.Geometry.IGeoLength.html#DxfLibrary_Geometry_IGeoLength_Length
+  commentId: P:DxfLibrary.Geometry.IGeoLength.Length
+  fullName: DxfLibrary.Geometry.IGeoLength.Length
+  nameWithType: IGeoLength.Length
+- uid: DxfLibrary.Geometry.IGeoLength.Length*
+  name: Length
+  href: api/DxfLibrary.Geometry.IGeoLength.html#DxfLibrary_Geometry_IGeoLength_Length_
+  commentId: Overload:DxfLibrary.Geometry.IGeoLength.Length
+  isSpec: "True"
+  fullName: DxfLibrary.Geometry.IGeoLength.Length
+  nameWithType: IGeoLength.Length
+- uid: DxfLibrary.IO
+  name: DxfLibrary.IO
+  href: api/DxfLibrary.IO.html
+  commentId: N:DxfLibrary.IO
+  fullName: DxfLibrary.IO
+  nameWithType: DxfLibrary.IO
+- uid: DxfLibrary.IO.DxfAsciiReader
+  name: DxfAsciiReader
+  href: api/DxfLibrary.IO.DxfAsciiReader.html
+  commentId: T:DxfLibrary.IO.DxfAsciiReader
+  fullName: DxfLibrary.IO.DxfAsciiReader
+  nameWithType: DxfAsciiReader
+- uid: DxfLibrary.IO.DxfAsciiReader.#ctor(System.IO.Stream)
+  name: DxfAsciiReader(Stream)
+  href: api/DxfLibrary.IO.DxfAsciiReader.html#DxfLibrary_IO_DxfAsciiReader__ctor_System_IO_Stream_
+  commentId: M:DxfLibrary.IO.DxfAsciiReader.#ctor(System.IO.Stream)
+  fullName: DxfLibrary.IO.DxfAsciiReader.DxfAsciiReader(System.IO.Stream)
+  nameWithType: DxfAsciiReader.DxfAsciiReader(Stream)
+- uid: DxfLibrary.IO.DxfAsciiReader.#ctor*
+  name: DxfAsciiReader
+  href: api/DxfLibrary.IO.DxfAsciiReader.html#DxfLibrary_IO_DxfAsciiReader__ctor_
+  commentId: Overload:DxfLibrary.IO.DxfAsciiReader.#ctor
+  isSpec: "True"
+  fullName: DxfLibrary.IO.DxfAsciiReader.DxfAsciiReader
+  nameWithType: DxfAsciiReader.DxfAsciiReader
+- uid: DxfLibrary.IO.DxfAsciiReader.CurrentPosition
+  name: CurrentPosition
+  href: api/DxfLibrary.IO.DxfAsciiReader.html#DxfLibrary_IO_DxfAsciiReader_CurrentPosition
+  commentId: P:DxfLibrary.IO.DxfAsciiReader.CurrentPosition
+  fullName: DxfLibrary.IO.DxfAsciiReader.CurrentPosition
+  nameWithType: DxfAsciiReader.CurrentPosition
+- uid: DxfLibrary.IO.DxfAsciiReader.CurrentPosition*
+  name: CurrentPosition
+  href: api/DxfLibrary.IO.DxfAsciiReader.html#DxfLibrary_IO_DxfAsciiReader_CurrentPosition_
+  commentId: Overload:DxfLibrary.IO.DxfAsciiReader.CurrentPosition
+  isSpec: "True"
+  fullName: DxfLibrary.IO.DxfAsciiReader.CurrentPosition
+  nameWithType: DxfAsciiReader.CurrentPosition
+- uid: DxfLibrary.IO.DxfAsciiReader.Dispose
+  name: Dispose()
+  href: api/DxfLibrary.IO.DxfAsciiReader.html#DxfLibrary_IO_DxfAsciiReader_Dispose
+  commentId: M:DxfLibrary.IO.DxfAsciiReader.Dispose
+  fullName: DxfLibrary.IO.DxfAsciiReader.Dispose()
+  nameWithType: DxfAsciiReader.Dispose()
+- uid: DxfLibrary.IO.DxfAsciiReader.Dispose*
+  name: Dispose
+  href: api/DxfLibrary.IO.DxfAsciiReader.html#DxfLibrary_IO_DxfAsciiReader_Dispose_
+  commentId: Overload:DxfLibrary.IO.DxfAsciiReader.Dispose
+  isSpec: "True"
+  fullName: DxfLibrary.IO.DxfAsciiReader.Dispose
+  nameWithType: DxfAsciiReader.Dispose
+- uid: DxfLibrary.IO.DxfAsciiReader.EndOfStream
+  name: EndOfStream
+  href: api/DxfLibrary.IO.DxfAsciiReader.html#DxfLibrary_IO_DxfAsciiReader_EndOfStream
+  commentId: P:DxfLibrary.IO.DxfAsciiReader.EndOfStream
+  fullName: DxfLibrary.IO.DxfAsciiReader.EndOfStream
+  nameWithType: DxfAsciiReader.EndOfStream
+- uid: DxfLibrary.IO.DxfAsciiReader.EndOfStream*
+  name: EndOfStream
+  href: api/DxfLibrary.IO.DxfAsciiReader.html#DxfLibrary_IO_DxfAsciiReader_EndOfStream_
+  commentId: Overload:DxfLibrary.IO.DxfAsciiReader.EndOfStream
+  isSpec: "True"
+  fullName: DxfLibrary.IO.DxfAsciiReader.EndOfStream
+  nameWithType: DxfAsciiReader.EndOfStream
+- uid: DxfLibrary.IO.DxfAsciiReader.GetNextPair
+  name: GetNextPair()
+  href: api/DxfLibrary.IO.DxfAsciiReader.html#DxfLibrary_IO_DxfAsciiReader_GetNextPair
+  commentId: M:DxfLibrary.IO.DxfAsciiReader.GetNextPair
+  fullName: DxfLibrary.IO.DxfAsciiReader.GetNextPair()
+  nameWithType: DxfAsciiReader.GetNextPair()
+- uid: DxfLibrary.IO.DxfAsciiReader.GetNextPair*
+  name: GetNextPair
+  href: api/DxfLibrary.IO.DxfAsciiReader.html#DxfLibrary_IO_DxfAsciiReader_GetNextPair_
+  commentId: Overload:DxfLibrary.IO.DxfAsciiReader.GetNextPair
+  isSpec: "True"
+  fullName: DxfLibrary.IO.DxfAsciiReader.GetNextPair
+  nameWithType: DxfAsciiReader.GetNextPair
+- uid: DxfLibrary.IO.DxfAsciiReader.Path
+  name: Path
+  href: api/DxfLibrary.IO.DxfAsciiReader.html#DxfLibrary_IO_DxfAsciiReader_Path
+  commentId: P:DxfLibrary.IO.DxfAsciiReader.Path
+  fullName: DxfLibrary.IO.DxfAsciiReader.Path
+  nameWithType: DxfAsciiReader.Path
+- uid: DxfLibrary.IO.DxfAsciiReader.Path*
+  name: Path
+  href: api/DxfLibrary.IO.DxfAsciiReader.html#DxfLibrary_IO_DxfAsciiReader_Path_
+  commentId: Overload:DxfLibrary.IO.DxfAsciiReader.Path
+  isSpec: "True"
+  fullName: DxfLibrary.IO.DxfAsciiReader.Path
+  nameWithType: DxfAsciiReader.Path
+- uid: DxfLibrary.IO.DxfAsciiReader.PeekNextPair
+  name: PeekNextPair()
+  href: api/DxfLibrary.IO.DxfAsciiReader.html#DxfLibrary_IO_DxfAsciiReader_PeekNextPair
+  commentId: M:DxfLibrary.IO.DxfAsciiReader.PeekNextPair
+  fullName: DxfLibrary.IO.DxfAsciiReader.PeekNextPair()
+  nameWithType: DxfAsciiReader.PeekNextPair()
+- uid: DxfLibrary.IO.DxfAsciiReader.PeekNextPair*
+  name: PeekNextPair
+  href: api/DxfLibrary.IO.DxfAsciiReader.html#DxfLibrary_IO_DxfAsciiReader_PeekNextPair_
+  commentId: Overload:DxfLibrary.IO.DxfAsciiReader.PeekNextPair
+  isSpec: "True"
+  fullName: DxfLibrary.IO.DxfAsciiReader.PeekNextPair
+  nameWithType: DxfAsciiReader.PeekNextPair
+- uid: DxfLibrary.IO.DxfBinaryReader
+  name: DxfBinaryReader
+  href: api/DxfLibrary.IO.DxfBinaryReader.html
+  commentId: T:DxfLibrary.IO.DxfBinaryReader
+  fullName: DxfLibrary.IO.DxfBinaryReader
+  nameWithType: DxfBinaryReader
+- uid: DxfLibrary.IO.DxfBinaryReader.#ctor(System.IO.Stream)
+  name: DxfBinaryReader(Stream)
+  href: api/DxfLibrary.IO.DxfBinaryReader.html#DxfLibrary_IO_DxfBinaryReader__ctor_System_IO_Stream_
+  commentId: M:DxfLibrary.IO.DxfBinaryReader.#ctor(System.IO.Stream)
+  fullName: DxfLibrary.IO.DxfBinaryReader.DxfBinaryReader(System.IO.Stream)
+  nameWithType: DxfBinaryReader.DxfBinaryReader(Stream)
+- uid: DxfLibrary.IO.DxfBinaryReader.#ctor*
+  name: DxfBinaryReader
+  href: api/DxfLibrary.IO.DxfBinaryReader.html#DxfLibrary_IO_DxfBinaryReader__ctor_
+  commentId: Overload:DxfLibrary.IO.DxfBinaryReader.#ctor
+  isSpec: "True"
+  fullName: DxfLibrary.IO.DxfBinaryReader.DxfBinaryReader
+  nameWithType: DxfBinaryReader.DxfBinaryReader
+- uid: DxfLibrary.IO.DxfBinaryReader.CurrentPosition
+  name: CurrentPosition
+  href: api/DxfLibrary.IO.DxfBinaryReader.html#DxfLibrary_IO_DxfBinaryReader_CurrentPosition
+  commentId: P:DxfLibrary.IO.DxfBinaryReader.CurrentPosition
+  fullName: DxfLibrary.IO.DxfBinaryReader.CurrentPosition
+  nameWithType: DxfBinaryReader.CurrentPosition
+- uid: DxfLibrary.IO.DxfBinaryReader.CurrentPosition*
+  name: CurrentPosition
+  href: api/DxfLibrary.IO.DxfBinaryReader.html#DxfLibrary_IO_DxfBinaryReader_CurrentPosition_
+  commentId: Overload:DxfLibrary.IO.DxfBinaryReader.CurrentPosition
+  isSpec: "True"
+  fullName: DxfLibrary.IO.DxfBinaryReader.CurrentPosition
+  nameWithType: DxfBinaryReader.CurrentPosition
+- uid: DxfLibrary.IO.DxfBinaryReader.Dispose
+  name: Dispose()
+  href: api/DxfLibrary.IO.DxfBinaryReader.html#DxfLibrary_IO_DxfBinaryReader_Dispose
+  commentId: M:DxfLibrary.IO.DxfBinaryReader.Dispose
+  fullName: DxfLibrary.IO.DxfBinaryReader.Dispose()
+  nameWithType: DxfBinaryReader.Dispose()
+- uid: DxfLibrary.IO.DxfBinaryReader.Dispose*
+  name: Dispose
+  href: api/DxfLibrary.IO.DxfBinaryReader.html#DxfLibrary_IO_DxfBinaryReader_Dispose_
+  commentId: Overload:DxfLibrary.IO.DxfBinaryReader.Dispose
+  isSpec: "True"
+  fullName: DxfLibrary.IO.DxfBinaryReader.Dispose
+  nameWithType: DxfBinaryReader.Dispose
+- uid: DxfLibrary.IO.DxfBinaryReader.EndOfStream
+  name: EndOfStream
+  href: api/DxfLibrary.IO.DxfBinaryReader.html#DxfLibrary_IO_DxfBinaryReader_EndOfStream
+  commentId: P:DxfLibrary.IO.DxfBinaryReader.EndOfStream
+  fullName: DxfLibrary.IO.DxfBinaryReader.EndOfStream
+  nameWithType: DxfBinaryReader.EndOfStream
+- uid: DxfLibrary.IO.DxfBinaryReader.EndOfStream*
+  name: EndOfStream
+  href: api/DxfLibrary.IO.DxfBinaryReader.html#DxfLibrary_IO_DxfBinaryReader_EndOfStream_
+  commentId: Overload:DxfLibrary.IO.DxfBinaryReader.EndOfStream
+  isSpec: "True"
+  fullName: DxfLibrary.IO.DxfBinaryReader.EndOfStream
+  nameWithType: DxfBinaryReader.EndOfStream
+- uid: DxfLibrary.IO.DxfBinaryReader.GetNextPair
+  name: GetNextPair()
+  href: api/DxfLibrary.IO.DxfBinaryReader.html#DxfLibrary_IO_DxfBinaryReader_GetNextPair
+  commentId: M:DxfLibrary.IO.DxfBinaryReader.GetNextPair
+  fullName: DxfLibrary.IO.DxfBinaryReader.GetNextPair()
+  nameWithType: DxfBinaryReader.GetNextPair()
+- uid: DxfLibrary.IO.DxfBinaryReader.GetNextPair*
+  name: GetNextPair
+  href: api/DxfLibrary.IO.DxfBinaryReader.html#DxfLibrary_IO_DxfBinaryReader_GetNextPair_
+  commentId: Overload:DxfLibrary.IO.DxfBinaryReader.GetNextPair
+  isSpec: "True"
+  fullName: DxfLibrary.IO.DxfBinaryReader.GetNextPair
+  nameWithType: DxfBinaryReader.GetNextPair
+- uid: DxfLibrary.IO.DxfBinaryReader.Path
+  name: Path
+  href: api/DxfLibrary.IO.DxfBinaryReader.html#DxfLibrary_IO_DxfBinaryReader_Path
+  commentId: P:DxfLibrary.IO.DxfBinaryReader.Path
+  fullName: DxfLibrary.IO.DxfBinaryReader.Path
+  nameWithType: DxfBinaryReader.Path
+- uid: DxfLibrary.IO.DxfBinaryReader.Path*
+  name: Path
+  href: api/DxfLibrary.IO.DxfBinaryReader.html#DxfLibrary_IO_DxfBinaryReader_Path_
+  commentId: Overload:DxfLibrary.IO.DxfBinaryReader.Path
+  isSpec: "True"
+  fullName: DxfLibrary.IO.DxfBinaryReader.Path
+  nameWithType: DxfBinaryReader.Path
+- uid: DxfLibrary.IO.DxfBinaryReader.PeekNextPair
+  name: PeekNextPair()
+  href: api/DxfLibrary.IO.DxfBinaryReader.html#DxfLibrary_IO_DxfBinaryReader_PeekNextPair
+  commentId: M:DxfLibrary.IO.DxfBinaryReader.PeekNextPair
+  fullName: DxfLibrary.IO.DxfBinaryReader.PeekNextPair()
+  nameWithType: DxfBinaryReader.PeekNextPair()
+- uid: DxfLibrary.IO.DxfBinaryReader.PeekNextPair*
+  name: PeekNextPair
+  href: api/DxfLibrary.IO.DxfBinaryReader.html#DxfLibrary_IO_DxfBinaryReader_PeekNextPair_
+  commentId: Overload:DxfLibrary.IO.DxfBinaryReader.PeekNextPair
+  isSpec: "True"
+  fullName: DxfLibrary.IO.DxfBinaryReader.PeekNextPair
+  nameWithType: DxfBinaryReader.PeekNextPair
+- uid: DxfLibrary.IO.DxfReaderService
+  name: DxfReaderService
+  href: api/DxfLibrary.IO.DxfReaderService.html
+  commentId: T:DxfLibrary.IO.DxfReaderService
+  fullName: DxfLibrary.IO.DxfReaderService
+  nameWithType: DxfReaderService
+- uid: DxfLibrary.IO.IDxfReader`2
+  name: IDxfReader<G, V>
+  href: api/DxfLibrary.IO.IDxfReader-2.html
+  commentId: T:DxfLibrary.IO.IDxfReader`2
+  name.vb: IDxfReader(Of G, V)
+  fullName: DxfLibrary.IO.IDxfReader<G, V>
+  fullName.vb: DxfLibrary.IO.IDxfReader(Of G, V)
+  nameWithType: IDxfReader<G, V>
+  nameWithType.vb: IDxfReader(Of G, V)
+- uid: DxfLibrary.IO.IDxfReader`2.CurrentPosition
+  name: CurrentPosition
+  href: api/DxfLibrary.IO.IDxfReader-2.html#DxfLibrary_IO_IDxfReader_2_CurrentPosition
+  commentId: P:DxfLibrary.IO.IDxfReader`2.CurrentPosition
+  fullName: DxfLibrary.IO.IDxfReader<G, V>.CurrentPosition
+  fullName.vb: DxfLibrary.IO.IDxfReader(Of G, V).CurrentPosition
+  nameWithType: IDxfReader<G, V>.CurrentPosition
+  nameWithType.vb: IDxfReader(Of G, V).CurrentPosition
+- uid: DxfLibrary.IO.IDxfReader`2.CurrentPosition*
+  name: CurrentPosition
+  href: api/DxfLibrary.IO.IDxfReader-2.html#DxfLibrary_IO_IDxfReader_2_CurrentPosition_
+  commentId: Overload:DxfLibrary.IO.IDxfReader`2.CurrentPosition
+  isSpec: "True"
+  fullName: DxfLibrary.IO.IDxfReader<G, V>.CurrentPosition
+  fullName.vb: DxfLibrary.IO.IDxfReader(Of G, V).CurrentPosition
+  nameWithType: IDxfReader<G, V>.CurrentPosition
+  nameWithType.vb: IDxfReader(Of G, V).CurrentPosition
+- uid: DxfLibrary.IO.IDxfReader`2.EndOfStream
+  name: EndOfStream
+  href: api/DxfLibrary.IO.IDxfReader-2.html#DxfLibrary_IO_IDxfReader_2_EndOfStream
+  commentId: P:DxfLibrary.IO.IDxfReader`2.EndOfStream
+  fullName: DxfLibrary.IO.IDxfReader<G, V>.EndOfStream
+  fullName.vb: DxfLibrary.IO.IDxfReader(Of G, V).EndOfStream
+  nameWithType: IDxfReader<G, V>.EndOfStream
+  nameWithType.vb: IDxfReader(Of G, V).EndOfStream
+- uid: DxfLibrary.IO.IDxfReader`2.EndOfStream*
+  name: EndOfStream
+  href: api/DxfLibrary.IO.IDxfReader-2.html#DxfLibrary_IO_IDxfReader_2_EndOfStream_
+  commentId: Overload:DxfLibrary.IO.IDxfReader`2.EndOfStream
+  isSpec: "True"
+  fullName: DxfLibrary.IO.IDxfReader<G, V>.EndOfStream
+  fullName.vb: DxfLibrary.IO.IDxfReader(Of G, V).EndOfStream
+  nameWithType: IDxfReader<G, V>.EndOfStream
+  nameWithType.vb: IDxfReader(Of G, V).EndOfStream
+- uid: DxfLibrary.IO.IDxfReader`2.GetNextPair
+  name: GetNextPair()
+  href: api/DxfLibrary.IO.IDxfReader-2.html#DxfLibrary_IO_IDxfReader_2_GetNextPair
+  commentId: M:DxfLibrary.IO.IDxfReader`2.GetNextPair
+  fullName: DxfLibrary.IO.IDxfReader<G, V>.GetNextPair()
+  fullName.vb: DxfLibrary.IO.IDxfReader(Of G, V).GetNextPair()
+  nameWithType: IDxfReader<G, V>.GetNextPair()
+  nameWithType.vb: IDxfReader(Of G, V).GetNextPair()
+- uid: DxfLibrary.IO.IDxfReader`2.GetNextPair*
+  name: GetNextPair
+  href: api/DxfLibrary.IO.IDxfReader-2.html#DxfLibrary_IO_IDxfReader_2_GetNextPair_
+  commentId: Overload:DxfLibrary.IO.IDxfReader`2.GetNextPair
+  isSpec: "True"
+  fullName: DxfLibrary.IO.IDxfReader<G, V>.GetNextPair
+  fullName.vb: DxfLibrary.IO.IDxfReader(Of G, V).GetNextPair
+  nameWithType: IDxfReader<G, V>.GetNextPair
+  nameWithType.vb: IDxfReader(Of G, V).GetNextPair
+- uid: DxfLibrary.IO.IDxfReader`2.Path
+  name: Path
+  href: api/DxfLibrary.IO.IDxfReader-2.html#DxfLibrary_IO_IDxfReader_2_Path
+  commentId: P:DxfLibrary.IO.IDxfReader`2.Path
+  fullName: DxfLibrary.IO.IDxfReader<G, V>.Path
+  fullName.vb: DxfLibrary.IO.IDxfReader(Of G, V).Path
+  nameWithType: IDxfReader<G, V>.Path
+  nameWithType.vb: IDxfReader(Of G, V).Path
+- uid: DxfLibrary.IO.IDxfReader`2.Path*
+  name: Path
+  href: api/DxfLibrary.IO.IDxfReader-2.html#DxfLibrary_IO_IDxfReader_2_Path_
+  commentId: Overload:DxfLibrary.IO.IDxfReader`2.Path
+  isSpec: "True"
+  fullName: DxfLibrary.IO.IDxfReader<G, V>.Path
+  fullName.vb: DxfLibrary.IO.IDxfReader(Of G, V).Path
+  nameWithType: IDxfReader<G, V>.Path
+  nameWithType.vb: IDxfReader(Of G, V).Path
+- uid: DxfLibrary.IO.IDxfReader`2.PeekNextPair
+  name: PeekNextPair()
+  href: api/DxfLibrary.IO.IDxfReader-2.html#DxfLibrary_IO_IDxfReader_2_PeekNextPair
+  commentId: M:DxfLibrary.IO.IDxfReader`2.PeekNextPair
+  fullName: DxfLibrary.IO.IDxfReader<G, V>.PeekNextPair()
+  fullName.vb: DxfLibrary.IO.IDxfReader(Of G, V).PeekNextPair()
+  nameWithType: IDxfReader<G, V>.PeekNextPair()
+  nameWithType.vb: IDxfReader(Of G, V).PeekNextPair()
+- uid: DxfLibrary.IO.IDxfReader`2.PeekNextPair*
+  name: PeekNextPair
+  href: api/DxfLibrary.IO.IDxfReader-2.html#DxfLibrary_IO_IDxfReader_2_PeekNextPair_
+  commentId: Overload:DxfLibrary.IO.IDxfReader`2.PeekNextPair
+  isSpec: "True"
+  fullName: DxfLibrary.IO.IDxfReader<G, V>.PeekNextPair
+  fullName.vb: DxfLibrary.IO.IDxfReader(Of G, V).PeekNextPair
+  nameWithType: IDxfReader<G, V>.PeekNextPair
+  nameWithType.vb: IDxfReader(Of G, V).PeekNextPair
+- uid: DxfLibrary.IO.TaggedData`2
+  name: TaggedData<G, V>
+  href: api/DxfLibrary.IO.TaggedData-2.html
+  commentId: T:DxfLibrary.IO.TaggedData`2
+  name.vb: TaggedData(Of G, V)
+  fullName: DxfLibrary.IO.TaggedData<G, V>
+  fullName.vb: DxfLibrary.IO.TaggedData(Of G, V)
+  nameWithType: TaggedData<G, V>
+  nameWithType.vb: TaggedData(Of G, V)
+- uid: DxfLibrary.IO.TaggedData`2.#ctor(`0,`1)
+  name: TaggedData(G, V)
+  href: api/DxfLibrary.IO.TaggedData-2.html#DxfLibrary_IO_TaggedData_2__ctor__0__1_
+  commentId: M:DxfLibrary.IO.TaggedData`2.#ctor(`0,`1)
+  fullName: DxfLibrary.IO.TaggedData<G, V>.TaggedData(G, V)
+  fullName.vb: DxfLibrary.IO.TaggedData(Of G, V).TaggedData(G, V)
+  nameWithType: TaggedData<G, V>.TaggedData(G, V)
+  nameWithType.vb: TaggedData(Of G, V).TaggedData(G, V)
+- uid: DxfLibrary.IO.TaggedData`2.#ctor*
+  name: TaggedData
+  href: api/DxfLibrary.IO.TaggedData-2.html#DxfLibrary_IO_TaggedData_2__ctor_
+  commentId: Overload:DxfLibrary.IO.TaggedData`2.#ctor
+  isSpec: "True"
+  fullName: DxfLibrary.IO.TaggedData<G, V>.TaggedData
+  fullName.vb: DxfLibrary.IO.TaggedData(Of G, V).TaggedData
+  nameWithType: TaggedData<G, V>.TaggedData
+  nameWithType.vb: TaggedData(Of G, V).TaggedData
+- uid: DxfLibrary.IO.TaggedData`2.GetValue*
+  name: GetValue
+  href: api/DxfLibrary.IO.TaggedData-2.html#DxfLibrary_IO_TaggedData_2_GetValue_
+  commentId: Overload:DxfLibrary.IO.TaggedData`2.GetValue
+  isSpec: "True"
+  fullName: DxfLibrary.IO.TaggedData<G, V>.GetValue
+  fullName.vb: DxfLibrary.IO.TaggedData(Of G, V).GetValue
+  nameWithType: TaggedData<G, V>.GetValue
+  nameWithType.vb: TaggedData(Of G, V).GetValue
+- uid: DxfLibrary.IO.TaggedData`2.GetValue``1
+  name: GetValue<T>()
+  href: api/DxfLibrary.IO.TaggedData-2.html#DxfLibrary_IO_TaggedData_2_GetValue__1
+  commentId: M:DxfLibrary.IO.TaggedData`2.GetValue``1
+  name.vb: GetValue(Of T)()
+  fullName: DxfLibrary.IO.TaggedData<G, V>.GetValue<T>()
+  fullName.vb: DxfLibrary.IO.TaggedData(Of G, V).GetValue(Of T)()
+  nameWithType: TaggedData<G, V>.GetValue<T>()
+  nameWithType.vb: TaggedData(Of G, V).GetValue(Of T)()
+- uid: DxfLibrary.IO.TaggedData`2.GroupCode
+  name: GroupCode
+  href: api/DxfLibrary.IO.TaggedData-2.html#DxfLibrary_IO_TaggedData_2_GroupCode
+  commentId: P:DxfLibrary.IO.TaggedData`2.GroupCode
+  fullName: DxfLibrary.IO.TaggedData<G, V>.GroupCode
+  fullName.vb: DxfLibrary.IO.TaggedData(Of G, V).GroupCode
+  nameWithType: TaggedData<G, V>.GroupCode
+  nameWithType.vb: TaggedData(Of G, V).GroupCode
+- uid: DxfLibrary.IO.TaggedData`2.GroupCode*
+  name: GroupCode
+  href: api/DxfLibrary.IO.TaggedData-2.html#DxfLibrary_IO_TaggedData_2_GroupCode_
+  commentId: Overload:DxfLibrary.IO.TaggedData`2.GroupCode
+  isSpec: "True"
+  fullName: DxfLibrary.IO.TaggedData<G, V>.GroupCode
+  fullName.vb: DxfLibrary.IO.TaggedData(Of G, V).GroupCode
+  nameWithType: TaggedData<G, V>.GroupCode
+  nameWithType.vb: TaggedData(Of G, V).GroupCode
+- uid: DxfLibrary.IO.TaggedData`2.Value
+  name: Value
+  href: api/DxfLibrary.IO.TaggedData-2.html#DxfLibrary_IO_TaggedData_2_Value
+  commentId: P:DxfLibrary.IO.TaggedData`2.Value
+  fullName: DxfLibrary.IO.TaggedData<G, V>.Value
+  fullName.vb: DxfLibrary.IO.TaggedData(Of G, V).Value
+  nameWithType: TaggedData<G, V>.Value
+  nameWithType.vb: TaggedData(Of G, V).Value
+- uid: DxfLibrary.IO.TaggedData`2.Value*
+  name: Value
+  href: api/DxfLibrary.IO.TaggedData-2.html#DxfLibrary_IO_TaggedData_2_Value_
+  commentId: Overload:DxfLibrary.IO.TaggedData`2.Value
+  isSpec: "True"
+  fullName: DxfLibrary.IO.TaggedData<G, V>.Value
+  fullName.vb: DxfLibrary.IO.TaggedData(Of G, V).Value
+  nameWithType: TaggedData<G, V>.Value
+  nameWithType.vb: TaggedData(Of G, V).Value
+- uid: DxfLibrary.Parse
+  name: DxfLibrary.Parse
+  href: api/DxfLibrary.Parse.html
+  commentId: N:DxfLibrary.Parse
+  fullName: DxfLibrary.Parse
+  nameWithType: DxfLibrary.Parse
+- uid: DxfLibrary.Parse.DxfAsciiParser
+  name: DxfAsciiParser
+  href: api/DxfLibrary.Parse.DxfAsciiParser.html
+  commentId: T:DxfLibrary.Parse.DxfAsciiParser
+  fullName: DxfLibrary.Parse.DxfAsciiParser
+  nameWithType: DxfAsciiParser
+- uid: DxfLibrary.Parse.DxfAsciiParser.Parse(DxfLibrary.IO.IDxfReader{System.String,System.Object})
+  name: Parse(IDxfReader<String, Object>)
+  href: api/DxfLibrary.Parse.DxfAsciiParser.html#DxfLibrary_Parse_DxfAsciiParser_Parse_DxfLibrary_IO_IDxfReader_System_String_System_Object__
+  commentId: M:DxfLibrary.Parse.DxfAsciiParser.Parse(DxfLibrary.IO.IDxfReader{System.String,System.Object})
+  name.vb: Parse(IDxfReader(Of String, Object))
+  fullName: DxfLibrary.Parse.DxfAsciiParser.Parse(DxfLibrary.IO.IDxfReader<System.String, System.Object>)
+  fullName.vb: DxfLibrary.Parse.DxfAsciiParser.Parse(DxfLibrary.IO.IDxfReader(Of System.String, System.Object))
+  nameWithType: DxfAsciiParser.Parse(IDxfReader<String, Object>)
+  nameWithType.vb: DxfAsciiParser.Parse(IDxfReader(Of String, Object))
+- uid: DxfLibrary.Parse.DxfAsciiParser.Parse*
+  name: Parse
+  href: api/DxfLibrary.Parse.DxfAsciiParser.html#DxfLibrary_Parse_DxfAsciiParser_Parse_
+  commentId: Overload:DxfLibrary.Parse.DxfAsciiParser.Parse
+  isSpec: "True"
+  fullName: DxfLibrary.Parse.DxfAsciiParser.Parse
+  nameWithType: DxfAsciiParser.Parse
+- uid: DxfLibrary.Parse.Entities
+  name: DxfLibrary.Parse.Entities
+  href: api/DxfLibrary.Parse.Entities.html
+  commentId: N:DxfLibrary.Parse.Entities
+  fullName: DxfLibrary.Parse.Entities
+  nameWithType: DxfLibrary.Parse.Entities
+- uid: DxfLibrary.Parse.Entities.EntityParser`1
+  name: EntityParser<T>
+  href: api/DxfLibrary.Parse.Entities.EntityParser-1.html
+  commentId: T:DxfLibrary.Parse.Entities.EntityParser`1
+  name.vb: EntityParser(Of T)
+  fullName: DxfLibrary.Parse.Entities.EntityParser<T>
+  fullName.vb: DxfLibrary.Parse.Entities.EntityParser(Of T)
+  nameWithType: EntityParser<T>
+  nameWithType.vb: EntityParser(Of T)
+- uid: DxfLibrary.Parse.Entities.EntityParser`1.ParseEntity(DxfLibrary.Entities.EntityStruct,DxfLibrary.IO.IDxfReader{System.String,System.Object},DxfLibrary.DxfSpec.IDxfSpec{System.Object})
+  name: ParseEntity(EntityStruct, IDxfReader<String, Object>, IDxfSpec<Object>)
+  href: api/DxfLibrary.Parse.Entities.EntityParser-1.html#DxfLibrary_Parse_Entities_EntityParser_1_ParseEntity_DxfLibrary_Entities_EntityStruct_DxfLibrary_IO_IDxfReader_System_String_System_Object__DxfLibrary_DxfSpec_IDxfSpec_System_Object__
+  commentId: M:DxfLibrary.Parse.Entities.EntityParser`1.ParseEntity(DxfLibrary.Entities.EntityStruct,DxfLibrary.IO.IDxfReader{System.String,System.Object},DxfLibrary.DxfSpec.IDxfSpec{System.Object})
+  name.vb: ParseEntity(EntityStruct, IDxfReader(Of String, Object), IDxfSpec(Of Object))
+  fullName: DxfLibrary.Parse.Entities.EntityParser<T>.ParseEntity(DxfLibrary.Entities.EntityStruct, DxfLibrary.IO.IDxfReader<System.String, System.Object>, DxfLibrary.DxfSpec.IDxfSpec<System.Object>)
+  fullName.vb: DxfLibrary.Parse.Entities.EntityParser(Of T).ParseEntity(DxfLibrary.Entities.EntityStruct, DxfLibrary.IO.IDxfReader(Of System.String, System.Object), DxfLibrary.DxfSpec.IDxfSpec(Of System.Object))
+  nameWithType: EntityParser<T>.ParseEntity(EntityStruct, IDxfReader<String, Object>, IDxfSpec<Object>)
+  nameWithType.vb: EntityParser(Of T).ParseEntity(EntityStruct, IDxfReader(Of String, Object), IDxfSpec(Of Object))
+- uid: DxfLibrary.Parse.Entities.EntityParser`1.ParseEntity*
+  name: ParseEntity
+  href: api/DxfLibrary.Parse.Entities.EntityParser-1.html#DxfLibrary_Parse_Entities_EntityParser_1_ParseEntity_
+  commentId: Overload:DxfLibrary.Parse.Entities.EntityParser`1.ParseEntity
+  isSpec: "True"
+  fullName: DxfLibrary.Parse.Entities.EntityParser<T>.ParseEntity
+  fullName.vb: DxfLibrary.Parse.Entities.EntityParser(Of T).ParseEntity
+  nameWithType: EntityParser<T>.ParseEntity
+  nameWithType.vb: EntityParser(Of T).ParseEntity
+- uid: DxfLibrary.Parse.Entities.EntitySectionParser
+  name: EntitySectionParser
+  href: api/DxfLibrary.Parse.Entities.EntitySectionParser.html
+  commentId: T:DxfLibrary.Parse.Entities.EntitySectionParser
+  fullName: DxfLibrary.Parse.Entities.EntitySectionParser
+  nameWithType: EntitySectionParser
+- uid: DxfLibrary.Parse.Entities.EntitySectionParser.Parse(DxfLibrary.IO.IDxfReader{System.String,System.Object})
+  name: Parse(IDxfReader<String, Object>)
+  href: api/DxfLibrary.Parse.Entities.EntitySectionParser.html#DxfLibrary_Parse_Entities_EntitySectionParser_Parse_DxfLibrary_IO_IDxfReader_System_String_System_Object__
+  commentId: M:DxfLibrary.Parse.Entities.EntitySectionParser.Parse(DxfLibrary.IO.IDxfReader{System.String,System.Object})
+  name.vb: Parse(IDxfReader(Of String, Object))
+  fullName: DxfLibrary.Parse.Entities.EntitySectionParser.Parse(DxfLibrary.IO.IDxfReader<System.String, System.Object>)
+  fullName.vb: DxfLibrary.Parse.Entities.EntitySectionParser.Parse(DxfLibrary.IO.IDxfReader(Of System.String, System.Object))
+  nameWithType: EntitySectionParser.Parse(IDxfReader<String, Object>)
+  nameWithType.vb: EntitySectionParser.Parse(IDxfReader(Of String, Object))
+- uid: DxfLibrary.Parse.Entities.EntitySectionParser.Parse*
+  name: Parse
+  href: api/DxfLibrary.Parse.Entities.EntitySectionParser.html#DxfLibrary_Parse_Entities_EntitySectionParser_Parse_
+  commentId: Overload:DxfLibrary.Parse.Entities.EntitySectionParser.Parse
+  isSpec: "True"
+  fullName: DxfLibrary.Parse.Entities.EntitySectionParser.Parse
+  nameWithType: EntitySectionParser.Parse
+- uid: DxfLibrary.Parse.Entities.HatchBoundaryParser
+  name: HatchBoundaryParser
+  href: api/DxfLibrary.Parse.Entities.HatchBoundaryParser.html
+  commentId: T:DxfLibrary.Parse.Entities.HatchBoundaryParser
+  fullName: DxfLibrary.Parse.Entities.HatchBoundaryParser
+  nameWithType: HatchBoundaryParser
+- uid: DxfLibrary.Parse.Entities.HatchBoundaryParser.ParseEntity(DxfLibrary.Geometry.GeoBase,DxfLibrary.IO.IDxfReader{System.String,System.Object},DxfLibrary.DxfSpec.IDxfSpec{System.Object})
+  name: ParseEntity(GeoBase, IDxfReader<String, Object>, IDxfSpec<Object>)
+  href: api/DxfLibrary.Parse.Entities.HatchBoundaryParser.html#DxfLibrary_Parse_Entities_HatchBoundaryParser_ParseEntity_DxfLibrary_Geometry_GeoBase_DxfLibrary_IO_IDxfReader_System_String_System_Object__DxfLibrary_DxfSpec_IDxfSpec_System_Object__
+  commentId: M:DxfLibrary.Parse.Entities.HatchBoundaryParser.ParseEntity(DxfLibrary.Geometry.GeoBase,DxfLibrary.IO.IDxfReader{System.String,System.Object},DxfLibrary.DxfSpec.IDxfSpec{System.Object})
+  name.vb: ParseEntity(GeoBase, IDxfReader(Of String, Object), IDxfSpec(Of Object))
+  fullName: DxfLibrary.Parse.Entities.HatchBoundaryParser.ParseEntity(DxfLibrary.Geometry.GeoBase, DxfLibrary.IO.IDxfReader<System.String, System.Object>, DxfLibrary.DxfSpec.IDxfSpec<System.Object>)
+  fullName.vb: DxfLibrary.Parse.Entities.HatchBoundaryParser.ParseEntity(DxfLibrary.Geometry.GeoBase, DxfLibrary.IO.IDxfReader(Of System.String, System.Object), DxfLibrary.DxfSpec.IDxfSpec(Of System.Object))
+  nameWithType: HatchBoundaryParser.ParseEntity(GeoBase, IDxfReader<String, Object>, IDxfSpec<Object>)
+  nameWithType.vb: HatchBoundaryParser.ParseEntity(GeoBase, IDxfReader(Of String, Object), IDxfSpec(Of Object))
+- uid: DxfLibrary.Parse.Entities.HatchBoundaryParser.ParseEntity*
+  name: ParseEntity
+  href: api/DxfLibrary.Parse.Entities.HatchBoundaryParser.html#DxfLibrary_Parse_Entities_HatchBoundaryParser_ParseEntity_
+  commentId: Overload:DxfLibrary.Parse.Entities.HatchBoundaryParser.ParseEntity
+  isSpec: "True"
+  fullName: DxfLibrary.Parse.Entities.HatchBoundaryParser.ParseEntity
+  nameWithType: HatchBoundaryParser.ParseEntity
+- uid: DxfLibrary.Parse.Entities.IDxfEntityParser`5
+  name: IDxfEntityParser<T, G, V, S, ES>
+  href: api/DxfLibrary.Parse.Entities.IDxfEntityParser-5.html
+  commentId: T:DxfLibrary.Parse.Entities.IDxfEntityParser`5
+  name.vb: IDxfEntityParser(Of T, G, V, S, ES)
+  fullName: DxfLibrary.Parse.Entities.IDxfEntityParser<T, G, V, S, ES>
+  fullName.vb: DxfLibrary.Parse.Entities.IDxfEntityParser(Of T, G, V, S, ES)
+  nameWithType: IDxfEntityParser<T, G, V, S, ES>
+  nameWithType.vb: IDxfEntityParser(Of T, G, V, S, ES)
+- uid: DxfLibrary.Parse.Entities.IDxfEntityParser`5.ParseEntity(`4,DxfLibrary.IO.IDxfReader{`1,`2},DxfLibrary.DxfSpec.IDxfSpec{`3})
+  name: ParseEntity(ES, IDxfReader<G, V>, IDxfSpec<S>)
+  href: api/DxfLibrary.Parse.Entities.IDxfEntityParser-5.html#DxfLibrary_Parse_Entities_IDxfEntityParser_5_ParseEntity__4_DxfLibrary_IO_IDxfReader__1__2__DxfLibrary_DxfSpec_IDxfSpec__3__
+  commentId: M:DxfLibrary.Parse.Entities.IDxfEntityParser`5.ParseEntity(`4,DxfLibrary.IO.IDxfReader{`1,`2},DxfLibrary.DxfSpec.IDxfSpec{`3})
+  name.vb: ParseEntity(ES, IDxfReader(Of G, V), IDxfSpec(Of S))
+  fullName: DxfLibrary.Parse.Entities.IDxfEntityParser<T, G, V, S, ES>.ParseEntity(ES, DxfLibrary.IO.IDxfReader<G, V>, DxfLibrary.DxfSpec.IDxfSpec<S>)
+  fullName.vb: DxfLibrary.Parse.Entities.IDxfEntityParser(Of T, G, V, S, ES).ParseEntity(ES, DxfLibrary.IO.IDxfReader(Of G, V), DxfLibrary.DxfSpec.IDxfSpec(Of S))
+  nameWithType: IDxfEntityParser<T, G, V, S, ES>.ParseEntity(ES, IDxfReader<G, V>, IDxfSpec<S>)
+  nameWithType.vb: IDxfEntityParser(Of T, G, V, S, ES).ParseEntity(ES, IDxfReader(Of G, V), IDxfSpec(Of S))
+- uid: DxfLibrary.Parse.Entities.IDxfEntityParser`5.ParseEntity*
+  name: ParseEntity
+  href: api/DxfLibrary.Parse.Entities.IDxfEntityParser-5.html#DxfLibrary_Parse_Entities_IDxfEntityParser_5_ParseEntity_
+  commentId: Overload:DxfLibrary.Parse.Entities.IDxfEntityParser`5.ParseEntity
+  isSpec: "True"
+  fullName: DxfLibrary.Parse.Entities.IDxfEntityParser<T, G, V, S, ES>.ParseEntity
+  fullName.vb: DxfLibrary.Parse.Entities.IDxfEntityParser(Of T, G, V, S, ES).ParseEntity
+  nameWithType: IDxfEntityParser<T, G, V, S, ES>.ParseEntity
+  nameWithType.vb: IDxfEntityParser(Of T, G, V, S, ES).ParseEntity
+- uid: DxfLibrary.Parse.HeaderParser
+  name: HeaderParser
+  href: api/DxfLibrary.Parse.HeaderParser.html
+  commentId: T:DxfLibrary.Parse.HeaderParser
+  fullName: DxfLibrary.Parse.HeaderParser
+  nameWithType: HeaderParser
+- uid: DxfLibrary.Parse.HeaderParser.Parse(DxfLibrary.IO.IDxfReader{System.String,System.Object})
+  name: Parse(IDxfReader<String, Object>)
+  href: api/DxfLibrary.Parse.HeaderParser.html#DxfLibrary_Parse_HeaderParser_Parse_DxfLibrary_IO_IDxfReader_System_String_System_Object__
+  commentId: M:DxfLibrary.Parse.HeaderParser.Parse(DxfLibrary.IO.IDxfReader{System.String,System.Object})
+  name.vb: Parse(IDxfReader(Of String, Object))
+  fullName: DxfLibrary.Parse.HeaderParser.Parse(DxfLibrary.IO.IDxfReader<System.String, System.Object>)
+  fullName.vb: DxfLibrary.Parse.HeaderParser.Parse(DxfLibrary.IO.IDxfReader(Of System.String, System.Object))
+  nameWithType: HeaderParser.Parse(IDxfReader<String, Object>)
+  nameWithType.vb: HeaderParser.Parse(IDxfReader(Of String, Object))
+- uid: DxfLibrary.Parse.HeaderParser.Parse*
+  name: Parse
+  href: api/DxfLibrary.Parse.HeaderParser.html#DxfLibrary_Parse_HeaderParser_Parse_
+  commentId: Overload:DxfLibrary.Parse.HeaderParser.Parse
+  isSpec: "True"
+  fullName: DxfLibrary.Parse.HeaderParser.Parse
+  nameWithType: HeaderParser.Parse
+- uid: DxfLibrary.Parse.IDxfParser`3
+  name: IDxfParser<T, G, V>
+  href: api/DxfLibrary.Parse.IDxfParser-3.html
+  commentId: T:DxfLibrary.Parse.IDxfParser`3
+  name.vb: IDxfParser(Of T, G, V)
+  fullName: DxfLibrary.Parse.IDxfParser<T, G, V>
+  fullName.vb: DxfLibrary.Parse.IDxfParser(Of T, G, V)
+  nameWithType: IDxfParser<T, G, V>
+  nameWithType.vb: IDxfParser(Of T, G, V)
+- uid: DxfLibrary.Parse.IDxfParser`3.Parse(DxfLibrary.IO.IDxfReader{`1,`2})
+  name: Parse(IDxfReader<G, V>)
+  href: api/DxfLibrary.Parse.IDxfParser-3.html#DxfLibrary_Parse_IDxfParser_3_Parse_DxfLibrary_IO_IDxfReader__1__2__
+  commentId: M:DxfLibrary.Parse.IDxfParser`3.Parse(DxfLibrary.IO.IDxfReader{`1,`2})
+  name.vb: Parse(IDxfReader(Of G, V))
+  fullName: DxfLibrary.Parse.IDxfParser<T, G, V>.Parse(DxfLibrary.IO.IDxfReader<G, V>)
+  fullName.vb: DxfLibrary.Parse.IDxfParser(Of T, G, V).Parse(DxfLibrary.IO.IDxfReader(Of G, V))
+  nameWithType: IDxfParser<T, G, V>.Parse(IDxfReader<G, V>)
+  nameWithType.vb: IDxfParser(Of T, G, V).Parse(IDxfReader(Of G, V))
+- uid: DxfLibrary.Parse.IDxfParser`3.Parse*
+  name: Parse
+  href: api/DxfLibrary.Parse.IDxfParser-3.html#DxfLibrary_Parse_IDxfParser_3_Parse_
+  commentId: Overload:DxfLibrary.Parse.IDxfParser`3.Parse
+  isSpec: "True"
+  fullName: DxfLibrary.Parse.IDxfParser<T, G, V>.Parse
+  fullName.vb: DxfLibrary.Parse.IDxfParser(Of T, G, V).Parse
+  nameWithType: IDxfParser<T, G, V>.Parse
+  nameWithType.vb: IDxfParser(Of T, G, V).Parse
+- uid: DxfLibrary.Parse.Sections
+  name: DxfLibrary.Parse.Sections
+  href: api/DxfLibrary.Parse.Sections.html
+  commentId: N:DxfLibrary.Parse.Sections
+  fullName: DxfLibrary.Parse.Sections
+  nameWithType: DxfLibrary.Parse.Sections
+- uid: DxfLibrary.Parse.Sections.AutoCADVersion
+  name: AutoCADVersion
+  href: api/DxfLibrary.Parse.Sections.AutoCADVersion.html
+  commentId: T:DxfLibrary.Parse.Sections.AutoCADVersion
+  fullName: DxfLibrary.Parse.Sections.AutoCADVersion
+  nameWithType: AutoCADVersion
+- uid: DxfLibrary.Parse.Sections.AutoCADVersion.AC1006
+  name: AC1006
+  href: api/DxfLibrary.Parse.Sections.AutoCADVersion.html#DxfLibrary_Parse_Sections_AutoCADVersion_AC1006
+  commentId: F:DxfLibrary.Parse.Sections.AutoCADVersion.AC1006
+  fullName: DxfLibrary.Parse.Sections.AutoCADVersion.AC1006
+  nameWithType: AutoCADVersion.AC1006
+- uid: DxfLibrary.Parse.Sections.AutoCADVersion.AC1009
+  name: AC1009
+  href: api/DxfLibrary.Parse.Sections.AutoCADVersion.html#DxfLibrary_Parse_Sections_AutoCADVersion_AC1009
+  commentId: F:DxfLibrary.Parse.Sections.AutoCADVersion.AC1009
+  fullName: DxfLibrary.Parse.Sections.AutoCADVersion.AC1009
+  nameWithType: AutoCADVersion.AC1009
+- uid: DxfLibrary.Parse.Sections.AutoCADVersion.AC1032
+  name: AC1032
+  href: api/DxfLibrary.Parse.Sections.AutoCADVersion.html#DxfLibrary_Parse_Sections_AutoCADVersion_AC1032
+  commentId: F:DxfLibrary.Parse.Sections.AutoCADVersion.AC1032
+  fullName: DxfLibrary.Parse.Sections.AutoCADVersion.AC1032
+  nameWithType: AutoCADVersion.AC1032
+- uid: DxfLibrary.Parse.Sections.EntitiesSection
+  name: EntitiesSection
+  href: api/DxfLibrary.Parse.Sections.EntitiesSection.html
+  commentId: T:DxfLibrary.Parse.Sections.EntitiesSection
+  fullName: DxfLibrary.Parse.Sections.EntitiesSection
+  nameWithType: EntitiesSection
+- uid: DxfLibrary.Parse.Sections.EntitiesSection.#ctor
+  name: EntitiesSection()
+  href: api/DxfLibrary.Parse.Sections.EntitiesSection.html#DxfLibrary_Parse_Sections_EntitiesSection__ctor
+  commentId: M:DxfLibrary.Parse.Sections.EntitiesSection.#ctor
+  fullName: DxfLibrary.Parse.Sections.EntitiesSection.EntitiesSection()
+  nameWithType: EntitiesSection.EntitiesSection()
+- uid: DxfLibrary.Parse.Sections.EntitiesSection.#ctor*
+  name: EntitiesSection
+  href: api/DxfLibrary.Parse.Sections.EntitiesSection.html#DxfLibrary_Parse_Sections_EntitiesSection__ctor_
+  commentId: Overload:DxfLibrary.Parse.Sections.EntitiesSection.#ctor
+  isSpec: "True"
+  fullName: DxfLibrary.Parse.Sections.EntitiesSection.EntitiesSection
+  nameWithType: EntitiesSection.EntitiesSection
+- uid: DxfLibrary.Parse.Sections.EntitiesSection.Entities
+  name: Entities
+  href: api/DxfLibrary.Parse.Sections.EntitiesSection.html#DxfLibrary_Parse_Sections_EntitiesSection_Entities
+  commentId: P:DxfLibrary.Parse.Sections.EntitiesSection.Entities
+  fullName: DxfLibrary.Parse.Sections.EntitiesSection.Entities
+  nameWithType: EntitiesSection.Entities
+- uid: DxfLibrary.Parse.Sections.EntitiesSection.Entities*
+  name: Entities
+  href: api/DxfLibrary.Parse.Sections.EntitiesSection.html#DxfLibrary_Parse_Sections_EntitiesSection_Entities_
+  commentId: Overload:DxfLibrary.Parse.Sections.EntitiesSection.Entities
+  isSpec: "True"
+  fullName: DxfLibrary.Parse.Sections.EntitiesSection.Entities
+  nameWithType: EntitiesSection.Entities
+- uid: DxfLibrary.Parse.Sections.EntitiesSection.SetProperty(System.String,System.Object)
+  name: SetProperty(String, Object)
+  href: api/DxfLibrary.Parse.Sections.EntitiesSection.html#DxfLibrary_Parse_Sections_EntitiesSection_SetProperty_System_String_System_Object_
+  commentId: M:DxfLibrary.Parse.Sections.EntitiesSection.SetProperty(System.String,System.Object)
+  fullName: DxfLibrary.Parse.Sections.EntitiesSection.SetProperty(System.String, System.Object)
+  nameWithType: EntitiesSection.SetProperty(String, Object)
+- uid: DxfLibrary.Parse.Sections.EntitiesSection.SetProperty*
+  name: SetProperty
+  href: api/DxfLibrary.Parse.Sections.EntitiesSection.html#DxfLibrary_Parse_Sections_EntitiesSection_SetProperty_
+  commentId: Overload:DxfLibrary.Parse.Sections.EntitiesSection.SetProperty
+  isSpec: "True"
+  fullName: DxfLibrary.Parse.Sections.EntitiesSection.SetProperty
+  nameWithType: EntitiesSection.SetProperty
+- uid: DxfLibrary.Parse.Sections.HeaderSection
+  name: HeaderSection
+  href: api/DxfLibrary.Parse.Sections.HeaderSection.html
+  commentId: T:DxfLibrary.Parse.Sections.HeaderSection
+  fullName: DxfLibrary.Parse.Sections.HeaderSection
+  nameWithType: HeaderSection
+- uid: DxfLibrary.Parse.Sections.HeaderSection.FileVersion
+  name: FileVersion
+  href: api/DxfLibrary.Parse.Sections.HeaderSection.html#DxfLibrary_Parse_Sections_HeaderSection_FileVersion
+  commentId: P:DxfLibrary.Parse.Sections.HeaderSection.FileVersion
+  fullName: DxfLibrary.Parse.Sections.HeaderSection.FileVersion
+  nameWithType: HeaderSection.FileVersion
+- uid: DxfLibrary.Parse.Sections.HeaderSection.FileVersion*
+  name: FileVersion
+  href: api/DxfLibrary.Parse.Sections.HeaderSection.html#DxfLibrary_Parse_Sections_HeaderSection_FileVersion_
+  commentId: Overload:DxfLibrary.Parse.Sections.HeaderSection.FileVersion
+  isSpec: "True"
+  fullName: DxfLibrary.Parse.Sections.HeaderSection.FileVersion
+  nameWithType: HeaderSection.FileVersion
+- uid: DxfLibrary.Parse.Sections.HeaderSection.LastSavedBy
+  name: LastSavedBy
+  href: api/DxfLibrary.Parse.Sections.HeaderSection.html#DxfLibrary_Parse_Sections_HeaderSection_LastSavedBy
+  commentId: P:DxfLibrary.Parse.Sections.HeaderSection.LastSavedBy
+  fullName: DxfLibrary.Parse.Sections.HeaderSection.LastSavedBy
+  nameWithType: HeaderSection.LastSavedBy
+- uid: DxfLibrary.Parse.Sections.HeaderSection.LastSavedBy*
+  name: LastSavedBy
+  href: api/DxfLibrary.Parse.Sections.HeaderSection.html#DxfLibrary_Parse_Sections_HeaderSection_LastSavedBy_
+  commentId: Overload:DxfLibrary.Parse.Sections.HeaderSection.LastSavedBy
+  isSpec: "True"
+  fullName: DxfLibrary.Parse.Sections.HeaderSection.LastSavedBy
+  nameWithType: HeaderSection.LastSavedBy
+- uid: DxfLibrary.Parse.Sections.HeaderSection.SetProperty(System.String,System.Object)
+  name: SetProperty(String, Object)
+  href: api/DxfLibrary.Parse.Sections.HeaderSection.html#DxfLibrary_Parse_Sections_HeaderSection_SetProperty_System_String_System_Object_
+  commentId: M:DxfLibrary.Parse.Sections.HeaderSection.SetProperty(System.String,System.Object)
+  fullName: DxfLibrary.Parse.Sections.HeaderSection.SetProperty(System.String, System.Object)
+  nameWithType: HeaderSection.SetProperty(String, Object)
+- uid: DxfLibrary.Parse.Sections.HeaderSection.SetProperty*
+  name: SetProperty
+  href: api/DxfLibrary.Parse.Sections.HeaderSection.html#DxfLibrary_Parse_Sections_HeaderSection_SetProperty_
+  commentId: Overload:DxfLibrary.Parse.Sections.HeaderSection.SetProperty
+  isSpec: "True"
+  fullName: DxfLibrary.Parse.Sections.HeaderSection.SetProperty
+  nameWithType: HeaderSection.SetProperty
+- uid: DxfLibrary.Parse.Sections.IDxfParsable
+  name: IDxfParsable
+  href: api/DxfLibrary.Parse.Sections.IDxfParsable.html
+  commentId: T:DxfLibrary.Parse.Sections.IDxfParsable
+  fullName: DxfLibrary.Parse.Sections.IDxfParsable
+  nameWithType: IDxfParsable
+- uid: DxfLibrary.Parse.Sections.IDxfParsable.SetProperty(System.String,System.Object)
+  name: SetProperty(String, Object)
+  href: api/DxfLibrary.Parse.Sections.IDxfParsable.html#DxfLibrary_Parse_Sections_IDxfParsable_SetProperty_System_String_System_Object_
+  commentId: M:DxfLibrary.Parse.Sections.IDxfParsable.SetProperty(System.String,System.Object)
+  fullName: DxfLibrary.Parse.Sections.IDxfParsable.SetProperty(System.String, System.Object)
+  nameWithType: IDxfParsable.SetProperty(String, Object)
+- uid: DxfLibrary.Parse.Sections.IDxfParsable.SetProperty*
+  name: SetProperty
+  href: api/DxfLibrary.Parse.Sections.IDxfParsable.html#DxfLibrary_Parse_Sections_IDxfParsable_SetProperty_
+  commentId: Overload:DxfLibrary.Parse.Sections.IDxfParsable.SetProperty
+  isSpec: "True"
+  fullName: DxfLibrary.Parse.Sections.IDxfParsable.SetProperty
+  nameWithType: IDxfParsable.SetProperty
+- uid: DxfLibrary.Parse.SectionsContainer
+  name: SectionsContainer
+  href: api/DxfLibrary.Parse.SectionsContainer.html
+  commentId: T:DxfLibrary.Parse.SectionsContainer
+  fullName: DxfLibrary.Parse.SectionsContainer
+  nameWithType: SectionsContainer
+- uid: DxfLibrary.Parse.SectionsContainer.Entities
+  name: Entities
+  href: api/DxfLibrary.Parse.SectionsContainer.html#DxfLibrary_Parse_SectionsContainer_Entities
+  commentId: P:DxfLibrary.Parse.SectionsContainer.Entities
+  fullName: DxfLibrary.Parse.SectionsContainer.Entities
+  nameWithType: SectionsContainer.Entities
+- uid: DxfLibrary.Parse.SectionsContainer.Entities*
+  name: Entities
+  href: api/DxfLibrary.Parse.SectionsContainer.html#DxfLibrary_Parse_SectionsContainer_Entities_
+  commentId: Overload:DxfLibrary.Parse.SectionsContainer.Entities
+  isSpec: "True"
+  fullName: DxfLibrary.Parse.SectionsContainer.Entities
+  nameWithType: SectionsContainer.Entities
+- uid: DxfLibrary.Parse.SectionsContainer.Header
+  name: Header
+  href: api/DxfLibrary.Parse.SectionsContainer.html#DxfLibrary_Parse_SectionsContainer_Header
+  commentId: P:DxfLibrary.Parse.SectionsContainer.Header
+  fullName: DxfLibrary.Parse.SectionsContainer.Header
+  nameWithType: SectionsContainer.Header
+- uid: DxfLibrary.Parse.SectionsContainer.Header*
+  name: Header
+  href: api/DxfLibrary.Parse.SectionsContainer.html#DxfLibrary_Parse_SectionsContainer_Header_
+  commentId: Overload:DxfLibrary.Parse.SectionsContainer.Header
+  isSpec: "True"
+  fullName: DxfLibrary.Parse.SectionsContainer.Header
+  nameWithType: SectionsContainer.Header
+- uid: DxfLibrary.Utilities
+  name: DxfLibrary.Utilities
+  href: api/DxfLibrary.Utilities.html
+  commentId: N:DxfLibrary.Utilities
+  fullName: DxfLibrary.Utilities
+  nameWithType: DxfLibrary.Utilities
+- uid: DxfLibrary.Utilities.DxfEntityLinker
+  name: DxfEntityLinker
+  href: api/DxfLibrary.Utilities.DxfEntityLinker.html
+  commentId: T:DxfLibrary.Utilities.DxfEntityLinker
+  fullName: DxfLibrary.Utilities.DxfEntityLinker
+  nameWithType: DxfEntityLinker
+- uid: DxfLibrary.Utilities.DxfEntityLinker.LinkEntities(System.Collections.Generic.List{DxfLibrary.Entities.IEntity})
+  name: LinkEntities(List<IEntity>)
+  href: api/DxfLibrary.Utilities.DxfEntityLinker.html#DxfLibrary_Utilities_DxfEntityLinker_LinkEntities_System_Collections_Generic_List_DxfLibrary_Entities_IEntity__
+  commentId: M:DxfLibrary.Utilities.DxfEntityLinker.LinkEntities(System.Collections.Generic.List{DxfLibrary.Entities.IEntity})
+  name.vb: LinkEntities(List(Of IEntity))
+  fullName: DxfLibrary.Utilities.DxfEntityLinker.LinkEntities(System.Collections.Generic.List<DxfLibrary.Entities.IEntity>)
+  fullName.vb: DxfLibrary.Utilities.DxfEntityLinker.LinkEntities(System.Collections.Generic.List(Of DxfLibrary.Entities.IEntity))
+  nameWithType: DxfEntityLinker.LinkEntities(List<IEntity>)
+  nameWithType.vb: DxfEntityLinker.LinkEntities(List(Of IEntity))
+- uid: DxfLibrary.Utilities.DxfEntityLinker.LinkEntities*
+  name: LinkEntities
+  href: api/DxfLibrary.Utilities.DxfEntityLinker.html#DxfLibrary_Utilities_DxfEntityLinker_LinkEntities_
+  commentId: Overload:DxfLibrary.Utilities.DxfEntityLinker.LinkEntities
+  isSpec: "True"
+  fullName: DxfLibrary.Utilities.DxfEntityLinker.LinkEntities
+  nameWithType: DxfEntityLinker.LinkEntities
+- uid: DxfLibrary.Utilities.DxfType
+  name: DxfType
+  href: api/DxfLibrary.Utilities.DxfType.html
+  commentId: T:DxfLibrary.Utilities.DxfType
+  fullName: DxfLibrary.Utilities.DxfType
+  nameWithType: DxfType
+- uid: DxfLibrary.Utilities.DxfType.FromGroupCode(System.Int32)
+  name: FromGroupCode(Int32)
+  href: api/DxfLibrary.Utilities.DxfType.html#DxfLibrary_Utilities_DxfType_FromGroupCode_System_Int32_
+  commentId: M:DxfLibrary.Utilities.DxfType.FromGroupCode(System.Int32)
+  fullName: DxfLibrary.Utilities.DxfType.FromGroupCode(System.Int32)
+  nameWithType: DxfType.FromGroupCode(Int32)
+- uid: DxfLibrary.Utilities.DxfType.FromGroupCode(System.String)
+  name: FromGroupCode(String)
+  href: api/DxfLibrary.Utilities.DxfType.html#DxfLibrary_Utilities_DxfType_FromGroupCode_System_String_
+  commentId: M:DxfLibrary.Utilities.DxfType.FromGroupCode(System.String)
+  fullName: DxfLibrary.Utilities.DxfType.FromGroupCode(System.String)
+  nameWithType: DxfType.FromGroupCode(String)
+- uid: DxfLibrary.Utilities.DxfType.FromGroupCode*
+  name: FromGroupCode
+  href: api/DxfLibrary.Utilities.DxfType.html#DxfLibrary_Utilities_DxfType_FromGroupCode_
+  commentId: Overload:DxfLibrary.Utilities.DxfType.FromGroupCode
+  isSpec: "True"
+  fullName: DxfLibrary.Utilities.DxfType.FromGroupCode
+  nameWithType: DxfType.FromGroupCode
+- uid: DxfLibrary.Utilities.EntityReference
+  name: EntityReference
+  href: api/DxfLibrary.Utilities.EntityReference.html
+  commentId: T:DxfLibrary.Utilities.EntityReference
+  fullName: DxfLibrary.Utilities.EntityReference
+  nameWithType: EntityReference
+- uid: DxfLibrary.Utilities.EntityReference.#ctor(DxfLibrary.Entities.IEntity)
+  name: EntityReference(IEntity)
+  href: api/DxfLibrary.Utilities.EntityReference.html#DxfLibrary_Utilities_EntityReference__ctor_DxfLibrary_Entities_IEntity_
+  commentId: M:DxfLibrary.Utilities.EntityReference.#ctor(DxfLibrary.Entities.IEntity)
+  fullName: DxfLibrary.Utilities.EntityReference.EntityReference(DxfLibrary.Entities.IEntity)
+  nameWithType: EntityReference.EntityReference(IEntity)
+- uid: DxfLibrary.Utilities.EntityReference.#ctor(System.String)
+  name: EntityReference(String)
+  href: api/DxfLibrary.Utilities.EntityReference.html#DxfLibrary_Utilities_EntityReference__ctor_System_String_
+  commentId: M:DxfLibrary.Utilities.EntityReference.#ctor(System.String)
+  fullName: DxfLibrary.Utilities.EntityReference.EntityReference(System.String)
+  nameWithType: EntityReference.EntityReference(String)
+- uid: DxfLibrary.Utilities.EntityReference.#ctor*
+  name: EntityReference
+  href: api/DxfLibrary.Utilities.EntityReference.html#DxfLibrary_Utilities_EntityReference__ctor_
+  commentId: Overload:DxfLibrary.Utilities.EntityReference.#ctor
+  isSpec: "True"
+  fullName: DxfLibrary.Utilities.EntityReference.EntityReference
+  nameWithType: EntityReference.EntityReference
+- uid: DxfLibrary.Utilities.EntityReference.IsLinked
+  name: IsLinked
+  href: api/DxfLibrary.Utilities.EntityReference.html#DxfLibrary_Utilities_EntityReference_IsLinked
+  commentId: P:DxfLibrary.Utilities.EntityReference.IsLinked
+  fullName: DxfLibrary.Utilities.EntityReference.IsLinked
+  nameWithType: EntityReference.IsLinked
+- uid: DxfLibrary.Utilities.EntityReference.IsLinked*
+  name: IsLinked
+  href: api/DxfLibrary.Utilities.EntityReference.html#DxfLibrary_Utilities_EntityReference_IsLinked_
+  commentId: Overload:DxfLibrary.Utilities.EntityReference.IsLinked
+  isSpec: "True"
+  fullName: DxfLibrary.Utilities.EntityReference.IsLinked
+  nameWithType: EntityReference.IsLinked
+- uid: DxfLibrary.Utilities.EntityReference.Reference
+  name: Reference
+  href: api/DxfLibrary.Utilities.EntityReference.html#DxfLibrary_Utilities_EntityReference_Reference
+  commentId: P:DxfLibrary.Utilities.EntityReference.Reference
+  fullName: DxfLibrary.Utilities.EntityReference.Reference
+  nameWithType: EntityReference.Reference
+- uid: DxfLibrary.Utilities.EntityReference.Reference*
+  name: Reference
+  href: api/DxfLibrary.Utilities.EntityReference.html#DxfLibrary_Utilities_EntityReference_Reference_
+  commentId: Overload:DxfLibrary.Utilities.EntityReference.Reference
+  isSpec: "True"
+  fullName: DxfLibrary.Utilities.EntityReference.Reference
+  nameWithType: EntityReference.Reference
+- uid: DxfLibrary.Utilities.EntityReference.SoftPointer
+  name: SoftPointer
+  href: api/DxfLibrary.Utilities.EntityReference.html#DxfLibrary_Utilities_EntityReference_SoftPointer
+  commentId: P:DxfLibrary.Utilities.EntityReference.SoftPointer
+  fullName: DxfLibrary.Utilities.EntityReference.SoftPointer
+  nameWithType: EntityReference.SoftPointer
+- uid: DxfLibrary.Utilities.EntityReference.SoftPointer*
+  name: SoftPointer
+  href: api/DxfLibrary.Utilities.EntityReference.html#DxfLibrary_Utilities_EntityReference_SoftPointer_
+  commentId: Overload:DxfLibrary.Utilities.EntityReference.SoftPointer
+  isSpec: "True"
+  fullName: DxfLibrary.Utilities.EntityReference.SoftPointer
+  nameWithType: EntityReference.SoftPointer
+- uid: DxfLibrary.Utilities.IDxfLinker
+  name: IDxfLinker
+  href: api/DxfLibrary.Utilities.IDxfLinker.html
+  commentId: T:DxfLibrary.Utilities.IDxfLinker
+  fullName: DxfLibrary.Utilities.IDxfLinker
+  nameWithType: IDxfLinker
+- uid: DxfLibrary.Utilities.IDxfLinker.LinkEntities(System.Collections.Generic.List{DxfLibrary.Entities.IEntity})
+  name: LinkEntities(List<IEntity>)
+  href: api/DxfLibrary.Utilities.IDxfLinker.html#DxfLibrary_Utilities_IDxfLinker_LinkEntities_System_Collections_Generic_List_DxfLibrary_Entities_IEntity__
+  commentId: M:DxfLibrary.Utilities.IDxfLinker.LinkEntities(System.Collections.Generic.List{DxfLibrary.Entities.IEntity})
+  name.vb: LinkEntities(List(Of IEntity))
+  fullName: DxfLibrary.Utilities.IDxfLinker.LinkEntities(System.Collections.Generic.List<DxfLibrary.Entities.IEntity>)
+  fullName.vb: DxfLibrary.Utilities.IDxfLinker.LinkEntities(System.Collections.Generic.List(Of DxfLibrary.Entities.IEntity))
+  nameWithType: IDxfLinker.LinkEntities(List<IEntity>)
+  nameWithType.vb: IDxfLinker.LinkEntities(List(Of IEntity))
+- uid: DxfLibrary.Utilities.IDxfLinker.LinkEntities*
+  name: LinkEntities
+  href: api/DxfLibrary.Utilities.IDxfLinker.html#DxfLibrary_Utilities_IDxfLinker_LinkEntities_
+  commentId: Overload:DxfLibrary.Utilities.IDxfLinker.LinkEntities
+  isSpec: "True"
+  fullName: DxfLibrary.Utilities.IDxfLinker.LinkEntities
+  nameWithType: IDxfLinker.LinkEntities
+- uid: DxfLibrary.Utilities.IEntityReference
+  name: IEntityReference
+  href: api/DxfLibrary.Utilities.IEntityReference.html
+  commentId: T:DxfLibrary.Utilities.IEntityReference
+  fullName: DxfLibrary.Utilities.IEntityReference
+  nameWithType: IEntityReference
+- uid: DxfLibrary.Utilities.IEntityReference.IsLinked
+  name: IsLinked
+  href: api/DxfLibrary.Utilities.IEntityReference.html#DxfLibrary_Utilities_IEntityReference_IsLinked
+  commentId: P:DxfLibrary.Utilities.IEntityReference.IsLinked
+  fullName: DxfLibrary.Utilities.IEntityReference.IsLinked
+  nameWithType: IEntityReference.IsLinked
+- uid: DxfLibrary.Utilities.IEntityReference.IsLinked*
+  name: IsLinked
+  href: api/DxfLibrary.Utilities.IEntityReference.html#DxfLibrary_Utilities_IEntityReference_IsLinked_
+  commentId: Overload:DxfLibrary.Utilities.IEntityReference.IsLinked
+  isSpec: "True"
+  fullName: DxfLibrary.Utilities.IEntityReference.IsLinked
+  nameWithType: IEntityReference.IsLinked
+- uid: DxfLibrary.Utilities.IEntityReference.Reference
+  name: Reference
+  href: api/DxfLibrary.Utilities.IEntityReference.html#DxfLibrary_Utilities_IEntityReference_Reference
+  commentId: P:DxfLibrary.Utilities.IEntityReference.Reference
+  fullName: DxfLibrary.Utilities.IEntityReference.Reference
+  nameWithType: IEntityReference.Reference
+- uid: DxfLibrary.Utilities.IEntityReference.Reference*
+  name: Reference
+  href: api/DxfLibrary.Utilities.IEntityReference.html#DxfLibrary_Utilities_IEntityReference_Reference_
+  commentId: Overload:DxfLibrary.Utilities.IEntityReference.Reference
+  isSpec: "True"
+  fullName: DxfLibrary.Utilities.IEntityReference.Reference
+  nameWithType: IEntityReference.Reference
+- uid: DxfLibrary.Utilities.IEntityReference.SoftPointer
+  name: SoftPointer
+  href: api/DxfLibrary.Utilities.IEntityReference.html#DxfLibrary_Utilities_IEntityReference_SoftPointer
+  commentId: P:DxfLibrary.Utilities.IEntityReference.SoftPointer
+  fullName: DxfLibrary.Utilities.IEntityReference.SoftPointer
+  nameWithType: IEntityReference.SoftPointer
+- uid: DxfLibrary.Utilities.IEntityReference.SoftPointer*
+  name: SoftPointer
+  href: api/DxfLibrary.Utilities.IEntityReference.html#DxfLibrary_Utilities_IEntityReference_SoftPointer_
+  commentId: Overload:DxfLibrary.Utilities.IEntityReference.SoftPointer
+  isSpec: "True"
+  fullName: DxfLibrary.Utilities.IEntityReference.SoftPointer
+  nameWithType: IEntityReference.SoftPointer

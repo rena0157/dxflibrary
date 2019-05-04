@@ -1,0 +1,758 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class GeoLine
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class GeoLine
+   ">
+    <meta name="generator" content="docfx 2.37.2.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="DxfLibrary.Geometry.GeoLine">
+  
+  
+  <h1 id="DxfLibrary_Geometry_GeoLine" data-uid="DxfLibrary.Geometry.GeoLine" class="text-break">Class GeoLine
+  </h1>
+  <div class="markdown level0 summary"><p>Geometric class that defines a segment.
+This segment can either be a line or an arc</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><a class="xref" href="DxfLibrary.Geometry.GeoBase.html">GeoBase</a></div>
+    <div class="level2"><span class="xref">GeoLine</span></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="DxfLibrary.Geometry.IGeoLength.html">IGeoLength</a></div>
+    <div><a class="xref" href="DxfLibrary.Geometry.IGeoArea.html">IGeoArea</a></div>
+    <div><a class="xref" href="DxfLibrary.GeoMath.IVectorable.html">IVectorable</a></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="DxfLibrary.Geometry.html">DxfLibrary.Geometry</a></h6>
+  <h6><strong>Assembly</strong>: DxfLibrary.dll</h6>
+  <h5 id="DxfLibrary_Geometry_GeoLine_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class GeoLine : GeoBase, IGeoLength, IGeoArea, IVectorable</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/rena0157/dxflibrary/new/master/apiSpec/new?filename=DxfLibrary_Geometry_GeoLine__ctor.md&amp;value=---%0Auid%3A%20DxfLibrary.Geometry.GeoLine.%23ctor%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/rena0157/dxflibrary/blob/master/src/DxfLibrary/Geometry/GeoLine.cs/#L24">View Source</a>
+  </span>
+  <a id="DxfLibrary_Geometry_GeoLine__ctor_" data-uid="DxfLibrary.Geometry.GeoLine.#ctor*"></a>
+  <h4 id="DxfLibrary_Geometry_GeoLine__ctor" data-uid="DxfLibrary.Geometry.GeoLine.#ctor">GeoLine()</h4>
+  <div class="markdown level1 summary"><p>Default Constructor for the Point</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public GeoLine()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/rena0157/dxflibrary/new/master/apiSpec/new?filename=DxfLibrary_Geometry_GeoLine__ctor_DxfLibrary_Geometry_GeoPoint_DxfLibrary_Geometry_GeoPoint_.md&amp;value=---%0Auid%3A%20DxfLibrary.Geometry.GeoLine.%23ctor(DxfLibrary.Geometry.GeoPoint%2CDxfLibrary.Geometry.GeoPoint)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/rena0157/dxflibrary/blob/master/src/DxfLibrary/Geometry/GeoLine.cs/#L34">View Source</a>
+  </span>
+  <a id="DxfLibrary_Geometry_GeoLine__ctor_" data-uid="DxfLibrary.Geometry.GeoLine.#ctor*"></a>
+  <h4 id="DxfLibrary_Geometry_GeoLine__ctor_DxfLibrary_Geometry_GeoPoint_DxfLibrary_Geometry_GeoPoint_" data-uid="DxfLibrary.Geometry.GeoLine.#ctor(DxfLibrary.Geometry.GeoPoint,DxfLibrary.Geometry.GeoPoint)">GeoLine(GeoPoint, GeoPoint)</h4>
+  <div class="markdown level1 summary"><p>Constructor from two points</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public GeoLine(GeoPoint p0, GeoPoint p1)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DxfLibrary.Geometry.GeoPoint.html">GeoPoint</a></td>
+        <td><span class="parametername">p0</span></td>
+        <td><p>First Point</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="DxfLibrary.Geometry.GeoPoint.html">GeoPoint</a></td>
+        <td><span class="parametername">p1</span></td>
+        <td><p>Second Point</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/rena0157/dxflibrary/new/master/apiSpec/new?filename=DxfLibrary_Geometry_GeoLine__ctor_DxfLibrary_Geometry_GeoPoint_DxfLibrary_Geometry_GeoPoint_DxfLibrary_Geometry_Bulge_.md&amp;value=---%0Auid%3A%20DxfLibrary.Geometry.GeoLine.%23ctor(DxfLibrary.Geometry.GeoPoint%2CDxfLibrary.Geometry.GeoPoint%2CDxfLibrary.Geometry.Bulge)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/rena0157/dxflibrary/blob/master/src/DxfLibrary/Geometry/GeoLine.cs/#L46">View Source</a>
+  </span>
+  <a id="DxfLibrary_Geometry_GeoLine__ctor_" data-uid="DxfLibrary.Geometry.GeoLine.#ctor*"></a>
+  <h4 id="DxfLibrary_Geometry_GeoLine__ctor_DxfLibrary_Geometry_GeoPoint_DxfLibrary_Geometry_GeoPoint_DxfLibrary_Geometry_Bulge_" data-uid="DxfLibrary.Geometry.GeoLine.#ctor(DxfLibrary.Geometry.GeoPoint,DxfLibrary.Geometry.GeoPoint,DxfLibrary.Geometry.Bulge)">GeoLine(GeoPoint, GeoPoint, Bulge)</h4>
+  <div class="markdown level1 summary"><p>Constructor for the geoline that takes two points
+and a bulge</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public GeoLine(GeoPoint p0, GeoPoint p1, Bulge bulge)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DxfLibrary.Geometry.GeoPoint.html">GeoPoint</a></td>
+        <td><span class="parametername">p0</span></td>
+        <td><p>Starting point</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="DxfLibrary.Geometry.GeoPoint.html">GeoPoint</a></td>
+        <td><span class="parametername">p1</span></td>
+        <td><p>Ending point</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="DxfLibrary.Geometry.Bulge.html">Bulge</a></td>
+        <td><span class="parametername">bulge</span></td>
+        <td><p>The Bulge</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/rena0157/dxflibrary/new/master/apiSpec/new?filename=DxfLibrary_Geometry_GeoLine__ctor_DxfLibrary_Geometry_GeoPoint_System_Double_System_Double_System_Double_.md&amp;value=---%0Auid%3A%20DxfLibrary.Geometry.GeoLine.%23ctor(DxfLibrary.Geometry.GeoPoint%2CSystem.Double%2CSystem.Double%2CSystem.Double)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/rena0157/dxflibrary/blob/master/src/DxfLibrary/Geometry/GeoLine.cs/#L61">View Source</a>
+  </span>
+  <a id="DxfLibrary_Geometry_GeoLine__ctor_" data-uid="DxfLibrary.Geometry.GeoLine.#ctor*"></a>
+  <h4 id="DxfLibrary_Geometry_GeoLine__ctor_DxfLibrary_Geometry_GeoPoint_System_Double_System_Double_System_Double_" data-uid="DxfLibrary.Geometry.GeoLine.#ctor(DxfLibrary.Geometry.GeoPoint,System.Double,System.Double,System.Double)">GeoLine(GeoPoint, Double, Double, Double)</h4>
+  <div class="markdown level1 summary"><p>Constructor from a center point, starting angle,
+ending angle, and radius. Note that all angles are in radians.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public GeoLine(GeoPoint geoCenter, double startAngle, double endAngle, double radius)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DxfLibrary.Geometry.GeoPoint.html">GeoPoint</a></td>
+        <td><span class="parametername">geoCenter</span></td>
+        <td><p>The Center point</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td><span class="parametername">startAngle</span></td>
+        <td><p>The Starting Angle (Radians)</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td><span class="parametername">endAngle</span></td>
+        <td><p>The Ending Angle (Radians)</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td><span class="parametername">radius</span></td>
+        <td><p>The Radius of the segment</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/rena0157/dxflibrary/new/master/apiSpec/new?filename=DxfLibrary_Geometry_GeoLine_Angle.md&amp;value=---%0Auid%3A%20DxfLibrary.Geometry.GeoLine.Angle%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/rena0157/dxflibrary/blob/master/src/DxfLibrary/Geometry/GeoLine.cs/#L132">View Source</a>
+  </span>
+  <a id="DxfLibrary_Geometry_GeoLine_Angle_" data-uid="DxfLibrary.Geometry.GeoLine.Angle*"></a>
+  <h4 id="DxfLibrary_Geometry_GeoLine_Angle" data-uid="DxfLibrary.Geometry.GeoLine.Angle">Angle</h4>
+  <div class="markdown level1 summary"><p>The angle that the arc makes.
+If the bulge is zero then the angle will return
+positive infinity</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public double Angle { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="DxfLibrary_Geometry_GeoLine_Angle_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>If there is no arc then the segment is a line and
+will then have an angle of PI (180 degrees). This angle will be returned
+in radians.</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/rena0157/dxflibrary/new/master/apiSpec/new?filename=DxfLibrary_Geometry_GeoLine_Area.md&amp;value=---%0Auid%3A%20DxfLibrary.Geometry.GeoLine.Area%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/rena0157/dxflibrary/blob/master/src/DxfLibrary/Geometry/GeoLine.cs/#L113">View Source</a>
+  </span>
+  <a id="DxfLibrary_Geometry_GeoLine_Area_" data-uid="DxfLibrary.Geometry.GeoLine.Area*"></a>
+  <h4 id="DxfLibrary_Geometry_GeoLine_Area" data-uid="DxfLibrary.Geometry.GeoLine.Area">Area</h4>
+  <div class="markdown level1 summary"><p>Area of the Segment. The Area of the segment
+Is the area of a trapizoid that is bounded by the two points of the
+line. Note that if the segment is an arc then the area is the area
+bounded by that arc.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public double Area { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/rena0157/dxflibrary/new/master/apiSpec/new?filename=DxfLibrary_Geometry_GeoLine_Bulge.md&amp;value=---%0Auid%3A%20DxfLibrary.Geometry.GeoLine.Bulge%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/rena0157/dxflibrary/blob/master/src/DxfLibrary/Geometry/GeoLine.cs/#L86">View Source</a>
+  </span>
+  <a id="DxfLibrary_Geometry_GeoLine_Bulge_" data-uid="DxfLibrary.Geometry.GeoLine.Bulge*"></a>
+  <h4 id="DxfLibrary_Geometry_GeoLine_Bulge" data-uid="DxfLibrary.Geometry.GeoLine.Bulge">Bulge</h4>
+  <div class="markdown level1 summary"><p>The Bulge of the segment</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Bulge Bulge { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DxfLibrary.Geometry.Bulge.html">Bulge</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/rena0157/dxflibrary/new/master/apiSpec/new?filename=DxfLibrary_Geometry_GeoLine_HasBulge.md&amp;value=---%0Auid%3A%20DxfLibrary.Geometry.GeoLine.HasBulge%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/rena0157/dxflibrary/blob/master/src/DxfLibrary/Geometry/GeoLine.cs/#L92">View Source</a>
+  </span>
+  <a id="DxfLibrary_Geometry_GeoLine_HasBulge_" data-uid="DxfLibrary.Geometry.GeoLine.HasBulge*"></a>
+  <h4 id="DxfLibrary_Geometry_GeoLine_HasBulge" data-uid="DxfLibrary.Geometry.GeoLine.HasBulge">HasBulge</h4>
+  <div class="markdown level1 summary"><p>Returns True if the line has a bulge, and false
+if the file does not have a bulge</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool HasBulge { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/rena0157/dxflibrary/new/master/apiSpec/new?filename=DxfLibrary_Geometry_GeoLine_Length.md&amp;value=---%0Auid%3A%20DxfLibrary.Geometry.GeoLine.Length%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/rena0157/dxflibrary/blob/master/src/DxfLibrary/Geometry/GeoLine.cs/#L105">View Source</a>
+  </span>
+  <a id="DxfLibrary_Geometry_GeoLine_Length_" data-uid="DxfLibrary.Geometry.GeoLine.Length*"></a>
+  <h4 id="DxfLibrary_Geometry_GeoLine_Length" data-uid="DxfLibrary.Geometry.GeoLine.Length">Length</h4>
+  <div class="markdown level1 summary"><p>The Length of the Line.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public double Length { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="DxfLibrary_Geometry_GeoLine_Length_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>If the Bulge is 0: The length will return the distance
+from point 0 to point 1</p>
+<p>If the Bulge is not 0: The length will return the arc
+length from by an arc from point 0 to point 1 with a
+Bulge of the Bulge.Value</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/rena0157/dxflibrary/new/master/apiSpec/new?filename=DxfLibrary_Geometry_GeoLine_Point0.md&amp;value=---%0Auid%3A%20DxfLibrary.Geometry.GeoLine.Point0%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/rena0157/dxflibrary/blob/master/src/DxfLibrary/Geometry/GeoLine.cs/#L76">View Source</a>
+  </span>
+  <a id="DxfLibrary_Geometry_GeoLine_Point0_" data-uid="DxfLibrary.Geometry.GeoLine.Point0*"></a>
+  <h4 id="DxfLibrary_Geometry_GeoLine_Point0" data-uid="DxfLibrary.Geometry.GeoLine.Point0">Point0</h4>
+  <div class="markdown level1 summary"><p>Starting point of the line</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public GeoPoint Point0 { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DxfLibrary.Geometry.GeoPoint.html">GeoPoint</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/rena0157/dxflibrary/new/master/apiSpec/new?filename=DxfLibrary_Geometry_GeoLine_Point1.md&amp;value=---%0Auid%3A%20DxfLibrary.Geometry.GeoLine.Point1%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/rena0157/dxflibrary/blob/master/src/DxfLibrary/Geometry/GeoLine.cs/#L81">View Source</a>
+  </span>
+  <a id="DxfLibrary_Geometry_GeoLine_Point1_" data-uid="DxfLibrary.Geometry.GeoLine.Point1*"></a>
+  <h4 id="DxfLibrary_Geometry_GeoLine_Point1" data-uid="DxfLibrary.Geometry.GeoLine.Point1">Point1</h4>
+  <div class="markdown level1 summary"><p>Ending Point of the line</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public GeoPoint Point1 { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DxfLibrary.Geometry.GeoPoint.html">GeoPoint</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/rena0157/dxflibrary/new/master/apiSpec/new?filename=DxfLibrary_Geometry_GeoLine_Radius.md&amp;value=---%0Auid%3A%20DxfLibrary.Geometry.GeoLine.Radius%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/rena0157/dxflibrary/blob/master/src/DxfLibrary/Geometry/GeoLine.cs/#L119">View Source</a>
+  </span>
+  <a id="DxfLibrary_Geometry_GeoLine_Radius_" data-uid="DxfLibrary.Geometry.GeoLine.Radius*"></a>
+  <h4 id="DxfLibrary_Geometry_GeoLine_Radius" data-uid="DxfLibrary.Geometry.GeoLine.Radius">Radius</h4>
+  <div class="markdown level1 summary"><p>Radius of the Arc, if the Bulge is not 0.
+If the Bulge is 0 this should return positive infinity</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public double Radius { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/rena0157/dxflibrary/new/master/apiSpec/new?filename=DxfLibrary_Geometry_GeoLine_Equals_System_Object_.md&amp;value=---%0Auid%3A%20DxfLibrary.Geometry.GeoLine.Equals(System.Object)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/rena0157/dxflibrary/blob/master/src/DxfLibrary/Geometry/GeoLine.cs/#L157">View Source</a>
+  </span>
+  <a id="DxfLibrary_Geometry_GeoLine_Equals_" data-uid="DxfLibrary.Geometry.GeoLine.Equals*"></a>
+  <h4 id="DxfLibrary_Geometry_GeoLine_Equals_System_Object_" data-uid="DxfLibrary.Geometry.GeoLine.Equals(System.Object)">Equals(Object)</h4>
+  <div class="markdown level1 summary"><p>Public Override of the Equals Function. This function
+will compare the following properties of a GeoLine:</p>
+<ul>
+<li>Point0</li>
+<li>Point1</li>
+<li>Bulge Value</li>
+</ul>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool Equals(object obj)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">obj</span></td>
+        <td><p>Object we are comparing to</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p>Returns: True if the lines are the same and false if they are not</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">System.Object.Equals(System.Object)</span></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/rena0157/dxflibrary/new/master/apiSpec/new?filename=DxfLibrary_Geometry_GeoLine_GetHashCode.md&amp;value=---%0Auid%3A%20DxfLibrary.Geometry.GeoLine.GetHashCode%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/rena0157/dxflibrary/blob/master/src/DxfLibrary/Geometry/GeoLine.cs/#L179">View Source</a>
+  </span>
+  <a id="DxfLibrary_Geometry_GeoLine_GetHashCode_" data-uid="DxfLibrary.Geometry.GeoLine.GetHashCode*"></a>
+  <h4 id="DxfLibrary_Geometry_GeoLine_GetHashCode" data-uid="DxfLibrary.Geometry.GeoLine.GetHashCode">GetHashCode()</h4>
+  <div class="markdown level1 summary"><p>Public Override of the GetHashCode Function. This function will hash
+the following properties of this type:</p>
+<ul>
+<li>Point0</li>
+<li>Point1</li>
+<li>Bulge Value</li>
+</ul>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override int GetHashCode()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><p>Returns: A hash of the object</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">System.Object.GetHashCode()</span></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/rena0157/dxflibrary/new/master/apiSpec/new?filename=DxfLibrary_Geometry_GeoLine_ToString.md&amp;value=---%0Auid%3A%20DxfLibrary.Geometry.GeoLine.ToString%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/rena0157/dxflibrary/blob/master/src/DxfLibrary/Geometry/GeoLine.cs/#L143">View Source</a>
+  </span>
+  <a id="DxfLibrary_Geometry_GeoLine_ToString_" data-uid="DxfLibrary.Geometry.GeoLine.ToString*"></a>
+  <h4 id="DxfLibrary_Geometry_GeoLine_ToString" data-uid="DxfLibrary.Geometry.GeoLine.ToString">ToString()</h4>
+  <div class="markdown level1 summary"><p>Override of the ToString Method</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string ToString()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><p>Returns: The Lines points and coordinates</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">System.Object.ToString()</span></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/rena0157/dxflibrary/new/master/apiSpec/new?filename=DxfLibrary_Geometry_GeoLine_ToVector.md&amp;value=---%0Auid%3A%20DxfLibrary.Geometry.GeoLine.ToVector%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/rena0157/dxflibrary/blob/master/src/DxfLibrary/Geometry/GeoLine.cs/#L197">View Source</a>
+  </span>
+  <a id="DxfLibrary_Geometry_GeoLine_ToVector_" data-uid="DxfLibrary.Geometry.GeoLine.ToVector*"></a>
+  <h4 id="DxfLibrary_Geometry_GeoLine_ToVector" data-uid="DxfLibrary.Geometry.GeoLine.ToVector">ToVector()</h4>
+  <div class="markdown level1 summary"><p>Convert this entity to a vector</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vector ToVector()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DxfLibrary.GeoMath.Vector.html">Vector</a></td>
+        <td><p>Returns: A new vector that has the origin and destination
+the same as this lines point 0 and point 1</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="DxfLibrary.Geometry.IGeoLength.html">IGeoLength</a>
+  </div>
+  <div>
+      <a class="xref" href="DxfLibrary.Geometry.IGeoArea.html">IGeoArea</a>
+  </div>
+  <div>
+      <a class="xref" href="DxfLibrary.GeoMath.IVectorable.html">IVectorable</a>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/rena0157/dxflibrary/new/master/apiSpec/new?filename=DxfLibrary_Geometry_GeoLine.md&amp;value=---%0Auid%3A%20DxfLibrary.Geometry.GeoLine%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/rena0157/dxflibrary/blob/master/src/DxfLibrary/Geometry/GeoLine.cs/#L17" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

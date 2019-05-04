@@ -25,6 +25,11 @@ namespace DxfLibrary.IO
         /// </summary>
         private BinaryReader _reader;
 
+        /// <summary>
+        /// The peeks queue
+        /// </summary>
+        private Queue<TaggedData<string, object>> _peeks;
+
         #endregion
 
         #region Constructors
@@ -37,6 +42,9 @@ namespace DxfLibrary.IO
         {
             // Create the binary reader
             _reader = new BinaryReader(stream);
+
+            // Create the Queue for peeking data
+            _peeks = new Queue<TaggedData<string, object>>();
 
             // Read the sentenial to make sure that it is a 
             // Dxf binary file
@@ -110,12 +118,23 @@ namespace DxfLibrary.IO
             // Run the switch dictionary action
             typeSwitch[valueType]();
 
+            // If there are any avalible data to be 
+            // read in the queue read it
+            if (_peeks.Count > 0)
+                return _peeks.Dequeue();
+
             return new TaggedData<string, object>(groupCode, value);
         }
 
+        /// <summary>
+        /// Peeks the next pair of data without moving the reader's position
+        /// </summary>
+        /// <returns>Returns the next pair of data</returns>
         public TaggedData<string, object> PeekNextPair()
         {
-            throw new NotImplementedException();
+            var nextPair = GetNextPair();
+            _peeks.Enqueue(nextPair);
+            return nextPair;
         }
 
         #endregion

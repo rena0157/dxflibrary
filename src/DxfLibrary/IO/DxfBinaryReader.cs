@@ -90,6 +90,53 @@ namespace DxfLibrary.IO
         /// <returns>Returns the data for the next pair</returns>
         public TaggedData<string, object> GetNextPair()
         {
+            // If there are any avalible data to be 
+            // read in the queue read it
+            if (_peeks.Count > 0)
+                return _peeks.Dequeue();
+
+            return ReadNextPair();
+        }
+
+        /// <summary>
+        /// Peeks the next pair of data without moving the reader's position
+        /// </summary>
+        /// <returns>Returns the next pair of data</returns>
+        public TaggedData<string, object> PeekNextPair()
+        {
+            var nextPair = ReadNextPair();
+            _peeks.Enqueue(nextPair);
+            return nextPair;
+        }
+
+        #endregion
+
+        #region Private Methods
+
+        /// <summary>
+        /// Function that Reads Null Terminated Strings from reader of bytes
+        /// </summary>
+        /// <returns>Returns: The string</returns>
+        private string ReadNullTerminatedString()
+        {
+            byte currentByte = _reader.ReadByte();
+            var bytes = new List<byte>();
+
+            while(currentByte != 0 && bytes.Count < 250)
+            {
+                bytes.Add(currentByte);
+                currentByte = _reader.ReadByte();
+            }
+
+            return Encoding.UTF8.GetString(bytes.ToArray());
+        }
+
+        /// <summary>
+        /// Reads the next pair of data from the stream
+        /// </summary>
+        /// <returns>Returns: A Tagged Data pair</returns>
+        private TaggedData<string, object> ReadNextPair()
+        {
             // First read the group code and then get the type
             // that the value is anticipated to be.
             var groupCode = _reader.ReadInt16().ToString();
@@ -118,45 +165,7 @@ namespace DxfLibrary.IO
             // Run the switch dictionary action
             typeSwitch[valueType]();
 
-            // If there are any avalible data to be 
-            // read in the queue read it
-            if (_peeks.Count > 0)
-                return _peeks.Dequeue();
-
             return new TaggedData<string, object>(groupCode, value);
-        }
-
-        /// <summary>
-        /// Peeks the next pair of data without moving the reader's position
-        /// </summary>
-        /// <returns>Returns the next pair of data</returns>
-        public TaggedData<string, object> PeekNextPair()
-        {
-            var nextPair = GetNextPair();
-            _peeks.Enqueue(nextPair);
-            return nextPair;
-        }
-
-        #endregion
-
-        #region Private Methods
-
-        /// <summary>
-        /// Function that Reads Null Terminated Strings from reader of bytes
-        /// </summary>
-        /// <returns>Returns: The string</returns>
-        private string ReadNullTerminatedString()
-        {
-            byte currentByte = _reader.ReadByte();
-            var bytes = new List<byte>();
-
-            while(currentByte != 0 && bytes.Count < 250)
-            {
-                bytes.Add(currentByte);
-                currentByte = _reader.ReadByte();
-            }
-
-            return Encoding.UTF8.GetString(bytes.ToArray());
         }
 
         #endregion

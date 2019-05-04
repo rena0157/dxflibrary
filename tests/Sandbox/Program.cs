@@ -43,6 +43,10 @@ namespace Sandbox
 
         }
 
+        /// <summary>
+        /// Logs a message to the console
+        /// </summary>
+        /// <param name="message">The message parameter that will be logged to the console</param>
         private static void Log(object message)
         {
             Console.WriteLine($"[{DateTime.Now}] -- {message.ToString()}");

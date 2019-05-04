@@ -5,6 +5,17 @@
    "version": "0.2.0",
    "configurations": [
        {
+           "name": "Sandbox (Launch)",
+           "type": "coreclr",
+           "request": "launch",
+           "preLaunchTask": "build",
+           "program": "${workspaceFolder}/artifacts/Sandbox.dll",
+           "args": [],
+           "cwd": "${workspaceFolder}",
+           "stopAtEntry": false,
+           "console": "internalConsole"
+       },
+       {
            "name": "Schema Generator",
            "type": "coreclr",
            "request": "launch",
@@ -16,7 +27,7 @@
            "console": "internalConsole"
        },
         {
-            "name": ".NET Core Launch (console)",
+            "name": "Launch Tests",
             "type": "coreclr",
             "request": "launch",
             "preLaunchTask": "build",

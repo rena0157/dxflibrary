@@ -38,25 +38,15 @@ namespace DxfLibrary.Tests.Entities
         /// Test that the layer name is being matched correctly
         /// </summary>
         [Theory]
-        [InlineData(_LayerNameTest, "TestLayer")]
-        public void LayerNameTest(string testString, string expected)
-        {
-            // Arrange
-            WriteMemory(testString);
-
-            // Act
-            DxfFile dxfFile = new DxfFile(_memoryStream);
-            var entity = dxfFile.Entities.First();
-
-            // Assert
-            Assert.Equal(expected, entity.LayerName);
-        }
+        [InlineData(GenericEntity, "TestLayer")]
+        public void LayerNameTest(string testString, string expected) 
+            => Assert.Equal(expected, GetFirstEntity<Line>(testString).LayerName);
 
         #endregion
 
         #region TestString
 
-        private const string _LayerNameTest = 
+        private const string GenericEntity = 
 @"  0
 SECTION
   2

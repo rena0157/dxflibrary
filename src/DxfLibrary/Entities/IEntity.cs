@@ -3,33 +3,37 @@
 // Created on: 2019-01-06
 
 using System;
+using System.Collections.Generic;
 
 using DxfLibrary.Parse;
 using DxfLibrary.Parse.Entities;
 using DxfLibrary.Parse.Sections;
 using DxfLibrary.Geometry;
+using DxfLibrary.Utilities;
 
 namespace DxfLibrary.Entities
 {
     /// <summary>
     /// The Entity Interface
     /// </summary>
-    public interface IEntity : IDxfParsable
+    public interface IEntity
     {
         /// <summary>
         /// The type of the entity
         /// </summary>
-        Type EntityType {get; set;}
+        Type EntityType {get;}
 
         /// <summary>
-        /// The Entity's handle or ID
+        /// The Entity's handle or ID, this is also the
+        /// soft pointer of another entity that can point to this
+        /// entity
         /// </summary>
         string Handle {get;}
 
         /// <summary>
-        /// The soft pointer of the entity
+        /// Objects that this entity references
         /// </summary>
-        string SoftPointer {get;}
+        List<IEntityReference> References {get; set;}
 
         /// <summary>
         /// The entity Layer name

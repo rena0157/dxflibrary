@@ -58,16 +58,16 @@ namespace DxfLibrary.Geometry
         public override bool Equals(object obj)
         {
             // Cast the object
-            var line = obj as GeoPoint;
+            var point = obj as GeoPoint;
 
             // If it cannot be casted then return false
-            if (line == null)
+            if (point == null)
                 return false;
 
             // Compare the values
-            return BasicGeometry.DoubleCompare(line.X, X) &&
-                BasicGeometry.DoubleCompare(line.Y, Y) && 
-                BasicGeometry.DoubleCompare(line.Z, Z);
+            return BasicGeometry.DoubleCompare(point.X, X) &&
+                BasicGeometry.DoubleCompare(point.Y, Y) && 
+                BasicGeometry.DoubleCompare(point.Z, Z);
         }
 
         /// <summary>

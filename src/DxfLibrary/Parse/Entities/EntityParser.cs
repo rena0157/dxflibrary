@@ -4,9 +4,6 @@
 
 using System;
 using System.Linq;
-using System.Collections.Generic;
-
-using DxfLibrary.Parse;
 using DxfLibrary.Entities;
 using DxfLibrary.IO;
 using DxfLibrary.DxfSpec;
@@ -16,7 +13,7 @@ namespace DxfLibrary.Parse.Entities
     /// <summary>
     /// A base parsing class for the entity type
     /// </summary>
-    public class EntityParser<T> : IDxfEntityParser<T, string, object, object>
+    public class EntityParser<T> : IDxfEntityParser<T, string, object, object, EntityStruct>
     {
 
         /// <summary>
@@ -26,7 +23,7 @@ namespace DxfLibrary.Parse.Entities
         /// <param name="reader">The reader that data will be read from</param>
         /// <param name="entitySpec">The entity specification</param>
         /// <returns></returns>
-        public T ParseEntity(IEntity entity, IDxfReader<string, object> reader, IDxfSpec<object> entitySpec)
+        public T ParseEntity(EntityStruct entity, IDxfReader<string, object> reader, IDxfSpec<object> entitySpec)
         {
             // Get the type of the struct
             var structType = typeof(T);
@@ -51,9 +48,8 @@ namespace DxfLibrary.Parse.Entities
 
                 // First check against the base class spec
                 var baseQuery = properties
-                    .Where(prop => baseEntitySpec.Properties
-                    .Any(spec => spec.Name == prop.Name && spec.Code as string == data.GroupCode))
-                    .FirstOrDefault();
+                    .FirstOrDefault(prop => baseEntitySpec.Properties
+                    .Any(spec => spec.Name == prop.Name && spec.Code as string == data.GroupCode));
 
                 // If base spec matches then set and return
                 if (baseQuery != null)
@@ -63,10 +59,10 @@ namespace DxfLibrary.Parse.Entities
                 }
 
                 // Query the specifications to see if the current data matches
+                // A non base property
                 var query = properties
-                    .Where(prop => entitySpec.Properties
-                    .Any(spec => spec.Name == prop.Name && spec.Code as string == data.GroupCode))
-                    .FirstOrDefault();
+                    .FirstOrDefault(prop => entitySpec.Properties
+                    .Any(spec => spec.Name == prop.Name && spec.Code as string == data.GroupCode));
 
                 // If the current data matches then set the property in the
                 // entity
@@ -74,7 +70,7 @@ namespace DxfLibrary.Parse.Entities
                     entity.SetProperty(query.Name, data.Value);
             }
 
-            return (T)entity;
+            return (T)Convert.ChangeType(entity, typeof(T));
         }
     }
 }

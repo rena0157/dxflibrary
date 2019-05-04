@@ -77,6 +77,11 @@ namespace DxfLibrary.DxfSpec
         public const string LineSpec = "LineSpec";
 
         /// <summary>
+        /// Constand for the Hatch Specification
+        /// </summary>
+        public const string HatchSpec = "HatchSpec";
+
+        /// <summary>
         /// Const for the LwPolyline Specification
         /// </summary>
         public const string LwPolylineSpec = "LwPolylineSpec";

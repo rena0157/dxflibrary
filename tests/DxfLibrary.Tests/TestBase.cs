@@ -24,6 +24,11 @@ namespace DxfLibrary.Tests
         /// </summary>
         protected ITestOutputHelper _logger;
 
+        /// <summary>
+        /// The Tolerance for comparing double values
+        /// </summary>
+        protected int _doubleTolerance;
+
         #endregion
 
         #region Constructors

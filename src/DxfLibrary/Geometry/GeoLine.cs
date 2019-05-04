@@ -50,6 +50,22 @@ namespace DxfLibrary.Geometry
             Point1 = p1;
         }
 
+        /// <summary>
+        /// Constructor from a center point, starting angle,
+        /// ending angle, and radius. Note that all angles are in radians.
+        /// </summary>
+        /// <param name="geoCenter">The Center point</param>
+        /// <param name="startAngle">The Starting Angle (Radians)</param>
+        /// <param name="endAngle">The Ending Angle (Radians)</param>
+        /// <param name="radius">The Radius of the segment</param>
+        public GeoLine(GeoPoint geoCenter, double startAngle, double endAngle, double radius) :
+            this(new GeoPoint(geoCenter.X + radius * Math.Cos(startAngle), geoCenter.Y + radius * Math.Sin(startAngle), geoCenter.Z),
+                 new GeoPoint(geoCenter.X + radius * Math.Cos(endAngle), geoCenter.Y + radius * Math.Sin(endAngle), geoCenter.Z),
+                 Geometry.Bulge.FromAngle(endAngle - startAngle))
+        {
+            
+        }
+
         #endregion
 
         #region Public Properties
@@ -127,6 +143,48 @@ namespace DxfLibrary.Geometry
         public override string ToString()
         {
             return $"P0({Point0.X}, {Point0.Y}, {Point0.Z}), P1({Point1.X}, {Point1.Y}, {Point1.Z})";
+        }
+
+        /// <summary>
+        /// Public Override of the Equals Function. This function
+        /// will compare the following properties of a GeoLine:
+        /// - Point0
+        /// - Point1
+        /// - Bulge Value
+        /// </summary>
+        /// <param name="obj">Object we are comparing to</param>
+        /// <returns>Returns: True if the lines are the same and false if they are not</returns>
+        public override bool Equals(object obj)
+        {
+            // Try and convert the obj to a line
+            // if it returns null then this is not a line
+            // and return false
+            var line = obj as GeoLine;
+            if (line == null)
+                return false;
+
+            // Compare the major properties of the two lines
+            return Point0.Equals(line.Point0) && Point1.Equals(line.Point1) 
+                && BasicGeometry.DoubleCompare(Bulge.Value, line.Bulge.Value);
+        }
+
+        /// <summary>
+        /// Public Override of the GetHashCode Function. This function will hash
+        /// the following properties of this type:
+        /// - Point0
+        /// - Point1
+        /// - Bulge Value
+        /// </summary>
+        /// <returns>Returns: A hash of the object</returns>
+        public override int GetHashCode()
+        {
+            int hash = 238728232;
+            int otherValue = 928392928;
+            hash = (hash * otherValue) + Point0.GetHashCode();
+            hash = (hash * otherValue) + Point1.GetHashCode();
+            hash = (hash * otherValue) + Bulge.Value.GetHashCode();
+
+            return hash;
         }
 
         /// <summary>

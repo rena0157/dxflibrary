@@ -11,16 +11,20 @@
             "Code" : "LWPOLYLINE"
         },
         {
-            "Name" : "Handle",
-            "Code" : "  5"
+            "Name" : "Entity.HatchString",
+            "Code" : "HATCH"
         },
         {
-            "Name" : "SoftPointer",
+            "Name" : "Handle",
+            "Code" : "5"
+        },
+        {
+            "Name" : "References",
             "Code" : "330"
         },
         {
             "Name" : "LayerName",
-            "Code" : "  8"
+            "Code" : "8"
         }
 
     ]

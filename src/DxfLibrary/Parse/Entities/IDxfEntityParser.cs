@@ -18,7 +18,8 @@ namespace DxfLibrary.Parse.Entities
     /// <typeparam name="G">Type of the Group Code (Usually string)</typeparam>
     /// <typeparam name="V">Type of the value (TaggedData, usually object)</typeparam>
     /// <typeparam name="S">Type of the specification (Usually Object)</typeparam>
-    public interface IDxfEntityParser<T, G, V, S>
+    /// <typeparam name="ES">Type of the specification (Usually an entity Structure)</typeparam>
+    public interface IDxfEntityParser<T, G, V, S, ES>
     {
         /// <summary>
         /// Parse any non base class entity
@@ -27,7 +28,7 @@ namespace DxfLibrary.Parse.Entities
         /// <param name="reader">The reader for the data in the file</param>
         /// <param name="entitySpec">The specificaiton that the parser will need</param>
         /// <returns>A new Entity</returns>
-        T ParseEntity(IEntity entity, IDxfReader<G, V> reader, IDxfSpec<S> entitySpec);
+        T ParseEntity(ES entity, IDxfReader<G, V> reader, IDxfSpec<S> entitySpec);
     }
 
 

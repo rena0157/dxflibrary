@@ -1,0 +1,58 @@
+{
+    "SpecName": "HatchSpec",
+    "SpecType": "Hatch",
+    "Properties": [
+        {
+            "Name" : "ElevationX",
+            "Code" : "10"
+        },
+        {
+            "Name" : "ElevationY",
+            "Code" : "20"
+        },
+        {
+            "Name" : "ElevationZ",
+            "Code" : "30"
+        },
+        {
+            "Name" : "PatternName",
+            "Code" : "2"
+        },
+        {
+            "Name" : "SolidFillFlag",
+            "Code" : "70"
+        },
+        {
+            "Name" : "AssociativityFlag",
+            "Code" : "71"
+        },
+        {
+            "Name" : "BoundaryPathsCount",
+            "Code" : "91"
+        },
+        {
+            "Name" : "Hatch Style",
+            "Code" : "75"
+        },
+        {
+            "Name" : "PatternType",
+            "Code" : "76"
+        },
+        {
+            "Name" : "PatternAngle",
+            "Code" : "52"
+        },
+        {
+            "Name" : "PatternScale",
+            "Code" : "41"
+        },
+        {
+            "Name" : "BoundaryAnnotationFlag",
+            "Code" : "73"
+        },
+        {
+            "Name" : "DoublePatternFlag",
+            "Code" : "77"
+        }
+    ]
+}

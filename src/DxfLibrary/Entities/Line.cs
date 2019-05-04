@@ -24,7 +24,7 @@ namespace DxfLibrary.Entities
         internal Line(LineStructure structure) : base(structure)
         {
             // Create the geometric base
-            _geometricBase = new GeoLine(new GeoPoint(structure.X1, structure.Y1),
+            GeometricBase = new GeoLine(new GeoPoint(structure.X1, structure.Y1),
                 new GeoPoint(structure.X2, structure.Y2));
         }
 
@@ -43,17 +43,17 @@ namespace DxfLibrary.Entities
         /// <summary>
         /// The Starting Point
         /// </summary>
-        public GeoPoint StartPoint => ((GeoLine)_geometricBase).Point0;
+        public GeoPoint StartPoint => ((GeoLine)GeometricBase).Point0;
 
         /// <summary>
         /// The End Point
         /// </summary>
-        public GeoPoint EndPoint => ((GeoLine)_geometricBase).Point1;
+        public GeoPoint EndPoint => ((GeoLine)GeometricBase).Point1;
 
         /// <summary>
         /// The length of the line as defined in the geometric base
         /// </summary>
-        public double Length => ((GeoLine)_geometricBase).Length;
+        public double Length => ((GeoLine)GeometricBase).Length;
 
 
         #endregion
@@ -62,7 +62,7 @@ namespace DxfLibrary.Entities
     /// <summary>
     /// Internal Class used to construct the Line Entity
     /// </summary>
-    internal class LineStructure : Entity
+    internal class LineStructure : EntityStruct
     {
         /// <summary>
         /// First X Coordinate

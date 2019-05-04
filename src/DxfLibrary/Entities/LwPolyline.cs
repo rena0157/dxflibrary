@@ -33,7 +33,7 @@ namespace DxfLibrary.Entities
             Thickness = structure.Thickness;
 
             // Set the geometric base class
-            _geometricBase = new GeoPolyline(structure.XCoordinate,
+            GeometricBase = new GeoPolyline(structure.XCoordinate,
                 structure.YCoordinate, structure.Bulge, PolylineFlag);
         }
 
@@ -52,12 +52,12 @@ namespace DxfLibrary.Entities
         /// <summary>
         /// The Total Length of the LwPolyline
         /// </summary>
-        public double Length => ((IGeoLength)_geometricBase).Length;
+        public double Length => ((IGeoLength)GeometricBase).Length;
 
         /// <summary>
         /// The Total Area of the LwPolyline
         /// </summary>
-        public double Area => ((IGeoArea)_geometricBase).Area;
+        public double Area => ((IGeoArea)GeometricBase).Area;
 
         /// <summary>
         /// The number of vertices in the Polyline
@@ -102,7 +102,7 @@ namespace DxfLibrary.Entities
     /// <summary>
     /// Internal Structure for the LwPolyline
     /// </summary>
-    internal class LwPolylineStructure : Entity
+    internal class LwPolylineStructure : EntityStruct
     {
         #region Trivial Properties
         /// <summary>

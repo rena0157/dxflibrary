@@ -33,6 +33,35 @@ namespace DxfLibrary.Tests.Entities
         protected MemoryStream _memoryStream;
 
         /// <summary>
+        /// Takes the data string, writes to the memory buffer,
+        /// reads the dxffile and extracts the first entity that
+        /// matches the type given.
+        /// </summary>
+        /// <param name="data">The data that represents a dxffile</param>
+        /// <typeparam name="T">The entity type</typeparam>
+        /// <returns>Returns the First Entity from the Dxf File that matches the type given</returns>
+        protected T GetFirstEntity<T>(string data)
+        {
+            WriteMemory(data);
+            var dxfFile = new DxfFile(_memoryStream);
+            var entity = dxfFile.GetEntities<T>();
+            return entity.FirstOrDefault();
+        }
+
+        /// <summary>
+        /// Takes the data string, writes to the memory buffer,
+        /// reads the dxf file and extracts all of the entities
+        /// </summary>
+        /// <param name="data">The data that represents a dxf file</param>
+        /// <returns>Returns: A list of all the entities from the file</returns>
+        protected List<IEntity> GetAllEntities(string data)
+        {
+            WriteMemory(data);
+            var dxfFile = new DxfFile(_memoryStream);
+            return dxfFile.Entities;
+        }
+
+        /// <summary>
         /// A Stream Writer that is used to write to the memory stream.
         /// Note that this is not disposed of until the object is distroyed to keep
         /// the base stream alive.

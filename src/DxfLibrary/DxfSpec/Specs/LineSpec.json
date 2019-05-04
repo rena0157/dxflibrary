@@ -4,19 +4,19 @@
     "Properties": [
         {
             "Name" : "X1",
-            "Code" : " 10"
+            "Code" : "10"
         },
         {
             "Name" : "Y1",
-            "Code" : " 20"
+            "Code" : "20"
         },
         {
             "Name" : "X2",
-            "Code" : " 11"
+            "Code" : "11"
         },
         {
             "Name" : "Y2",
-            "Code" : " 21"
+            "Code" : "21"
         }
     ]
 }

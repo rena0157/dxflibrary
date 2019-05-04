@@ -1,9 +1,13 @@
 # dotnet build Dirs
 bin/
 obj/
+artifacts/
+.tmp/
 
 # AutoCAD Files
 *.dwl
 *.dwl2
 *.bak
 *.log
+/.tmp
+/.vs/dxflibrary/v16

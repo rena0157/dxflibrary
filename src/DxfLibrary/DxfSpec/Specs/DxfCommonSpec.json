@@ -4,7 +4,7 @@
     "Properties": [
         {
             "Name" : "Sections.StartCode",
-            "Code" : "  0"
+            "Code" : "0"
         },
         {
             "Name" : "Sections.StartString",
@@ -20,7 +20,7 @@
         },
         {
             "Name" : "Sections.EndCode",
-            "Code" : "  0"
+            "Code" : "0"
         },
         {
             "Name" : "Sections.EndString",

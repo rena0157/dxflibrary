@@ -16,7 +16,7 @@
         },
         {
             "Name" : "Handle",
-            "Code" : "  5"
+            "Code" : "5"
         },
         {
             "Name" : "References",
@@ -24,7 +24,7 @@
         },
         {
             "Name" : "LayerName",
-            "Code" : "  8"
+            "Code" : "8"
         }
 
     ]

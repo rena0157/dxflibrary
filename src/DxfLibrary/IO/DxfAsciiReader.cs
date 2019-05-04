@@ -78,7 +78,7 @@ namespace DxfLibrary.IO
                 return _peeks.Dequeue();
 
             CurrentPosition += 2;
-            return new TaggedData<string, object>(_reader.ReadLine(), _reader.ReadLine());
+            return new TaggedData<string, object>(_reader.ReadLine().Trim(), _reader.ReadLine());
         }
 
         /// <summary>
@@ -86,7 +86,7 @@ namespace DxfLibrary.IO
         /// </summary>
         public TaggedData<string, object> PeekNextPair()
         {
-            var nextPair = new TaggedData<string, object>(_reader.ReadLine(), _reader.ReadLine());
+            var nextPair = new TaggedData<string, object>(_reader.ReadLine().Trim(), _reader.ReadLine());
             _peeks.Enqueue(nextPair);
             return nextPair;
         }

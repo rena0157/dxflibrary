@@ -34,18 +34,20 @@ namespace Sandbox
 
             using(var stream = new FileStream(testFile, FileMode.Open, FileAccess.Read, FileShare.ReadWrite))
             {
-                var reader = new DxfBinaryReader(stream);
+                Environment.CurrentDirectory = @"C:\Dev\dxflibrary\artifacts\";
+                var test = Directory.GetCurrentDirectory();
+                var file = new DxfFile(stream, true);
 
-                var pairs = new List<TaggedData<string, object>>();
+                // var pairs = new List<TaggedData<string, object>>();
 
-                while(!reader.EndOfStream)
-                {
-                    if (pairs.Count == 6029)
-                        Console.WriteLine("BREAK");
+                // while(!reader.EndOfStream)
+                // {
+                //     if (pairs.Count == 6029)
+                //         Console.WriteLine("BREAK");
 
-                    var pair = reader.GetNextPair();
-                    pairs.Add(pair);
-                }
+                //     var pair = reader.GetNextPair();
+                //     pairs.Add(pair);
+                // }
                  Log("Exiting Program");
 
             }

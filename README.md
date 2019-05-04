@@ -10,6 +10,7 @@ A library for reading Dxf files with an emphasis on geometric properties of enti
 
 - Basic Entity Parsing Framework (Complete)
 - Entity Specification Framework (Complete)
+- Binary Files (Complete)
 - Entities (In order of importance)
   - LINE (Complete)
   - LWPOLYLINE (Complete)

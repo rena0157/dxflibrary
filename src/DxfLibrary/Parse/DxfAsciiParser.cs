@@ -37,6 +37,10 @@ namespace DxfLibrary.Parse
             while(!reader.EndOfStream)
             {
                 var firstItem = reader.GetNextPair();
+
+                if (reader.EndOfStream)
+                    break;
+                
                 var secondItem = reader.GetNextPair();
 
                 var sectionCode = commonSpec.Get("Sections.StartCode") as string;
@@ -44,7 +48,8 @@ namespace DxfLibrary.Parse
 
                 // If the first item's code is a section code and its value is a section string then this is the start
                 // of a section
-                if (firstItem.GroupCode == sectionCode as string && firstItem.Value as string == sectionString as string)
+                if ( String.CompareOrdinal(firstItem.GroupCode, sectionCode) == 0 && 
+                     String.CompareOrdinal(firstItem.Value as string, sectionString as string) == 0)
                 {
                     var sectionName = secondItem.Value as string;
 

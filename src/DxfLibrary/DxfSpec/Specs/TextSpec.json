@@ -1,0 +1,78 @@
+{
+    "SpecName": "TextSpec",
+    "SpecType": "Text",
+    "Properties": [
+        {
+            "Name" : "XCoordinate1",
+            "Code" : "10"
+        },
+        {
+            "Name" : "YCoordinate1",
+            "Code" : "20"
+        },
+        {
+            "Name" : "ZCoordinate1",
+            "Code" : "30"
+        },
+        {
+            "Name" : "Height",
+            "Code" : "40"
+        },
+        {
+            "Name" : "Value",
+            "Code" : "1"
+        },
+        {
+            "Name" : "TextRotation",
+            "Code" : "50"
+        },
+        {
+            "Name" : "XScale",
+            "Code" : "41"
+        },
+        {
+            "Name" : "ObliqueAngle",
+            "Code" : 51
+        },
+        {
+            "Name" : "TextStyle",
+            "Code" : "7"
+        },
+        {
+            "Name" : "TextGenerationFlag",
+            "Code" : "71"
+        },
+        {
+            "Name" : "HorizontalJustification",
+            "Code" : "72"
+        },
+        {
+            "Name" : "XCoordinate2",
+            "Code" : "11"
+        },
+        {
+            "Name" : "YCoordinate2",
+            "Code" : "21"
+        },
+        {
+            "Name" : "ZCoordinate2",
+            "Code" : "31"
+        },
+        {
+            "Name" : "ExtrusionX",
+            "Code" : "210"
+        },
+        {
+            "Name" : "ExtrusionY",
+            "Code" : "220"
+        },
+        {
+            "Name" : "ExtrusionZ",
+            "Code" : "230"
+        },
+        {
+            "Name" : "VerticalJustification",
+            "Code" : "73"
+        }
+    ]
+}

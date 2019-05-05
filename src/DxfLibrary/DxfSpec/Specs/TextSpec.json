@@ -32,7 +32,7 @@
         },
         {
             "Name" : "ObliqueAngle",
-            "Code" : 51
+            "Code" : "51"
         },
         {
             "Name" : "TextStyle",

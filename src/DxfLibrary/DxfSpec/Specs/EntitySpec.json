@@ -15,6 +15,10 @@
             "Code" : "HATCH"
         },
         {
+            "Name" : "Entity.TextString",
+            "Code" : "TEXT"
+        },
+        {
             "Name" : "Handle",
             "Code" : "5"
         },

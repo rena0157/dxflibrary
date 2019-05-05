@@ -86,7 +86,7 @@ namespace DxfLibrary
             {
                 using (var reader = new DxfAsciiReader(fileStream))
                 {
-                    var parser = new DxfAsciiParser();
+                    var parser = new DxfParser();
                     _container = parser.Parse(reader);
                 }
             }
@@ -94,7 +94,7 @@ namespace DxfLibrary
             {
                 using (var reader = new DxfBinaryReader(fileStream))
                 {
-                    var parser = new DxfAsciiParser();
+                    var parser = new DxfParser();
                     _container = parser.Parse(reader);
                 }
             }

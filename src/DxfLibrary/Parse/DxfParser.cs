@@ -19,7 +19,7 @@ namespace DxfLibrary.Parse
     /// The main Ascii parser. This function will be used as the main entry point for
     /// the parsing of Dxf Ascii Files
     /// </summary>
-    public class DxfAsciiParser : IDxfParser<SectionsContainer, string, object>
+    public class DxfParser : IDxfParser<SectionsContainer, string, object>
     {
         public SectionsContainer Parse(IDxfReader<string, object> reader)
         {

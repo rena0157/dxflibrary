@@ -10,7 +10,7 @@ using Xunit.Abstractions;
 
 namespace DxfLibrary.Tests
 {
-    public class MemoryStreamTestBase<T> : TestBase, IMemoryStreamTestBase<T>
+    public class MemoryStreamTestBase : TestBase, IMemoryStreamTestBase
     {
 
         /// <summary>
@@ -24,52 +24,39 @@ namespace DxfLibrary.Tests
 
         private bool isBinary;
 
-        public MemoryStream MemStream { get; set; }
+        public MemoryStream TextMemStream { get; set; }
+
+        public MemoryStream BinMemStream {get; set;}
 
         public MemoryStreamTestBase(ITestOutputHelper logger) : base(logger)
         {
-            MemStream = new MemoryStream();
+            TextMemStream = new MemoryStream();
+            BinMemStream = new MemoryStream();
 
-            if (typeof(T) == typeof(string))
-            {
-                isBinary = false;
-                _streamWriter = new StreamWriter(MemStream);
-            }
-            else if (typeof(T) == typeof(byte[]))
-            {
-                isBinary = true;
-                _binWriter = new BinaryWriter(MemStream);
-            }
-            else
-                throw new NotSupportedException("The Type Provided is not supported");
+            _streamWriter = new StreamWriter(TextMemStream);
+            _binWriter = new BinaryWriter(BinMemStream);
         }
-
 
         public void Dispose()
         {
-            if(!isBinary)
-                _streamWriter.Dispose();
-
-            else
-                _binWriter.Dispose();
-            
-            MemStream.Dispose();
+            _streamWriter.Dispose();
+            _binWriter.Dispose();
+            BinMemStream.Dispose();
+            TextMemStream.Dispose();
         }
 
-        public void WriteMemory(object value)
+        public void WriteMemory(string value)
         {
-            if (!isBinary)
-            {
-                _streamWriter.Write((string)value);
-                _streamWriter.Flush();
-            }
-            else
-            {
-                _binWriter.Write((byte[])value);
-                _binWriter.Flush();
-            }
+            _streamWriter.Write(value);
+            _streamWriter.Flush();
+            TextMemStream.Position = 0;
+        }
 
-            MemStream.Position = 0;
+        public void WriteMemory(byte[] value)
+        {
+            _binWriter.Write(value);
+            _binWriter.Flush();
+            BinMemStream.Position = 0;
         }
     }
 }

@@ -83,7 +83,7 @@ ENDSEC
         [Fact]
         public void GetEntitiesTest()
         {
-            DxfFile dxfFile = new DxfFile(_memoryStream);
+            DxfFile dxfFile = new DxfFile(TextMemStream);
             var lines = dxfFile.GetEntities<Line>().FirstOrDefault();
             Assert.NotNull(lines);
         }
@@ -95,7 +95,7 @@ ENDSEC
         public void PointTest()
         {
             // Read the file and extract the lines
-            DxfFile dxfFile = new DxfFile(_memoryStream);
+            DxfFile dxfFile = new DxfFile(TextMemStream);
             var lines = dxfFile.GetEntities<Line>();
 
             // Set up two points and test to see if they match what was

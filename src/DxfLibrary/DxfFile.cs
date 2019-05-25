@@ -45,7 +45,7 @@ namespace DxfLibrary
         /// </summary>
         /// <param name="fileStream">A filestream that points to the file</param>
         /// <param name="isBinary">True if the file is binary</param>
-        public DxfFile(FileStream fileStream, bool isBinary)
+        public DxfFile(Stream fileStream, bool isBinary)
         {
             // Load the file
             LoadFile(fileStream, isBinary);

@@ -45,7 +45,7 @@ namespace DxfLibrary.Tests.Entities
             WriteMemory(value);
 
             // Act
-            DxfFile dxfFile = new DxfFile(_memoryStream);
+            DxfFile dxfFile = new DxfFile(TextMemStream);
             var polyline = dxfFile.GetEntities<LwPolyline>().FirstOrDefault();
 
             // Assert
@@ -68,7 +68,7 @@ namespace DxfLibrary.Tests.Entities
             WriteMemory(value);
 
             // Act
-            DxfFile dxfFile = new DxfFile(_memoryStream);
+            DxfFile dxfFile = new DxfFile(TextMemStream);
             var polyline = dxfFile.GetEntities<LwPolyline>().FirstOrDefault();
 
             // Assert
@@ -91,7 +91,7 @@ namespace DxfLibrary.Tests.Entities
             WriteMemory(value);
 
             // Act
-            var dxfFile = new DxfFile(_memoryStream);
+            var dxfFile = new DxfFile(TextMemStream);
             var polyline = dxfFile.GetEntities<LwPolyline>().FirstOrDefault();
 
             // Assert
@@ -114,7 +114,7 @@ namespace DxfLibrary.Tests.Entities
             WriteMemory(value);
 
             // Act
-            var dxfFile = new DxfFile(_memoryStream);
+            var dxfFile = new DxfFile(TextMemStream);
             var polyline = dxfFile.GetEntities<LwPolyline>().FirstOrDefault();
 
             // Assert
@@ -138,7 +138,7 @@ namespace DxfLibrary.Tests.Entities
             WriteMemory(value);
 
             // Act
-            var dxfFile = new DxfFile(_memoryStream);
+            var dxfFile = new DxfFile(TextMemStream);
             var polyline = dxfFile.GetEntities<LwPolyline>().FirstOrDefault();
 
             // Assert
@@ -155,7 +155,7 @@ namespace DxfLibrary.Tests.Entities
             WriteMemory(value);
 
             // Act
-            var dxfFile = new DxfFile(_memoryStream);
+            var dxfFile = new DxfFile(TextMemStream);
             var polyline = dxfFile.GetEntities<LwPolyline>().FirstOrDefault();
 
             // Assert

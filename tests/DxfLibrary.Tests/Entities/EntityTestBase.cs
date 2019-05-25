@@ -23,14 +23,8 @@ namespace DxfLibrary.Tests.Entities
     /// for a virual file using a memory stream. A string can be written to
     /// the stream and then passed to the dxf parser to simulate a file.
     /// </summary>
-    public class EntityTestBase : TestBase, IDisposable
+    public class EntityTestBase : MemoryStreamTestBase
     {
-
-        /// <summary>
-        /// The memory Stream that is used to simulate
-        /// a file that is read by the dxf parsers
-        /// </summary>
-        protected MemoryStream _memoryStream;
 
         /// <summary>
         /// Takes the data string, writes to the memory buffer,
@@ -43,7 +37,15 @@ namespace DxfLibrary.Tests.Entities
         protected T GetFirstEntity<T>(string data)
         {
             WriteMemory(data);
-            var dxfFile = new DxfFile(_memoryStream);
+            var dxfFile = new DxfFile(TextMemStream);
+            var entity = dxfFile.GetEntities<T>();
+            return entity.FirstOrDefault();
+        }
+
+        protected T GetFirstEntity<T>(byte[] data)
+        {
+            WriteMemory(data);
+            var dxfFile = new DxfFile(BinMemStream, true);
             var entity = dxfFile.GetEntities<T>();
             return entity.FirstOrDefault();
         }
@@ -57,16 +59,16 @@ namespace DxfLibrary.Tests.Entities
         protected List<IEntity> GetAllEntities(string data)
         {
             WriteMemory(data);
-            var dxfFile = new DxfFile(_memoryStream);
+            var dxfFile = new DxfFile(TextMemStream);
             return dxfFile.Entities;
         }
 
-        /// <summary>
-        /// A Stream Writer that is used to write to the memory stream.
-        /// Note that this is not disposed of until the object is distroyed to keep
-        /// the base stream alive.
-        /// </summary>
-        private StreamWriter _streamWriter;
+        protected List<IEntity> GetAllEntities(byte[] data)
+        {
+            WriteMemory(data);
+            var dxfFile = new DxfFile(BinMemStream);
+            return dxfFile.Entities;
+        }
 
         /// <summary>
         /// Default Constructor for the EntityBaseClass.
@@ -76,33 +78,7 @@ namespace DxfLibrary.Tests.Entities
         /// <param name="logger">Logger passed from XUnit</param>
         public EntityTestBase(ITestOutputHelper logger) : base(logger)
         {
-            // Initialize the streams
-            _memoryStream = new MemoryStream();
-            _streamWriter = new StreamWriter(_memoryStream);
-        }
 
-        /// <summary>
-        /// Dispose of the streams and other managed resources
-        /// </summary>
-        public void Dispose()
-        {
-            _streamWriter.Dispose();
-            _memoryStream.Dispose();
-        }
-
-        /// <summary>
-        /// Write to the memory stream.
-        /// Note that after writing to the stream the position
-        /// of the memory stream is reset to 0
-        /// </summary>
-        /// <param name="value">The string that is written to the stream</param>
-        protected void WriteMemory(string value)
-        {
-            _streamWriter.Write(value);
-
-            // Make sure to flush and reset the position of the stream
-            _streamWriter.Flush();
-            _memoryStream.Position = 0;
         }
     }
 }

@@ -7,12 +7,17 @@ using DxfLibrary.Geometry;
 
 namespace DxfLibrary.Entities
 {
+    /// <summary>
+    /// The Text Entity
+    /// </summary>
     public class Text : Entity
     {
         #region Constructors
 
-        // Initialize the members of this class
-
+        /// <summary>
+        /// The Internal Constructor for this Entity
+        /// </summary>
+        /// <param name="textStruc">The Text Struct that is passed</param>
         internal Text(TextStructure textStruc) : base(textStruc)
         {
             FirstAlignmentPoint 
